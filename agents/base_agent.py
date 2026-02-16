@@ -2,9 +2,10 @@
 
 from abc import ABC, abstractmethod
 from typing import Dict, Any
-from models.state import BrandIntelligenceState
-from utils.llm_client import llm_client
-from utils.logger import get_logger
+
+# Modular imports
+from models import BrandIntelligenceState
+from utils import llm_client, get_logger
 
 logger = get_logger(__name__)
 

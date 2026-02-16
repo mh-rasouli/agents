@@ -3,18 +3,22 @@
 import asyncio
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, Any, Optional
-from agents.base_agent import BaseAgent
-from models.state import BrandIntelligenceState
-from scrapers.rasmio_scraper import RasmioScraper
-from scrapers.codal_scraper import CodalScraper
-from scrapers.tsetmc_scraper import TsetmcScraper
-from scrapers.linka_scraper import LinkaScraper
-from scrapers.trademark_scraper import TrademarkScraper
-from scrapers.web_search import WebSearchScraper
-from scrapers.example_scraper import ExampleScraper
-from scrapers.tavily_scraper import TavilyScraper
-from config.prompts import DATA_EXTRACTION_PROMPT
-from utils.logger import get_logger
+
+# Modular imports
+from agents import BaseAgent
+from models import BrandIntelligenceState
+from scrapers import (
+    ExampleScraper,
+    WebSearchScraper,
+    TavilyScraper,
+    RasmioScraper,
+    CodalScraper,
+    TsetmcScraper,
+    LinkaScraper,
+    TrademarkScraper,
+)
+from config import DATA_EXTRACTION_PROMPT
+from utils import get_logger
 
 logger = get_logger(__name__)
 

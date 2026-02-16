@@ -1,15 +1,19 @@
 """LangGraph workflow definition for brand intelligence system."""
 
 from langgraph.graph import StateGraph, END
-from models.state import BrandIntelligenceState
-from agents.data_collection_agent import DataCollectionAgent
-from agents.relationship_agent import RelationshipMappingAgent
-from agents.categorization_agent import CategorizationAgent
-from agents.product_catalog_agent import ProductCatalogAgent
-from agents.insights_agent import StrategicInsightsAgent
-from agents.formatter_agent import OutputFormatterAgent
-from agents.customer_intelligence_agent import CustomerIntelligenceAgent
-from utils.logger import get_logger
+
+# Modular imports
+from models import BrandIntelligenceState
+from agents import (
+    DataCollectionAgent,
+    RelationshipMappingAgent,
+    CategorizationAgent,
+    ProductCatalogAgent,
+    StrategicInsightsAgent,
+    OutputFormatterAgent,
+    CustomerIntelligenceAgent,
+)
+from utils import get_logger
 
 logger = get_logger(__name__)
 

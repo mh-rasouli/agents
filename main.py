@@ -3,9 +3,11 @@
 import argparse
 import sys
 from pathlib import Path
+
+# Modular imports
 from graph import run_workflow
-from config.settings import settings
-from utils.logger import get_logger
+from config import settings
+from utils import get_logger
 
 logger = get_logger(__name__)
 
@@ -64,10 +66,8 @@ def run_batch_mode(args):
     Args:
         args: Command-line arguments
     """
-    from utils.google_sheets_client import GoogleSheetsClient
-    from utils.registry import BrandRegistry
-    from utils.run_logger import RunLogger
     import time
+    from utils import GoogleSheetsClient, BrandRegistry, RunLogger
 
     logger.info("=" * 60)
     logger.info("BATCH MODE: Processing brands from Google Sheets")
