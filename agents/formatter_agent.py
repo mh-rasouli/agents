@@ -228,11 +228,26 @@ class OutputFormatterAgent(BaseAgent):
 
         target_audiences = categorization.get("target_audiences", [])
         if target_audiences:
-            lines.append(f"مخاطبان هدف: {', '.join(target_audiences)}")
+            # Handle both string and dict formats
+            audience_strings = []
+            for aud in target_audiences:
+                if isinstance(aud, dict):
+                    # Extract segment or name field from dict
+                    audience_strings.append(aud.get("segment") or aud.get("name") or str(aud))
+                else:
+                    audience_strings.append(str(aud))
+            lines.append(f"مخاطبان هدف: {', '.join(audience_strings)}")
 
         channels = categorization.get("distribution_channels", [])
         if channels:
-            lines.append(f"کانال‌های توزیع: {', '.join(channels)}")
+            # Handle both string and dict formats
+            channel_strings = []
+            for ch in channels:
+                if isinstance(ch, dict):
+                    channel_strings.append(ch.get("channel") or ch.get("name") or str(ch))
+                else:
+                    channel_strings.append(str(ch))
+            lines.append(f"کانال‌های توزیع: {', '.join(channel_strings)}")
 
         lines.append("")
 
@@ -760,7 +775,17 @@ class OutputFormatterAgent(BaseAgent):
         # موقعیت‌یابی بازار
         lines.append("موقعیت‌یابی بازار")
         lines.append(f"{brand_name} با مدل کسب‌وکار {categorization.get('business_model', 'B2C')} فعالیت می‌کند، ")
-        lines.append(f"با هدف‌گذاری به {', '.join(categorization.get('target_audiences', ['مصرف‌کنندگان عمومی']))}.")
+
+        # Handle target_audiences (can be list of strings or dicts)
+        target_auds = categorization.get('target_audiences', ['مصرف‌کنندگان عمومی'])
+        aud_strings = []
+        for aud in target_auds:
+            if isinstance(aud, dict):
+                aud_strings.append(aud.get("segment") or aud.get("name") or "مصرف‌کنندگان عمومی")
+            else:
+                aud_strings.append(str(aud))
+
+        lines.append(f"با هدف‌گذاری به {', '.join(aud_strings)}.")
         lines.append(f"این برند در سطح قیمتی {categorization.get('price_tier', 'متوسط')} قرار دارد ")
         lines.append("و بین کیفیت و مقرون‌به‌صرفه بودن تعادل ایجاد می‌کند تا بیشترین سهم بازار را به دست آورد.")
         lines.append("")
@@ -1000,11 +1025,25 @@ class OutputFormatterAgent(BaseAgent):
 
         target_audiences = categorization.get("target_audiences", [])
         if target_audiences:
-            lines.append(f"- **مخاطب هدف:** {', '.join(target_audiences).replace('_', ' ').title()}")
+            # Handle both string and dict formats
+            aud_strs = []
+            for aud in target_audiences:
+                if isinstance(aud, dict):
+                    aud_strs.append((aud.get("segment") or aud.get("name") or str(aud)).replace('_', ' ').title())
+                else:
+                    aud_strs.append(str(aud).replace('_', ' ').title())
+            lines.append(f"- **مخاطب هدف:** {', '.join(aud_strs)}")
 
         channels = categorization.get("distribution_channels", [])
         if channels:
-            lines.append(f"- **کانال‌های توزیع:** {', '.join(channels).title()}")
+            # Handle both string and dict formats
+            ch_strs = []
+            for ch in channels:
+                if isinstance(ch, dict):
+                    ch_strs.append((ch.get("channel") or ch.get("name") or str(ch)).title())
+                else:
+                    ch_strs.append(str(ch).title())
+            lines.append(f"- **کانال‌های توزیع:** {', '.join(ch_strs)}")
 
         lines.append("")
         lines.append("---")

@@ -1,7 +1,7 @@
 """Utilities - Helper functions and clients."""
 
 from utils.llm_client import LLMClient, llm_client
-from utils.logger import get_logger, setup_logger
+from utils.logger import get_logger
 from utils.helpers import (
     generate_timestamp,
     sanitize_filename,
@@ -19,7 +19,6 @@ __all__ = [
     "llm_client",
     # Logger
     "get_logger",
-    "setup_logger",
     # Helpers
     "generate_timestamp",
     "sanitize_filename",
