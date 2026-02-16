@@ -9,14 +9,14 @@
     "confidence_level": "medium"
   },
   "parent_company_overview": {
-    "name": "Artin Pouya Pardaz",
+    "name": "Sharif Hamkadeh Psychology Center",
     "stock_symbol": "N/A",
     "market": "Private",
-    "industry": "Healthcare_Technology"
+    "industry": "Unknown"
   },
   "ownership_structure": {
-    "immediate_parent": "Artin Pouya Pardaz",
-    "ultimate_parent": "آرتین پویا پرداز",
+    "immediate_parent": "Sharif Hamkadeh Psychology Center",
+    "ultimate_parent": "Unknown",
     "ownership_percentage": "Unknown",
     "public_float": "Unknown"
   },
@@ -28,7 +28,7 @@
   "advertising_intelligence_framework": {
     "industry_standards": "2-5% of revenue for FMCG",
     "competitive_benchmarks": "Leading brands invest 3-7% of revenue",
-    "recommended_range": "mid tier: 2-4% of estimated revenue"
+    "recommended_range": "mid-market tier: 2-4% of estimated revenue"
   },
   "estimated_advertising_budget": {
     "annual_estimate_tomans": "500M-1B Tomans",

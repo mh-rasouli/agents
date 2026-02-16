@@ -2,8 +2,8 @@
 تجمیع کامل داده‌ها - ترکیب تمام فایل‌ها
 ====================================================================================================
 برند: Hamkade_Official
-تاریخ تولید: 2026-02-16 07:02:10
-شناسه گزارش: 20260216_070210
+تاریخ تولید: 2026-02-16 09:50:14
+شناسه گزارش: 20260216_095014
 
 این فایل شامل تمام داده‌ها از تمام فایل‌های خروجی تولید شده است:
   - 0_complete_master_report.txt
@@ -24,119 +24,112 @@
 ================================================================================
 گزارش جامع هوشمند برند
 برند: Hamkade_Official
-تاریخ تولید: 2026-02-16 07:02:10
-شناسه گزارش: 20260216_070210
+تاریخ تولید: 2026-02-16 09:50:14
+شناسه گزارش: 20260216_095014
 ================================================================================
 
 بخش ۱: خلاصه اجرایی
 --------------------------------------------------------------------------------
-Strategic analysis for Hamkade_Official reveals 0 high-potential cross-promotion opportunities
-with sister brands under Artin Pouya Pardaz. Primary recommendation: Leverage family brand synergy through
-integrated campaigns targeting urban Iranian families. Focus on Instagram and Telegram for digital
-engagement, with traditional TV for mass awareness. Estimated campaign budget: 500M-1B Tomans
-for comprehensive multi-channel approach.
+خلاصه اجرایی در دسترس نیست.
 
 بخش ۲: پروفایل برند
 --------------------------------------------------------------------------------
 نام برند: Hamkade_Official
-وبسایت: https://hamkade.com
-عنوان وبسایت: همکده بزرگترین مرکز مشاوره روانشناسی {300+ مشاور و متخصص}
-توضیحات: مرکز مشاوره همکده با 300+ متخصص و روانشناس حرفه ای در 20 حوزه تخصصی آماده پاسخگویی به شما عزیزان است| همین الان تماس بگیرید
+وبسایت: None
 
 بخش ۳: ساختار شرکتی و روابط
 --------------------------------------------------------------------------------
-شرکت مادر: Artin Pouya Pardaz
-صنعت: Healthcare_Technology
-
-شرکت مادر نهایی: آرتین پویا پرداز
-ارزش بازار: Unknown
+شرکت مادر: Sharif Hamkadeh Psychology Center
 
 بخش ۴: دسته‌بندی بازار
 --------------------------------------------------------------------------------
-صنعت: خدمات بهداشت و درمان
+صنعت: خدمات روانشناسی و مشاوره
 کد ISIC: 8690
 مدل کسب‌وکار: B2C
-سطح قیمتی: mid
+سطح قیمتی: mid-market
+مخاطبان هدف: Individuals seeking mental health support, Couples and Families, Parents, Students
+کانال‌های توزیع: online, direct, telephonic
 
 بخش ۵: بینش‌ها و فرصت‌های استراتژیک
 --------------------------------------------------------------------------------
+فرصت‌های تبلیغات متقابل (3):
+
+1. برند شریک: Fidibo
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+2. برند شریک: Okala
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+3. برند شریک: Bimeh.com
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
 بخش ۶: توصیه‌های زمان‌بندی کمپین
 --------------------------------------------------------------------------------
 دوره‌های بهینه:
-  - Nowruz (March)
-  - Back to School (September)
-  - Yalda Night (December)
+  - Mehr (September/October)
+  - Dey/Bahman (January/February)
+  - Farvardin (March/April)
 
 دوره‌های اجتناب:
-  - Muharram (August-September)
-  - Ramadan fasting hours
-
-توصیه‌های فصلی:
-  Q1: Nowruz campaigns - highest consumer spending
-  Q2: Summer cleaning campaigns
-  Q3: Back-to-school promotions
-  Q4: Winter and Yalda campaigns
+  - First 10 days of Muharram (High mourning period - tone must shift to purely empathetic/educational if active)
+  - Election weeks (Media noise is too high)
 
 بخش ۷: بودجه و کانال‌های توصیه‌شده
 --------------------------------------------------------------------------------
-بودجه تخمینی: 500-1000 million Tomans
-معادل دلار: $10,000-$20,000
+بودجه تخمینی: 2B - 5B Tomans per Quarter
+معادل دلار: $40,000 - $100,000
 
 تخصیص کانال:
-  - Digital (Instagram, Telegram): 55%
-  - Traditional (TV, Billboard): 40%
-  - Events & Sponsorships: 5%
+  - instagram: 35% - Primary lead generation and brand awareness via influencers and video content.
+  - telegram: 15% - Retention and deep-funnel educational content in psychology channels.
+  - tv: 20% - Maintaining the 'Mass Trust' factor via IRIB (specific health programs).
+  - outdoor: 15% - High-traffic billboards in Tehran (Hemmat, Modarres) for the 1448 short-code.
+  - influencers: 10% - Lifestyle and 'Mommy bloggers' to humanize therapy.
+  - other: 5% - SEO and Google Ads (search terms like 'مشاور خانواده').
 
-جزئیات کانال‌ها (5 کانال):
+جزئیات کانال‌ها (2 کانال):
 
-  Instagram - اولویت: high
-  دلیل: Primary social media platform in Iran with highest engagement
-  بودجه: 35%
+  Instagram Reels - اولویت: high
+  دلیل: High viral potential for 'relatable' mental health scenarios and 'Did you know?' psychological facts.
+  بودجه: None
 
-  Telegram - اولویت: high
-  دلیل: Wide adoption for announcements and customer service
-  بودجه: 20%
-
-  TV (IRIB) - اولویت: medium
-  دلیل: Broad reach for brand awareness
-  بودجه: 25%
-
-  Out-of-Home (Billboards) - اولویت: medium
-  دلیل: High visibility in urban areas
-  بودجه: 15%
-
-  LinkedIn - اولویت: low
-  دلیل: Professional networking for B2B
-  بودجه: 5%
+  1448 Short-code (Audio Branding) - اولویت: high
+  دلیل: The 4-digit number is the strongest brand asset for the Iranian market where phone calls are still preferred over apps for personal matters.
+  بودجه: None
 
 بخش ۸: جهت‌گیری خلاقیت
 --------------------------------------------------------------------------------
 پیام‌های کلیدی:
-  - Hamkade_Official - Quality for your family
-  - Trusted by Iranian families
-  - Experience the difference
+  - {'message_fa': '۱۴۴۸؛ خطی که به آرامش ختم می\u200cشود', 'message_en': '1448: The line that ends in peace', 'target_segment': 'General Public'}
+  - {'message_fa': 'قهرمانِ زندگیِ خودت باش؛ از همین امروز', 'message_en': 'Be the hero of your own life; starting today', 'target_segment': 'Gen Z and Individuals'}
 
-لحن و سبک: Warm, authentic, family-oriented
-توصیه‌های بصری: Bright colors, family imagery, clean modern design
+لحن و سبک: Modern-Minimalist with a warm color palette (Teal/Blue for trust, subtle Peach for warmth). Avoid clinical/hospital vibes; use 'lifestyle' imagery.
+توصیه‌های بصری: Use real people (not stock photos) in comfortable home settings. Soft lighting, focus on expressions of relief after a call.
 
-استراتژی هشتگ: #کیفیت_برتر #برای_خانواده #Hamkade_Official
+استراتژی هشتگ: #همکده #مشاوره_تلفنی #روانشناسی #سلامت_روان #۱۴۴۸
 
 تم‌های محتوایی:
-  - Behind-the-scenes manufacturing
-  - Customer testimonials
-  - Product demonstrations
-  - Family moments
+  - Family Harmony
+  - Overcoming Anxiety
+  - Parenting Secrets
+  - Modern Relationships
 
 بخش ۹: معیارهای موفقیت و شاخص‌های کلیدی
 --------------------------------------------------------------------------------
 شاخص‌های کلیدی اصلی:
-  - Brand awareness lift (+20% target)
-  - Social media engagement rate (+50% target)
-  - Sales growth (+30% target)
-  - Customer acquisition cost (CAC reduction of 15%)
+  - Number of calls to 1448
+  - Cost Per Acquisition (CPA) per session
+  - Instagram Engagement Rate
+  - Repeat session rate (Customer Lifetime Value)
 
-رویکرد اندازه‌گیری: Monthly tracking via social listening, sales data, and surveys
-معیارهای مقایسه: Compare against sister brands and industry averages
+رویکرد اندازه‌گیری: Call tracking software for 1448, UTM links for web bookings, and monthly brand awareness surveys.
+معیارهای مقایسه: 5% conversion rate from lead to first session; 40% retention rate for second session.
 
 ================================================================================
 پایان گزارش
@@ -154,46 +147,24 @@ JSON کامل:
 {
   "brand_intelligence_report": {
     "generated_date": "2026-02-16",
-    "brand_id": "hamkade_official_20260216_070210",
-    "data_sources": [
-      "web_search",
-      "example",
-      "codal",
-      "rasmio",
-      "linka",
-      "tsetmc"
-    ],
+    "brand_id": "hamkade_official_20260216_095014",
+    "data_sources": [],
     "report_version": "1.0"
   },
   "basic_information": {
     "brand_name": "Hamkade_Official",
     "brand_name_persian": "",
-    "website": "https://hamkade.com",
+    "website": null,
     "establishment_year": "Unknown",
     "business_model": "B2C",
-    "service_type": "خدمات بهداشت و درمان"
+    "service_type": "خدمات روانشناسی و مشاوره"
   },
   "parent_company_structure": {
     "immediate_parent": {
-      "name": "Artin Pouya Pardaz",
-      "name_fa": "آرتین پویا پرداز",
-      "industry": "Healthcare_Technology",
-      "relation_type": "direct_parent",
-      "source": "knowledge_base"
+      "name": "Sharif Hamkadeh Psychology Center",
+      "ownership_percentage": null
     },
-    "ultimate_parent": {
-      "name": "Artin Pouya Pardaz",
-      "name_fa": "آرتین پویا پرداز",
-      "brand_name": "Artin Pouya Pardaz",
-      "established": "Unknown",
-      "headquarters": "تهران، ایران",
-      "employees": "Unknown",
-      "description": "شرکت فعال در حوزه مشاوره روانشناسی و خدمات سلامت روان",
-      "description_en": "Company active in psychological counseling and mental health services",
-      "website": "https://hamkadeh.com/",
-      "market_cap": "Unknown",
-      "source": "knowledge_base"
-    },
+    "ultimate_parent": {},
     "ownership_chain": []
   },
   "brand_relationship_map": {
@@ -203,234 +174,83 @@ JSON کامل:
   },
   "product_categorization": {
     "primary_industry": {
-      "name_en": "Healthcare_&_Medical_Services",
-      "name_fa": "خدمات بهداشت و درمان",
-      "isic_code": "8690",
-      "category_level_1": "Healthcare_Services",
-      "category_level_2": "Mental_Health_Services",
-      "category_level_3": "Online_Counseling_Platforms"
+      "name_fa": "خدمات روانشناسی و مشاوره",
+      "name_en": "Psychology and Counseling Services",
+      "isic_code": "8690"
     },
-    "sub_industries": [],
-    "product_categories": [],
+    "sub_industries": [
+      "Telehealth",
+      "Mental Health Services",
+      "Online Therapy Platforms",
+      "Educational Counseling"
+    ],
+    "product_categories": [
+      "Individual Counseling",
+      "Family and Marriage Therapy",
+      "Child and Adolescent Psychology",
+      "Addiction Recovery Consultation",
+      "Sexual Health Counseling",
+      "Academic and Career Guidance",
+      "Depression and Anxiety Treatment"
+    ],
     "service_categories": [],
     "customer_segments": {
-      "primary": [],
+      "primary": [
+        {
+          "segment": "Individuals seeking mental health support",
+          "description": "Adults dealing with depression, anxiety, or personal growth challenges."
+        },
+        {
+          "segment": "Couples and Families",
+          "description": "People experiencing marital conflicts, infidelity issues, or seeking pre-marriage counseling."
+        },
+        {
+          "segment": "Parents",
+          "description": "Fathers and mothers looking for child behavioral guidance and parenting skills."
+        },
+        {
+          "segment": "Students",
+          "description": "Youth and young adults needing academic motivation and stress management."
+        }
+      ],
       "secondary": []
     },
-    "price_positioning": "mid"
+    "price_positioning": "mid-market"
   },
   "market_intelligence": {
     "competitive_advantages": [],
-    "market_position": {},
-    "distribution_channels": []
+    "market_position": {
+      "positioning_statement": "The largest specialized tele-health counseling center in Iran providing accessible mental health services through a network of 300+ experts.",
+      "competitive_advantages": [
+        "High accessibility via short-code phone (1448)",
+        "Large network of over 300 specialized consultants",
+        "Strong media presence and IRIB partnership",
+        "User-friendly credit-based booking system"
+      ],
+      "market_share_estimate": "leader"
+    },
+    "distribution_channels": [
+      "online",
+      "direct",
+      "telephonic"
+    ]
   },
-  "contact_information": {
-    "emails": [
-      "info@hamkadeh.com",
-      "info@hmakadeh.com"
-    ],
-    "phones": [
-      "1631117682",
-      "1770030099",
-      "1770030100",
-      "1771086430",
-      "1757404837"
-    ],
-    "addresses": []
-  },
+  "contact_information": {},
   "social_media_presence": {
     "instagram": {
-      "handle": null,
-      "followers": null,
-      "engagement_rate": null,
-      "posts_count": null,
-      "average_likes": null,
-      "average_comments": null
-    },
-    "telegram": {
-      "handle": null,
-      "members": null,
-      "posts_count": null
-    },
-    "twitter": {
-      "handle": null,
+      "handle": "hamkade.ir",
       "followers": null
     },
     "linkedin": {
       "handle": null,
       "followers": null
     },
-    "aparat": {
+    "twitter": {
       "handle": null,
-      "subscribers": null
+      "followers": null
     }
   },
-  "website_intelligence": {
-    "title": "همکده بزرگترین مرکز مشاوره روانشناسی {300+ مشاور و متخصص}",
-    "meta_description": "مرکز مشاوره همکده با 300+ متخصص و روانشناس حرفه ای در 20 حوزه تخصصی آماده پاسخگویی به شما عزیزان است| همین الان تماس بگیرید",
-    "is_javascript_site": false,
-    "data_richness": 0.9166666666666667,
-    "headings": [
-      {
-        "level": "h2",
-        "text": "متخصصان و روانشناسانهمکده"
-      },
-      {
-        "level": "h2",
-        "text": "همکــده؛"
-      },
-      {
-        "level": "h2",
-        "text": "راهنمای دریافت نوبت مشاوره"
-      },
-      {
-        "level": "h2",
-        "text": "دیدگاه مراجعین همکده"
-      },
-      {
-        "level": "h2",
-        "text": "مجله اخبار و مقالات روز"
-      },
-      {
-        "level": "h3",
-        "text": "پشتیبانی: ۱۴۴۸"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهفـــــردی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهافسردگی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهخیانت"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهپیش از ازدواج"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهزوج درمانی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهجنسی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهخانواده"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهوالدین"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهکودکان"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهفوبیا و ترس"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهتحصیلی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهترک اعتیاد"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهفـــــردی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهافسردگی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهخیانت"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهپیش از ازدواج"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهزوج درمانی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهجنسی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهفوبیا و ترس"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهخانواده"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهوالدین"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهکودکان"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهتحصیلی"
-      },
-      {
-        "level": "h3",
-        "text": "مشاورهترک اعتیاد"
-      },
-      {
-        "level": "h3",
-        "text": "جایی ست که آرامش را بازمیابید!"
-      },
-      {
-        "level": "h3",
-        "text": "1 ) انتخاب حیطه مشاوره"
-      },
-      {
-        "level": "h3",
-        "text": "2 ) خرید اعتبار مشاوره"
-      },
-      {
-        "level": "h3",
-        "text": "3 ) انتخاب مشاور"
-      },
-      {
-        "level": "h3",
-        "text": "4) تعیین زمان جلسه"
-      },
-      {
-        "level": "h3",
-        "text": "5 ) برقراری جلسه مشاوره"
-      }
-    ],
-    "content_summary": "همکده بزرگترین مرکز مشاوره روانشناسی {300+ مشاور و متخصص} پرش به محتوا خدمــات مرکز مشــاوره همکــده بـزرگترین مرکـــز مشــاوره تلفنـــی ایـــران؛ در حوزه های تخصصـــی مشــاوره ســلامت روان، خدمتگـــزار شمـــاست... مشاوره فـــــردی مشاوره افسردگی مشاوره خیانت مشاوره پیش از ازدواج مشاوره زوج درمانی مشاوره جنسی مشاوره خانواده مشاوره والدین مشاوره کودکان مشاوره فوبیا و ترس مشاوره تحصیلی مشاوره ترک اعتیاد مشاوره فـــــردی مشاوره افسردگی مشاوره خیانت مشاوره پیش از ازدواج مشاوره زوج درمانی مشاوره جنسی مشاوره فوبیا و ترس مشاوره خانواده مشاوره والدین مشاوره کودکان مشاوره تحصیلی مشاوره ترک اعتیاد متخصصان و روانشناسان همکده مشاهده همه مشاهده همه همکــده؛ جایی ست که آرامش را بازمیابید! در همکده، تیمی از مشاوران متخصص و متعهد با تجربه و دانش فنی قوی در زمینه‌های مختلف مشاوره فعالیت می‌کنند. آنها با استفاده از روش‌ها و تکنیک‌های مربوطه، به صورت شخصی و متناسب با نیازهای هر فرد، راهنمایی و پشتیبانی می‌کنند. متخصص و روانشناس 0 + مشاوره فعال در روز 0 + 1,813,301 مشاوره ی موفق میزان رضایت کاربران % 0 راهنمای دریافت نوبت مشاوره با توجه به راهنمای تصویری زیر به سادگی از ما خدمات مشاوره ی موردنظرتان را دریافت کنید: 1 ) انتخاب حیطه مشاوره مسئله ای که در آن نیاز به کسب مشاوره دارید را مشخص نمایید. 2 ) خرید اعتبار مشاوره بسته ی اعتباری موردنظر تان را تهیه کنید. 3 ) انتخاب مشاور مشاور دلخواهتان را از لیست مشاوران انتخاب کنید. 4) تعیین زمان جلسه زمان مناسب برقراری ارتباط با مشاور را تعیین می کنید. 5 ) برقراری جلسه مشاوره مشاور در زمان تعیین شده با شما ارتباط خواهد گرفت. بدون معطلی وقت مشاورتو رزرو کن! رزرو نوبت تلفنی دیدگاه مراجعین همکده هم مسیر ما به سوی سلامت روان جهت آشنایی بیشتر با مجموعه همکده و نحوه برقراری جلسات مشاوره میتوانید پیش نمایشی از این جلسات را در اینجا مشاهده کنید. آشنایی با ما مجله اخبار و مقالات روز مشاهده همه مشاوره خانواده , مشاوره فردی , مشاوره کودک و نوجوان مشاوره تأثیر موبایل بر ذهن: بررسی اثرات منفی و راهکار درمان موبایل به بخشی جدایی‌ناپذیر از زندگی ما تبدیل شده است؛ اما این ... مدت مطالعه: 4 دقیقه مشاوره فردی دریافت مشاوره غلبه بر تنبلی ذهنی تلفنی چرا ذهن برخی افر",
-    "about_us": null,
-    "internal_links": [
-      "https://hamkadeh.com/#content",
-      "https://hamkadeh.com",
-      "https://hamkadeh.com/#elementor-action%3Aaction%3Doff_canvas%3Aopen%26settings%3DeyJpZCI6ImFhMDc5MjciLCJkaXNwbGF5TW9kZSI6Im9wZW4ifQ%3D%3D",
-      "https://hamkadeh.com/#elementor-action%3Aaction%3Doff_canvas%3Aclose%26settings%3DeyJpZCI6ImFhMDc5MjciLCJkaXNwbGF5TW9kZSI6ImNsb3NlIn0%3D",
-      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%d8%ae%d8%a7%d9%86%d9%88%d8%a7%d8%af%d9%87",
-      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d9%be%db%8c%d8%b4-%d8%a7%d8%b2-%d8%a7%d8%b2%d8%af%d9%88%d8%a7%d8%ac",
-      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%da%a9%d9%88%d8%af%da%a9%d8%a7%d9%86",
-      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%d9%81%d8%b1%d8%af%db%8c",
-      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b2%d9%88%d8%ac-%d8%af%d8%b1%d9%85%d8%a7%d9%86%db%8c",
-      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%d8%a7%d9%81%d8%b3%d8%b1%d8%af%da%af%db%8c"
-    ]
-  }
+  "website_intelligence": {}
 }
 
 
@@ -450,148 +270,182 @@ JSON کامل:
     "confidence_level": "high"
   },
   "executive_summary": {
-    "key_insight": "Strategic analysis for Hamkade_Official reveals 0 high-potential cross-promotion opportunities\nwith sister brands under Artin Pouya Pardaz. Primary recommendation: Leverage family brand synergy through\nintegrated campaigns targeting urban Iranian families. Focus on Instagram and Telegram for digital\nengagement, with traditional TV for mass awareness. Estimated campaign budget: 500M-1B Tomans\nfor comprehensive multi-channel approach.",
-    "primary_opportunities": []
+    "key_insight": "",
+    "primary_opportunities": [
+      "Fidibo",
+      "Okala",
+      "Bimeh.com"
+    ]
   },
   "tier_1_opportunities": {
     "description": "High-priority, high-impact opportunities",
-    "recommendations": []
+    "recommendations": [
+      {
+        "opportunity_id": "ST-001",
+        "partner_brand": "Fidibo",
+        "rationale": "High overlap between consumers of psychological e-books and those seeking professional therapy. Self-help readers are the most qualified leads for counseling.",
+        "potential_reach": "High (1M+ active readers)",
+        "recommended_approach": "A 'Mind & Soul' bundle where purchasing a psychology book on Fidibo grants a discount code for the first Hamkadeh session.",
+        "timing": "Book Week or Nowruz (self-improvement season)"
+      },
+      {
+        "opportunity_id": "ST-002",
+        "partner_brand": "Okala",
+        "rationale": "Targeting household decision-makers (mothers) who manage family well-being and are often under significant domestic stress.",
+        "potential_reach": "High (Mass market FMCG users)",
+        "recommended_approach": "QR codes on grocery delivery bags with the message: 'Your family's peace starts with your mental health. Call 1448.'",
+        "timing": "Year-round, specifically pre-Nowruz cleaning season"
+      },
+      {
+        "opportunity_id": "ST-003",
+        "partner_brand": "Bimeh.com",
+        "rationale": "Addressing the 'cost' barrier. Co-marketing the value of mental health 'insurance' or corporate wellness packages.",
+        "potential_reach": "Medium (Insurance seekers)",
+        "recommended_approach": "Joint webinars on 'Reducing workplace stress' for B2B clients and cross-selling therapy as a 'mental insurance' policy.",
+        "timing": "End of fiscal year (Esfand) when companies renew benefits"
+      }
+    ]
   },
   "campaign_timing_recommendations": {
     "optimal_periods": [
-      "Nowruz (March)",
-      "Back to School (September)",
-      "Yalda Night (December)"
+      "Mehr (September/October)",
+      "Dey/Bahman (January/February)",
+      "Farvardin (March/April)"
     ],
-    "seasonal_considerations": "Iranian cultural events drive consumer spending",
+    "rationale": "Mehr marks the start of the academic year (student/parent stress); Dey/Bahman is 'Seasonal Affective Disorder' peak and pre-New Year reflection; Farvardin is for 'New Year, New Me' resolutions.",
+    "seasonal_considerations": "Yalda Night is excellent for 'Family Harmony' themes. Nowruz is the peak for self-improvement and marriage counseling before the 'wedding season' starts.",
     "avoid_periods": [
-      "Muharram (August-September)",
-      "Ramadan fasting hours"
-    ],
-    "quarterly_recommendations": {
-      "Q1": "Nowruz campaigns - highest consumer spending",
-      "Q2": "Summer cleaning campaigns",
-      "Q3": "Back-to-school promotions",
-      "Q4": "Winter and Yalda campaigns"
-    }
+      "First 10 days of Muharram (High mourning period - tone must shift to purely empathetic/educational if active)",
+      "Election weeks (Media noise is too high)"
+    ]
   },
   "channel_strategy": {
     "recommendations": [
       {
-        "channel": "Instagram",
+        "channel": "Instagram Reels",
         "priority": "high",
-        "rationale": "Primary social media platform in Iran with highest engagement",
-        "content_type": "Visual stories, product demonstrations, user-generated content",
-        "budget_allocation": "35%"
+        "rationale": "High viral potential for 'relatable' mental health scenarios and 'Did you know?' psychological facts.",
+        "content_suggestions": "Short skits about common couple arguments resolved through counseling.",
+        "estimated_reach": "2M+ per month",
+        "estimated_cost": "Moderate"
       },
       {
-        "channel": "Telegram",
+        "channel": "1448 Short-code (Audio Branding)",
         "priority": "high",
-        "rationale": "Wide adoption for announcements and customer service",
-        "content_type": "Promotions, customer support, exclusive deals",
-        "budget_allocation": "20%"
-      },
-      {
-        "channel": "TV (IRIB)",
-        "priority": "medium",
-        "rationale": "Broad reach for brand awareness",
-        "content_type": "30-second commercials during prime time",
-        "budget_allocation": "25%"
-      },
-      {
-        "channel": "Out-of-Home (Billboards)",
-        "priority": "medium",
-        "rationale": "High visibility in urban areas",
-        "content_type": "Brand awareness campaigns in Tehran metro",
-        "budget_allocation": "15%"
-      },
-      {
-        "channel": "LinkedIn",
-        "priority": "low",
-        "rationale": "Professional networking for B2B",
-        "content_type": "Thought leadership, industry insights",
-        "budget_allocation": "5%"
+        "rationale": "The 4-digit number is the strongest brand asset for the Iranian market where phone calls are still preferred over apps for personal matters.",
+        "content_suggestions": "Radio jingles and short TV stings emphasizing the number.",
+        "estimated_reach": "Mass Market",
+        "estimated_cost": "High"
       }
     ],
     "budget_allocation": {
-      "Digital (Instagram, Telegram)": "55%",
-      "Traditional (TV, Billboard)": "40%",
-      "Events & Sponsorships": "5%"
+      "instagram": "35% - Primary lead generation and brand awareness via influencers and video content.",
+      "telegram": "15% - Retention and deep-funnel educational content in psychology channels.",
+      "tv": "20% - Maintaining the 'Mass Trust' factor via IRIB (specific health programs).",
+      "outdoor": "15% - High-traffic billboards in Tehran (Hemmat, Modarres) for the 1448 short-code.",
+      "influencers": "10% - Lifestyle and 'Mommy bloggers' to humanize therapy.",
+      "other": "5% - SEO and Google Ads (search terms like 'مشاور خانواده')."
     }
   },
   "audience_intelligence": {
-    "primary_segments": [],
-    "demographic_profile": "Urban families aged 25-45, middle to upper-middle class",
-    "psychographic_profile": "Value-conscious, quality-seeking, brand-loyal",
-    "digital_behavior": "Active on Instagram and Telegram, increasing e-commerce adoption",
-    "untapped_segments": [
-      "Gen Z consumers",
-      "Rural markets"
+    "primary_segments": [
+      {
+        "name": "The Modern Tehran/Metropolitan Woman",
+        "characteristics": "Aged 25-45, educated, balancing career and family, active on Instagram, seeks work-life balance.",
+        "size_estimate": "3M - 5M"
+      },
+      {
+        "name": "The Anxious Gen Z Student",
+        "characteristics": "Aged 18-24, high academic pressure, digital native, prefers text/online over voice calls, looks for 'motivation'.",
+        "size_estimate": "2M - 4M"
+      }
     ],
-    "overlap_with_sister_brands": "High overlap with sister brands targeting families"
+    "overlap_with_sister_brands": "Strong synergy with Sharif University affiliates; potential to target alumni and tech-savvy individuals who trust the 'Sharif' brand name.",
+    "untapped_segments": [
+      {
+        "segment": "Expatriate Iranians",
+        "opportunity": "Iranians abroad seek Persian-speaking therapists who understand the cultural nuances but find local therapy in the West too expensive.",
+        "approach": "Targeted Instagram ads in Europe, Canada, and UAE focusing on 'Cultural Understanding' and 'Payment via International Gateways/Crypto'."
+      }
+    ],
+    "digital_behavior": "Highly active on Instagram for discovery and Telegram for long-form educational content and self-help tips."
   },
   "competitive_strategy": {
-    "positioning": "Premium quality with competitive pricing",
+    "positioning": "Iran’s largest and most accessible professional mental health network, bridging the gap between traditional expertise and modern tele-health.",
     "differentiation_points": [
-      "Strong parent company backing (Golrang Group)",
-      "Established brand heritage",
-      "Quality assurance and certifications"
+      "The '1448' Short-code (Ease of access)",
+      "Official IRIB Media Partner (High trust/credibility)",
+      "Massive scale (300+ consultants)",
+      "Direct affiliation with Sharif Hamkadeh Psychology Center"
     ],
     "competitive_advantages_to_highlight": [
-      "Iranian-made with international standards",
-      "Wide distribution network",
-      "Family of trusted brands"
+      "Immediate connection (no long waiting lists)",
+      "Anonymity and privacy",
+      "Specialized departments for niche issues (Sexual health, addiction)"
     ],
     "messaging_pillars": [
-      "Quality you can trust",
-      "Made for Iranian families",
-      "Part of a proud heritage"
+      "1448: Your direct line to peace",
+      "Expertise you can trust (The Sharif Connection)",
+      "Mental health is not a luxury, it's a necessity",
+      "Anytime, Anywhere Counseling"
     ],
-    "tone_of_voice": "Warm, trustworthy, family-oriented"
+    "tone_of_voice": "Empathetic, Authoritative yet Accessible, Hopeful, and Scientifically Grounded."
   },
   "budget_allocation_recommendation": {
-    "estimated_range_tomans": "500-1000 million Tomans",
-    "estimated_range_usd": "$10,000-$20,000",
+    "estimated_range_tomans": "2B - 5B Tomans per Quarter",
+    "estimated_range_usd": "$40,000 - $100,000",
     "allocation_by_channel": {
-      "Digital (Instagram, Telegram)": "55%",
-      "Traditional (TV, Billboard)": "40%",
-      "Events & Sponsorships": "5%"
+      "instagram": "35% - Primary lead generation and brand awareness via influencers and video content.",
+      "telegram": "15% - Retention and deep-funnel educational content in psychology channels.",
+      "tv": "20% - Maintaining the 'Mass Trust' factor via IRIB (specific health programs).",
+      "outdoor": "15% - High-traffic billboards in Tehran (Hemmat, Modarres) for the 1448 short-code.",
+      "influencers": "10% - Lifestyle and 'Mommy bloggers' to humanize therapy.",
+      "other": "5% - SEO and Google Ads (search terms like 'مشاور خانواده')."
     },
-    "rationale": "Budget based on mid price tier and industry standards",
-    "roi_expectations": "2-3x return on investment expected within 6 months"
+    "rationale": "As a market leader, Hamkadeh must maintain 'Trust' (TV/Outdoor) while aggressively capturing 'Intent' (Instagram/SEO).",
+    "roi_expectations": "3x Return on Ad Spend (ROAS) based on session bookings and long-term user retention."
   },
   "creative_direction": {
     "key_messages": [
-      "Hamkade_Official - Quality for your family",
-      "Trusted by Iranian families",
-      "Experience the difference"
+      {
+        "message_fa": "۱۴۴۸؛ خطی که به آرامش ختم می‌شود",
+        "message_en": "1448: The line that ends in peace",
+        "target_segment": "General Public"
+      },
+      {
+        "message_fa": "قهرمانِ زندگیِ خودت باش؛ از همین امروز",
+        "message_en": "Be the hero of your own life; starting today",
+        "target_segment": "Gen Z and Individuals"
+      }
     ],
-    "tone_and_style": "Warm, authentic, family-oriented",
-    "visual_recommendations": "Bright colors, family imagery, clean modern design",
-    "cultural_considerations": "Respect for Iranian values, family-centric messaging",
+    "tone_and_style": "Modern-Minimalist with a warm color palette (Teal/Blue for trust, subtle Peach for warmth). Avoid clinical/hospital vibes; use 'lifestyle' imagery.",
+    "visual_recommendations": "Use real people (not stock photos) in comfortable home settings. Soft lighting, focus on expressions of relief after a call.",
+    "cultural_considerations": "Respect family values; focus on 'preserving the family unit' for marriage counseling ads. Use Hafez or Rumi quotes occasionally to bridge psychology with Persian culture.",
     "hashtag_strategy": [
-      "#کیفیت_برتر",
-      "#برای_خانواده",
-      "#Hamkade_Official"
+      "#همکده",
+      "#مشاوره_تلفنی",
+      "#روانشناسی",
+      "#سلامت_روان",
+      "#۱۴۴۸"
     ],
-    "influencer_suggestions": "Family lifestyle influencers, home management accounts",
+    "influencer_suggestions": "Lifestyle influencers who are open about their mental health journey; medical/doctor influencers; respected university professors.",
     "content_themes": [
-      "Behind-the-scenes manufacturing",
-      "Customer testimonials",
-      "Product demonstrations",
-      "Family moments"
+      "Family Harmony",
+      "Overcoming Anxiety",
+      "Parenting Secrets",
+      "Modern Relationships"
     ],
-    "storytelling_angle": "From our family to yours - a story of Iranian quality"
+    "storytelling_angle": "The 'Before vs. After' call journey. From a state of confusion/darkness to a state of clarity/light through a simple phone conversation."
   },
   "kpi_tracking": {
     "primary_kpis": [
-      "Brand awareness lift (+20% target)",
-      "Social media engagement rate (+50% target)",
-      "Sales growth (+30% target)",
-      "Customer acquisition cost (CAC reduction of 15%)"
+      "Number of calls to 1448",
+      "Cost Per Acquisition (CPA) per session",
+      "Instagram Engagement Rate",
+      "Repeat session rate (Customer Lifetime Value)"
     ],
-    "measurement_approach": "Monthly tracking via social listening, sales data, and surveys",
-    "benchmarks": "Compare against sister brands and industry averages"
+    "measurement_approach": "Call tracking software for 1448, UTM links for web bookings, and monthly brand awareness surveys.",
+    "benchmarks": "5% conversion rate from lead to first session; 40% retention rate for second session."
   }
 }
 
@@ -603,8 +457,17 @@ JSON کامل:
 پایگاه داده برندها - جدول برندهای مرتبط
 ----------------------------------------------------------------------------------------------------
 
-﻿brand_name,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
-Hamkade_Official,Artin Pouya Pardaz,Healthcare_&_Medical_Services,Healthcare_Services,Mental_Health_Services,Online_Counseling_Platforms,SELF,Unknown,mid
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Hamkade_Official,SELF,Sharif Hamkadeh Psychology Center,Psychology and Counseling Services,Consumer_Products,General_Products,Psychology_and_Counseling_Services,SELF,leader,mid-market
+Paziresh24,COMPETITOR,Unknown,Online Medical & Psychology Booking,Consumer_Products,General_Products,Online_Medical_&_Psychology_Booking,NONE,leader,mid-market
+Soshianet (Soshiant),COMPETITOR,Unknown,Psychology Services,Consumer_Products,General_Products,Psychology_Services,NONE,challenger,mid-market
+Doctorhto,COMPETITOR,Unknown,Healthcare Marketplace,Consumer_Products,General_Products,Healthcare_Marketplace,NONE,challenger,mid-market
+SnappDoctor,COMPETITOR,Unknown,Telemedicine,Healthcare_&_Life_Sciences,Digital_Health,Telemedicine,NONE,leader,mid-market
+Moshver,SIMILAR,Unknown,Online Counseling,Consumer_Products,General_Products,Online_Counseling,LOW,Unknown,mid-market
+E-Daroo,SIMILAR,Unknown,Health Tech,Consumer_Products,General_Products,Health_Tech,LOW,Unknown,mid-market
+Fidibo,COMPLEMENTARY,Unknown,E-books,Consumer_Products,General_Products,E_books,HIGH,Unknown,economy
+Okala,COMPLEMENTARY,Unknown,FMCG Delivery,Consumer_Products,General_Products,FMCG_Delivery,MEDIUM,Unknown,mid-market
+Bimeh.com,COMPLEMENTARY,Unknown,Insurtech,Consumer_Products,General_Products,Insurtech,MEDIUM,Unknown,mid-market
 
 
 
@@ -615,92 +478,106 @@ Hamkade_Official,Artin Pouya Pardaz,Healthcare_&_Medical_Services,Healthcare_Ser
 پروفایل برند: Hamkade_Official
 
 اطلاعات پایه
-Hamkade_Official یک برند فعال در صنعت خدمات بهداشت و درمان است.
-این برند متعلق به Artin Pouya Pardaz است که با نماد بورس نامشخص فعالیت می‌کند.
-شرکت مادر نهایی آرتین پویا پرداز است، 
-یکی از بزرگترین گروه‌های صنعتی ایران با چندین برند 
-و ارزش بازار تخمینی Unknown.
+Hamkade_Official یک برند فعال در صنعت خدمات روانشناسی و مشاوره است.
+این برند متعلق به Sharif Hamkadeh Psychology Center است که با نماد بورس نامشخص فعالیت می‌کند.
 
 ساختار شرکتی
 ساختار شرکتی Hamkade_Official نشان‌دهنده یک سلسله‌مراتب پیچیده از مالکیت و مدیریت برند است.
-به عنوان یک شرکت تابعه مستقیم Artin Pouya Pardaz، این برند از شبکه‌های توزیع مستقر، 
-تخصص عملیاتی و ثبات مالی بهره‌مند می‌شود. شرکت مادر در بخش Healthcare_Technology فعالیت می‌کند 
+به عنوان یک شرکت تابعه مستقیم Sharif Hamkadeh Psychology Center، این برند از شبکه‌های توزیع مستقر، 
+تخصص عملیاتی و ثبات مالی بهره‌مند می‌شود. شرکت مادر در بخش محصولات مصرفی فعالیت می‌کند 
 و هم‌راستایی استراتژیک و هم‌افزایی را در سبد برندها فراهم می‌آورد.
 
 خانواده برند - برندهای خواهر
 موقعیت‌یابی بازار
 Hamkade_Official با مدل کسب‌وکار B2C فعالیت می‌کند، 
-با هدف‌گذاری به .
-این برند در سطح قیمتی mid قرار دارد 
+با هدف‌گذاری به Individuals seeking mental health support, Couples and Families, Parents, Students.
+این برند در سطح قیمتی mid-market قرار دارد 
 و بین کیفیت و مقرون‌به‌صرفه بودن تعادل ایجاد می‌کند تا بیشترین سهم بازار را به دست آورد.
 
+موقعیت بازار: رقابتی.
+چشم‌انداز رقابتی: پویا و رقابتی.
+کانال‌های توزیع شامل online, direct, telephonic است، 
+که پوشش گسترده بازار و دسترسی به مصرف‌کنندگان هدف را تضمین می‌کند.
 
 فرصت‌های استراتژیک
+تحلیل نشان می‌دهد 3 فرصت با پتانسیل بالا برای تبلیغات متقابل:
+
+1. همکاری با Fidibo
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+2. همکاری با Okala
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+3. همکاری با Bimeh.com
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
 توصیه‌های زمان‌بندی کمپین
 دوره‌های بهینه کمپین برای حداکثر تأثیر:
-- Nowruz (March): تعامل و هزینه بالای مصرف‌کننده
-- Back to School (September): تعامل و هزینه بالای مصرف‌کننده
-- Yalda Night (December): تعامل و هزینه بالای مصرف‌کننده
+- Mehr (September/October): تعامل و هزینه بالای مصرف‌کننده
+- Dey/Bahman (January/February): تعامل و هزینه بالای مصرف‌کننده
+- Farvardin (March/April): تعامل و هزینه بالای مصرف‌کننده
 
 دوره‌هایی که باید از کمپین‌های تجاری اجتناب کرد:
-- Muharram (August-September)
-- Ramadan fasting hours
+- First 10 days of Muharram (High mourning period - tone must shift to purely empathetic/educational if active)
+- Election weeks (Media noise is too high)
 
 توصیه‌های بودجه و سرمایه‌گذاری
-بودجه تبلیغاتی سالانه توصیه‌شده: 500-1000 million Tomans
-معادل دلار: $10,000-$20,000
-بازده مورد انتظار سرمایه: 2-3x return on investment expected within 6 months
+بودجه تبلیغاتی سالانه توصیه‌شده: 2B - 5B Tomans per Quarter
+معادل دلار: $40,000 - $100,000
+بازده مورد انتظار سرمایه: 3x Return on Ad Spend (ROAS) based on session bookings and long-term user retention.
 
 تخصیص کانال توصیه‌شده:
-- Digital (Instagram, Telegram): 55%
-- Traditional (TV, Billboard): 40%
-- Events & Sponsorships: 5%
+- instagram: 35% - Primary lead generation and brand awareness via influencers and video content.
+- telegram: 15% - Retention and deep-funnel educational content in psychology channels.
+- tv: 20% - Maintaining the 'Mass Trust' factor via IRIB (specific health programs).
+- outdoor: 15% - High-traffic billboards in Tehran (Hemmat, Modarres) for the 1448 short-code.
+- influencers: 10% - Lifestyle and 'Mommy bloggers' to humanize therapy.
+- other: 5% - SEO and Google Ads (search terms like 'مشاور خانواده').
 
 استراتژی کانال‌های بازاریابی
-Instagram (اولویت: high)
-  دلیل: Primary social media platform in Iran with highest engagement
-  نوع محتوا: Visual stories, product demonstrations, user-generated content
-  تخصیص بودجه: 35%
+Instagram Reels (اولویت: high)
+  دلیل: High viral potential for 'relatable' mental health scenarios and 'Did you know?' psychological facts.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
 
-Telegram (اولویت: high)
-  دلیل: Wide adoption for announcements and customer service
-  نوع محتوا: Promotions, customer support, exclusive deals
-  تخصیص بودجه: 20%
-
-TV (IRIB) (اولویت: medium)
-  دلیل: Broad reach for brand awareness
-  نوع محتوا: 30-second commercials during prime time
-  تخصیص بودجه: 25%
-
-Out-of-Home (Billboards) (اولویت: medium)
-  دلیل: High visibility in urban areas
-  نوع محتوا: Brand awareness campaigns in Tehran metro
-  تخصیص بودجه: 15%
-
-LinkedIn (اولویت: low)
-  دلیل: Professional networking for B2B
-  نوع محتوا: Thought leadership, industry insights
-  تخصیص بودجه: 5%
+1448 Short-code (Audio Branding) (اولویت: high)
+  دلیل: The 4-digit number is the strongest brand asset for the Iranian market where phone calls are still preferred over apps for personal matters.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
 
 جهت‌گیری خلاقانه و پیام‌رسانی
 پیام‌های کلیدی برند:
-- Hamkade_Official - Quality for your family
-- Trusted by Iranian families
-- Experience the difference
+- {'message_fa': '۱۴۴۸؛ خطی که به آرامش ختم می\u200cشود', 'message_en': '1448: The line that ends in peace', 'target_segment': 'General Public'}
+- {'message_fa': 'قهرمانِ زندگیِ خودت باش؛ از همین امروز', 'message_en': 'Be the hero of your own life; starting today', 'target_segment': 'Gen Z and Individuals'}
 
-لحن و سبک: Warm, authentic, family-oriented
-توصیه‌های بصری: Bright colors, family imagery, clean modern design
-ملاحظات فرهنگی: Respect for Iranian values, family-centric messaging
+لحن و سبک: Modern-Minimalist with a warm color palette (Teal/Blue for trust, subtle Peach for warmth). Avoid clinical/hospital vibes; use 'lifestyle' imagery.
+توصیه‌های بصری: Use real people (not stock photos) in comfortable home settings. Soft lighting, focus on expressions of relief after a call.
+ملاحظات فرهنگی: Respect family values; focus on 'preserving the family unit' for marriage counseling ads. Use Hafez or Rumi quotes occasionally to bridge psychology with Persian culture.
 
 معیارهای موفقیت و شاخص‌های کلیدی
 شاخص‌های کلیدی اصلی برای موفقیت کمپین:
-- Brand awareness lift (+20% target)
-- Social media engagement rate (+50% target)
-- Sales growth (+30% target)
-- Customer acquisition cost (CAC reduction of 15%)
+- Number of calls to 1448
+- Cost Per Acquisition (CPA) per session
+- Instagram Engagement Rate
+- Repeat session rate (Customer Lifetime Value)
 
-رویکرد اندازه‌گیری: Monthly tracking via social listening, sales data, and surveys
-معیارهای مقایسه: Compare against sister brands and industry averages
+رویکرد اندازه‌گیری: Call tracking software for 1448, UTM links for web bookings, and monthly brand awareness surveys.
+معیارهای مقایسه: 5% conversion rate from lead to first session; 40% retention rate for second session.
 
 
 ####################################################################################################
@@ -722,14 +599,14 @@ JSON کامل:
     "confidence_level": "medium"
   },
   "parent_company_overview": {
-    "name": "Artin Pouya Pardaz",
+    "name": "Sharif Hamkadeh Psychology Center",
     "stock_symbol": "N/A",
     "market": "Private",
-    "industry": "Healthcare_Technology"
+    "industry": "Unknown"
   },
   "ownership_structure": {
-    "immediate_parent": "Artin Pouya Pardaz",
-    "ultimate_parent": "آرتین پویا پرداز",
+    "immediate_parent": "Sharif Hamkadeh Psychology Center",
+    "ultimate_parent": "Unknown",
     "ownership_percentage": "Unknown",
     "public_float": "Unknown"
   },
@@ -741,7 +618,7 @@ JSON کامل:
   "advertising_intelligence_framework": {
     "industry_standards": "2-5% of revenue for FMCG",
     "competitive_benchmarks": "Leading brands invest 3-7% of revenue",
-    "recommended_range": "mid tier: 2-4% of estimated revenue"
+    "recommended_range": "mid-market tier: 2-4% of estimated revenue"
   },
   "estimated_advertising_budget": {
     "annual_estimate_tomans": "500M-1B Tomans",
@@ -762,18 +639,14 @@ JSON کامل:
 
 **تاریخ گزارش:** 2026-02-16
 **برند:** Hamkade_Official
-**صنعت:** خدمات بهداشت و درمان
+**صنعت:** خدمات روانشناسی و مشاوره
 **مدل کسب‌وکار:** B2C
 
 ---
 
 ## 🎯 خلاصه استراتژیک
 
-Strategic analysis for Hamkade_Official reveals 0 high-potential cross-promotion opportunities
-with sister brands under Artin Pouya Pardaz. Primary recommendation: Leverage family brand synergy through
-integrated campaigns targeting urban Iranian families. Focus on Instagram and Telegram for digital
-engagement, with traditional TV for mass awareness. Estimated campaign budget: 500M-1B Tomans
-for comprehensive multi-channel approach.
+Hamkade_Official نماینده یک فرصت استراتژیک در بازار خدمات روانشناسی و مشاوره ایران است.
 
 ---
 
@@ -782,18 +655,14 @@ for comprehensive multi-channel approach.
 ### هویت برند
 
 - **نام برند:** Hamkade_Official
-- **وبسایت:** [https://hamkade.com](https://hamkade.com)
-- **شرکت مادر:** Artin Pouya Pardaz
-- **شرکت مادر نهایی:** آرتین پویا پرداز
-
-**عنوان وبسایت:** همکده بزرگترین مرکز مشاوره روانشناسی {300+ مشاور و متخصص}
-
-**توضیحات:** مرکز مشاوره همکده با 300+ متخصص و روانشناس حرفه ای در 20 حوزه تخصصی آماده پاسخگویی به شما عزیزان است| همین الان تماس بگیرید
+- **شرکت مادر:** Sharif Hamkadeh Psychology Center
 
 ### موقعیت‌یابی بازار
 
-- **صنعت:** خدمات بهداشت و درمان
-- **سطح قیمتی:** Mid
+- **صنعت:** خدمات روانشناسی و مشاوره
+- **سطح قیمتی:** Mid-Market
+- **مخاطب هدف:** Individuals Seeking Mental Health Support, Couples And Families, Parents, Students
+- **کانال‌های توزیع:** Online, Direct, Telephonic
 
 ---
 
@@ -801,20 +670,12 @@ for comprehensive multi-channel approach.
 
 ### شرکت مادر
 
-**Artin Pouya Pardaz** به عنوان شرکت مادر مستقیم، موارد زیر را فراهم می‌کند:
+**Sharif Hamkadeh Psychology Center** به عنوان شرکت مادر مستقیم، موارد زیر را فراهم می‌کند:
 
 - پشتیبانی مالی و ثبات
 - شبکه‌های توزیع مستقر
 - تخصص عملیاتی و بهترین شیوه‌ها
-- دسترسی به زیرساخت بازار Healthcare_Technology
-
-### گروه مادر نهایی
-
-**آرتین پویا پرداز** نماینده سازمان مادر نهایی است:
-
-- شرکت فعال در حوزه مشاوره روانشناسی و خدمات سلامت روان
-- ارزش بازار: Unknown
-- نیروی کار: Unknown کارمند
+- دسترسی به زیرساخت بازار محصولات مصرفی
 
 ---
 
@@ -824,32 +685,63 @@ for comprehensive multi-channel approach.
 
 ## 💡 فرصت‌های استراتژیک
 
+### 3 فرصت برتر تبلیغات متقابل
+
+#### 1. Fidibo 🟡
+
+**سطح هم‌افزایی:** None
+**اولویت:** MEDIUM
+
+**مفهوم کمپین:**
+None
+
+**مخاطب هدف:** None
+**بودجه تخمینی:** None
+**منفعت مورد انتظار:** None
+**اجرا:** سختی متوسط
+
+#### 2. Okala 🟡
+
+**سطح هم‌افزایی:** None
+**اولویت:** MEDIUM
+
+**مفهوم کمپین:**
+None
+
+**مخاطب هدف:** None
+**بودجه تخمینی:** None
+**منفعت مورد انتظار:** None
+**اجرا:** سختی متوسط
+
+#### 3. Bimeh.com 🟡
+
+**سطح هم‌افزایی:** None
+**اولویت:** MEDIUM
+
+**مفهوم کمپین:**
+None
+
+**مخاطب هدف:** None
+**بودجه تخمینی:** None
+**منفعت مورد انتظار:** None
+**اجرا:** سختی متوسط
+
 ---
 
 ## 📅 استراتژی زمان‌بندی کمپین
 
 ### دوره‌های بهینه کمپین
 
-- **Nowruz (March)**
-- **Back to School (September)**
-- **Yalda Night (December)**
-
-### تفکیک فصلی
-
-**Q1:** Nowruz campaigns - highest consumer spending
-
-**Q2:** Summer cleaning campaigns
-
-**Q3:** Back-to-school promotions
-
-**Q4:** Winter and Yalda campaigns
+- **Mehr (September/October)**
+- **Dey/Bahman (January/February)**
+- **Farvardin (March/April)**
 
 ### دوره‌های اجتناب
 
-- Muharram (August-September)
-- Ramadan fasting hours
+- First 10 days of Muharram (High mourning period - tone must shift to purely empathetic/educational if active)
+- Election weeks (Media noise is too high)
 
-**زمینه فرهنگی:** Iranian cultural events drive consumer spending
+**زمینه فرهنگی:** Yalda Night is excellent for 'Family Harmony' themes. Nowruz is the peak for self-improvement and marriage counseling before the 'wedding season' starts.
 
 ---
 
@@ -857,51 +749,36 @@ for comprehensive multi-channel approach.
 
 ### بودجه توصیه‌شده
 
-- **بودجه سالانه:** 500-1000 million Tomans
-- **معادل دلار:** $10,000-$20,000
-- **بازده مورد انتظار:** 2-3x return on investment expected within 6 months
+- **بودجه سالانه:** 2B - 5B Tomans per Quarter
+- **معادل دلار:** $40,000 - $100,000
+- **بازده مورد انتظار:** 3x Return on Ad Spend (ROAS) based on session bookings and long-term user retention.
 
-**دلیل:** Budget based on mid price tier and industry standards
+**دلیل:** As a market leader, Hamkadeh must maintain 'Trust' (TV/Outdoor) while aggressively capturing 'Intent' (Instagram/SEO).
 
 ### تخصیص کانال
 
 | کانال | تخصیص |
 |---------|------------|
-| Digital (Instagram, Telegram) | 55% |
-| Traditional (TV, Billboard) | 40% |
-| Events & Sponsorships | 5% |
+| instagram | 35% - Primary lead generation and brand awareness via influencers and video content. |
+| telegram | 15% - Retention and deep-funnel educational content in psychology channels. |
+| tv | 20% - Maintaining the 'Mass Trust' factor via IRIB (specific health programs). |
+| outdoor | 15% - High-traffic billboards in Tehran (Hemmat, Modarres) for the 1448 short-code. |
+| influencers | 10% - Lifestyle and 'Mommy bloggers' to humanize therapy. |
+| other | 5% - SEO and Google Ads (search terms like 'مشاور خانواده'). |
 
 ### جزئیات استراتژی کانال
 
-#### Instagram - 🔴 بالا
+#### Instagram Reels - 🔴 بالا
 
-**دلیل:** Primary social media platform in Iran with highest engagement
-**نوع محتوا:** Visual stories, product demonstrations, user-generated content
-**تخصیص بودجه:** 35%
+**دلیل:** High viral potential for 'relatable' mental health scenarios and 'Did you know?' psychological facts.
+**نوع محتوا:** None
+**تخصیص بودجه:** None
 
-#### Telegram - 🔴 بالا
+#### 1448 Short-code (Audio Branding) - 🔴 بالا
 
-**دلیل:** Wide adoption for announcements and customer service
-**نوع محتوا:** Promotions, customer support, exclusive deals
-**تخصیص بودجه:** 20%
-
-#### TV (IRIB) - 🟡 متوسط
-
-**دلیل:** Broad reach for brand awareness
-**نوع محتوا:** 30-second commercials during prime time
-**تخصیص بودجه:** 25%
-
-#### Out-of-Home (Billboards) - 🟡 متوسط
-
-**دلیل:** High visibility in urban areas
-**نوع محتوا:** Brand awareness campaigns in Tehran metro
-**تخصیص بودجه:** 15%
-
-#### LinkedIn - 🟢 پایین
-
-**دلیل:** Professional networking for B2B
-**نوع محتوا:** Thought leadership, industry insights
-**تخصیص بودجه:** 5%
+**دلیل:** The 4-digit number is the strongest brand asset for the Iranian market where phone calls are still preferred over apps for personal matters.
+**نوع محتوا:** None
+**تخصیص بودجه:** None
 
 ---
 
@@ -909,28 +786,27 @@ for comprehensive multi-channel approach.
 
 ### پیام‌های کلیدی برند
 
-- Hamkade_Official - Quality for your family
-- Trusted by Iranian families
-- Experience the difference
+- {'message_fa': '۱۴۴۸؛ خطی که به آرامش ختم می\u200cشود', 'message_en': '1448: The line that ends in peace', 'target_segment': 'General Public'}
+- {'message_fa': 'قهرمانِ زندگیِ خودت باش؛ از همین امروز', 'message_en': 'Be the hero of your own life; starting today', 'target_segment': 'Gen Z and Individuals'}
 
-**لحن و سبک:** Warm, authentic, family-oriented
+**لحن و سبک:** Modern-Minimalist with a warm color palette (Teal/Blue for trust, subtle Peach for warmth). Avoid clinical/hospital vibes; use 'lifestyle' imagery.
 
-**راهنمای بصری:** Bright colors, family imagery, clean modern design
+**راهنمای بصری:** Use real people (not stock photos) in comfortable home settings. Soft lighting, focus on expressions of relief after a call.
 
-**ملاحظات فرهنگی:** Respect for Iranian values, family-centric messaging
+**ملاحظات فرهنگی:** Respect family values; focus on 'preserving the family unit' for marriage counseling ads. Use Hafez or Rumi quotes occasionally to bridge psychology with Persian culture.
 
 **استراتژی هشتگ:**
 
-#کیفیت_برتر #برای_خانواده #Hamkade_Official
+#همکده #مشاوره_تلفنی #روانشناسی #سلامت_روان #۱۴۴۸
 
 ### تم‌های محتوایی
 
-- Behind-the-scenes manufacturing
-- Customer testimonials
-- Product demonstrations
-- Family moments
+- Family Harmony
+- Overcoming Anxiety
+- Parenting Secrets
+- Modern Relationships
 
-**داستان برند:** From our family to yours - a story of Iranian quality
+**داستان برند:** The 'Before vs. After' call journey. From a state of confusion/darkness to a state of clarity/light through a simple phone conversation.
 
 ---
 
@@ -938,38 +814,40 @@ for comprehensive multi-channel approach.
 
 ### شاخص‌های کلیدی اصلی
 
-- Brand awareness lift (+20% target)
-- Social media engagement rate (+50% target)
-- Sales growth (+30% target)
-- Customer acquisition cost (CAC reduction of 15%)
+- Number of calls to 1448
+- Cost Per Acquisition (CPA) per session
+- Instagram Engagement Rate
+- Repeat session rate (Customer Lifetime Value)
 
-**رویکرد اندازه‌گیری:** Monthly tracking via social listening, sales data, and surveys
+**رویکرد اندازه‌گیری:** Call tracking software for 1448, UTM links for web bookings, and monthly brand awareness surveys.
 
-**معیارهای مقایسه:** Compare against sister brands and industry averages
+**معیارهای مقایسه:** 5% conversion rate from lead to first session; 40% retention rate for second session.
 
 ---
 
 ## 🎯 استراتژی رقابتی
 
-**موقعیت‌یابی:** Premium quality with competitive pricing
+**موقعیت‌یابی:** Iran’s largest and most accessible professional mental health network, bridging the gap between traditional expertise and modern tele-health.
 
 ### نقاط تمایز
 
-- Strong parent company backing (Golrang Group)
-- Established brand heritage
-- Quality assurance and certifications
+- The '1448' Short-code (Ease of access)
+- Official IRIB Media Partner (High trust/credibility)
+- Massive scale (300+ consultants)
+- Direct affiliation with Sharif Hamkadeh Psychology Center
 
 ### مزایای رقابتی
 
-- Iranian-made with international standards
-- Wide distribution network
-- Family of trusted brands
+- Immediate connection (no long waiting lists)
+- Anonymity and privacy
+- Specialized departments for niche issues (Sexual health, addiction)
 
 ### ستون‌های پیام‌رسانی
 
-1. Quality you can trust
-1. Made for Iranian families
-1. Part of a proud heritage
+1. 1448: Your direct line to peace
+1. Expertise you can trust (The Sharif Connection)
+1. Mental health is not a luxury, it's a necessity
+1. Anytime, Anywhere Counseling
 
 ---
 
@@ -988,7 +866,7 @@ for comprehensive multi-channel approach.
 
 ---
 
-*گزارش تولیدشده توسط عامل هوشمند برند در 2026-02-16 07:02:10*
+*گزارش تولیدشده توسط عامل هوشمند برند در 2026-02-16 09:50:14*
 
 
 ####################################################################################################
@@ -1002,60 +880,26 @@ JSON کامل:
 {
   "brand_intelligence_product_catalog": {
     "brand_name": "Hamkade_Official",
-    "generated_date": "2026-02-16 07:02:10",
-    "report_id": "20260216_070210",
-    "extraction_method": "rule_based_healthcare",
-    "data_quality": "comprehensive"
+    "generated_date": "2026-02-16 09:50:14",
+    "report_id": "20260216_095014",
+    "extraction_method": "automated",
+    "data_quality": "limited"
   },
   "catalog_summary": {
-    "total_products": 4,
+    "total_products": 0,
     "total_therapeutic_areas": 0,
-    "total_categories": 1,
+    "total_categories": 0,
     "product_lines": []
   },
   "therapeutic_areas": [],
-  "product_categories": {
-    "Mental Health Services": 4
-  },
+  "product_categories": {},
   "complete_product_list": [],
-  "services_list": [
-    {
-      "name": "Individual Counseling",
-      "name_fa": "مشاوره فردی",
-      "category": "Mental Health Services",
-      "type": "service",
-      "availability": "Available"
-    },
-    {
-      "name": "Couple Therapy",
-      "name_fa": "زوج درمانی",
-      "category": "Mental Health Services",
-      "type": "service",
-      "availability": "Available"
-    },
-    {
-      "name": "Family Counseling",
-      "name_fa": "مشاوره خانواده",
-      "category": "Mental Health Services",
-      "type": "service",
-      "availability": "Available"
-    },
-    {
-      "name": "Educational Counseling",
-      "name_fa": "مشاوره تحصیلی",
-      "category": "Mental Health Services",
-      "type": "service",
-      "availability": "Available"
-    }
-  ],
+  "services_list": [],
   "market_intelligence": {},
-  "metadata": {
-    "total_counselors": "300",
-    "specialization_areas": "20"
-  },
+  "metadata": {},
   "corporate_relationships": {
-    "parent_company": "Artin Pouya Pardaz",
-    "ultimate_parent": "آرتین پویا پرداز",
+    "parent_company": "Sharif Hamkadeh Psychology Center",
+    "ultimate_parent": "Unknown",
     "manufacturing_subsidiaries": [
       "Unknown"
     ],
@@ -1066,14 +910,16 @@ JSON کامل:
   },
   "industry_classification": {
     "primary_industry": {
-      "name_en": "Healthcare_&_Medical_Services",
-      "name_fa": "خدمات بهداشت و درمان",
-      "isic_code": "8690",
-      "category_level_1": "Healthcare_Services",
-      "category_level_2": "Mental_Health_Services",
-      "category_level_3": "Online_Counseling_Platforms"
+      "name_fa": "خدمات روانشناسی و مشاوره",
+      "name_en": "Psychology and Counseling Services",
+      "isic_code": "8690"
     },
-    "sub_industries": [],
+    "sub_industries": [
+      "Telehealth",
+      "Mental Health Services",
+      "Online Therapy Platforms",
+      "Educational Counseling"
+    ],
     "business_model": "B2C"
   }
 }
@@ -1083,5 +929,5 @@ JSON کامل:
 پایان فایل تجمیع داده‌ها
 ====================================================================================================
 تعداد کل بخش‌ها: ترکیب 9 فایل
-تاریخ تولید: 2026-02-16 07:02:10
+تاریخ تولید: 2026-02-16 09:50:14
 ====================================================================================================

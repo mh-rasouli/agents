@@ -1,89 +1,103 @@
 پروفایل برند: Hamkade_Official
 
 اطلاعات پایه
-Hamkade_Official یک برند فعال در صنعت خدمات بهداشت و درمان است.
-این برند متعلق به Artin Pouya Pardaz است که با نماد بورس نامشخص فعالیت می‌کند.
-شرکت مادر نهایی آرتین پویا پرداز است، 
-یکی از بزرگترین گروه‌های صنعتی ایران با چندین برند 
-و ارزش بازار تخمینی Unknown.
+Hamkade_Official یک برند فعال در صنعت خدمات روانشناسی و مشاوره است.
+این برند متعلق به Sharif Hamkadeh Psychology Center است که با نماد بورس نامشخص فعالیت می‌کند.
 
 ساختار شرکتی
 ساختار شرکتی Hamkade_Official نشان‌دهنده یک سلسله‌مراتب پیچیده از مالکیت و مدیریت برند است.
-به عنوان یک شرکت تابعه مستقیم Artin Pouya Pardaz، این برند از شبکه‌های توزیع مستقر، 
-تخصص عملیاتی و ثبات مالی بهره‌مند می‌شود. شرکت مادر در بخش Healthcare_Technology فعالیت می‌کند 
+به عنوان یک شرکت تابعه مستقیم Sharif Hamkadeh Psychology Center، این برند از شبکه‌های توزیع مستقر، 
+تخصص عملیاتی و ثبات مالی بهره‌مند می‌شود. شرکت مادر در بخش محصولات مصرفی فعالیت می‌کند 
 و هم‌راستایی استراتژیک و هم‌افزایی را در سبد برندها فراهم می‌آورد.
 
 خانواده برند - برندهای خواهر
 موقعیت‌یابی بازار
 Hamkade_Official با مدل کسب‌وکار B2C فعالیت می‌کند، 
-با هدف‌گذاری به .
-این برند در سطح قیمتی mid قرار دارد 
+با هدف‌گذاری به Individuals seeking mental health support, Couples and Families, Parents, Students.
+این برند در سطح قیمتی mid-market قرار دارد 
 و بین کیفیت و مقرون‌به‌صرفه بودن تعادل ایجاد می‌کند تا بیشترین سهم بازار را به دست آورد.
 
+موقعیت بازار: رقابتی.
+چشم‌انداز رقابتی: پویا و رقابتی.
+کانال‌های توزیع شامل online, direct, telephonic است، 
+که پوشش گسترده بازار و دسترسی به مصرف‌کنندگان هدف را تضمین می‌کند.
 
 فرصت‌های استراتژیک
+تحلیل نشان می‌دهد 3 فرصت با پتانسیل بالا برای تبلیغات متقابل:
+
+1. همکاری با Fidibo
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+2. همکاری با Okala
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+3. همکاری با Bimeh.com
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
 توصیه‌های زمان‌بندی کمپین
 دوره‌های بهینه کمپین برای حداکثر تأثیر:
-- Nowruz (March): تعامل و هزینه بالای مصرف‌کننده
-- Back to School (September): تعامل و هزینه بالای مصرف‌کننده
-- Yalda Night (December): تعامل و هزینه بالای مصرف‌کننده
+- Mehr (September/October): تعامل و هزینه بالای مصرف‌کننده
+- Dey/Bahman (January/February): تعامل و هزینه بالای مصرف‌کننده
+- Farvardin (March/April): تعامل و هزینه بالای مصرف‌کننده
 
 دوره‌هایی که باید از کمپین‌های تجاری اجتناب کرد:
-- Muharram (August-September)
-- Ramadan fasting hours
+- First 10 days of Muharram (High mourning period - tone must shift to purely empathetic/educational if active)
+- Election weeks (Media noise is too high)
 
 توصیه‌های بودجه و سرمایه‌گذاری
-بودجه تبلیغاتی سالانه توصیه‌شده: 500-1000 million Tomans
-معادل دلار: $10,000-$20,000
-بازده مورد انتظار سرمایه: 2-3x return on investment expected within 6 months
+بودجه تبلیغاتی سالانه توصیه‌شده: 2B - 5B Tomans per Quarter
+معادل دلار: $40,000 - $100,000
+بازده مورد انتظار سرمایه: 3x Return on Ad Spend (ROAS) based on session bookings and long-term user retention.
 
 تخصیص کانال توصیه‌شده:
-- Digital (Instagram, Telegram): 55%
-- Traditional (TV, Billboard): 40%
-- Events & Sponsorships: 5%
+- instagram: 35% - Primary lead generation and brand awareness via influencers and video content.
+- telegram: 15% - Retention and deep-funnel educational content in psychology channels.
+- tv: 20% - Maintaining the 'Mass Trust' factor via IRIB (specific health programs).
+- outdoor: 15% - High-traffic billboards in Tehran (Hemmat, Modarres) for the 1448 short-code.
+- influencers: 10% - Lifestyle and 'Mommy bloggers' to humanize therapy.
+- other: 5% - SEO and Google Ads (search terms like 'مشاور خانواده').
 
 استراتژی کانال‌های بازاریابی
-Instagram (اولویت: high)
-  دلیل: Primary social media platform in Iran with highest engagement
-  نوع محتوا: Visual stories, product demonstrations, user-generated content
-  تخصیص بودجه: 35%
+Instagram Reels (اولویت: high)
+  دلیل: High viral potential for 'relatable' mental health scenarios and 'Did you know?' psychological facts.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
 
-Telegram (اولویت: high)
-  دلیل: Wide adoption for announcements and customer service
-  نوع محتوا: Promotions, customer support, exclusive deals
-  تخصیص بودجه: 20%
-
-TV (IRIB) (اولویت: medium)
-  دلیل: Broad reach for brand awareness
-  نوع محتوا: 30-second commercials during prime time
-  تخصیص بودجه: 25%
-
-Out-of-Home (Billboards) (اولویت: medium)
-  دلیل: High visibility in urban areas
-  نوع محتوا: Brand awareness campaigns in Tehran metro
-  تخصیص بودجه: 15%
-
-LinkedIn (اولویت: low)
-  دلیل: Professional networking for B2B
-  نوع محتوا: Thought leadership, industry insights
-  تخصیص بودجه: 5%
+1448 Short-code (Audio Branding) (اولویت: high)
+  دلیل: The 4-digit number is the strongest brand asset for the Iranian market where phone calls are still preferred over apps for personal matters.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
 
 جهت‌گیری خلاقانه و پیام‌رسانی
 پیام‌های کلیدی برند:
-- Hamkade_Official - Quality for your family
-- Trusted by Iranian families
-- Experience the difference
+- {'message_fa': '۱۴۴۸؛ خطی که به آرامش ختم می\u200cشود', 'message_en': '1448: The line that ends in peace', 'target_segment': 'General Public'}
+- {'message_fa': 'قهرمانِ زندگیِ خودت باش؛ از همین امروز', 'message_en': 'Be the hero of your own life; starting today', 'target_segment': 'Gen Z and Individuals'}
 
-لحن و سبک: Warm, authentic, family-oriented
-توصیه‌های بصری: Bright colors, family imagery, clean modern design
-ملاحظات فرهنگی: Respect for Iranian values, family-centric messaging
+لحن و سبک: Modern-Minimalist with a warm color palette (Teal/Blue for trust, subtle Peach for warmth). Avoid clinical/hospital vibes; use 'lifestyle' imagery.
+توصیه‌های بصری: Use real people (not stock photos) in comfortable home settings. Soft lighting, focus on expressions of relief after a call.
+ملاحظات فرهنگی: Respect family values; focus on 'preserving the family unit' for marriage counseling ads. Use Hafez or Rumi quotes occasionally to bridge psychology with Persian culture.
 
 معیارهای موفقیت و شاخص‌های کلیدی
 شاخص‌های کلیدی اصلی برای موفقیت کمپین:
-- Brand awareness lift (+20% target)
-- Social media engagement rate (+50% target)
-- Sales growth (+30% target)
-- Customer acquisition cost (CAC reduction of 15%)
+- Number of calls to 1448
+- Cost Per Acquisition (CPA) per session
+- Instagram Engagement Rate
+- Repeat session rate (Customer Lifetime Value)
 
-رویکرد اندازه‌گیری: Monthly tracking via social listening, sales data, and surveys
-معیارهای مقایسه: Compare against sister brands and industry averages
+رویکرد اندازه‌گیری: Call tracking software for 1448, UTM links for web bookings, and monthly brand awareness surveys.
+معیارهای مقایسه: 5% conversion rate from lead to first session; 40% retention rate for second session.

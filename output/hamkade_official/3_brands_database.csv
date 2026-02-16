@@ -1,2 +1,11 @@
-﻿brand_name,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
-Hamkade_Official,Artin Pouya Pardaz,Healthcare_&_Medical_Services,Healthcare_Services,Mental_Health_Services,Online_Counseling_Platforms,SELF,Unknown,mid
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Hamkade_Official,SELF,Sharif Hamkadeh Psychology Center,Psychology and Counseling Services,Consumer_Products,General_Products,Psychology_and_Counseling_Services,SELF,leader,mid-market
+Paziresh24,COMPETITOR,Unknown,Online Medical & Psychology Booking,Consumer_Products,General_Products,Online_Medical_&_Psychology_Booking,NONE,leader,mid-market
+Soshianet (Soshiant),COMPETITOR,Unknown,Psychology Services,Consumer_Products,General_Products,Psychology_Services,NONE,challenger,mid-market
+Doctorhto,COMPETITOR,Unknown,Healthcare Marketplace,Consumer_Products,General_Products,Healthcare_Marketplace,NONE,challenger,mid-market
+SnappDoctor,COMPETITOR,Unknown,Telemedicine,Healthcare_&_Life_Sciences,Digital_Health,Telemedicine,NONE,leader,mid-market
+Moshver,SIMILAR,Unknown,Online Counseling,Consumer_Products,General_Products,Online_Counseling,LOW,Unknown,mid-market
+E-Daroo,SIMILAR,Unknown,Health Tech,Consumer_Products,General_Products,Health_Tech,LOW,Unknown,mid-market
+Fidibo,COMPLEMENTARY,Unknown,E-books,Consumer_Products,General_Products,E_books,HIGH,Unknown,economy
+Okala,COMPLEMENTARY,Unknown,FMCG Delivery,Consumer_Products,General_Products,FMCG_Delivery,MEDIUM,Unknown,mid-market
+Bimeh.com,COMPLEMENTARY,Unknown,Insurtech,Consumer_Products,General_Products,Insurtech,MEDIUM,Unknown,mid-market
