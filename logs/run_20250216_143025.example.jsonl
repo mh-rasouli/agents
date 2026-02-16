@@ -1,0 +1,10 @@
+{"timestamp": "2025-02-16T14:30:25.123456", "run_id": "20250216_143025_001_digikala", "event": "START", "brand_name": "دیجی‌کالا", "details": "website=https://www.digikala.com"}
+{"timestamp": "2025-02-16T14:30:47.456789", "run_id": "20250216_143025_001_digikala", "event": "SUCCESS", "brand_name": "دیجی‌کالا", "details": "duration=22.34s | outputs=4", "duration_seconds": 22.34}
+{"timestamp": "2025-02-16T14:30:48.789012", "run_id": "20250216_143025_002_snap", "event": "START", "brand_name": "اسنپ", "details": "website=https://snapp.ir | parent=Super App"}
+{"timestamp": "2025-02-16T14:31:05.012345", "run_id": "20250216_143025_002_snap", "event": "FAIL", "brand_name": "اسنپ", "details": "duration=17.12s | error=Failed to scrape website: Connection timeout after 30 seconds", "duration_seconds": 17.12}
+{"timestamp": "2025-02-16T14:31:06.234567", "run_id": "20250216_143025_003_tapsi", "event": "START", "brand_name": "تپسی", "details": "website=https://tapsi.ir"}
+{"timestamp": "2025-02-16T14:31:06.345678", "run_id": "20250216_143025_003_tapsi", "event": "SKIP", "brand_name": "تپسی", "details": "reason=already_processed"}
+{"timestamp": "2025-02-16T14:31:07.456789", "run_id": "20250216_143025_004_alibaba", "event": "START", "brand_name": "علی‌بابا", "details": "website=https://alibaba.ir"}
+{"timestamp": "2025-02-16T14:31:32.567890", "run_id": "20250216_143025_004_alibaba", "event": "SUCCESS", "brand_name": "علی‌بابا", "details": "duration=25.67s | outputs=4", "duration_seconds": 25.67}
+{"timestamp": "2025-02-16T14:31:33.678901", "run_id": "20250216_143025_005_bamilo", "event": "START", "brand_name": "بامیلو"}
+{"timestamp": "2025-02-16T14:31:33.789012", "run_id": "20250216_143025_005_bamilo", "event": "SKIP", "brand_name": "بامیلو", "details": "reason=already_processed"}

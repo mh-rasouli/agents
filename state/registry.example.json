@@ -1,0 +1,32 @@
+{
+  "دیجی‌کالا": {
+    "last_input_hash": "a3d5f8e9c1b2d4a6f7e8c9d0b1a2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+    "status": "success",
+    "last_success_at": "2025-01-15T10:30:45.123456",
+    "last_run_id": "abc12345-1",
+    "outputs": {
+      "json": "./output/digikala/brand_intelligence.json",
+      "csv": "./output/digikala/brand_intelligence.csv",
+      "txt": "./output/digikala/brand_intelligence.txt",
+      "markdown": "./output/digikala/brand_intelligence.md"
+    }
+  },
+  "اسنپ": {
+    "last_input_hash": "b4e6a9f0d2c3e5b7a8f9d0c1b2a3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1",
+    "status": "failed",
+    "last_success_at": "2025-01-10T08:15:30.654321",
+    "last_fail_at": "2025-01-15T11:45:20.789012",
+    "last_run_id": "abc12345-2",
+    "last_error": "Failed to scrape website: Connection timeout after 30 seconds"
+  },
+  "تپسی": {
+    "last_input_hash": "c5f7b0a1e3d4f6c8b9a0e1d2c3b4a5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2",
+    "status": "success",
+    "last_success_at": "2025-01-15T09:20:15.456789",
+    "last_run_id": "abc12345-3",
+    "outputs": {
+      "json": "./output/tapsi/brand_intelligence.json",
+      "csv": "./output/tapsi/brand_intelligence.csv"
+    }
+  }
+}

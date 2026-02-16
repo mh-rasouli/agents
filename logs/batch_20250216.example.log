@@ -1,0 +1,10 @@
+[2025-02-16 14:30:25] [20250216_143025_001_digikala] [START   ] دیجی‌کالا | website=https://www.digikala.com
+[2025-02-16 14:30:47] [20250216_143025_001_digikala] [SUCCESS ] دیجی‌کالا | duration=22.34s | outputs=4
+[2025-02-16 14:30:48] [20250216_143025_002_snap] [START   ] اسنپ | website=https://snapp.ir | parent=Super App
+[2025-02-16 14:31:05] [20250216_143025_002_snap] [FAIL    ] اسنپ | duration=17.12s | error=Failed to scrape website: Connection timeout after 30 seconds
+[2025-02-16 14:31:06] [20250216_143025_003_tapsi] [START   ] تپسی | website=https://tapsi.ir
+[2025-02-16 14:31:06] [20250216_143025_003_tapsi] [SKIP    ] تپسی | reason=already_processed
+[2025-02-16 14:31:07] [20250216_143025_004_alibaba] [START   ] علی‌بابا | website=https://alibaba.ir
+[2025-02-16 14:31:32] [20250216_143025_004_alibaba] [SUCCESS ] علی‌بابا | duration=25.67s | outputs=4
+[2025-02-16 14:31:33] [20250216_143025_005_bamilo] [START   ] بامیلو
+[2025-02-16 14:31:33] [20250216_143025_005_bamilo] [SKIP    ] بامیلو | reason=already_processed
