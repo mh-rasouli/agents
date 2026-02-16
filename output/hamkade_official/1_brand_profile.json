@@ -1,0 +1,281 @@
+{
+  "brand_intelligence_report": {
+    "generated_date": "2026-02-16",
+    "brand_id": "hamkade_official_20260216_070210",
+    "data_sources": [
+      "web_search",
+      "example",
+      "codal",
+      "rasmio",
+      "linka",
+      "tsetmc"
+    ],
+    "report_version": "1.0"
+  },
+  "basic_information": {
+    "brand_name": "Hamkade_Official",
+    "brand_name_persian": "",
+    "website": "https://hamkade.com",
+    "establishment_year": "Unknown",
+    "business_model": "B2C",
+    "service_type": "خدمات بهداشت و درمان"
+  },
+  "parent_company_structure": {
+    "immediate_parent": {
+      "name": "Artin Pouya Pardaz",
+      "name_fa": "آرتین پویا پرداز",
+      "industry": "Healthcare_Technology",
+      "relation_type": "direct_parent",
+      "source": "knowledge_base"
+    },
+    "ultimate_parent": {
+      "name": "Artin Pouya Pardaz",
+      "name_fa": "آرتین پویا پرداز",
+      "brand_name": "Artin Pouya Pardaz",
+      "established": "Unknown",
+      "headquarters": "تهران، ایران",
+      "employees": "Unknown",
+      "description": "شرکت فعال در حوزه مشاوره روانشناسی و خدمات سلامت روان",
+      "description_en": "Company active in psychological counseling and mental health services",
+      "website": "https://hamkadeh.com/",
+      "market_cap": "Unknown",
+      "source": "knowledge_base"
+    },
+    "ownership_chain": []
+  },
+  "brand_relationship_map": {
+    "sister_brands_same_parent": [],
+    "brand_family": [],
+    "total_related_brands": 0
+  },
+  "product_categorization": {
+    "primary_industry": {
+      "name_en": "Healthcare_&_Medical_Services",
+      "name_fa": "خدمات بهداشت و درمان",
+      "isic_code": "8690",
+      "category_level_1": "Healthcare_Services",
+      "category_level_2": "Mental_Health_Services",
+      "category_level_3": "Online_Counseling_Platforms"
+    },
+    "sub_industries": [],
+    "product_categories": [],
+    "service_categories": [],
+    "customer_segments": {
+      "primary": [],
+      "secondary": []
+    },
+    "price_positioning": "mid"
+  },
+  "market_intelligence": {
+    "competitive_advantages": [],
+    "market_position": {},
+    "distribution_channels": []
+  },
+  "contact_information": {
+    "emails": [
+      "info@hamkadeh.com",
+      "info@hmakadeh.com"
+    ],
+    "phones": [
+      "1631117682",
+      "1770030099",
+      "1770030100",
+      "1771086430",
+      "1757404837"
+    ],
+    "addresses": []
+  },
+  "social_media_presence": {
+    "instagram": {
+      "handle": null,
+      "followers": null,
+      "engagement_rate": null,
+      "posts_count": null,
+      "average_likes": null,
+      "average_comments": null
+    },
+    "telegram": {
+      "handle": null,
+      "members": null,
+      "posts_count": null
+    },
+    "twitter": {
+      "handle": null,
+      "followers": null
+    },
+    "linkedin": {
+      "handle": null,
+      "followers": null
+    },
+    "aparat": {
+      "handle": null,
+      "subscribers": null
+    }
+  },
+  "website_intelligence": {
+    "title": "همکده بزرگترین مرکز مشاوره روانشناسی {300+ مشاور و متخصص}",
+    "meta_description": "مرکز مشاوره همکده با 300+ متخصص و روانشناس حرفه ای در 20 حوزه تخصصی آماده پاسخگویی به شما عزیزان است| همین الان تماس بگیرید",
+    "is_javascript_site": false,
+    "data_richness": 0.9166666666666667,
+    "headings": [
+      {
+        "level": "h2",
+        "text": "متخصصان و روانشناسانهمکده"
+      },
+      {
+        "level": "h2",
+        "text": "همکــده؛"
+      },
+      {
+        "level": "h2",
+        "text": "راهنمای دریافت نوبت مشاوره"
+      },
+      {
+        "level": "h2",
+        "text": "دیدگاه مراجعین همکده"
+      },
+      {
+        "level": "h2",
+        "text": "مجله اخبار و مقالات روز"
+      },
+      {
+        "level": "h3",
+        "text": "پشتیبانی: ۱۴۴۸"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهفـــــردی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهافسردگی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهخیانت"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهپیش از ازدواج"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهزوج درمانی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهجنسی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهخانواده"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهوالدین"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهکودکان"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهفوبیا و ترس"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهتحصیلی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهترک اعتیاد"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهفـــــردی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهافسردگی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهخیانت"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهپیش از ازدواج"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهزوج درمانی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهجنسی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهفوبیا و ترس"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهخانواده"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهوالدین"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهکودکان"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهتحصیلی"
+      },
+      {
+        "level": "h3",
+        "text": "مشاورهترک اعتیاد"
+      },
+      {
+        "level": "h3",
+        "text": "جایی ست که آرامش را بازمیابید!"
+      },
+      {
+        "level": "h3",
+        "text": "1 ) انتخاب حیطه مشاوره"
+      },
+      {
+        "level": "h3",
+        "text": "2 ) خرید اعتبار مشاوره"
+      },
+      {
+        "level": "h3",
+        "text": "3 ) انتخاب مشاور"
+      },
+      {
+        "level": "h3",
+        "text": "4) تعیین زمان جلسه"
+      },
+      {
+        "level": "h3",
+        "text": "5 ) برقراری جلسه مشاوره"
+      }
+    ],
+    "content_summary": "همکده بزرگترین مرکز مشاوره روانشناسی {300+ مشاور و متخصص} پرش به محتوا خدمــات مرکز مشــاوره همکــده بـزرگترین مرکـــز مشــاوره تلفنـــی ایـــران؛ در حوزه های تخصصـــی مشــاوره ســلامت روان، خدمتگـــزار شمـــاست... مشاوره فـــــردی مشاوره افسردگی مشاوره خیانت مشاوره پیش از ازدواج مشاوره زوج درمانی مشاوره جنسی مشاوره خانواده مشاوره والدین مشاوره کودکان مشاوره فوبیا و ترس مشاوره تحصیلی مشاوره ترک اعتیاد مشاوره فـــــردی مشاوره افسردگی مشاوره خیانت مشاوره پیش از ازدواج مشاوره زوج درمانی مشاوره جنسی مشاوره فوبیا و ترس مشاوره خانواده مشاوره والدین مشاوره کودکان مشاوره تحصیلی مشاوره ترک اعتیاد متخصصان و روانشناسان همکده مشاهده همه مشاهده همه همکــده؛ جایی ست که آرامش را بازمیابید! در همکده، تیمی از مشاوران متخصص و متعهد با تجربه و دانش فنی قوی در زمینه‌های مختلف مشاوره فعالیت می‌کنند. آنها با استفاده از روش‌ها و تکنیک‌های مربوطه، به صورت شخصی و متناسب با نیازهای هر فرد، راهنمایی و پشتیبانی می‌کنند. متخصص و روانشناس 0 + مشاوره فعال در روز 0 + 1,813,301 مشاوره ی موفق میزان رضایت کاربران % 0 راهنمای دریافت نوبت مشاوره با توجه به راهنمای تصویری زیر به سادگی از ما خدمات مشاوره ی موردنظرتان را دریافت کنید: 1 ) انتخاب حیطه مشاوره مسئله ای که در آن نیاز به کسب مشاوره دارید را مشخص نمایید. 2 ) خرید اعتبار مشاوره بسته ی اعتباری موردنظر تان را تهیه کنید. 3 ) انتخاب مشاور مشاور دلخواهتان را از لیست مشاوران انتخاب کنید. 4) تعیین زمان جلسه زمان مناسب برقراری ارتباط با مشاور را تعیین می کنید. 5 ) برقراری جلسه مشاوره مشاور در زمان تعیین شده با شما ارتباط خواهد گرفت. بدون معطلی وقت مشاورتو رزرو کن! رزرو نوبت تلفنی دیدگاه مراجعین همکده هم مسیر ما به سوی سلامت روان جهت آشنایی بیشتر با مجموعه همکده و نحوه برقراری جلسات مشاوره میتوانید پیش نمایشی از این جلسات را در اینجا مشاهده کنید. آشنایی با ما مجله اخبار و مقالات روز مشاهده همه مشاوره خانواده , مشاوره فردی , مشاوره کودک و نوجوان مشاوره تأثیر موبایل بر ذهن: بررسی اثرات منفی و راهکار درمان موبایل به بخشی جدایی‌ناپذیر از زندگی ما تبدیل شده است؛ اما این ... مدت مطالعه: 4 دقیقه مشاوره فردی دریافت مشاوره غلبه بر تنبلی ذهنی تلفنی چرا ذهن برخی افر",
+    "about_us": null,
+    "internal_links": [
+      "https://hamkadeh.com/#content",
+      "https://hamkadeh.com",
+      "https://hamkadeh.com/#elementor-action%3Aaction%3Doff_canvas%3Aopen%26settings%3DeyJpZCI6ImFhMDc5MjciLCJkaXNwbGF5TW9kZSI6Im9wZW4ifQ%3D%3D",
+      "https://hamkadeh.com/#elementor-action%3Aaction%3Doff_canvas%3Aclose%26settings%3DeyJpZCI6ImFhMDc5MjciLCJkaXNwbGF5TW9kZSI6ImNsb3NlIn0%3D",
+      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%d8%ae%d8%a7%d9%86%d9%88%d8%a7%d8%af%d9%87",
+      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d9%be%db%8c%d8%b4-%d8%a7%d8%b2-%d8%a7%d8%b2%d8%af%d9%88%d8%a7%d8%ac",
+      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%da%a9%d9%88%d8%af%da%a9%d8%a7%d9%86",
+      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%d9%81%d8%b1%d8%af%db%8c",
+      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b2%d9%88%d8%ac-%d8%af%d8%b1%d9%85%d8%a7%d9%86%db%8c",
+      "https://hamkadeh.com/%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c-%d8%a7%d9%81%d8%b3%d8%b1%d8%af%da%af%db%8c"
+    ]
+  }
+}

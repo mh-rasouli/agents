@@ -1,0 +1,116 @@
+================================================================================
+گزارش جامع هوشمند برند
+برند: همکده
+تاریخ تولید: 2026-02-16 09:38:03
+شناسه گزارش: 20260216_093803
+================================================================================
+
+بخش ۱: خلاصه اجرایی
+--------------------------------------------------------------------------------
+خلاصه اجرایی در دسترس نیست.
+
+بخش ۲: پروفایل برند
+--------------------------------------------------------------------------------
+نام برند: همکده
+وبسایت: None
+
+بخش ۳: ساختار شرکتی و روابط
+--------------------------------------------------------------------------------
+شرکت مادر: سامانه مدیریت ارتباط با مشتریان همکده
+
+بخش ۴: دسته‌بندی بازار
+--------------------------------------------------------------------------------
+صنعت: خدمات سلامت و روانشناسی
+کد ISIC: 8620
+مدل کسب‌وکار: B2C
+سطح قیمتی: mid-market
+مخاطبان هدف: Individuals seeking mental health support, Couples and Families, Students and Youth, Remote users
+کانال‌های توزیع: online, direct
+
+بخش ۵: بینش‌ها و فرصت‌های استراتژیک
+--------------------------------------------------------------------------------
+فرصت‌های تبلیغات متقابل (3):
+
+1. برند شریک: Digikala (Health & Personal Care Category)
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+2. برند شریک: Gaj / ChiBeKhoonam
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+3. برند شریک: SnappFood
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+بخش ۶: توصیه‌های زمان‌بندی کمپین
+--------------------------------------------------------------------------------
+دوره‌های بهینه:
+  - Shahrivar (Back to school/Back to work prep)
+  - Mehregan (Focus on relationships)
+  - Esfand (Pre-Nowruz 'New Year, New Me' mental decluttering)
+  - Ordibehesht (Exam season stress)
+
+دوره‌های اجتناب:
+  - First week of Nowruz (Total holiday mode)
+  - Ashura/Tasua (Solemn religious period unsuitable for aggressive sales)
+
+بخش ۷: بودجه و کانال‌های توصیه‌شده
+--------------------------------------------------------------------------------
+بودجه تخمینی: 2B - 5B Tomans per Quarter
+معادل دلار: $40,000 - $100,000 (Parallel Market Rate)
+
+تخصیص کانال:
+  - instagram: 40% - Primary engine for awareness and lead-gen via Reels/Stories.
+  - telegram: 15% - High conversion in health/educational channels.
+  - tv: 10% - Late-night VOD or Satellite (GEM/Persiana) for wide reach to housewives.
+  - outdoor: 15% - Billboards in high-traffic Tehran areas (Hemmat/Modarres) for brand authority.
+  - influencers: 20% - Lifestyle and 'Self-care' influencers for social proof.
+
+جزئیات کانال‌ها (3 کانال):
+
+  Instagram Reels - اولویت: high
+  دلیل: Highest organic reach in Iran currently; perfect for 'Common Psychological Signs' videos.
+  بودجه: None
+
+  Telegram Sponsored Messages - اولویت: medium
+  دلیل: Precise targeting of users in 'Psychology' and 'Self-help' channels.
+  بودجه: None
+
+  Tehran Metro/Bus Ads - اولویت: medium
+  دلیل: Targets the commuting 'Anxious Professional' and students during their high-stress transit times.
+  بودجه: None
+
+بخش ۸: جهت‌گیری خلاقیت
+--------------------------------------------------------------------------------
+پیام‌های کلیدی:
+  - {'message_fa': 'حال خوبت رو به تعویق ننداز', 'message_en': "Don't postpone your well-being.", 'target_segment': 'All segments'}
+  - {'message_fa': 'بزرگترین مرکز مشاوره تلفنی ایران، همیشه در کنار شما', 'message_en': "Iran's largest tele-counseling center, always by your side.", 'target_segment': 'Remote users'}
+
+لحن و سبک: Minimalist, clean, and calming. Use of soft blue and white colors. Avoid 'medical' coldness; focus on 'human' warmth.
+توصیه‌های بصری: Authentic Iranian faces, diverse age groups, cozy home environments where counseling takes place via phone.
+
+استراتژی هشتگ: #همکده #مشاوره_تلفنی #سلامت_روان #روانشناسی_خانواده
+
+تم‌های محتوایی:
+  - Breaking the Stigma
+  - Relationship Resilience
+  - Productivity & Mental Health
+
+بخش ۹: معیارهای موفقیت و شاخص‌های کلیدی
+--------------------------------------------------------------------------------
+شاخص‌های کلیدی اصلی:
+  - Cost Per Lead (CPL) for phone inquiries
+  - Number of first-time counseling sessions booked
+  - Retention rate (sessions per user)
+  - Brand Sentiment Score on social media
+
+رویکرد اندازه‌گیری: UTM tracking for all digital ads, unique promo codes for influencers, and post-call surveys asking 'How did you hear about us?'.
+معیارهای مقایسه: Targeting 20% lower CPL than general health platforms like Paziresh24 due to specialization.
+
+================================================================================
+پایان گزارش
+================================================================================

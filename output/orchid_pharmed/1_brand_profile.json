@@ -1,0 +1,146 @@
+{
+  "brand_intelligence_report": {
+    "generated_date": "2026-02-15",
+    "brand_id": "orchid_pharmed_20260215_072050",
+    "data_sources": [
+      "rasmio",
+      "example",
+      "web_search",
+      "tsetmc",
+      "codal",
+      "linka"
+    ],
+    "report_version": "1.0"
+  },
+  "basic_information": {
+    "brand_name": "Orchid_Pharmed",
+    "brand_name_persian": "",
+    "website": "https://orchidpharmed.com/fa/",
+    "establishment_year": "Unknown",
+    "business_model": "B2C",
+    "service_type": "داروسازی و بیوتکنولوژی"
+  },
+  "parent_company_structure": {
+    "immediate_parent": {
+      "name": "CinnaGen",
+      "name_fa": "CinnaGen",
+      "stock_symbol": "سیناژن",
+      "industry": "داروسازی و بیوتکنولوژی",
+      "relation_type": "direct_parent"
+    },
+    "ultimate_parent": {
+      "name": "CinnaGen Biotech Group",
+      "name_fa": "گروه بیوتکنولوژی سیناژن",
+      "stock_symbol": "سیناژن",
+      "description": "شرکت پیشرو در زمینه بیوتکنولوژی و داروسازی ایران",
+      "market_cap": "بیش از 5000 میلیارد تومان",
+      "total_brands": "3+",
+      "employees": "بیش از 500 نفر"
+    },
+    "ownership_chain": []
+  },
+  "brand_relationship_map": {
+    "sister_brands_same_parent": [
+      {
+        "name": "CinnaGen",
+        "products": "داروهای بیوتکنولوژی",
+        "category": "biotech",
+        "price_tier": "premium",
+        "target_audience": "بخش بهداشت و درمان",
+        "relation": "same_parent",
+        "synergy_score": "HIGH"
+      },
+      {
+        "name": "ReciGen",
+        "products": "پروتئین‌های نوترکیب",
+        "category": "biotech",
+        "price_tier": "premium",
+        "target_audience": "بیمارستان‌ها و مراکز درمانی",
+        "relation": "same_parent",
+        "synergy_score": "HIGH"
+      }
+    ],
+    "brand_family": [
+      {
+        "name": "CinnaGen",
+        "parent": "CinnaGen",
+        "category": "biotech",
+        "relation": "cinnagen_biotech_group_family"
+      },
+      {
+        "name": "ReciGen",
+        "parent": "CinnaGen",
+        "category": "biotech",
+        "relation": "cinnagen_biotech_group_family"
+      }
+    ],
+    "total_related_brands": 2
+  },
+  "product_categorization": {
+    "primary_industry": {
+      "name_en": "داروسازی و بیوتکنولوژی",
+      "name_fa": "داروسازی و بیوتکنولوژی",
+      "source": "parent_company"
+    },
+    "sub_industries": [],
+    "product_categories": [],
+    "service_categories": [],
+    "customer_segments": {
+      "primary": [
+        "general_public"
+      ],
+      "secondary": []
+    },
+    "price_positioning": "mid"
+  },
+  "market_intelligence": {
+    "competitive_advantages": [],
+    "market_position": {
+      "positioning": "unknown",
+      "estimated_market_share": "unknown",
+      "competitive_landscape": "competitive"
+    },
+    "distribution_channels": [
+      "retail",
+      "online"
+    ]
+  },
+  "contact_information": {
+    "emails": [],
+    "phones": [],
+    "addresses": []
+  },
+  "social_media_presence": {
+    "instagram": {
+      "handle": null,
+      "followers": null,
+      "engagement_rate": null,
+      "posts_count": null,
+      "average_likes": null,
+      "average_comments": null
+    },
+    "telegram": {
+      "handle": null,
+      "members": null,
+      "posts_count": null
+    },
+    "twitter": {
+      "handle": null,
+      "followers": null
+    },
+    "linkedin": {
+      "handle": null,
+      "followers": null
+    },
+    "aparat": {
+      "handle": null,
+      "subscribers": null
+    }
+  },
+  "website_intelligence": {
+    "title": null,
+    "meta_description": null,
+    "is_javascript_site": false,
+    "data_richness": 0.0
+  }
+}

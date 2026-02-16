@@ -1,0 +1,10 @@
+﻿brand_name,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Snapp_Bime,Fanavaran Tejarat Electronic Romak,Transportation_&_Mobility,Technology_Services,On-Demand_Platforms,Ride-Hailing,SELF,Unknown,mid
+Snapp Box,Fanavaran Tejarat Electronic Romak,transportation_mobility,Consumer_Products,General_Products,transportation_mobility,MEDIUM,Strong,Unknown
+Snapp Food,Fanavaran Tejarat Electronic Romak,food_delivery,Technology_Services,On-Demand_Platforms,Food_Delivery,MEDIUM,Strong,Unknown
+Snapp Market,Fanavaran Tejarat Electronic Romak,grocery_shopping,Consumer_Products,General_Products,grocery_shopping,MEDIUM,Strong,Unknown
+Snapp Pay,Fanavaran Tejarat Electronic Romak,financial_services,Consumer_Products,General_Products,financial_services,MEDIUM,Strong,Unknown
+Snapp Bimeh,Fanavaran Tejarat Electronic Romak,financial_services,Consumer_Products,General_Products,financial_services,MEDIUM,Strong,Unknown
+Snapp Doctor,Fanavaran Tejarat Electronic Romak,healthcare,Consumer_Products,General_Products,healthcare,MEDIUM,Strong,Unknown
+Snapp Trip,Fanavaran Tejarat Electronic Romak,travel,Consumer_Products,General_Products,travel,MEDIUM,Strong,Unknown
+Snapp Shop,Fanavaran Tejarat Electronic Romak,shopping,Consumer_Products,General_Products,shopping,MEDIUM,Strong,Unknown

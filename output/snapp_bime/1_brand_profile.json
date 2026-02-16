@@ -1,0 +1,271 @@
+{
+  "brand_intelligence_report": {
+    "generated_date": "2026-02-15",
+    "brand_id": "snapp_bime_20260215_090251",
+    "data_sources": [
+      "example",
+      "linka",
+      "codal",
+      "tsetmc",
+      "web_search",
+      "rasmio"
+    ],
+    "report_version": "1.0"
+  },
+  "basic_information": {
+    "brand_name": "Snapp_Bime",
+    "brand_name_persian": "",
+    "website": "https://insurance.snapp.ir/",
+    "establishment_year": "Unknown",
+    "business_model": "B2C",
+    "service_type": ""
+  },
+  "parent_company_structure": {
+    "immediate_parent": {
+      "name": "Fanavaran Tejarat Electronic Romak",
+      "name_fa": "فناوران تجارت الکترونیک رومک",
+      "industry": "Transportation & Mobility",
+      "relation_type": "direct_parent",
+      "source": "knowledge_base"
+    },
+    "ultimate_parent": {
+      "name": "Fanavaran Tejarat Electronic Romak",
+      "name_fa": "فناوران تجارت الکترونیک رومک",
+      "brand_name": "Snapp Group",
+      "established": "2014",
+      "headquarters": "تهران، ایران",
+      "employees": "10000+",
+      "description": "بزرگترین پلتفرم سوپر اپلیکیشن ایران",
+      "description_en": "Iran's largest super-app platform",
+      "website": "https://snapp.ir",
+      "market_cap": "بیش از 1 میلیارد دلار",
+      "source": "knowledge_base"
+    },
+    "ownership_chain": []
+  },
+  "brand_relationship_map": {
+    "sister_brands_same_parent": [
+      {
+        "name": "Snapp Box",
+        "name_fa": "اسنپ باکس",
+        "role": "Logistics & Last-Mile Delivery",
+        "established": "2017",
+        "website": "https://box.snapp.ir",
+        "focus": "Package delivery, moving services, freight",
+        "focus_fa": "ارسال بسته، خدمات اسباب‌کشی، حمل بار",
+        "industry": "Logistics",
+        "business_model": "B2B_and_B2C",
+        "description": "پلتفرم لجستیک و ارسال بسته آنلاین",
+        "description_en": "Online logistics and package delivery platform",
+        "market_position": "",
+        "relation": "sister_brand",
+        "parent": "Snapp Group",
+        "category": "transportation_mobility",
+        "synergy_potential": "high"
+      },
+      {
+        "name": "Snapp Food",
+        "name_fa": "اسنپ فود",
+        "role": "Food Delivery",
+        "established": "2018",
+        "website": "https://snappfood.ir",
+        "focus": "Restaurant food delivery, grocery delivery",
+        "focus_fa": "سفارش غذا از رستوران، خرید مواد غذایی",
+        "industry": "Food_Delivery",
+        "business_model": "B2C",
+        "description": "بزرگترین پلتفرم سفارش آنلاین غذا در ایران",
+        "description_en": "Iran's largest online food ordering platform",
+        "market_position": "Leader - Over 60% market share",
+        "relation": "sister_brand",
+        "parent": "Snapp Group",
+        "category": "food_delivery",
+        "synergy_potential": "high"
+      },
+      {
+        "name": "Snapp Market",
+        "name_fa": "اسنپ مارکت",
+        "role": "Online Grocery Shopping",
+        "established": "2019",
+        "website": "https://snappmarket.com",
+        "focus": "Online supermarket, fresh produce delivery",
+        "focus_fa": "سوپرمارکت آنلاین، تحویل مواد غذایی تازه",
+        "industry": "E-Commerce_Grocery",
+        "business_model": "B2C",
+        "description": "سوپرمارکت آنلاین با تحویل سریع",
+        "description_en": "Online supermarket with fast delivery",
+        "market_position": "",
+        "relation": "sister_brand",
+        "parent": "Snapp Group",
+        "category": "grocery_shopping",
+        "synergy_potential": "high"
+      },
+      {
+        "name": "Snapp Pay",
+        "name_fa": "اسنپ پی",
+        "role": "Digital Payments & Fintech",
+        "established": "2019",
+        "website": "https://snapp.pay",
+        "focus": "Digital wallet, bill payments, money transfer",
+        "focus_fa": "کیف پول دیجیتال، پرداخت قبوض، انتقال وجه",
+        "industry": "Financial_Technology",
+        "business_model": "B2C",
+        "description": "کیف پول دیجیتال و سرویس‌های پرداخت",
+        "description_en": "Digital wallet and payment services",
+        "market_position": "",
+        "relation": "sister_brand",
+        "parent": "Snapp Group",
+        "category": "financial_services",
+        "synergy_potential": "high"
+      },
+      {
+        "name": "Snapp Bimeh",
+        "name_fa": "اسنپ بیمه",
+        "role": "Insurance Marketplace",
+        "established": "2020",
+        "website": "https://insurance.snapp.ir",
+        "focus": "Online insurance comparison and purchase",
+        "focus_fa": "مقایسه و خرید آنلاین بیمه",
+        "industry": "Insurance_Technology",
+        "business_model": "B2C",
+        "description": "پلتفرم مقایسه و خرید آنلاین بیمه‌نامه",
+        "description_en": "Online insurance comparison and purchase platform",
+        "market_position": "",
+        "relation": "sister_brand",
+        "parent": "Snapp Group",
+        "category": "financial_services",
+        "synergy_potential": "high"
+      },
+      {
+        "name": "Snapp Doctor",
+        "name_fa": "اسنپ دکتر",
+        "role": "Telemedicine & Healthcare",
+        "established": "2019",
+        "website": "https://doctor.snapp.ir",
+        "focus": "Online doctor consultation, appointment booking",
+        "focus_fa": "مشاوره آنلاین پزشکی، نوبت‌دهی پزشک",
+        "industry": "Healthcare_Technology",
+        "business_model": "B2C",
+        "description": "پلتفرم مشاوره پزشکی آنلاین و نوبت‌دهی",
+        "description_en": "Online medical consultation and appointment platform",
+        "market_position": "",
+        "relation": "sister_brand",
+        "parent": "Snapp Group",
+        "category": "healthcare",
+        "synergy_potential": "high"
+      },
+      {
+        "name": "Snapp Trip",
+        "name_fa": "اسنپ تریپ",
+        "role": "Travel Booking",
+        "established": "2020",
+        "website": "https://snapptrip.com",
+        "focus": "Flight tickets, hotel booking, tour packages",
+        "focus_fa": "بلیط هواپیما، رزرو هتل، تورهای مسافرتی",
+        "industry": "Travel_Technology",
+        "business_model": "B2C",
+        "description": "پلتفرم رزرو آنلاین سفر و هتل",
+        "description_en": "Online travel and hotel booking platform",
+        "market_position": "",
+        "relation": "sister_brand",
+        "parent": "Snapp Group",
+        "category": "travel",
+        "synergy_potential": "high"
+      },
+      {
+        "name": "Snapp Shop",
+        "name_fa": "اسنپ شاپ",
+        "role": "E-Commerce Marketplace",
+        "established": "2021",
+        "website": "https://snappshop.ir",
+        "focus": "Online marketplace for various products",
+        "focus_fa": "بازار آنلاین برای محصولات مختلف",
+        "industry": "E-Commerce",
+        "business_model": "B2C",
+        "description": "بازار آنلاین محصولات متنوع",
+        "description_en": "Online marketplace for various products",
+        "market_position": "",
+        "relation": "sister_brand",
+        "parent": "Snapp Group",
+        "category": "shopping",
+        "synergy_potential": "high"
+      }
+    ],
+    "brand_family": [],
+    "total_related_brands": 0
+  },
+  "product_categorization": {
+    "primary_industry": {
+      "name_en": "Transportation_&_Mobility",
+      "name_fa": "",
+      "isic_code": "4931",
+      "category_level_1": "Technology_Services",
+      "category_level_2": "On-Demand_Platforms",
+      "category_level_3": "Ride-Hailing"
+    },
+    "sub_industries": [],
+    "product_categories": [],
+    "service_categories": [],
+    "customer_segments": {
+      "primary": [
+        "urban_professionals"
+      ],
+      "secondary": []
+    },
+    "price_positioning": "mid"
+  },
+  "market_intelligence": {
+    "competitive_advantages": [],
+    "market_position": {
+      "positioning": "unknown",
+      "estimated_market_share": "unknown",
+      "competitive_landscape": "competitive"
+    },
+    "distribution_channels": [
+      "online"
+    ]
+  },
+  "contact_information": {
+    "emails": [],
+    "phones": [
+      "11091004893",
+      "2434133810",
+      "1181173947",
+      "11811739476",
+      "6613625366"
+    ],
+    "addresses": []
+  },
+  "social_media_presence": {
+    "instagram": {
+      "handle": null,
+      "followers": null,
+      "engagement_rate": null,
+      "posts_count": null,
+      "average_likes": null,
+      "average_comments": null
+    },
+    "telegram": {
+      "handle": null,
+      "members": null,
+      "posts_count": null
+    },
+    "twitter": {
+      "handle": null,
+      "followers": null
+    },
+    "linkedin": {
+      "handle": null,
+      "followers": null
+    },
+    "aparat": {
+      "handle": null,
+      "subscribers": null
+    }
+  },
+  "website_intelligence": {
+    "title": "خرید آنلاین بیمه با اسنپ، استعلام و مقایسه با بهترین قیمت",
+    "meta_description": "با سرویس بیمه اسنپ صفر تا صد فرایند خرید بیمه خود را بطور اینترنتی انجام دهید، از محاسبه تا مقایسه و خرید، با اسنپ‏",
+    "is_javascript_site": false,
+    "data_richness": 0.7
+  }
+}

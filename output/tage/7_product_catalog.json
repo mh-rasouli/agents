@@ -1,0 +1,487 @@
+{
+  "brand_intelligence_product_catalog": {
+    "brand_name": "Tage",
+    "generated_date": "2026-02-15 07:43:27",
+    "report_id": "20260215_074327",
+    "extraction_method": "knowledge_base",
+    "data_quality": "comprehensive"
+  },
+  "catalog_summary": {
+    "total_products": 14,
+    "total_therapeutic_areas": 5,
+    "total_categories": 5,
+    "product_lines": []
+  },
+  "therapeutic_areas": [
+    "Oncology - سرطان‌شناسی",
+    "Immunology & Rheumatology - ایمونولوژی و روماتولوژی",
+    "Hematology - خون‌شناسی",
+    "Endocrinology - غدد درون‌ریز",
+    "Hepatology - کبدشناسی"
+  ],
+  "product_categories": {
+    "oncology": {
+      "therapeutic_area": "Oncology - سرطان‌شناسی",
+      "products": [
+        {
+          "generic_name": "Rituximab",
+          "brand_name": "Reditux",
+          "manufacturer": "CinnaGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Monoclonal Antibody",
+          "indications": [
+            "Non-Hodgkin's Lymphoma",
+            "Chronic Lymphocytic Leukemia (CLL)",
+            "Rheumatoid Arthritis"
+          ],
+          "dosage_form": "Injectable - Vial",
+          "strength": "100mg, 500mg",
+          "approval_year": "2008",
+          "market_position": "Leader in Iranian market"
+        },
+        {
+          "generic_name": "Trastuzumab",
+          "brand_name": "Trazumab",
+          "manufacturer": "CinnaGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Monoclonal Antibody",
+          "indications": [
+            "HER2-positive Breast Cancer",
+            "HER2-positive Gastric Cancer"
+          ],
+          "dosage_form": "Injectable - Vial",
+          "strength": "150mg, 440mg",
+          "approval_year": "2010"
+        },
+        {
+          "generic_name": "Bevacizumab",
+          "brand_name": "Avastin Biosimilar",
+          "manufacturer": "AryoGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Monoclonal Antibody",
+          "indications": [
+            "Colorectal Cancer",
+            "Non-Small Cell Lung Cancer",
+            "Glioblastoma",
+            "Renal Cell Carcinoma"
+          ],
+          "dosage_form": "Injectable",
+          "strength": "100mg, 400mg"
+        },
+        {
+          "generic_name": "Cetuximab",
+          "brand_name": "CetuGene",
+          "manufacturer": "CinnaGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Monoclonal Antibody",
+          "indications": [
+            "Colorectal Cancer",
+            "Head and Neck Cancer"
+          ],
+          "dosage_form": "Injectable"
+        }
+      ]
+    },
+    "immunology_rheumatology": {
+      "therapeutic_area": "Immunology & Rheumatology - ایمونولوژی و روماتولوژی",
+      "products": [
+        {
+          "generic_name": "Adalimumab",
+          "brand_name": "CinnoRA",
+          "manufacturer": "CinnaGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Monoclonal Antibody",
+          "indications": [
+            "Rheumatoid Arthritis",
+            "Ankylosing Spondylitis",
+            "Psoriatic Arthritis",
+            "Crohn's Disease",
+            "Ulcerative Colitis",
+            "Plaque Psoriasis"
+          ],
+          "dosage_form": "Pre-filled Syringe",
+          "strength": "40mg/0.8ml",
+          "approval_year": "2016"
+        },
+        {
+          "generic_name": "Infliximab",
+          "brand_name": "Inflectra",
+          "manufacturer": "CinnaGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Monoclonal Antibody",
+          "indications": [
+            "Rheumatoid Arthritis",
+            "Crohn's Disease",
+            "Ulcerative Colitis",
+            "Ankylosing Spondylitis",
+            "Psoriatic Arthritis",
+            "Plaque Psoriasis"
+          ],
+          "dosage_form": "Injectable - Vial",
+          "strength": "100mg"
+        },
+        {
+          "generic_name": "Etanercept",
+          "brand_name": "Etanar",
+          "manufacturer": "ReciGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Fusion Protein",
+          "indications": [
+            "Rheumatoid Arthritis",
+            "Psoriatic Arthritis",
+            "Ankylosing Spondylitis"
+          ],
+          "dosage_form": "Pre-filled Syringe",
+          "strength": "25mg, 50mg"
+        }
+      ]
+    },
+    "hematology": {
+      "therapeutic_area": "Hematology - خون‌شناسی",
+      "products": [
+        {
+          "generic_name": "Filgrastim",
+          "brand_name": "CinnoVex",
+          "manufacturer": "CinnaGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Recombinant Protein",
+          "indications": [
+            "Neutropenia (Chemotherapy-induced)",
+            "Bone Marrow Transplant",
+            "Mobilization of stem cells"
+          ],
+          "dosage_form": "Pre-filled Syringe",
+          "strength": "300mcg, 480mcg"
+        },
+        {
+          "generic_name": "Erythropoietin (EPO)",
+          "brand_name": "Eprex Biosimilar",
+          "manufacturer": "ReciGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Recombinant Protein",
+          "indications": [
+            "Anemia in Chronic Kidney Disease",
+            "Chemotherapy-induced Anemia"
+          ],
+          "dosage_form": "Pre-filled Syringe",
+          "strength": "2000 IU, 4000 IU, 10000 IU"
+        },
+        {
+          "generic_name": "Interferon Beta-1a",
+          "brand_name": "ReciGen",
+          "manufacturer": "ReciGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Recombinant Protein",
+          "indications": [
+            "Multiple Sclerosis (Relapsing-Remitting)"
+          ],
+          "dosage_form": "Pre-filled Syringe",
+          "strength": "22mcg, 44mcg"
+        }
+      ]
+    },
+    "endocrinology": {
+      "therapeutic_area": "Endocrinology - غدد درون‌ریز",
+      "products": [
+        {
+          "generic_name": "Insulin Glargine",
+          "brand_name": "CinnoSulin",
+          "manufacturer": "CinnaGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Recombinant Insulin",
+          "indications": [
+            "Type 1 Diabetes",
+            "Type 2 Diabetes"
+          ],
+          "dosage_form": "Pre-filled Pen",
+          "strength": "100 IU/ml"
+        },
+        {
+          "generic_name": "Human Growth Hormone",
+          "brand_name": "CinnoTropin",
+          "manufacturer": "CinnaGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Recombinant Protein",
+          "indications": [
+            "Growth Hormone Deficiency",
+            "Turner Syndrome",
+            "Chronic Kidney Disease in children"
+          ],
+          "dosage_form": "Injectable - Vial",
+          "strength": "4 IU, 10 IU"
+        }
+      ]
+    },
+    "hepatology": {
+      "therapeutic_area": "Hepatology - کبدشناسی",
+      "products": [
+        {
+          "generic_name": "Interferon Alpha-2b",
+          "brand_name": "AlfaGen",
+          "manufacturer": "ReciGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "Recombinant Protein",
+          "indications": [
+            "Chronic Hepatitis B",
+            "Chronic Hepatitis C"
+          ],
+          "dosage_form": "Injectable - Vial",
+          "strength": "3 MIU, 5 MIU, 10 MIU"
+        },
+        {
+          "generic_name": "PEGylated Interferon Alpha-2a",
+          "brand_name": "PegaGen",
+          "manufacturer": "CinnaGen",
+          "marketed_by": "Orchid_Pharmed",
+          "type": "PEGylated Recombinant Protein",
+          "indications": [
+            "Chronic Hepatitis B",
+            "Chronic Hepatitis C"
+          ],
+          "dosage_form": "Pre-filled Syringe",
+          "strength": "180mcg"
+        }
+      ]
+    }
+  },
+  "complete_product_list": [
+    {
+      "generic_name": "Rituximab",
+      "brand_name": "Reditux",
+      "manufacturer": "CinnaGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Monoclonal Antibody",
+      "indications": [
+        "Non-Hodgkin's Lymphoma",
+        "Chronic Lymphocytic Leukemia (CLL)",
+        "Rheumatoid Arthritis"
+      ],
+      "dosage_form": "Injectable - Vial",
+      "strength": "100mg, 500mg",
+      "approval_year": "2008",
+      "market_position": "Leader in Iranian market"
+    },
+    {
+      "generic_name": "Trastuzumab",
+      "brand_name": "Trazumab",
+      "manufacturer": "CinnaGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Monoclonal Antibody",
+      "indications": [
+        "HER2-positive Breast Cancer",
+        "HER2-positive Gastric Cancer"
+      ],
+      "dosage_form": "Injectable - Vial",
+      "strength": "150mg, 440mg",
+      "approval_year": "2010"
+    },
+    {
+      "generic_name": "Bevacizumab",
+      "brand_name": "Avastin Biosimilar",
+      "manufacturer": "AryoGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Monoclonal Antibody",
+      "indications": [
+        "Colorectal Cancer",
+        "Non-Small Cell Lung Cancer",
+        "Glioblastoma",
+        "Renal Cell Carcinoma"
+      ],
+      "dosage_form": "Injectable",
+      "strength": "100mg, 400mg"
+    },
+    {
+      "generic_name": "Cetuximab",
+      "brand_name": "CetuGene",
+      "manufacturer": "CinnaGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Monoclonal Antibody",
+      "indications": [
+        "Colorectal Cancer",
+        "Head and Neck Cancer"
+      ],
+      "dosage_form": "Injectable"
+    },
+    {
+      "generic_name": "Adalimumab",
+      "brand_name": "CinnoRA",
+      "manufacturer": "CinnaGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Monoclonal Antibody",
+      "indications": [
+        "Rheumatoid Arthritis",
+        "Ankylosing Spondylitis",
+        "Psoriatic Arthritis",
+        "Crohn's Disease",
+        "Ulcerative Colitis",
+        "Plaque Psoriasis"
+      ],
+      "dosage_form": "Pre-filled Syringe",
+      "strength": "40mg/0.8ml",
+      "approval_year": "2016"
+    },
+    {
+      "generic_name": "Infliximab",
+      "brand_name": "Inflectra",
+      "manufacturer": "CinnaGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Monoclonal Antibody",
+      "indications": [
+        "Rheumatoid Arthritis",
+        "Crohn's Disease",
+        "Ulcerative Colitis",
+        "Ankylosing Spondylitis",
+        "Psoriatic Arthritis",
+        "Plaque Psoriasis"
+      ],
+      "dosage_form": "Injectable - Vial",
+      "strength": "100mg"
+    },
+    {
+      "generic_name": "Etanercept",
+      "brand_name": "Etanar",
+      "manufacturer": "ReciGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Fusion Protein",
+      "indications": [
+        "Rheumatoid Arthritis",
+        "Psoriatic Arthritis",
+        "Ankylosing Spondylitis"
+      ],
+      "dosage_form": "Pre-filled Syringe",
+      "strength": "25mg, 50mg"
+    },
+    {
+      "generic_name": "Filgrastim",
+      "brand_name": "CinnoVex",
+      "manufacturer": "CinnaGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Recombinant Protein",
+      "indications": [
+        "Neutropenia (Chemotherapy-induced)",
+        "Bone Marrow Transplant",
+        "Mobilization of stem cells"
+      ],
+      "dosage_form": "Pre-filled Syringe",
+      "strength": "300mcg, 480mcg"
+    },
+    {
+      "generic_name": "Erythropoietin (EPO)",
+      "brand_name": "Eprex Biosimilar",
+      "manufacturer": "ReciGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Recombinant Protein",
+      "indications": [
+        "Anemia in Chronic Kidney Disease",
+        "Chemotherapy-induced Anemia"
+      ],
+      "dosage_form": "Pre-filled Syringe",
+      "strength": "2000 IU, 4000 IU, 10000 IU"
+    },
+    {
+      "generic_name": "Interferon Beta-1a",
+      "brand_name": "ReciGen",
+      "manufacturer": "ReciGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Recombinant Protein",
+      "indications": [
+        "Multiple Sclerosis (Relapsing-Remitting)"
+      ],
+      "dosage_form": "Pre-filled Syringe",
+      "strength": "22mcg, 44mcg"
+    },
+    {
+      "generic_name": "Insulin Glargine",
+      "brand_name": "CinnoSulin",
+      "manufacturer": "CinnaGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Recombinant Insulin",
+      "indications": [
+        "Type 1 Diabetes",
+        "Type 2 Diabetes"
+      ],
+      "dosage_form": "Pre-filled Pen",
+      "strength": "100 IU/ml"
+    },
+    {
+      "generic_name": "Human Growth Hormone",
+      "brand_name": "CinnoTropin",
+      "manufacturer": "CinnaGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Recombinant Protein",
+      "indications": [
+        "Growth Hormone Deficiency",
+        "Turner Syndrome",
+        "Chronic Kidney Disease in children"
+      ],
+      "dosage_form": "Injectable - Vial",
+      "strength": "4 IU, 10 IU"
+    },
+    {
+      "generic_name": "Interferon Alpha-2b",
+      "brand_name": "AlfaGen",
+      "manufacturer": "ReciGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "Recombinant Protein",
+      "indications": [
+        "Chronic Hepatitis B",
+        "Chronic Hepatitis C"
+      ],
+      "dosage_form": "Injectable - Vial",
+      "strength": "3 MIU, 5 MIU, 10 MIU"
+    },
+    {
+      "generic_name": "PEGylated Interferon Alpha-2a",
+      "brand_name": "PegaGen",
+      "manufacturer": "CinnaGen",
+      "marketed_by": "Orchid_Pharmed",
+      "type": "PEGylated Recombinant Protein",
+      "indications": [
+        "Chronic Hepatitis B",
+        "Chronic Hepatitis C"
+      ],
+      "dosage_form": "Pre-filled Syringe",
+      "strength": "180mcg"
+    }
+  ],
+  "market_intelligence": {
+    "market_share": "بیش از 70% بازار داروهای بیوتکنولوژی ایران",
+    "annual_production": "میلیون‌ها دوز",
+    "export_markets": [
+      "عراق",
+      "افغانستان",
+      "آذربایجان",
+      "ارمنستان"
+    ],
+    "competitive_position": "رهبر بازار داروهای بیولوژیک ایران",
+    "key_competitors": [
+      "Zist Daru Danesh",
+      "Pooyesh Darou",
+      "Sobhan Oncology"
+    ]
+  },
+  "corporate_relationships": {
+    "parent_company": "Unknown",
+    "ultimate_parent": "Unknown",
+    "manufacturing_subsidiaries": [
+      "Unknown"
+    ],
+    "marketing_distribution_role": {
+      "role": "Manufacturing/Product Brand",
+      "description": "Tage is a product/manufacturing brand"
+    }
+  },
+  "industry_classification": {
+    "primary_industry": {},
+    "sub_industries": [],
+    "business_model": "B2C"
+  },
+  "product_statistics": {
+    "total_products": 18,
+    "therapeutic_areas": 5,
+    "monoclonal_antibodies": 8,
+    "recombinant_proteins": 10,
+    "biosimilars": 12,
+    "total_indications": 40
+  }
+}

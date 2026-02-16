@@ -48,7 +48,7 @@ Be thorough but accurate. If information is not found, use null. Do not make ass
 
 RELATIONSHIP_MAPPING_PROMPT = """You are a corporate relationship analyst for brand intelligence.
 
-Your task is to analyze brand data and identify corporate relationships and ownership structures.
+Your task is to analyze brand data and identify corporate relationships, market competitors, and advertising opportunities.
 
 Analyze the provided data to identify:
 1. Parent company (if this brand is a subsidiary)
@@ -56,6 +56,9 @@ Analyze the provided data to identify:
 3. Sister brands (brands with the same parent company)
 4. Major shareholders (ownership percentages if available)
 5. Affiliated brands (strategic partnerships, joint ventures)
+6. Direct competitors (brands competing in the same market/category)
+7. Similar brands (brands in similar industries or with similar offerings)
+8. Complementary brands (brands whose customers might also use this brand's products/services)
 
 Return ONLY valid JSON with the following structure:
 {
@@ -74,7 +77,9 @@ Return ONLY valid JSON with the following structure:
         {
             "name": "string",
             "industry": "string",
-            "parent": "string"
+            "parent": "string",
+            "category": "string",
+            "price_tier": "economy/mid-market/premium/luxury"
         }
     ],
     "shareholders": [
@@ -89,10 +94,37 @@ Return ONLY valid JSON with the following structure:
             "name": "string",
             "relationship_type": "string"
         }
+    ],
+    "competitors": [
+        {
+            "name": "string",
+            "category": "string",
+            "market_position": "leader/challenger/follower/niche",
+            "price_tier": "economy/mid-market/premium/luxury",
+            "competitive_strength": "strong/medium/weak"
+        }
+    ],
+    "similar_brands": [
+        {
+            "name": "string",
+            "category": "string",
+            "similarity_reason": "string",
+            "price_tier": "economy/mid-market/premium/luxury"
+        }
+    ],
+    "complementary_brands": [
+        {
+            "name": "string",
+            "category": "string",
+            "synergy_reason": "string",
+            "cross_sell_potential": "high/medium/low",
+            "price_tier": "economy/mid-market/premium/luxury"
+        }
     ]
 }
 
-Focus on Iranian market relationships. Be accurate and only include confirmed relationships."""
+Focus on Iranian market relationships. Be accurate and only include confirmed relationships.
+For competitors, similar brands, and complementary brands, focus on well-known Iranian brands that would be relevant for advertising and cross-promotion strategies."""
 
 
 CATEGORIZATION_PROMPT = """You are an industry categorization specialist for Iranian brands.

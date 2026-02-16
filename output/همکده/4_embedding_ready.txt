@@ -1,0 +1,108 @@
+پروفایل برند: همکده
+
+اطلاعات پایه
+همکده یک برند فعال در صنعت خدمات سلامت و روانشناسی است.
+این برند متعلق به سامانه مدیریت ارتباط با مشتریان همکده است که با نماد بورس نامشخص فعالیت می‌کند.
+
+ساختار شرکتی
+ساختار شرکتی همکده نشان‌دهنده یک سلسله‌مراتب پیچیده از مالکیت و مدیریت برند است.
+به عنوان یک شرکت تابعه مستقیم سامانه مدیریت ارتباط با مشتریان همکده، این برند از شبکه‌های توزیع مستقر، 
+تخصص عملیاتی و ثبات مالی بهره‌مند می‌شود. شرکت مادر در بخش محصولات مصرفی فعالیت می‌کند 
+و هم‌راستایی استراتژیک و هم‌افزایی را در سبد برندها فراهم می‌آورد.
+
+خانواده برند - برندهای خواهر
+موقعیت‌یابی بازار
+همکده با مدل کسب‌وکار B2C فعالیت می‌کند، 
+با هدف‌گذاری به Individuals seeking mental health support, Couples and Families, Students and Youth, Remote users.
+این برند در سطح قیمتی mid-market قرار دارد 
+و بین کیفیت و مقرون‌به‌صرفه بودن تعادل ایجاد می‌کند تا بیشترین سهم بازار را به دست آورد.
+
+موقعیت بازار: رقابتی.
+چشم‌انداز رقابتی: پویا و رقابتی.
+کانال‌های توزیع شامل online, direct است، 
+که پوشش گسترده بازار و دسترسی به مصرف‌کنندگان هدف را تضمین می‌کند.
+
+فرصت‌های استراتژیک
+تحلیل نشان می‌دهد 3 فرصت با پتانسیل بالا برای تبلیغات متقابل:
+
+1. همکاری با Digikala (Health & Personal Care Category)
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+2. همکاری با Gaj / ChiBeKhoonam
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+3. همکاری با SnappFood
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+توصیه‌های زمان‌بندی کمپین
+دوره‌های بهینه کمپین برای حداکثر تأثیر:
+- Shahrivar (Back to school/Back to work prep): تعامل و هزینه بالای مصرف‌کننده
+- Mehregan (Focus on relationships): تعامل و هزینه بالای مصرف‌کننده
+- Esfand (Pre-Nowruz 'New Year, New Me' mental decluttering): تعامل و هزینه بالای مصرف‌کننده
+- Ordibehesht (Exam season stress): تعامل و هزینه بالای مصرف‌کننده
+
+دوره‌هایی که باید از کمپین‌های تجاری اجتناب کرد:
+- First week of Nowruz (Total holiday mode)
+- Ashura/Tasua (Solemn religious period unsuitable for aggressive sales)
+
+توصیه‌های بودجه و سرمایه‌گذاری
+بودجه تبلیغاتی سالانه توصیه‌شده: 2B - 5B Tomans per Quarter
+معادل دلار: $40,000 - $100,000 (Parallel Market Rate)
+بازده مورد انتظار سرمایه: 3:1 Return on Ad Spend (ROAS) based on first-session bookings and LTV of returning patients.
+
+تخصیص کانال توصیه‌شده:
+- instagram: 40% - Primary engine for awareness and lead-gen via Reels/Stories.
+- telegram: 15% - High conversion in health/educational channels.
+- tv: 10% - Late-night VOD or Satellite (GEM/Persiana) for wide reach to housewives.
+- outdoor: 15% - Billboards in high-traffic Tehran areas (Hemmat/Modarres) for brand authority.
+- influencers: 20% - Lifestyle and 'Self-care' influencers for social proof.
+
+استراتژی کانال‌های بازاریابی
+Instagram Reels (اولویت: high)
+  دلیل: Highest organic reach in Iran currently; perfect for 'Common Psychological Signs' videos.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
+
+Telegram Sponsored Messages (اولویت: medium)
+  دلیل: Precise targeting of users in 'Psychology' and 'Self-help' channels.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
+
+Tehran Metro/Bus Ads (اولویت: medium)
+  دلیل: Targets the commuting 'Anxious Professional' and students during their high-stress transit times.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
+
+جهت‌گیری خلاقانه و پیام‌رسانی
+پیام‌های کلیدی برند:
+- {'message_fa': 'حال خوبت رو به تعویق ننداز', 'message_en': "Don't postpone your well-being.", 'target_segment': 'All segments'}
+- {'message_fa': 'بزرگترین مرکز مشاوره تلفنی ایران، همیشه در کنار شما', 'message_en': "Iran's largest tele-counseling center, always by your side.", 'target_segment': 'Remote users'}
+
+لحن و سبک: Minimalist, clean, and calming. Use of soft blue and white colors. Avoid 'medical' coldness; focus on 'human' warmth.
+توصیه‌های بصری: Authentic Iranian faces, diverse age groups, cozy home environments where counseling takes place via phone.
+ملاحظات فرهنگی: Respect family values but gently challenge the stigma of 'going to a shrink'. Use the term 'Moshavere' (Consultation) rather than 'Ravandarmany' (Psychotherapy) for broader appeal.
+
+معیارهای موفقیت و شاخص‌های کلیدی
+شاخص‌های کلیدی اصلی برای موفقیت کمپین:
+- Cost Per Lead (CPL) for phone inquiries
+- Number of first-time counseling sessions booked
+- Retention rate (sessions per user)
+- Brand Sentiment Score on social media
+
+رویکرد اندازه‌گیری: UTM tracking for all digital ads, unique promo codes for influencers, and post-call surveys asking 'How did you hear about us?'.
+معیارهای مقایسه: Targeting 20% lower CPL than general health platforms like Paziresh24 due to specialization.

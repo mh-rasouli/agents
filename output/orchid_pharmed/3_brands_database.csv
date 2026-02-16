@@ -1,0 +1,6 @@
+﻿brand_name,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Orchid_Pharmed,CinnaGen,داروسازی و بیوتکنولوژی,Consumer Products,General Products,داروسازی و بیوتکنولوژی,SELF,Unknown,mid
+CinnaGen,CinnaGen,biotech,Healthcare & Life Sciences,Pharmaceutical & Biotechnology,Biotechnology Products,HIGH,Strong,premium
+ReciGen,CinnaGen,biotech,Healthcare & Life Sciences,Pharmaceutical & Biotechnology,Biotechnology Products,HIGH,Strong,premium
+CinnaGen,CinnaGen,biotech,Healthcare & Life Sciences,Pharmaceutical & Biotechnology,Biotechnology Products,LOW,Unknown,Unknown
+ReciGen,CinnaGen,biotech,Healthcare & Life Sciences,Pharmaceutical & Biotechnology,Biotechnology Products,LOW,Unknown,Unknown

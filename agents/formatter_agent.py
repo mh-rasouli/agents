@@ -624,6 +624,7 @@ class OutputFormatterAgent(BaseAgent):
         output_path = output_dir / "3_brands_database.csv"
 
         relationships = state.get("relationships", {})
+        insights = state.get("insights", {})
         brand_name = state["brand_name"]
 
         # Build brands list
@@ -646,13 +647,14 @@ class OutputFormatterAgent(BaseAgent):
 
         brands.append({
             "brand_name": brand_name,
+            "relationship_type": "SELF",
             "parent_company": relationships.get("parent_company", {}).get("name", "Unknown"),
             "category": current_category,
             "category_level_1": current_hierarchy["category_level_1"],
             "category_level_2": current_hierarchy["category_level_2"],
             "category_level_3": current_hierarchy["category_level_3"],
             "cross_sell_potential": "SELF",
-            "market_position": "Unknown",
+            "market_position": categorization.get("market_position", {}).get("market_share_estimate", "Unknown"),
             "price_tier": state.get("categorization", {}).get("price_tier", "Unknown")
         })
 
@@ -663,6 +665,7 @@ class OutputFormatterAgent(BaseAgent):
 
             brands.append({
                 "brand_name": brand.get("name"),
+                "relationship_type": "SISTER",
                 "parent_company": relationships.get("parent_company", {}).get("name", "Unknown"),
                 "category": brand_category,
                 "category_level_1": brand_hierarchy["category_level_1"],
@@ -680,6 +683,7 @@ class OutputFormatterAgent(BaseAgent):
 
             brands.append({
                 "brand_name": brand.get("name"),
+                "relationship_type": "FAMILY",
                 "parent_company": brand.get("parent", "Unknown"),
                 "category": brand_category,
                 "category_level_1": brand_hierarchy["category_level_1"],
@@ -690,11 +694,93 @@ class OutputFormatterAgent(BaseAgent):
                 "price_tier": "Unknown"
             })
 
+        # Add competitors
+        for brand in relationships.get("competitors", []):
+            brand_category = brand.get("category", "Unknown")
+            brand_hierarchy = self._get_category_hierarchy(brand_category)
+
+            brands.append({
+                "brand_name": brand.get("name"),
+                "relationship_type": "COMPETITOR",
+                "parent_company": "Unknown",
+                "category": brand_category,
+                "category_level_1": brand_hierarchy["category_level_1"],
+                "category_level_2": brand_hierarchy["category_level_2"],
+                "category_level_3": brand_hierarchy["category_level_3"],
+                "cross_sell_potential": "NONE",
+                "market_position": brand.get("market_position", "Unknown"),
+                "price_tier": brand.get("price_tier", "Unknown")
+            })
+
+        # Add similar brands
+        for brand in relationships.get("similar_brands", []):
+            brand_category = brand.get("category", "Unknown")
+            brand_hierarchy = self._get_category_hierarchy(brand_category)
+
+            brands.append({
+                "brand_name": brand.get("name"),
+                "relationship_type": "SIMILAR",
+                "parent_company": "Unknown",
+                "category": brand_category,
+                "category_level_1": brand_hierarchy["category_level_1"],
+                "category_level_2": brand_hierarchy["category_level_2"],
+                "category_level_3": brand_hierarchy["category_level_3"],
+                "cross_sell_potential": "LOW",
+                "market_position": "Unknown",
+                "price_tier": brand.get("price_tier", "Unknown")
+            })
+
+        # Add complementary brands from relationships
+        for brand in relationships.get("complementary_brands", []):
+            brand_category = brand.get("category", "Unknown")
+            brand_hierarchy = self._get_category_hierarchy(brand_category)
+
+            brands.append({
+                "brand_name": brand.get("name"),
+                "relationship_type": "COMPLEMENTARY",
+                "parent_company": "Unknown",
+                "category": brand_category,
+                "category_level_1": brand_hierarchy["category_level_1"],
+                "category_level_2": brand_hierarchy["category_level_2"],
+                "category_level_3": brand_hierarchy["category_level_3"],
+                "cross_sell_potential": brand.get("cross_sell_potential", "HIGH").upper(),
+                "market_position": "Unknown",
+                "price_tier": brand.get("price_tier", "Unknown")
+            })
+
+        # Add complementary brands from insights (cross-promotion opportunities)
+        cross_promo = insights.get("cross_promotion_opportunities", [])
+        if not cross_promo:
+            # Try tier_1_opportunities from insights
+            tier_1 = insights.get("tier_1_opportunities", {})
+            cross_promo = tier_1.get("recommendations", [])
+
+        for opp in cross_promo:
+            partner_name = opp.get("partner_brand") or opp.get("brand_name")
+            if partner_name and partner_name not in [b["brand_name"] for b in brands]:
+                # Extract category from partner_brand name if possible
+                brand_category = "Unknown"
+                brand_hierarchy = self._get_category_hierarchy(brand_category)
+
+                brands.append({
+                    "brand_name": partner_name,
+                    "relationship_type": "COMPLEMENTARY",
+                    "parent_company": "Unknown",
+                    "category": brand_category,
+                    "category_level_1": brand_hierarchy["category_level_1"],
+                    "category_level_2": brand_hierarchy["category_level_2"],
+                    "category_level_3": brand_hierarchy["category_level_3"],
+                    "cross_sell_potential": "HIGH",
+                    "market_position": "Unknown",
+                    "price_tier": "Unknown"
+                })
+
         # Write CSV with UTF-8 encoding
         if brands:
             with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:  # utf-8-sig for Excel compatibility
                 fieldnames = [
                     "brand_name",
+                    "relationship_type",
                     "parent_company",
                     "category",
                     "category_level_1",

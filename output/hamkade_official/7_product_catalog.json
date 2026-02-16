@@ -1,0 +1,78 @@
+{
+  "brand_intelligence_product_catalog": {
+    "brand_name": "Hamkade_Official",
+    "generated_date": "2026-02-16 07:02:10",
+    "report_id": "20260216_070210",
+    "extraction_method": "rule_based_healthcare",
+    "data_quality": "comprehensive"
+  },
+  "catalog_summary": {
+    "total_products": 4,
+    "total_therapeutic_areas": 0,
+    "total_categories": 1,
+    "product_lines": []
+  },
+  "therapeutic_areas": [],
+  "product_categories": {
+    "Mental Health Services": 4
+  },
+  "complete_product_list": [],
+  "services_list": [
+    {
+      "name": "Individual Counseling",
+      "name_fa": "مشاوره فردی",
+      "category": "Mental Health Services",
+      "type": "service",
+      "availability": "Available"
+    },
+    {
+      "name": "Couple Therapy",
+      "name_fa": "زوج درمانی",
+      "category": "Mental Health Services",
+      "type": "service",
+      "availability": "Available"
+    },
+    {
+      "name": "Family Counseling",
+      "name_fa": "مشاوره خانواده",
+      "category": "Mental Health Services",
+      "type": "service",
+      "availability": "Available"
+    },
+    {
+      "name": "Educational Counseling",
+      "name_fa": "مشاوره تحصیلی",
+      "category": "Mental Health Services",
+      "type": "service",
+      "availability": "Available"
+    }
+  ],
+  "market_intelligence": {},
+  "metadata": {
+    "total_counselors": "300",
+    "specialization_areas": "20"
+  },
+  "corporate_relationships": {
+    "parent_company": "Artin Pouya Pardaz",
+    "ultimate_parent": "آرتین پویا پرداز",
+    "manufacturing_subsidiaries": [
+      "Unknown"
+    ],
+    "marketing_distribution_role": {
+      "role": "Manufacturing/Product Brand",
+      "description": "Hamkade_Official is a product/manufacturing brand"
+    }
+  },
+  "industry_classification": {
+    "primary_industry": {
+      "name_en": "Healthcare_&_Medical_Services",
+      "name_fa": "خدمات بهداشت و درمان",
+      "isic_code": "8690",
+      "category_level_1": "Healthcare_Services",
+      "category_level_2": "Mental_Health_Services",
+      "category_level_3": "Online_Counseling_Platforms"
+    },
+    "sub_industries": [],
+    "business_model": "B2C"
+  }
+}

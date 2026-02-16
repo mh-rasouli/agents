@@ -1,0 +1,13 @@
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+همکده,SELF,سامانه مدیریت ارتباط با مشتریان همکده,Human Health and Psychology Services,Consumer_Products,General_Products,Human_Health_and_Psychology_Services,SELF,leader,mid-market
+Sarem,COMPETITOR,Unknown,Psychology and Health Services,Consumer_Products,General_Products,Psychology_and_Health_Services,NONE,challenger,mid-market
+Paziresh24,COMPETITOR,Unknown,Online Medical and Counseling,Consumer_Products,General_Products,Online_Medical_and_Counseling,NONE,leader,mid-market
+Doctor Dr,COMPETITOR,Unknown,Online Medical and Counseling,Consumer_Products,General_Products,Online_Medical_and_Counseling,NONE,challenger,mid-market
+Snapp Doctor,COMPETITOR,Unknown,Telemedicine and Counseling,Consumer_Products,General_Products,Telemedicine_and_Counseling,NONE,leader,economy
+FaraMoshavere,SIMILAR,Unknown,Psychology Services,Consumer_Products,General_Products,Psychology_Services,LOW,Unknown,mid-market
+Moshver.com,SIMILAR,Unknown,Online Counseling,Consumer_Products,General_Products,Online_Counseling,LOW,Unknown,mid-market
+SnappFood,COMPLEMENTARY,Unknown,Lifestyle and Delivery,Consumer_Products,General_Products,Lifestyle_and_Delivery,MEDIUM,Unknown,mid-market
+Digikala,COMPLEMENTARY,Unknown,E-commerce,Consumer_Products,General_Products,E_commerce,HIGH,Unknown,mid-market
+Gaj,COMPLEMENTARY,Unknown,Education,Consumer_Products,General_Products,Education,HIGH,Unknown,mid-market
+Digikala (Health & Personal Care Category),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+Gaj / ChiBeKhoonam,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown

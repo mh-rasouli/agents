@@ -1,0 +1,230 @@
+================================================================================
+گزارش جامع هوشمند برند
+برند: اسنپ
+تاریخ تولید: 2026-02-16 09:20:21
+شناسه گزارش: 20260216_092021
+================================================================================
+
+بخش ۱: خلاصه اجرایی
+--------------------------------------------------------------------------------
+خلاصه اجرایی در دسترس نیست.
+
+بخش ۲: پروفایل برند
+--------------------------------------------------------------------------------
+نام برند: اسنپ
+وبسایت: None
+
+بخش ۳: ساختار شرکتی و روابط
+--------------------------------------------------------------------------------
+شرکت مادر: IIG (Iran Internet Group)
+
+برندهای خواهر (3):
+  - Bamilo: نامشخص [هم‌افزایی: نامشخص]
+  - ZoodFood: نامشخص [هم‌افزایی: نامشخص]
+  - Eskan021: نامشخص [هم‌افزایی: نامشخص]
+
+بخش ۴: دسته‌بندی بازار
+--------------------------------------------------------------------------------
+صنعت: فناوری اطلاعات و خدمات پلتفرم دیجیتال
+کد ISIC: 6201
+مدل کسب‌وکار: B2B2C
+سطح قیمتی: mid-market
+مخاطبان هدف: Urban Commuters, Tech-savvy Households, Business Entities, Travelers
+کانال‌های توزیع: online, direct
+
+بخش ۵: بینش‌ها و فرصت‌های استراتژیک
+--------------------------------------------------------------------------------
+فرصت‌های تبلیغات متقابل (3):
+
+1. برند شریک: SnappPay
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+2. برند شریک: Hyperstar
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+3. برند شریک: Irancell
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+بخش ۶: توصیه‌های زمان‌بندی کمپین
+--------------------------------------------------------------------------------
+دوره‌های بهینه:
+  - Esfand (Feb/March) for Nowruz prep
+  - Azar (Nov/Dec) for Yalda Night
+  - Shahrivar (August/Sept) for Back-to-School
+  - Ramadan for SnappFood Iftar/Sahar deals
+
+دوره‌های اجتناب:
+  - F
+  - i
+  - r
+  - s
+  - t
+  -  
+  - 1
+  - 0
+  -  
+  - d
+  - a
+  - y
+  - s
+  -  
+  - o
+  - f
+  -  
+  - M
+  - u
+  - h
+  - a
+  - r
+  - r
+  - a
+  - m
+  -  
+  - (
+  - A
+  - s
+  - h
+  - u
+  - r
+  - a
+  - /
+  - T
+  - a
+  - s
+  - u
+  - '
+  - a
+  - )
+  -  
+  - f
+  - o
+  - r
+  -  
+  - u
+  - p
+  - b
+  - e
+  - a
+  - t
+  -  
+  - o
+  - r
+  -  
+  - p
+  - r
+  - o
+  - m
+  - o
+  - t
+  - i
+  - o
+  - n
+  - a
+  - l
+  -  
+  - a
+  - d
+  - v
+  - e
+  - r
+  - t
+  - i
+  - s
+  - i
+  - n
+  - g
+  - ;
+  -  
+  - u
+  - s
+  - e
+  -  
+  - C
+  - S
+  - R
+  - -
+  - f
+  - o
+  - c
+  - u
+  - s
+  - e
+  - d
+  -  
+  - m
+  - e
+  - s
+  - s
+  - a
+  - g
+  - i
+  - n
+  - g
+  -  
+  - i
+  - n
+  - s
+  - t
+  - e
+  - a
+  - d
+  - .
+
+بخش ۷: بودجه و کانال‌های توصیه‌شده
+--------------------------------------------------------------------------------
+بودجه تخمینی: 50B - 100B Tomans per major quarterly campaign
+معادل دلار: $1M - $2M (Market equivalent)
+
+تخصیص کانال:
+  - instagram: 35% - Primary for lifestyle and engagement
+  - telegram: 15% - High conversion for discount codes
+  - tv: 10% - Mass awareness for older demographics/provinces
+  - outdoor: 25% - High visibility billboards in Tehran traffic hubs
+  - influencers: 10% - Micro-influencers for niche services (Doctor/Trip)
+  - other: 5% - Performance marketing (Ad-networks/VODs)
+
+جزئیات کانال‌ها (2 کانال):
+
+  Instagram Reels - اولویت: high
+  دلیل: Algorithmic reach is currently the highest for organic growth in Iran.
+  بودجه: None
+
+  Tehran Billboard Circuits (Hemmat/Modares) - اولویت: high
+  دلیل: Captures the target audience (commuters) while they are literally in a car or traffic.
+  بودجه: None
+
+بخش ۸: جهت‌گیری خلاقیت
+--------------------------------------------------------------------------------
+پیام‌های کلیدی:
+  - {'message_fa': 'همه نیازها، یک اسنپ', 'message_en': 'Every need, one Snapp', 'target_segment': 'General Public'}
+  - {'message_fa': 'الان بخر، بعدا پرداخت کن', 'message_en': 'Buy now, pay later', 'target_segment': 'Price-sensitive shoppers'}
+
+لحن و سبک: Minimalist, vibrant (using the signature green), energetic, and deeply rooted in urban Iranian culture.
+توصیه‌های بصری: High-quality photography of 'real' Iranians, clean typography, and UI-focused motion graphics.
+
+استراتژی هشتگ: #اسنپ #سوپراپ #سبک_زندگی #Snapp
+
+تم‌های محتوایی:
+  - Time-saving hacks
+  - Economic empowerment (BNPL)
+  - Driver/Courier appreciation stories
+
+بخش ۹: معیارهای موفقیت و شاخص‌های کلیدی
+--------------------------------------------------------------------------------
+شاخص‌های کلیدی اصلی:
+  - Daily Active Users (DAU) growth
+  - Cross-service adoption rate
+  - Cost Per Acquisition (CPA) per service
+
+رویکرد اندازه‌گیری: In-app tracking, brand lift surveys, and attribution modeling for OOH using city-specific promo codes.
+معیارهای مقایسه: Maintain >80% market share in ride-hailing and >50% in food delivery.
+
+================================================================================
+پایان گزارش
+================================================================================

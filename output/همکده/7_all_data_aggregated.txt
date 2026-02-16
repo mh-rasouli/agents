@@ -1,0 +1,1044 @@
+====================================================================================================
+تجمیع کامل داده‌ها - ترکیب تمام فایل‌ها
+====================================================================================================
+برند: همکده
+تاریخ تولید: 2026-02-16 09:38:03
+شناسه گزارش: 20260216_093803
+
+این فایل شامل تمام داده‌ها از تمام فایل‌های خروجی تولید شده است:
+  - 0_complete_master_report.txt
+  - 1_brand_profile.json
+  - 2_strategic_insights.json
+  - 3_brands_database.csv
+  - 4_embedding_ready.txt
+  - 5_financial_intelligence.json
+  - 6_executive_summary.md
+  - 7_product_catalog.json
+====================================================================================================
+
+
+####################################################################################################
+# فایل ۰: گزارش جامع (TXT)
+####################################################################################################
+
+================================================================================
+گزارش جامع هوشمند برند
+برند: همکده
+تاریخ تولید: 2026-02-16 09:38:03
+شناسه گزارش: 20260216_093803
+================================================================================
+
+بخش ۱: خلاصه اجرایی
+--------------------------------------------------------------------------------
+خلاصه اجرایی در دسترس نیست.
+
+بخش ۲: پروفایل برند
+--------------------------------------------------------------------------------
+نام برند: همکده
+وبسایت: None
+
+بخش ۳: ساختار شرکتی و روابط
+--------------------------------------------------------------------------------
+شرکت مادر: سامانه مدیریت ارتباط با مشتریان همکده
+
+بخش ۴: دسته‌بندی بازار
+--------------------------------------------------------------------------------
+صنعت: خدمات سلامت و روانشناسی
+کد ISIC: 8620
+مدل کسب‌وکار: B2C
+سطح قیمتی: mid-market
+مخاطبان هدف: Individuals seeking mental health support, Couples and Families, Students and Youth, Remote users
+کانال‌های توزیع: online, direct
+
+بخش ۵: بینش‌ها و فرصت‌های استراتژیک
+--------------------------------------------------------------------------------
+فرصت‌های تبلیغات متقابل (3):
+
+1. برند شریک: Digikala (Health & Personal Care Category)
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+2. برند شریک: Gaj / ChiBeKhoonam
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+3. برند شریک: SnappFood
+   هم‌افزایی: None | اولویت: None
+   بودجه: None
+   مفهوم کمپین: None
+
+بخش ۶: توصیه‌های زمان‌بندی کمپین
+--------------------------------------------------------------------------------
+دوره‌های بهینه:
+  - Shahrivar (Back to school/Back to work prep)
+  - Mehregan (Focus on relationships)
+  - Esfand (Pre-Nowruz 'New Year, New Me' mental decluttering)
+  - Ordibehesht (Exam season stress)
+
+دوره‌های اجتناب:
+  - First week of Nowruz (Total holiday mode)
+  - Ashura/Tasua (Solemn religious period unsuitable for aggressive sales)
+
+بخش ۷: بودجه و کانال‌های توصیه‌شده
+--------------------------------------------------------------------------------
+بودجه تخمینی: 2B - 5B Tomans per Quarter
+معادل دلار: $40,000 - $100,000 (Parallel Market Rate)
+
+تخصیص کانال:
+  - instagram: 40% - Primary engine for awareness and lead-gen via Reels/Stories.
+  - telegram: 15% - High conversion in health/educational channels.
+  - tv: 10% - Late-night VOD or Satellite (GEM/Persiana) for wide reach to housewives.
+  - outdoor: 15% - Billboards in high-traffic Tehran areas (Hemmat/Modarres) for brand authority.
+  - influencers: 20% - Lifestyle and 'Self-care' influencers for social proof.
+
+جزئیات کانال‌ها (3 کانال):
+
+  Instagram Reels - اولویت: high
+  دلیل: Highest organic reach in Iran currently; perfect for 'Common Psychological Signs' videos.
+  بودجه: None
+
+  Telegram Sponsored Messages - اولویت: medium
+  دلیل: Precise targeting of users in 'Psychology' and 'Self-help' channels.
+  بودجه: None
+
+  Tehran Metro/Bus Ads - اولویت: medium
+  دلیل: Targets the commuting 'Anxious Professional' and students during their high-stress transit times.
+  بودجه: None
+
+بخش ۸: جهت‌گیری خلاقیت
+--------------------------------------------------------------------------------
+پیام‌های کلیدی:
+  - {'message_fa': 'حال خوبت رو به تعویق ننداز', 'message_en': "Don't postpone your well-being.", 'target_segment': 'All segments'}
+  - {'message_fa': 'بزرگترین مرکز مشاوره تلفنی ایران، همیشه در کنار شما', 'message_en': "Iran's largest tele-counseling center, always by your side.", 'target_segment': 'Remote users'}
+
+لحن و سبک: Minimalist, clean, and calming. Use of soft blue and white colors. Avoid 'medical' coldness; focus on 'human' warmth.
+توصیه‌های بصری: Authentic Iranian faces, diverse age groups, cozy home environments where counseling takes place via phone.
+
+استراتژی هشتگ: #همکده #مشاوره_تلفنی #سلامت_روان #روانشناسی_خانواده
+
+تم‌های محتوایی:
+  - Breaking the Stigma
+  - Relationship Resilience
+  - Productivity & Mental Health
+
+بخش ۹: معیارهای موفقیت و شاخص‌های کلیدی
+--------------------------------------------------------------------------------
+شاخص‌های کلیدی اصلی:
+  - Cost Per Lead (CPL) for phone inquiries
+  - Number of first-time counseling sessions booked
+  - Retention rate (sessions per user)
+  - Brand Sentiment Score on social media
+
+رویکرد اندازه‌گیری: UTM tracking for all digital ads, unique promo codes for influencers, and post-call surveys asking 'How did you hear about us?'.
+معیارهای مقایسه: Targeting 20% lower CPL than general health platforms like Paziresh24 due to specialization.
+
+================================================================================
+پایان گزارش
+================================================================================
+
+
+####################################################################################################
+# فایل ۱: پروفایل برند (JSON)
+####################################################################################################
+
+پروفایل برند - داده‌های ساختاریافته
+----------------------------------------------------------------------------------------------------
+
+JSON کامل:
+{
+  "brand_intelligence_report": {
+    "generated_date": "2026-02-16",
+    "brand_id": "همکده_20260216_093803",
+    "data_sources": [],
+    "report_version": "1.0"
+  },
+  "basic_information": {
+    "brand_name": "همکده",
+    "brand_name_persian": "همکده",
+    "website": null,
+    "establishment_year": "Unknown",
+    "business_model": "B2C",
+    "service_type": "خدمات سلامت و روانشناسی"
+  },
+  "parent_company_structure": {
+    "immediate_parent": {
+      "name": "سامانه مدیریت ارتباط با مشتریان همکده",
+      "ownership_percentage": null
+    },
+    "ultimate_parent": {},
+    "ownership_chain": []
+  },
+  "brand_relationship_map": {
+    "sister_brands_same_parent": [],
+    "brand_family": [],
+    "total_related_brands": 0
+  },
+  "product_categorization": {
+    "primary_industry": {
+      "name_fa": "خدمات سلامت و روانشناسی",
+      "name_en": "Human Health and Psychology Services",
+      "isic_code": "8620"
+    },
+    "sub_industries": [
+      "Tele-psychology",
+      "Mental Health Counseling",
+      "Family and Marriage Services",
+      "Digital Health (E-Health)"
+    ],
+    "product_categories": [
+      "Online Counseling Sessions",
+      "Telephone Therapy",
+      "Psychological Assessment",
+      "Relationship Coaching",
+      "Child and Adolescent Psychology"
+    ],
+    "service_categories": [],
+    "customer_segments": {
+      "primary": [
+        {
+          "segment": "Individuals seeking mental health support",
+          "description": "Adults dealing with anxiety, depression, or personal growth issues."
+        },
+        {
+          "segment": "Couples and Families",
+          "description": "People looking for relationship advice, marriage counseling, or parenting support."
+        },
+        {
+          "segment": "Students and Youth",
+          "description": "Academic counseling and youth-specific psychological guidance."
+        },
+        {
+          "segment": "Remote users",
+          "description": "Individuals in smaller cities with limited access to in-person elite clinics."
+        }
+      ],
+      "secondary": []
+    },
+    "price_positioning": "mid-market"
+  },
+  "market_intelligence": {
+    "competitive_advantages": [],
+    "market_position": {
+      "positioning_statement": "The largest specialized online psychology center in Iran providing accessible mental health care.",
+      "competitive_advantages": [
+        "Largest network of licensed psychologists",
+        "High accessibility via telephone and online platforms",
+        "Strong regulatory alignment with the Psychology and Counseling Organization of Iran",
+        "24/7 availability for counseling services"
+      ],
+      "market_share_estimate": "leader"
+    },
+    "distribution_channels": [
+      "online",
+      "direct"
+    ]
+  },
+  "contact_information": {},
+  "social_media_presence": {
+    "instagram": {
+      "handle": null,
+      "followers": null
+    },
+    "linkedin": {
+      "handle": null,
+      "followers": null
+    },
+    "twitter": {
+      "handle": null,
+      "followers": null
+    }
+  },
+  "website_intelligence": {}
+}
+
+
+####################################################################################################
+# فایل ۲: بینش‌های استراتژیک (JSON)
+####################################################################################################
+
+بینش‌های استراتژیک - توصیه‌های جامع
+----------------------------------------------------------------------------------------------------
+
+JSON کامل:
+{
+  "strategic_intelligence_report": {
+    "brand": "همکده",
+    "generated_date": "2026-02-16",
+    "analyst": "Brand Intelligence Agent",
+    "confidence_level": "high"
+  },
+  "executive_summary": {
+    "key_insight": "",
+    "primary_opportunities": [
+      "Digikala (Health & Personal Care Category)",
+      "Gaj / ChiBeKhoonam",
+      "SnappFood"
+    ]
+  },
+  "tier_1_opportunities": {
+    "description": "High-priority, high-impact opportunities",
+    "recommendations": [
+      {
+        "opportunity_id": "ST-001",
+        "partner_brand": "Digikala (Health & Personal Care Category)",
+        "rationale": "Customers buying health supplements or wellness books are prime candidates for psychological well-being services.",
+        "potential_reach": "High (Millions of active shoppers)",
+        "recommended_approach": "Discount vouchers for Hamkadeh counseling sessions included in Digikala 'Green' or health-related shipments.",
+        "timing": "Year-round, with peaks during exams or New Year"
+      },
+      {
+        "opportunity_id": "ST-002",
+        "partner_brand": "Gaj / ChiBeKhoonam",
+        "rationale": "High stress levels among Konkur (university entrance exam) candidates and their parents creates a massive demand for academic and anxiety counseling.",
+        "potential_reach": "High (Students and parents nationwide)",
+        "recommended_approach": "Joint webinars on 'Stress Management during Exams' with a lead-gen funnel to Hamkadeh sessions.",
+        "timing": "Bahman to Tir (February - June)"
+      },
+      {
+        "opportunity_id": "ST-003",
+        "partner_brand": "SnappFood",
+        "rationale": "Lifestyle alignment; users frequenting convenience apps value the time-saving nature of tele-health.",
+        "potential_reach": "High (Urban professionals)",
+        "recommended_approach": "Gamified 'Mental Health Check-up' in the Snapp app 'Club' section in exchange for points.",
+        "timing": "Weekends and evening hours when app usage peaks"
+      }
+    ]
+  },
+  "campaign_timing_recommendations": {
+    "optimal_periods": [
+      "Shahrivar (Back to school/Back to work prep)",
+      "Mehregan (Focus on relationships)",
+      "Esfand (Pre-Nowruz 'New Year, New Me' mental decluttering)",
+      "Ordibehesht (Exam season stress)"
+    ],
+    "rationale": "In Iran, the end of the fiscal/solar year (Esfand) is a time for renewal. Conversely, the start of the school year (Mehr) increases domestic stress, driving demand for family counseling.",
+    "seasonal_considerations": "Yalda Night is excellent for 'Family Bonding' themes. Ramadan is a period of reflection and self-improvement suitable for individual therapy ads.",
+    "avoid_periods": [
+      "First week of Nowruz (Total holiday mode)",
+      "Ashura/Tasua (Solemn religious period unsuitable for aggressive sales)"
+    ]
+  },
+  "channel_strategy": {
+    "recommendations": [
+      {
+        "channel": "Instagram Reels",
+        "priority": "high",
+        "rationale": "Highest organic reach in Iran currently; perfect for 'Common Psychological Signs' videos.",
+        "content_suggestions": "Short clips: '3 signs of burnout', 'How to talk to your spouse about money'.",
+        "estimated_reach": "1M+ views per viral clip",
+        "estimated_cost": "Medium"
+      },
+      {
+        "channel": "Telegram Sponsored Messages",
+        "priority": "medium",
+        "rationale": "Precise targeting of users in 'Psychology' and 'Self-help' channels.",
+        "content_suggestions": "Direct link to a free 5-minute phone consultation.",
+        "estimated_reach": "500k impressions",
+        "estimated_cost": "Low-Medium"
+      },
+      {
+        "channel": "Tehran Metro/Bus Ads",
+        "priority": "medium",
+        "rationale": "Targets the commuting 'Anxious Professional' and students during their high-stress transit times.",
+        "content_suggestions": "QR codes for instant 'Stress Tests'.",
+        "estimated_reach": "2M daily commuters",
+        "estimated_cost": "High"
+      }
+    ],
+    "budget_allocation": {
+      "instagram": "40% - Primary engine for awareness and lead-gen via Reels/Stories.",
+      "telegram": "15% - High conversion in health/educational channels.",
+      "tv": "10% - Late-night VOD or Satellite (GEM/Persiana) for wide reach to housewives.",
+      "outdoor": "15% - Billboards in high-traffic Tehran areas (Hemmat/Modarres) for brand authority.",
+      "influencers": "20% - Lifestyle and 'Self-care' influencers for social proof."
+    }
+  },
+  "audience_intelligence": {
+    "primary_segments": [
+      {
+        "name": "The Anxious Professional",
+        "characteristics": "Aged 25-40, living in Tehran or Mashhad, high-stress jobs, active on Instagram/LinkedIn.",
+        "size_estimate": "2-3 Million"
+      },
+      {
+        "name": "Remote Seekers",
+        "characteristics": "Residents of Tier 2/3 cities (e.g., Ilam, Birjand) with limited access to top-tier local clinics.",
+        "size_estimate": "5-7 Million"
+      }
+    ],
+    "overlap_with_sister_brands": "High potential to upsell CRM-driven personalized mental health packages based on user history.",
+    "untapped_segments": [
+      {
+        "segment": "Corporate HR Departments",
+        "opportunity": "B2B mental health packages for employees (EAP).",
+        "approach": "LinkedIn thought-leadership content focusing on 'Productivity through Well-being'."
+      }
+    ],
+    "digital_behavior": "Heavy Instagram usage for discovery; Telegram for educational long-form content and booking bots."
+  },
+  "competitive_strategy": {
+    "positioning": "The 'Digital Hospital' of Mental Health: The largest, most accredited, and accessible counseling network in Iran.",
+    "differentiation_points": [
+      "Official affiliation with the Psychology & Counseling Organization of Iran",
+      "24/7 Telephone accessibility (crucial for Iranian users who prefer talking over typing)",
+      "Largest pool of licensed specialists compared to Snapp Doctor's generalist approach"
+    ],
+    "competitive_advantages_to_highlight": [
+      "Privacy and Anonymity (highly valued in Iranian culture regarding mental health)",
+      "Immediate connection (No waiting lists)",
+      "Specialized matching (Right doctor for the right problem)"
+    ],
+    "messaging_pillars": [
+      "Expertise & Accreditation",
+      "Accessibility (Everywhere, Anytime)",
+      "Cultural Understanding (Iranian family dynamics)"
+    ],
+    "tone_of_voice": "Empathetic, professional, trustworthy, yet modern and non-judgmental."
+  },
+  "budget_allocation_recommendation": {
+    "estimated_range_tomans": "2B - 5B Tomans per Quarter",
+    "estimated_range_usd": "$40,000 - $100,000 (Parallel Market Rate)",
+    "allocation_by_channel": {
+      "instagram": "40% - Primary engine for awareness and lead-gen via Reels/Stories.",
+      "telegram": "15% - High conversion in health/educational channels.",
+      "tv": "10% - Late-night VOD or Satellite (GEM/Persiana) for wide reach to housewives.",
+      "outdoor": "15% - Billboards in high-traffic Tehran areas (Hemmat/Modarres) for brand authority.",
+      "influencers": "20% - Lifestyle and 'Self-care' influencers for social proof."
+    },
+    "rationale": "As a market leader, Hamkadeh needs to maintain 'Top of Mind' status while aggressively capturing leads via digital channels.",
+    "roi_expectations": "3:1 Return on Ad Spend (ROAS) based on first-session bookings and LTV of returning patients."
+  },
+  "creative_direction": {
+    "key_messages": [
+      {
+        "message_fa": "حال خوبت رو به تعویق ننداز",
+        "message_en": "Don't postpone your well-being.",
+        "target_segment": "All segments"
+      },
+      {
+        "message_fa": "بزرگترین مرکز مشاوره تلفنی ایران، همیشه در کنار شما",
+        "message_en": "Iran's largest tele-counseling center, always by your side.",
+        "target_segment": "Remote users"
+      }
+    ],
+    "tone_and_style": "Minimalist, clean, and calming. Use of soft blue and white colors. Avoid 'medical' coldness; focus on 'human' warmth.",
+    "visual_recommendations": "Authentic Iranian faces, diverse age groups, cozy home environments where counseling takes place via phone.",
+    "cultural_considerations": "Respect family values but gently challenge the stigma of 'going to a shrink'. Use the term 'Moshavere' (Consultation) rather than 'Ravandarmany' (Psychotherapy) for broader appeal.",
+    "hashtag_strategy": [
+      "#همکده",
+      "#مشاوره_تلفنی",
+      "#سلامت_روان",
+      "#روانشناسی_خانواده"
+    ],
+    "influencer_suggestions": "Lifestyle influencers (e.g., mothers, young professionals) and 'Soft-Science' educators.",
+    "content_themes": [
+      "Breaking the Stigma",
+      "Relationship Resilience",
+      "Productivity & Mental Health"
+    ],
+    "storytelling_angle": "The 'Before and After' of a person who felt stuck in a dark room and found a window through a simple phone call."
+  },
+  "kpi_tracking": {
+    "primary_kpis": [
+      "Cost Per Lead (CPL) for phone inquiries",
+      "Number of first-time counseling sessions booked",
+      "Retention rate (sessions per user)",
+      "Brand Sentiment Score on social media"
+    ],
+    "measurement_approach": "UTM tracking for all digital ads, unique promo codes for influencers, and post-call surveys asking 'How did you hear about us?'.",
+    "benchmarks": "Targeting 20% lower CPL than general health platforms like Paziresh24 due to specialization."
+  }
+}
+
+
+####################################################################################################
+# فایل ۳: پایگاه داده برندها (CSV)
+####################################################################################################
+
+پایگاه داده برندها - جدول برندهای مرتبط
+----------------------------------------------------------------------------------------------------
+
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+همکده,SELF,سامانه مدیریت ارتباط با مشتریان همکده,Human Health and Psychology Services,Consumer_Products,General_Products,Human_Health_and_Psychology_Services,SELF,leader,mid-market
+Sarem,COMPETITOR,Unknown,Psychology and Health Services,Consumer_Products,General_Products,Psychology_and_Health_Services,NONE,challenger,mid-market
+Paziresh24,COMPETITOR,Unknown,Online Medical and Counseling,Consumer_Products,General_Products,Online_Medical_and_Counseling,NONE,leader,mid-market
+Doctor Dr,COMPETITOR,Unknown,Online Medical and Counseling,Consumer_Products,General_Products,Online_Medical_and_Counseling,NONE,challenger,mid-market
+Snapp Doctor,COMPETITOR,Unknown,Telemedicine and Counseling,Consumer_Products,General_Products,Telemedicine_and_Counseling,NONE,leader,economy
+FaraMoshavere,SIMILAR,Unknown,Psychology Services,Consumer_Products,General_Products,Psychology_Services,LOW,Unknown,mid-market
+Moshver.com,SIMILAR,Unknown,Online Counseling,Consumer_Products,General_Products,Online_Counseling,LOW,Unknown,mid-market
+SnappFood,COMPLEMENTARY,Unknown,Lifestyle and Delivery,Consumer_Products,General_Products,Lifestyle_and_Delivery,MEDIUM,Unknown,mid-market
+Digikala,COMPLEMENTARY,Unknown,E-commerce,Consumer_Products,General_Products,E_commerce,HIGH,Unknown,mid-market
+Gaj,COMPLEMENTARY,Unknown,Education,Consumer_Products,General_Products,Education,HIGH,Unknown,mid-market
+Digikala (Health & Personal Care Category),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+Gaj / ChiBeKhoonam,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+
+
+
+####################################################################################################
+# فایل ۴: متن آماده Embedding
+####################################################################################################
+
+پروفایل برند: همکده
+
+اطلاعات پایه
+همکده یک برند فعال در صنعت خدمات سلامت و روانشناسی است.
+این برند متعلق به سامانه مدیریت ارتباط با مشتریان همکده است که با نماد بورس نامشخص فعالیت می‌کند.
+
+ساختار شرکتی
+ساختار شرکتی همکده نشان‌دهنده یک سلسله‌مراتب پیچیده از مالکیت و مدیریت برند است.
+به عنوان یک شرکت تابعه مستقیم سامانه مدیریت ارتباط با مشتریان همکده، این برند از شبکه‌های توزیع مستقر، 
+تخصص عملیاتی و ثبات مالی بهره‌مند می‌شود. شرکت مادر در بخش محصولات مصرفی فعالیت می‌کند 
+و هم‌راستایی استراتژیک و هم‌افزایی را در سبد برندها فراهم می‌آورد.
+
+خانواده برند - برندهای خواهر
+موقعیت‌یابی بازار
+همکده با مدل کسب‌وکار B2C فعالیت می‌کند، 
+با هدف‌گذاری به Individuals seeking mental health support, Couples and Families, Students and Youth, Remote users.
+این برند در سطح قیمتی mid-market قرار دارد 
+و بین کیفیت و مقرون‌به‌صرفه بودن تعادل ایجاد می‌کند تا بیشترین سهم بازار را به دست آورد.
+
+موقعیت بازار: رقابتی.
+چشم‌انداز رقابتی: پویا و رقابتی.
+کانال‌های توزیع شامل online, direct است، 
+که پوشش گسترده بازار و دسترسی به مصرف‌کنندگان هدف را تضمین می‌کند.
+
+فرصت‌های استراتژیک
+تحلیل نشان می‌دهد 3 فرصت با پتانسیل بالا برای تبلیغات متقابل:
+
+1. همکاری با Digikala (Health & Personal Care Category)
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+2. همکاری با Gaj / ChiBeKhoonam
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+3. همکاری با SnappFood
+   سطح هم‌افزایی: None
+   مفهوم کمپین: None
+   مخاطب هدف: None
+   بودجه تخمینی: None
+   منافع مورد انتظار: None
+   سختی اجرا: None
+
+توصیه‌های زمان‌بندی کمپین
+دوره‌های بهینه کمپین برای حداکثر تأثیر:
+- Shahrivar (Back to school/Back to work prep): تعامل و هزینه بالای مصرف‌کننده
+- Mehregan (Focus on relationships): تعامل و هزینه بالای مصرف‌کننده
+- Esfand (Pre-Nowruz 'New Year, New Me' mental decluttering): تعامل و هزینه بالای مصرف‌کننده
+- Ordibehesht (Exam season stress): تعامل و هزینه بالای مصرف‌کننده
+
+دوره‌هایی که باید از کمپین‌های تجاری اجتناب کرد:
+- First week of Nowruz (Total holiday mode)
+- Ashura/Tasua (Solemn religious period unsuitable for aggressive sales)
+
+توصیه‌های بودجه و سرمایه‌گذاری
+بودجه تبلیغاتی سالانه توصیه‌شده: 2B - 5B Tomans per Quarter
+معادل دلار: $40,000 - $100,000 (Parallel Market Rate)
+بازده مورد انتظار سرمایه: 3:1 Return on Ad Spend (ROAS) based on first-session bookings and LTV of returning patients.
+
+تخصیص کانال توصیه‌شده:
+- instagram: 40% - Primary engine for awareness and lead-gen via Reels/Stories.
+- telegram: 15% - High conversion in health/educational channels.
+- tv: 10% - Late-night VOD or Satellite (GEM/Persiana) for wide reach to housewives.
+- outdoor: 15% - Billboards in high-traffic Tehran areas (Hemmat/Modarres) for brand authority.
+- influencers: 20% - Lifestyle and 'Self-care' influencers for social proof.
+
+استراتژی کانال‌های بازاریابی
+Instagram Reels (اولویت: high)
+  دلیل: Highest organic reach in Iran currently; perfect for 'Common Psychological Signs' videos.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
+
+Telegram Sponsored Messages (اولویت: medium)
+  دلیل: Precise targeting of users in 'Psychology' and 'Self-help' channels.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
+
+Tehran Metro/Bus Ads (اولویت: medium)
+  دلیل: Targets the commuting 'Anxious Professional' and students during their high-stress transit times.
+  نوع محتوا: محتوای ترکیبی
+  تخصیص بودجه: نامشخص
+
+جهت‌گیری خلاقانه و پیام‌رسانی
+پیام‌های کلیدی برند:
+- {'message_fa': 'حال خوبت رو به تعویق ننداز', 'message_en': "Don't postpone your well-being.", 'target_segment': 'All segments'}
+- {'message_fa': 'بزرگترین مرکز مشاوره تلفنی ایران، همیشه در کنار شما', 'message_en': "Iran's largest tele-counseling center, always by your side.", 'target_segment': 'Remote users'}
+
+لحن و سبک: Minimalist, clean, and calming. Use of soft blue and white colors. Avoid 'medical' coldness; focus on 'human' warmth.
+توصیه‌های بصری: Authentic Iranian faces, diverse age groups, cozy home environments where counseling takes place via phone.
+ملاحظات فرهنگی: Respect family values but gently challenge the stigma of 'going to a shrink'. Use the term 'Moshavere' (Consultation) rather than 'Ravandarmany' (Psychotherapy) for broader appeal.
+
+معیارهای موفقیت و شاخص‌های کلیدی
+شاخص‌های کلیدی اصلی برای موفقیت کمپین:
+- Cost Per Lead (CPL) for phone inquiries
+- Number of first-time counseling sessions booked
+- Retention rate (sessions per user)
+- Brand Sentiment Score on social media
+
+رویکرد اندازه‌گیری: UTM tracking for all digital ads, unique promo codes for influencers, and post-call surveys asking 'How did you hear about us?'.
+معیارهای مقایسه: Targeting 20% lower CPL than general health platforms like Paziresh24 due to specialization.
+
+
+####################################################################################################
+# فایل ۵: هوشمندی مالی (JSON)
+####################################################################################################
+
+هوشمندی مالی - تحلیل شرکت مادر
+----------------------------------------------------------------------------------------------------
+
+JSON کامل:
+{
+  "financial_intelligence_report": {
+    "report_date": "2026-02-16",
+    "data_sources": [
+      "Parent company disclosures",
+      "Market estimates",
+      "Industry analysis"
+    ],
+    "confidence_level": "medium"
+  },
+  "parent_company_overview": {
+    "name": "سامانه مدیریت ارتباط با مشتریان همکده",
+    "stock_symbol": "N/A",
+    "market": "Private",
+    "industry": "Unknown"
+  },
+  "ownership_structure": {
+    "immediate_parent": "سامانه مدیریت ارتباط با مشتریان همکده",
+    "ultimate_parent": "Unknown",
+    "ownership_percentage": "Unknown",
+    "public_float": "Unknown"
+  },
+  "market_capitalization": {
+    "estimate": "Unknown",
+    "currency": "Iranian Toman",
+    "calculation_method": "Industry estimates"
+  },
+  "advertising_intelligence_framework": {
+    "industry_standards": "2-5% of revenue for FMCG",
+    "competitive_benchmarks": "Leading brands invest 3-7% of revenue",
+    "recommended_range": "mid-market tier: 2-4% of estimated revenue"
+  },
+  "estimated_advertising_budget": {
+    "annual_estimate_tomans": "500M-1B Tomans",
+    "annual_estimate_usd": "$10K-$20K",
+    "basis": "Industry standards and price tier positioning",
+    "confidence": "medium"
+  }
+}
+
+
+####################################################################################################
+# فایل ۶: خلاصه اجرایی (MARKDOWN)
+####################################################################################################
+
+# گزارش هوشمند برند: همکده
+
+## خلاصه اجرایی
+
+**تاریخ گزارش:** 2026-02-16
+**برند:** همکده
+**صنعت:** خدمات سلامت و روانشناسی
+**مدل کسب‌وکار:** B2C
+
+---
+
+## 🎯 خلاصه استراتژیک
+
+همکده نماینده یک فرصت استراتژیک در بازار خدمات سلامت و روانشناسی ایران است.
+
+---
+
+## 📊 بررسی کلی برند
+
+### هویت برند
+
+- **نام برند:** همکده
+- **شرکت مادر:** سامانه مدیریت ارتباط با مشتریان همکده
+
+### موقعیت‌یابی بازار
+
+- **صنعت:** خدمات سلامت و روانشناسی
+- **سطح قیمتی:** Mid-Market
+- **مخاطب هدف:** Individuals Seeking Mental Health Support, Couples And Families, Students And Youth, Remote Users
+- **کانال‌های توزیع:** Online, Direct
+
+---
+
+## 🏢 ساختار شرکتی
+
+### شرکت مادر
+
+**سامانه مدیریت ارتباط با مشتریان همکده** به عنوان شرکت مادر مستقیم، موارد زیر را فراهم می‌کند:
+
+- پشتیبانی مالی و ثبات
+- شبکه‌های توزیع مستقر
+- تخصص عملیاتی و بهترین شیوه‌ها
+- دسترسی به زیرساخت بازار محصولات مصرفی
+
+---
+
+## 👨‍👩‍👧‍👦 خانواده برند و روابط
+
+---
+
+## 💡 فرصت‌های استراتژیک
+
+### 3 فرصت برتر تبلیغات متقابل
+
+#### 1. Digikala (Health & Personal Care Category) 🟡
+
+**سطح هم‌افزایی:** None
+**اولویت:** MEDIUM
+
+**مفهوم کمپین:**
+None
+
+**مخاطب هدف:** None
+**بودجه تخمینی:** None
+**منفعت مورد انتظار:** None
+**اجرا:** سختی متوسط
+
+#### 2. Gaj / ChiBeKhoonam 🟡
+
+**سطح هم‌افزایی:** None
+**اولویت:** MEDIUM
+
+**مفهوم کمپین:**
+None
+
+**مخاطب هدف:** None
+**بودجه تخمینی:** None
+**منفعت مورد انتظار:** None
+**اجرا:** سختی متوسط
+
+#### 3. SnappFood 🟡
+
+**سطح هم‌افزایی:** None
+**اولویت:** MEDIUM
+
+**مفهوم کمپین:**
+None
+
+**مخاطب هدف:** None
+**بودجه تخمینی:** None
+**منفعت مورد انتظار:** None
+**اجرا:** سختی متوسط
+
+---
+
+## 📅 استراتژی زمان‌بندی کمپین
+
+### دوره‌های بهینه کمپین
+
+- **Shahrivar (Back to school/Back to work prep)**
+- **Mehregan (Focus on relationships)**
+- **Esfand (Pre-Nowruz 'New Year, New Me' mental decluttering)**
+- **Ordibehesht (Exam season stress)**
+
+### دوره‌های اجتناب
+
+- First week of Nowruz (Total holiday mode)
+- Ashura/Tasua (Solemn religious period unsuitable for aggressive sales)
+
+**زمینه فرهنگی:** Yalda Night is excellent for 'Family Bonding' themes. Ramadan is a period of reflection and self-improvement suitable for individual therapy ads.
+
+---
+
+## 💰 توصیه‌های بودجه و کانال
+
+### بودجه توصیه‌شده
+
+- **بودجه سالانه:** 2B - 5B Tomans per Quarter
+- **معادل دلار:** $40,000 - $100,000 (Parallel Market Rate)
+- **بازده مورد انتظار:** 3:1 Return on Ad Spend (ROAS) based on first-session bookings and LTV of returning patients.
+
+**دلیل:** As a market leader, Hamkadeh needs to maintain 'Top of Mind' status while aggressively capturing leads via digital channels.
+
+### تخصیص کانال
+
+| کانال | تخصیص |
+|---------|------------|
+| instagram | 40% - Primary engine for awareness and lead-gen via Reels/Stories. |
+| telegram | 15% - High conversion in health/educational channels. |
+| tv | 10% - Late-night VOD or Satellite (GEM/Persiana) for wide reach to housewives. |
+| outdoor | 15% - Billboards in high-traffic Tehran areas (Hemmat/Modarres) for brand authority. |
+| influencers | 20% - Lifestyle and 'Self-care' influencers for social proof. |
+
+### جزئیات استراتژی کانال
+
+#### Instagram Reels - 🔴 بالا
+
+**دلیل:** Highest organic reach in Iran currently; perfect for 'Common Psychological Signs' videos.
+**نوع محتوا:** None
+**تخصیص بودجه:** None
+
+#### Telegram Sponsored Messages - 🟡 متوسط
+
+**دلیل:** Precise targeting of users in 'Psychology' and 'Self-help' channels.
+**نوع محتوا:** None
+**تخصیص بودجه:** None
+
+#### Tehran Metro/Bus Ads - 🟡 متوسط
+
+**دلیل:** Targets the commuting 'Anxious Professional' and students during their high-stress transit times.
+**نوع محتوا:** None
+**تخصیص بودجه:** None
+
+---
+
+## 🎨 جهت‌گیری خلاقیت
+
+### پیام‌های کلیدی برند
+
+- {'message_fa': 'حال خوبت رو به تعویق ننداز', 'message_en': "Don't postpone your well-being.", 'target_segment': 'All segments'}
+- {'message_fa': 'بزرگترین مرکز مشاوره تلفنی ایران، همیشه در کنار شما', 'message_en': "Iran's largest tele-counseling center, always by your side.", 'target_segment': 'Remote users'}
+
+**لحن و سبک:** Minimalist, clean, and calming. Use of soft blue and white colors. Avoid 'medical' coldness; focus on 'human' warmth.
+
+**راهنمای بصری:** Authentic Iranian faces, diverse age groups, cozy home environments where counseling takes place via phone.
+
+**ملاحظات فرهنگی:** Respect family values but gently challenge the stigma of 'going to a shrink'. Use the term 'Moshavere' (Consultation) rather than 'Ravandarmany' (Psychotherapy) for broader appeal.
+
+**استراتژی هشتگ:**
+
+#همکده #مشاوره_تلفنی #سلامت_روان #روانشناسی_خانواده
+
+### تم‌های محتوایی
+
+- Breaking the Stigma
+- Relationship Resilience
+- Productivity & Mental Health
+
+**داستان برند:** The 'Before and After' of a person who felt stuck in a dark room and found a window through a simple phone call.
+
+---
+
+## 📈 معیارهای موفقیت و شاخص‌های کلیدی
+
+### شاخص‌های کلیدی اصلی
+
+- Cost Per Lead (CPL) for phone inquiries
+- Number of first-time counseling sessions booked
+- Retention rate (sessions per user)
+- Brand Sentiment Score on social media
+
+**رویکرد اندازه‌گیری:** UTM tracking for all digital ads, unique promo codes for influencers, and post-call surveys asking 'How did you hear about us?'.
+
+**معیارهای مقایسه:** Targeting 20% lower CPL than general health platforms like Paziresh24 due to specialization.
+
+---
+
+## 🎯 استراتژی رقابتی
+
+**موقعیت‌یابی:** The 'Digital Hospital' of Mental Health: The largest, most accredited, and accessible counseling network in Iran.
+
+### نقاط تمایز
+
+- Official affiliation with the Psychology & Counseling Organization of Iran
+- 24/7 Telephone accessibility (crucial for Iranian users who prefer talking over typing)
+- Largest pool of licensed specialists compared to Snapp Doctor's generalist approach
+
+### مزایای رقابتی
+
+- Privacy and Anonymity (highly valued in Iranian culture regarding mental health)
+- Immediate connection (No waiting lists)
+- Specialized matching (Right doctor for the right problem)
+
+### ستون‌های پیام‌رسانی
+
+1. Expertise & Accreditation
+1. Accessibility (Everywhere, Anytime)
+1. Cultural Understanding (Iranian family dynamics)
+
+---
+
+## 🎬 نتیجه‌گیری و مراحل بعدی
+
+این تحلیل جامع از همکده فرصت‌های قابل توجهی برای رشد را آشکار می‌سازد 
+از طریق مشارکت‌های استراتژیک برند، زمان‌بندی هدفمند کمپین و رویکردهای بازاریابی چندکاناله.
+
+**اقدامات فوری توصیه‌شده:**
+
+1. آغاز مذاکرات با 3 برند خواهر برتر برای کمپین‌های تبلیغات متقابل
+2. توسعه برنامه‌های تفصیلی کمپین برای دوره‌های فصلی بهینه
+3. تخصیص بودجه بازاریابی طبق توزیع کانال توصیه‌شده
+4. پیاده‌سازی زیرساخت ردیابی شاخص‌های کلیدی برای سنجش کمپین
+5. آغاز توسعه خلاقانه همراستا با ستون‌های پیام‌رسانی برند
+
+---
+
+*گزارش تولیدشده توسط عامل هوشمند برند در 2026-02-16 09:38:03*
+
+
+####################################################################################################
+# فایل ۷: کاتالوگ کامل محصولات (JSON)
+####################################################################################################
+
+کاتالوگ کامل محصولات
+----------------------------------------------------------------------------------------------------
+
+JSON کامل:
+{
+  "brand_intelligence_product_catalog": {
+    "brand_name": "همکده",
+    "generated_date": "2026-02-16 09:38:03",
+    "report_id": "20260216_093803",
+    "extraction_method": "automated",
+    "data_quality": "limited"
+  },
+  "catalog_summary": {
+    "total_products": 0,
+    "total_therapeutic_areas": 0,
+    "total_categories": 5,
+    "product_lines": []
+  },
+  "therapeutic_areas": [],
+  "product_categories": [
+    {
+      "category_name": "مشاوره خانواده و ازدواج",
+      "products": [
+        {
+          "product_name": "مشاوره پیش از ازدواج",
+          "description": "بررسی تفاهم، ویژگی‌های شخصیتی و آمادگی زوجین برای شروع زندگی مشترک.",
+          "target_market": "افراد در آستانه ازدواج",
+          "details": "شامل تست‌های روانشناختی و جلسات تحلیل رفتار"
+        },
+        {
+          "product_name": "مشاوره حل اختلافات زناشویی",
+          "description": "بهبود روابط بین زوجین، مدیریت تعارضات و بازسازی اعتماد.",
+          "target_market": "زوج‌های دارای چالش‌های عاطفی و ارتباطی",
+          "details": "ارائه راهکارهای بهبود صمیمیت و مهارت‌های گفتگو"
+        },
+        {
+          "product_name": "مشاوره طلاق",
+          "description": "کاهش آسیب‌های روانی ناشی از جدایی و مدیریت بحران‌های پس از طلاق.",
+          "target_market": "افراد در حال جدایی یا پس از طلاق",
+          "details": "تمرکز بر تاب‌آوری و سلامت روان فرزندان"
+        }
+      ]
+    },
+    {
+      "category_name": "اختلالات روانشناختی",
+      "products": [
+        {
+          "product_name": "درمان افسردگی",
+          "description": "تشخیص و درمان انواع افسردگی از جمله افسردگی اساسی و فصلی.",
+          "target_market": "افراد دارای افت خلق، ناامیدی و بی‌‌لذتی",
+          "details": "استفاده از رویکردهای CBT و طرحواره درمانی"
+        },
+        {
+          "product_name": "درمان اضطراب و استرس",
+          "description": "مدیریت اضطراب فراگیر، حملات پانیک و استرس‌های شغلی/تحصیلی.",
+          "target_market": "عموم مردم با درگیری‌های ذهنی و استرسی",
+          "details": "آموزش تکنیک‌های ریلکسیشن و کنترل افکار مزاحم"
+        },
+        {
+          "product_name": "درمان وسواس (OCD)",
+          "description": "درمان وسواس‌های فکری و عملی جهت بهبود کیفیت زندگی روزمره.",
+          "target_market": "افراد دارای رفتارهای تکراری یا افکار آزاردهنده",
+          "details": "رویکرد مواجهه و جلوگیری از پاسخ"
+        }
+      ]
+    },
+    {
+      "category_name": "کودک و نوجوان",
+      "products": [
+        {
+          "product_name": "مشاوره تربیتی کودک",
+          "description": "آموزش شیوه‌های فرزندپروری و مدیریت رفتارهای چالش‌برانگیز کودکان.",
+          "target_market": "والدین",
+          "details": "تمرکز بر تقویت رابطه والد-کودک"
+        },
+        {
+          "product_name": "مشاوره بلوغ و نوجوانی",
+          "description": "بررسی چالش‌های دوره بلوغ، بحران هویت و افت تحصیلی.",
+          "target_market": "نوجوانان و والدین آن‌ها",
+          "details": "بهبود ارتباط بین‌نسلی"
+        }
+      ]
+    },
+    {
+      "category_name": "توسعه فردی",
+      "products": [
+        {
+          "product_name": "افزایش اعتماد به نفس و عزت نفس",
+          "description": "کار بر روی باورهای خودپنداره و توانمندی‌های فردی.",
+          "target_market": "افراد جویای رشد فردی و اجتماعی",
+          "details": "شناسایی نقاط قوت و رفع موانع ذهنی"
+        },
+        {
+          "product_name": "مدیریت خشم",
+          "description": "آموزش کنترل هیجانات آنی و ابراز صحیح ناراحتی.",
+          "target_market": "افراد دارای تکانشگری یا پرخاشگری",
+          "details": "تکنیک‌های خودکنترلی"
+        }
+      ]
+    },
+    {
+      "category_name": "سایر خدمات تخصصی",
+      "products": [
+        {
+          "product_name": "مشاوره تلفنی و آنلاین",
+          "description": "دسترسی سریع به روانشناسان متخصص بدون محدودیت جغرافیایی.",
+          "target_market": "ایرانیان داخل و خارج از کشور",
+          "details": "پشتیبانی شبانه‌روزی و حفظ محرمانگی"
+        },
+        {
+          "product_name": "تست‌های روانسنجی",
+          "description": "اجرای تست‌های معتبر شخصیت، هوش و سلامت روان.",
+          "target_market": "مراجعین نیازمند ارزیابی دقیق",
+          "details": "تفسیر توسط متخصصین روانسنجی"
+        }
+      ]
+    }
+  ],
+  "complete_product_list": [],
+  "services_list": [],
+  "market_intelligence": {},
+  "metadata": {},
+  "corporate_relationships": {
+    "parent_company": "سامانه مدیریت ارتباط با مشتریان همکده",
+    "ultimate_parent": "Unknown",
+    "manufacturing_subsidiaries": [
+      "Unknown"
+    ],
+    "marketing_distribution_role": {
+      "role": "Manufacturing/Product Brand",
+      "description": "همکده is a product/manufacturing brand"
+    }
+  },
+  "industry_classification": {
+    "primary_industry": {
+      "name_fa": "خدمات سلامت و روانشناسی",
+      "name_en": "Human Health and Psychology Services",
+      "isic_code": "8620"
+    },
+    "sub_industries": [
+      "Tele-psychology",
+      "Mental Health Counseling",
+      "Family and Marriage Services",
+      "Digital Health (E-Health)"
+    ],
+    "business_model": "B2C"
+  }
+}
+
+
+====================================================================================================
+پایان فایل تجمیع داده‌ها
+====================================================================================================
+تعداد کل بخش‌ها: ترکیب 9 فایل
+تاریخ تولید: 2026-02-16 09:38:03
+====================================================================================================

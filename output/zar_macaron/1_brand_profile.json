@@ -1,0 +1,103 @@
+{
+  "brand_intelligence_report": {
+    "generated_date": "2026-02-15",
+    "brand_id": "zar_macaron_20260215_090238",
+    "data_sources": [
+      "example",
+      "rasmio",
+      "codal",
+      "web_search",
+      "tsetmc",
+      "linka"
+    ],
+    "report_version": "1.0"
+  },
+  "basic_information": {
+    "brand_name": "Zar_Macaron",
+    "brand_name_persian": "",
+    "website": "https://www.zarmacaron.com/",
+    "establishment_year": "Unknown",
+    "business_model": "B2C",
+    "service_type": ""
+  },
+  "parent_company_structure": {
+    "immediate_parent": {},
+    "ultimate_parent": {},
+    "ownership_chain": []
+  },
+  "brand_relationship_map": {
+    "sister_brands_same_parent": [],
+    "brand_family": [],
+    "total_related_brands": 0
+  },
+  "product_categorization": {
+    "primary_industry": {
+      "name_en": "Confectionery_&_Biscuits",
+      "name_fa": "",
+      "isic_code": "1073",
+      "category_level_1": "Food_&_Beverage",
+      "category_level_2": "Sweet_Snacks",
+      "category_level_3": "Macarons_&_Cookies"
+    },
+    "sub_industries": [],
+    "product_categories": [],
+    "service_categories": [],
+    "customer_segments": {
+      "primary": [
+        "general_public"
+      ],
+      "secondary": []
+    },
+    "price_positioning": "economy_to_mid"
+  },
+  "market_intelligence": {
+    "competitive_advantages": [],
+    "market_position": {
+      "positioning": "unknown",
+      "estimated_market_share": "unknown",
+      "competitive_landscape": "competitive"
+    },
+    "distribution_channels": [
+      "retail",
+      "online"
+    ]
+  },
+  "contact_information": {
+    "emails": [],
+    "phones": [],
+    "addresses": []
+  },
+  "social_media_presence": {
+    "instagram": {
+      "handle": null,
+      "followers": null,
+      "engagement_rate": null,
+      "posts_count": null,
+      "average_likes": null,
+      "average_comments": null
+    },
+    "telegram": {
+      "handle": null,
+      "members": null,
+      "posts_count": null
+    },
+    "twitter": {
+      "handle": null,
+      "followers": null
+    },
+    "linkedin": {
+      "handle": null,
+      "followers": null
+    },
+    "aparat": {
+      "handle": null,
+      "subscribers": null
+    }
+  },
+  "website_intelligence": {
+    "title": null,
+    "meta_description": null,
+    "is_javascript_site": false,
+    "data_richness": 0.0
+  }
+}

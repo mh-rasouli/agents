@@ -1,0 +1,173 @@
+پروفایل برند: Active Cleaners
+
+اطلاعات پایه
+Active Cleaners یک برند فعال در صنعت خدمات نظافتی است.
+این برند متعلق به پدیده شیمی قرن است که با نماد بورس قرن فعالیت می‌کند.
+شرکت مادر نهایی گروه صنعتی گلرنگ است، 
+یکی از بزرگترین گروه‌های صنعتی ایران با 60+ برند 
+و ارزش بازار تخمینی بیش از 50 هزار میلیارد تومان.
+
+ساختار شرکتی
+ساختار شرکتی Active Cleaners نشان‌دهنده یک سلسله‌مراتب پیچیده از مالکیت و مدیریت برند است.
+به عنوان یک شرکت تابعه مستقیم پدیده شیمی قرن، این برند از شبکه‌های توزیع مستقر، 
+تخصص عملیاتی و ثبات مالی بهره‌مند می‌شود. شرکت مادر در بخش شوینده و بهداشتی فعالیت می‌کند 
+و هم‌راستایی استراتژیک و هم‌افزایی را در سبد برندها فراهم می‌آورد.
+
+خانواده برند - برندهای خواهر
+Active Cleaners بخشی از خانواده‌ای متشکل از 5 برند خواهر تحت شرکت مادر یکسان است.
+این برندهای خواهر فرصت‌های قابل توجهی برای تبلیغات متقابل و بازاریابی یکپارچه ایجاد می‌کنند:
+
+- Active Home: تخصص در مایع ظرفشویی، شوینده سطوح، 
+  هدف‌گذاری به خانواده‌ها با امتیاز هم‌افزایی VERY_HIGH.
+  این برند در دسته cleaning_products با قیمت‌گذاری economy_to_mid فعالیت می‌کند.
+
+- پاکشو: تخصص در پودر لباسشویی، 
+  هدف‌گذاری به عموم مردم با امتیاز هم‌افزایی HIGH.
+  این برند در دسته laundry با قیمت‌گذاری economy فعالیت می‌کند.
+
+- Ave: تخصص در مایع لباسشویی، نرم‌کننده، 
+  هدف‌گذاری به خانواده‌های شهری با امتیاز هم‌افزایی HIGH.
+  این برند در دسته laundry با قیمت‌گذاری mid فعالیت می‌کند.
+
+- تاژ: تخصص در پودر ماشین ظرفشویی، 
+  هدف‌گذاری به خانواده‌های مدرن با امتیاز هم‌افزایی HIGH.
+  این برند در دسته dishwashing با قیمت‌گذاری mid فعالیت می‌کند.
+
+- Sana: تخصص در محصولات بهداشتی، 
+  هدف‌گذاری به خانواده‌ها با امتیاز هم‌افزایی MEDIUM.
+  این برند در دسته hygiene با قیمت‌گذاری mid فعالیت می‌کند.
+
+خانواده گسترده‌تر برند شامل 13 برند در دسته‌های متعدد است:
+- Active Home (دسته cleaning_products) تحت پدیده شیمی قرن
+- پاکشو (دسته laundry) تحت پدیده شیمی قرن
+- Ave (دسته laundry) تحت پدیده شیمی قرن
+- تاژ (دسته dishwashing) تحت پدیده شیمی قرن
+- Sana (دسته hygiene) تحت پدیده شیمی قرن
+- Bonux (دسته laundry) تحت شیمیایی پاکنام
+- Ariel (دسته laundry) تحت شیمیایی پاکنام
+- Mihan (دسته distribution) تحت گلرنگ پخش
+- شیرین‌عسل (دسته confectionery) تحت صنایع غذایی شیرین عسل
+- ماهان (دسته confectionery) تحت صنایع غذایی شیرین عسل
+- Top Top (دسته confectionery) تحت صنایع غذایی شیرین عسل
+- پاکی (دسته dairy) تحت لبنیات پاکی
+- Sadolin (دسته paint) تحت رنگ‌های صنعتی شرق
+
+موقعیت‌یابی بازار
+Active Cleaners با مدل کسب‌وکار B2C فعالیت می‌کند، 
+با هدف‌گذاری به urban_professionals.
+این برند در سطح قیمتی mid_to_premium قرار دارد 
+و بین کیفیت و مقرون‌به‌صرفه بودن تعادل ایجاد می‌کند تا بیشترین سهم بازار را به دست آورد.
+
+موقعیت بازار: unknown.
+چشم‌انداز رقابتی: competitive.
+کانال‌های توزیع شامل online است، 
+که پوشش گسترده بازار و دسترسی به مصرف‌کنندگان هدف را تضمین می‌کند.
+
+فرصت‌های استراتژیک
+تحلیل نشان می‌دهد 5 فرصت با پتانسیل بالا برای تبلیغات متقابل:
+
+1. همکاری با Active Home
+   سطح هم‌افزایی: VERY_HIGH
+   مفهوم کمپین: Joint campaign highlighting complementary products between Active Cleaners and Active Home
+   مخاطب هدف: خانواده‌ها
+   بودجه تخمینی: 50-100 million Tomans
+   منافع مورد انتظار: Increased brand awareness and cross-selling
+   سختی اجرا: low
+
+2. همکاری با پاکشو
+   سطح هم‌افزایی: HIGH
+   مفهوم کمپین: Joint campaign highlighting complementary products between Active Cleaners and پاکشو
+   مخاطب هدف: عموم مردم
+   بودجه تخمینی: 50-100 million Tomans
+   منافع مورد انتظار: Increased brand awareness and cross-selling
+   سختی اجرا: low
+
+3. همکاری با Ave
+   سطح هم‌افزایی: HIGH
+   مفهوم کمپین: Joint campaign highlighting complementary products between Active Cleaners and Ave
+   مخاطب هدف: خانواده‌های شهری
+   بودجه تخمینی: 50-100 million Tomans
+   منافع مورد انتظار: Increased brand awareness and cross-selling
+   سختی اجرا: low
+
+4. همکاری با تاژ
+   سطح هم‌افزایی: HIGH
+   مفهوم کمپین: Joint campaign highlighting complementary products between Active Cleaners and تاژ
+   مخاطب هدف: خانواده‌های مدرن
+   بودجه تخمینی: 50-100 million Tomans
+   منافع مورد انتظار: Increased brand awareness and cross-selling
+   سختی اجرا: low
+
+5. همکاری با Sana
+   سطح هم‌افزایی: MEDIUM
+   مفهوم کمپین: Joint campaign highlighting complementary products between Active Cleaners and Sana
+   مخاطب هدف: خانواده‌ها
+   بودجه تخمینی: 20-50 million Tomans
+   منافع مورد انتظار: Increased brand awareness and cross-selling
+   سختی اجرا: medium
+
+توصیه‌های زمان‌بندی کمپین
+دوره‌های بهینه کمپین برای حداکثر تأثیر:
+- Nowruz (March): تعامل و هزینه بالای مصرف‌کننده
+- Back to School (September): تعامل و هزینه بالای مصرف‌کننده
+- Yalda Night (December): تعامل و هزینه بالای مصرف‌کننده
+
+دوره‌هایی که باید از کمپین‌های تجاری اجتناب کرد:
+- Muharram (August-September)
+- Ramadan fasting hours
+
+توصیه‌های بودجه و سرمایه‌گذاری
+بودجه تبلیغاتی سالانه توصیه‌شده: 500-1000 million Tomans
+معادل دلار: $10,000-$20,000
+بازده مورد انتظار سرمایه: 2-3x return on investment expected within 6 months
+
+تخصیص کانال توصیه‌شده:
+- Digital (Instagram, Telegram): 55%
+- Traditional (TV, Billboard): 40%
+- Events & Sponsorships: 5%
+
+استراتژی کانال‌های بازاریابی
+Instagram (اولویت: high)
+  دلیل: Primary social media platform in Iran with highest engagement
+  نوع محتوا: Visual stories, product demonstrations, user-generated content
+  تخصیص بودجه: 35%
+
+Telegram (اولویت: high)
+  دلیل: Wide adoption for announcements and customer service
+  نوع محتوا: Promotions, customer support, exclusive deals
+  تخصیص بودجه: 20%
+
+TV (IRIB) (اولویت: medium)
+  دلیل: Broad reach for brand awareness
+  نوع محتوا: 30-second commercials during prime time
+  تخصیص بودجه: 25%
+
+Out-of-Home (Billboards) (اولویت: medium)
+  دلیل: High visibility in urban areas
+  نوع محتوا: Brand awareness campaigns in Tehran metro
+  تخصیص بودجه: 15%
+
+LinkedIn (اولویت: low)
+  دلیل: Professional networking for B2B
+  نوع محتوا: Thought leadership, industry insights
+  تخصیص بودجه: 5%
+
+جهت‌گیری خلاقانه و پیام‌رسانی
+پیام‌های کلیدی برند:
+- Active Cleaners - Quality for your family
+- Trusted by Iranian families
+- Experience the difference
+
+لحن و سبک: Warm, authentic, family-oriented
+توصیه‌های بصری: Bright colors, family imagery, clean modern design
+ملاحظات فرهنگی: Respect for Iranian values, family-centric messaging
+
+معیارهای موفقیت و شاخص‌های کلیدی
+شاخص‌های کلیدی اصلی برای موفقیت کمپین:
+- Brand awareness lift (+20% target)
+- Social media engagement rate (+50% target)
+- Sales growth (+30% target)
+- Customer acquisition cost (CAC reduction of 15%)
+
+رویکرد اندازه‌گیری: Monthly tracking via social listening, sales data, and surveys
+معیارهای مقایسه: Compare against sister brands and industry averages

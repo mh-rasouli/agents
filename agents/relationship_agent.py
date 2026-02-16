@@ -169,6 +169,9 @@ Brand: {brand_name}"""
             "shareholders": [],
             "affiliates": [],
             "brand_family": [],
+            "competitors": [],
+            "similar_brands": [],
+            "complementary_brands": [],
             "parent_company_verification": {}
         }
 
@@ -362,6 +365,9 @@ Brand: {brand_name}"""
             "shareholders": [],
             "affiliates": [],
             "brand_family": [],
+            "competitors": [],
+            "similar_brands": [],
+            "complementary_brands": [],
             "parent_company_verification": {}
         }
 

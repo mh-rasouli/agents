@@ -1,0 +1,105 @@
+{
+  "brand_intelligence_report": {
+    "generated_date": "2026-02-16",
+    "brand_id": "همکده_20260216_093803",
+    "data_sources": [],
+    "report_version": "1.0"
+  },
+  "basic_information": {
+    "brand_name": "همکده",
+    "brand_name_persian": "همکده",
+    "website": null,
+    "establishment_year": "Unknown",
+    "business_model": "B2C",
+    "service_type": "خدمات سلامت و روانشناسی"
+  },
+  "parent_company_structure": {
+    "immediate_parent": {
+      "name": "سامانه مدیریت ارتباط با مشتریان همکده",
+      "ownership_percentage": null
+    },
+    "ultimate_parent": {},
+    "ownership_chain": []
+  },
+  "brand_relationship_map": {
+    "sister_brands_same_parent": [],
+    "brand_family": [],
+    "total_related_brands": 0
+  },
+  "product_categorization": {
+    "primary_industry": {
+      "name_fa": "خدمات سلامت و روانشناسی",
+      "name_en": "Human Health and Psychology Services",
+      "isic_code": "8620"
+    },
+    "sub_industries": [
+      "Tele-psychology",
+      "Mental Health Counseling",
+      "Family and Marriage Services",
+      "Digital Health (E-Health)"
+    ],
+    "product_categories": [
+      "Online Counseling Sessions",
+      "Telephone Therapy",
+      "Psychological Assessment",
+      "Relationship Coaching",
+      "Child and Adolescent Psychology"
+    ],
+    "service_categories": [],
+    "customer_segments": {
+      "primary": [
+        {
+          "segment": "Individuals seeking mental health support",
+          "description": "Adults dealing with anxiety, depression, or personal growth issues."
+        },
+        {
+          "segment": "Couples and Families",
+          "description": "People looking for relationship advice, marriage counseling, or parenting support."
+        },
+        {
+          "segment": "Students and Youth",
+          "description": "Academic counseling and youth-specific psychological guidance."
+        },
+        {
+          "segment": "Remote users",
+          "description": "Individuals in smaller cities with limited access to in-person elite clinics."
+        }
+      ],
+      "secondary": []
+    },
+    "price_positioning": "mid-market"
+  },
+  "market_intelligence": {
+    "competitive_advantages": [],
+    "market_position": {
+      "positioning_statement": "The largest specialized online psychology center in Iran providing accessible mental health care.",
+      "competitive_advantages": [
+        "Largest network of licensed psychologists",
+        "High accessibility via telephone and online platforms",
+        "Strong regulatory alignment with the Psychology and Counseling Organization of Iran",
+        "24/7 availability for counseling services"
+      ],
+      "market_share_estimate": "leader"
+    },
+    "distribution_channels": [
+      "online",
+      "direct"
+    ]
+  },
+  "contact_information": {},
+  "social_media_presence": {
+    "instagram": {
+      "handle": null,
+      "followers": null
+    },
+    "linkedin": {
+      "handle": null,
+      "followers": null
+    },
+    "twitter": {
+      "handle": null,
+      "followers": null
+    }
+  },
+  "website_intelligence": {}
+}

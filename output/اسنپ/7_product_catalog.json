@@ -1,0 +1,48 @@
+{
+  "brand_intelligence_product_catalog": {
+    "brand_name": "اسنپ",
+    "generated_date": "2026-02-16 09:20:21",
+    "report_id": "20260216_092021",
+    "extraction_method": "automated",
+    "data_quality": "limited"
+  },
+  "catalog_summary": {
+    "total_products": 0,
+    "total_therapeutic_areas": 0,
+    "total_categories": 0,
+    "product_lines": []
+  },
+  "therapeutic_areas": [],
+  "product_categories": {},
+  "complete_product_list": [],
+  "services_list": [],
+  "market_intelligence": {},
+  "metadata": {},
+  "corporate_relationships": {
+    "parent_company": "IIG (Iran Internet Group)",
+    "ultimate_parent": "Unknown",
+    "manufacturing_subsidiaries": [
+      "Unknown"
+    ],
+    "marketing_distribution_role": {
+      "role": "Manufacturing/Product Brand",
+      "description": "اسنپ is a product/manufacturing brand"
+    }
+  },
+  "industry_classification": {
+    "primary_industry": {
+      "name_fa": "فناوری اطلاعات و خدمات پلتفرم دیجیتال",
+      "name_en": "Information Technology and Digital Platform Services",
+      "isic_code": "6201"
+    },
+    "sub_industries": [
+      "Ride-hailing",
+      "Last-mile Delivery",
+      "Food & Grocery E-commerce",
+      "Online Travel Agency (OTA)",
+      "FinTech",
+      "HealthTech"
+    ],
+    "business_model": "B2B2C"
+  }
+}

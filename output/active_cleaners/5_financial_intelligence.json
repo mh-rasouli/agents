@@ -1,0 +1,39 @@
+{
+  "financial_intelligence_report": {
+    "report_date": "2026-02-15",
+    "data_sources": [
+      "Parent company disclosures",
+      "Market estimates",
+      "Industry analysis"
+    ],
+    "confidence_level": "medium"
+  },
+  "parent_company_overview": {
+    "name": "پدیده شیمی قرن",
+    "stock_symbol": "قرن",
+    "market": "Tehran Stock Exchange",
+    "industry": "شوینده و بهداشتی"
+  },
+  "ownership_structure": {
+    "immediate_parent": "پدیده شیمی قرن",
+    "ultimate_parent": "گروه صنعتی گلرنگ",
+    "ownership_percentage": "Unknown",
+    "public_float": "Unknown"
+  },
+  "market_capitalization": {
+    "estimate": "بیش از 50 هزار میلیارد تومان",
+    "currency": "Iranian Toman",
+    "calculation_method": "Industry estimates"
+  },
+  "advertising_intelligence_framework": {
+    "industry_standards": "2-5% of revenue for FMCG",
+    "competitive_benchmarks": "Leading brands invest 3-7% of revenue",
+    "recommended_range": "mid_to_premium tier: 2-4% of estimated revenue"
+  },
+  "estimated_advertising_budget": {
+    "annual_estimate_tomans": "500M-1B Tomans",
+    "annual_estimate_usd": "$10K-$20K",
+    "basis": "Industry standards and price tier positioning",
+    "confidence": "medium"
+  }
+}

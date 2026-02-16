@@ -1,0 +1,126 @@
+{
+  "brand_intelligence_report": {
+    "generated_date": "2026-02-16",
+    "brand_id": "اسنپ_20260216_092021",
+    "data_sources": [],
+    "report_version": "1.0"
+  },
+  "basic_information": {
+    "brand_name": "اسنپ",
+    "brand_name_persian": "اسنپ",
+    "website": null,
+    "establishment_year": "Unknown",
+    "business_model": "B2B2C",
+    "service_type": "فناوری اطلاعات و خدمات پلتفرم دیجیتال"
+  },
+  "parent_company_structure": {
+    "immediate_parent": {
+      "name": "IIG (Iran Internet Group)",
+      "ownership_percentage": null
+    },
+    "ultimate_parent": {},
+    "ownership_chain": []
+  },
+  "brand_relationship_map": {
+    "sister_brands_same_parent": [
+      {
+        "name": "Bamilo",
+        "industry": "E-commerce",
+        "parent": "Iran Internet Group"
+      },
+      {
+        "name": "ZoodFood",
+        "industry": "Food Delivery",
+        "parent": "Iran Internet Group"
+      },
+      {
+        "name": "Eskan021",
+        "industry": "Real Estate",
+        "parent": "Iran Internet Group"
+      }
+    ],
+    "brand_family": [],
+    "total_related_brands": 0
+  },
+  "product_categorization": {
+    "primary_industry": {
+      "name_fa": "فناوری اطلاعات و خدمات پلتفرم دیجیتال",
+      "name_en": "Information Technology and Digital Platform Services",
+      "isic_code": "6201"
+    },
+    "sub_industries": [
+      "Ride-hailing",
+      "Last-mile Delivery",
+      "Food & Grocery E-commerce",
+      "Online Travel Agency (OTA)",
+      "FinTech",
+      "HealthTech"
+    ],
+    "product_categories": [
+      "On-demand Transportation",
+      "Food Delivery",
+      "Grocery Delivery",
+      "Courier & Logistics",
+      "Hotel & Flight Booking",
+      "BNPL & Digital Payments",
+      "Telemedicine"
+    ],
+    "service_categories": [],
+    "customer_segments": {
+      "primary": [
+        {
+          "segment": "Urban Commuters",
+          "description": "Daily travelers seeking affordable and convenient transportation in metropolitan areas."
+        },
+        {
+          "segment": "Tech-savvy Households",
+          "description": "Families and individuals using digital platforms for food, grocery, and household needs."
+        },
+        {
+          "segment": "Business Entities",
+          "description": "Corporations needing logistical solutions, staff transportation, and delivery services."
+        },
+        {
+          "segment": "Travelers",
+          "description": "Domestic and international travelers looking for integrated booking services."
+        }
+      ],
+      "secondary": []
+    },
+    "price_positioning": "mid-market"
+  },
+  "market_intelligence": {
+    "competitive_advantages": [],
+    "market_position": {
+      "positioning_statement": "The first and largest 'Super App' in Iran, providing an integrated ecosystem for all daily digital needs.",
+      "competitive_advantages": [
+        "First-mover advantage in ride-hailing",
+        "Extensive network of drivers and vendors",
+        "Deep integration of diverse services (Super App)",
+        "Strong financial backing from IIG and MTN",
+        "High brand equity and user trust"
+      ],
+      "market_share_estimate": "leader"
+    },
+    "distribution_channels": [
+      "online",
+      "direct"
+    ]
+  },
+  "contact_information": {},
+  "social_media_presence": {
+    "instagram": {
+      "handle": "snapp_team",
+      "followers": null
+    },
+    "linkedin": {
+      "handle": "snapp-cab",
+      "followers": null
+    },
+    "twitter": {
+      "handle": "snapp_team",
+      "followers": null
+    }
+  },
+  "website_intelligence": {}
+}
