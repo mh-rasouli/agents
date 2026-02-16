@@ -1,0 +1,87 @@
+{
+  "iran_novin_group": {
+    "corporate_structure": {
+      "ultimate_parent": {
+        "name": "Iran Novin Industrial Group",
+        "name_fa": "گروه صنعتی ایران نوین",
+        "brand_name": "Iran Novin",
+        "established": "1995",
+        "headquarters": "تهران، ایران",
+        "employees": "1500+",
+        "description": "گروه صنعتی با فعالیت در صنایع مختلف",
+        "description_en": "Industrial conglomerate active in various industries",
+        "website": "https://irannovin.net",
+        "stock_symbol": null,
+        "market_cap": "Information not available"
+      },
+      "business_segments": {
+        "note": "Iran Novin Group operates in multiple industrial sectors",
+        "note_fa": "گروه ایران نوین در بخش‌های صنعتی مختلفی فعالیت دارد",
+        "primary_activities": [
+          "Manufacturing",
+          "Trade & Distribution",
+          "Industrial Services"
+        ]
+      },
+      "subsidiaries": {
+        "manufacturing": [
+          {
+            "company": "Iran Novin Manufacturing",
+            "name_fa": "تولیدی ایران نوین",
+            "role": "Manufacturing Operations",
+            "focus": "Industrial manufacturing",
+            "focus_fa": "تولیدات صنعتی",
+            "industry": "Manufacturing",
+            "business_model": "B2B",
+            "description": "بخش تولیدی گروه",
+            "description_en": "Manufacturing division of the group"
+          }
+        ],
+        "trade_distribution": [
+          {
+            "company": "Iran Novin Trade",
+            "name_fa": "بازرگانی ایران نوین",
+            "role": "Trading & Distribution",
+            "focus": "Import, export, and distribution",
+            "focus_fa": "واردات، صادرات و توزیع",
+            "industry": "Trade_&_Distribution",
+            "business_model": "B2B",
+            "description": "بخش بازرگانی و توزیع",
+            "description_en": "Trading and distribution division"
+          }
+        ]
+      }
+    },
+    "group_information": {
+      "note": "Limited public information available",
+      "note_fa": "اطلاعات عمومی محدود در دسترس است",
+      "data_sources": [
+        "Company website",
+        "Business registries",
+        "Trade associations"
+      ],
+      "verification_needed": true,
+      "last_updated": "2026-02-15"
+    },
+    "market_intelligence": {
+      "market_position": "Private industrial group",
+      "market_position_fa": "گروه صنعتی خصوصی",
+      "visibility": "Limited public visibility",
+      "competitive_landscape": "Regional industrial players"
+    },
+    "cross_promotion_opportunities": {
+      "note": "Cross-promotion opportunities depend on specific business activities",
+      "note_fa": "فرصت‌های تبلیغات متقابل بستگی به فعالیت‌های خاص دارد",
+      "potential_synergies": [
+        "Integration across manufacturing and distribution",
+        "Supply chain optimization",
+        "Shared logistics network"
+      ]
+    },
+    "data_quality_warning": {
+      "status": "Limited Information",
+      "message": "Public information about Iran Novin Group is limited. Knowledge base contains general structure based on available data. Specific subsidiaries, products, and financial information require additional research.",
+      "message_fa": "اطلاعات عمومی در مورد گروه ایران نوین محدود است. پایگاه دانش شامل ساختار کلی بر اساس اطلاعات موجود است. اطلاعات دقیق شرکت‌های زیرمجموعه، محصولات و مالی نیاز به تحقیقات بیشتر دارد."
+    }
+  }
+}

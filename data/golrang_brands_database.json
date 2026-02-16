@@ -1,0 +1,205 @@
+{
+  "golrang_industrial_group": {
+    "parent_company": "گلرنگ",
+    "description": "بزرگترین گروه صنعتی ایران در صنایع شیمیایی و غذایی",
+    "stock_symbol": "غگلرن",
+    "subsidiaries": [
+      {
+        "company": "پدیده شیمی قرن",
+        "stock_symbol": "قرن",
+        "industry": "شوینده و بهداشتی",
+        "brands": [
+          {
+            "name": "Active",
+            "products": "شوینده‌های خانگی",
+            "category": "cleaning_products",
+            "price_tier": "mid_to_premium",
+            "target": "خانواده‌های شهری"
+          },
+          {
+            "name": "Active Cleaners",
+            "products": "خشکشویی آنلاین",
+            "category": "services",
+            "price_tier": "premium",
+            "target": "شهری شاغل، طبقه متوسط رو به بالا"
+          },
+          {
+            "name": "Active Home",
+            "products": "مایع ظرفشویی، شوینده سطوح",
+            "category": "cleaning_products",
+            "price_tier": "economy_to_mid",
+            "target": "خانواده‌ها"
+          },
+          {
+            "name": "پاکشو",
+            "products": "پودر لباسشویی",
+            "category": "laundry",
+            "price_tier": "economy",
+            "target": "عموم مردم"
+          },
+          {
+            "name": "Ave",
+            "products": "مایع لباسشویی، نرم‌کننده",
+            "category": "laundry",
+            "price_tier": "mid",
+            "target": "خانواده‌های شهری"
+          },
+          {
+            "name": "تاژ",
+            "products": "پودر ماشین ظرفشویی",
+            "category": "dishwashing",
+            "price_tier": "mid",
+            "target": "خانواده‌های مدرن"
+          },
+          {
+            "name": "Sana",
+            "products": "محصولات بهداشتی",
+            "category": "hygiene",
+            "price_tier": "mid",
+            "target": "خانواده‌ها"
+          }
+        ]
+      },
+      {
+        "company": "شیمیایی پاکنام",
+        "industry": "شوینده",
+        "brands": [
+          {
+            "name": "Bonux",
+            "products": "پودر لباسشویی",
+            "category": "laundry",
+            "price_tier": "economy",
+            "target": "عموم مردم"
+          },
+          {
+            "name": "Ariel",
+            "products": "پودر لباسشویی (لایسنس P&G)",
+            "category": "laundry",
+            "price_tier": "premium",
+            "target": "طبقه متوسط به بالا"
+          }
+        ]
+      },
+      {
+        "company": "گلرنگ پخش",
+        "industry": "توزیع",
+        "brands": [
+          {
+            "name": "Mihan",
+            "products": "توزیع کننده",
+            "category": "distribution",
+            "price_tier": "n/a",
+            "target": "B2B"
+          }
+        ]
+      },
+      {
+        "company": "صنایع غذایی شیرین عسل",
+        "industry": "غذایی",
+        "brands": [
+          {
+            "name": "شیرین‌عسل",
+            "products": "آبنبات، شیرینی",
+            "category": "confectionery",
+            "price_tier": "economy_to_mid",
+            "target": "کودکان و خانواده‌ها"
+          },
+          {
+            "name": "ماهان",
+            "products": "شکلات و تافی",
+            "category": "confectionery",
+            "price_tier": "mid",
+            "target": "کودکان و نوجوانان"
+          },
+          {
+            "name": "Top Top",
+            "products": "آدامس",
+            "category": "confectionery",
+            "price_tier": "economy",
+            "target": "همه سنین"
+          }
+        ]
+      },
+      {
+        "company": "لبنیات پاکی",
+        "industry": "لبنیات",
+        "brands": [
+          {
+            "name": "پاکی",
+            "products": "شیر، ماست، پنیر",
+            "category": "dairy",
+            "price_tier": "mid",
+            "target": "خانواده‌ها"
+          }
+        ]
+      },
+      {
+        "company": "رنگ‌های صنعتی شرق",
+        "industry": "رنگ و رزین",
+        "brands": [
+          {
+            "name": "Sadolin",
+            "products": "رنگ ساختمانی",
+            "category": "paint",
+            "price_tier": "premium",
+            "target": "پروژه‌های ساختمانی"
+          }
+        ]
+      }
+    ],
+    "total_brands": "60+",
+    "market_cap_estimate": "بیش از 50 هزار میلیارد تومان",
+    "employees": "بیش از 10000 نفر"
+  },
+  "cinnagen_biotech_group": {
+    "parent_company": "سیناژن",
+    "description": "شرکت پیشرو در زمینه بیوتکنولوژی و داروسازی ایران",
+    "stock_symbol": "سیناژن",
+    "subsidiaries": [
+      {
+        "company": "CinnaGen",
+        "stock_symbol": "سیناژن",
+        "industry": "داروسازی و بیوتکنولوژی",
+        "brands": [
+          {
+            "name": "Orchid_Pharmed",
+            "products": "محصولات بیوفارماسوتیکال و داروهای زیستی",
+            "category": "pharmaceutical",
+            "price_tier": "premium",
+            "target": "بیماران و مراکز درمانی"
+          },
+          {
+            "name": "CinnaGen",
+            "products": "داروهای بیوتکنولوژی",
+            "category": "biotech",
+            "price_tier": "premium",
+            "target": "بخش بهداشت و درمان"
+          },
+          {
+            "name": "ReciGen",
+            "products": "پروتئین‌های نوترکیب",
+            "category": "biotech",
+            "price_tier": "premium",
+            "target": "بیمارستان‌ها و مراکز درمانی"
+          }
+        ]
+      }
+    ],
+    "total_brands": "3+",
+    "market_cap_estimate": "بیش از 5000 میلیارد تومان",
+    "employees": "بیش از 500 نفر"
+  },
+  "cross_sell_matrix": {
+    "Active_Cleaners": {
+      "very_high_synergy": ["Active Home", "Active"],
+      "high_synergy": ["Ave", "Sana"],
+      "medium_synergy": ["پاکشو", "تاژ"],
+      "low_synergy": ["شیرین‌عسل", "پاکی"]
+    },
+    "Active_Home": {
+      "very_high_synergy": ["Active", "Active Cleaners"],
+      "high_synergy": ["Ave", "تاژ"],
+      "medium_synergy": ["Sana", "پاکشو"]
+    }
+  }
+}

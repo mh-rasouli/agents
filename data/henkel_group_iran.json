@@ -1,0 +1,190 @@
+{
+  "henkel_group_iran": {
+    "corporate_structure": {
+      "ultimate_parent": {
+        "name": "Henkel AG & Co. KGaA",
+        "name_fa": "هنکل",
+        "brand_name": "Henkel",
+        "established": "1876",
+        "headquarters": "Düsseldorf, Germany",
+        "employees": "50,000+ globally",
+        "description": "German multinational chemical and consumer goods company",
+        "description_fa": "شرکت چند ملیتی آلمانی تولیدکننده مواد شیمیایی و کالاهای مصرفی",
+        "website": "https://www.henkel.com",
+        "stock_symbol": "HEN3 (Frankfurt Stock Exchange)",
+        "market_cap": "Over €30 billion EUR"
+      },
+      "iran_operations": {
+        "local_presence": "Manufacturing and distribution in Iran",
+        "local_presence_fa": "تولید و توزیع محلی در ایران",
+        "iran_headquarters": "تهران، ایران",
+        "iran_established": "1990s",
+        "iran_employees": "500+"
+      },
+      "subsidiaries": {
+        "cleaning_products": [
+          {
+            "company": "Tage",
+            "name_fa": "تاژ",
+            "role": "Dishwashing Liquids & Cleaning Products",
+            "established_iran": "1995",
+            "website": "https://tage.ir",
+            "focus": "Dishwashing liquid, surface cleaners, multi-purpose cleaners",
+            "focus_fa": "مایع ظرفشویی، پاک‌کننده‌های سطوح، پاک‌کننده‌های چند منظوره",
+            "industry": "Cleaning_Products",
+            "business_model": "B2C",
+            "description": "برند پیشرو در صنعت شوینده‌های ظرف در ایران",
+            "description_en": "Leading dishwashing liquid brand in Iran",
+            "market_position": "Market leader - Over 40% market share in dishwashing category",
+            "product_lines": [
+              {
+                "line": "Tage Classic",
+                "line_fa": "تاژ کلاسیک",
+                "description": "Original dishwashing liquid",
+                "variants": ["Lemon", "Apple", "Pomegranate"]
+              },
+              {
+                "line": "Tage Active",
+                "line_fa": "تاژ اکتیو",
+                "description": "Enhanced grease-cutting formula",
+                "variants": ["Green Apple", "Orange"]
+              },
+              {
+                "line": "Tage Pro",
+                "line_fa": "تاژ پرو",
+                "description": "Professional-grade cleaning",
+                "variants": ["Ultra Strong", "Antibacterial"]
+              },
+              {
+                "line": "Tage Multi-Surface",
+                "line_fa": "تاژ چند سطحی",
+                "description": "All-purpose surface cleaner",
+                "variants": ["Kitchen", "Bathroom", "Glass"]
+              }
+            ]
+          },
+          {
+            "company": "Persil",
+            "name_fa": "پرسیل",
+            "role": "Laundry Detergents",
+            "established_iran": "2000",
+            "website": "https://www.persil.com",
+            "focus": "Laundry detergent powder and liquid",
+            "focus_fa": "پودر و مایع لباسشویی",
+            "industry": "Laundry_Care",
+            "business_model": "B2C",
+            "description": "برند جهانی لباسشویی هنکل",
+            "description_en": "Henkel's global laundry detergent brand",
+            "market_position": "Premium segment",
+            "available_in_iran": true,
+            "product_lines": [
+              {
+                "line": "Persil Power Gel",
+                "line_fa": "پرسیل پاور ژل",
+                "description": "Liquid laundry detergent"
+              },
+              {
+                "line": "Persil Megaperls",
+                "line_fa": "پرسیل مگاپرلز",
+                "description": "Concentrated detergent pearls"
+              }
+            ]
+          },
+          {
+            "company": "Pril",
+            "name_fa": "پریل",
+            "role": "Dishwashing Products",
+            "established_iran": "1998",
+            "website": null,
+            "focus": "Dishwashing liquid, tablets",
+            "focus_fa": "مایع ظرفشویی، قرص ماشین ظرفشویی",
+            "industry": "Cleaning_Products",
+            "business_model": "B2C",
+            "description": "برند جهانی شوینده ظرف هنکل",
+            "description_en": "Henkel's global dishwashing brand",
+            "market_position": "Secondary brand to Tage in Iran",
+            "available_in_iran": true
+          }
+        ],
+        "adhesives_sealants": [
+          {
+            "company": "Pattex",
+            "name_fa": "پتکس",
+            "role": "Adhesives & Sealants",
+            "established_iran": "2005",
+            "website": null,
+            "focus": "Super glue, construction adhesives, mounting tapes",
+            "focus_fa": "چسب قوی، چسب‌های ساختمانی، نوار دوطرفه",
+            "industry": "Adhesives",
+            "business_model": "B2C_and_B2B",
+            "description": "برند چسب‌های صنعتی و خانگی",
+            "description_en": "Industrial and household adhesives brand",
+            "available_in_iran": true
+          }
+        ],
+        "hair_care": [
+          {
+            "company": "Schwarzkopf",
+            "name_fa": "شوارتزکف",
+            "role": "Hair Care & Hair Coloring",
+            "established_iran": "2010",
+            "website": null,
+            "focus": "Hair dye, hair care products, styling",
+            "focus_fa": "رنگ مو، محصولات مراقبت از مو، استایلینگ",
+            "industry": "Personal_Care",
+            "business_model": "B2C",
+            "description": "برند جهانی مراقبت از مو",
+            "description_en": "Global hair care brand",
+            "available_in_iran": "Limited availability",
+            "note": "Primarily through import, limited local distribution"
+          }
+        ]
+      }
+    },
+    "brand_statistics": {
+      "total_brands_in_iran": 5,
+      "flagship_brand": "Tage",
+      "market_coverage": "National distribution",
+      "retail_presence": "All major retailers and supermarkets",
+      "online_presence": "E-commerce platforms (Digikala, Snapp Market)"
+    },
+    "market_intelligence": {
+      "market_position": "رهبر بازار شوینده‌های ظرف با برند تاژ",
+      "market_position_en": "Market leader in dishwashing category with Tage brand",
+      "tage_market_share": "40-45% in dishwashing liquid category",
+      "key_competitors": [
+        "Active (Golrang)",
+        "Rika",
+        "Sunlight (Unilever)",
+        "Local Iranian brands"
+      ],
+      "competitive_advantages": [
+        "Strong brand equity (Tage)",
+        "Global R&D capabilities",
+        "Premium quality perception",
+        "Wide distribution network"
+      ]
+    },
+    "cross_promotion_opportunities": {
+      "high_synergy_pairs": [
+        {
+          "brand_1": "Tage",
+          "brand_2": "Persil",
+          "opportunity": "Complete home cleaning bundle",
+          "opportunity_fa": "بسته کامل نظافت خانه"
+        },
+        {
+          "brand_1": "Tage",
+          "brand_2": "Pattex",
+          "opportunity": "Home maintenance and cleaning solutions",
+          "opportunity_fa": "راهکارهای نگهداری و نظافت خانه"
+        }
+      ]
+    },
+    "notes": {
+      "parent_company_verification": "Confirmed: Tage is owned by Henkel AG & Co. KGaA",
+      "local_manufacturing": "Tage is manufactured locally in Iran under Henkel license",
+      "distribution": "Henkel Iran handles local distribution and marketing"
+    }
+  }
+}

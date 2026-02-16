@@ -1,0 +1,188 @@
+{
+  "golrang_complete_data": {
+    "parent_info": {
+      "name": "گروه صنعتی گلرنگ",
+      "name_en": "Golrang Industrial Group",
+      "stock_symbol": "غگلرن",
+      "established": "1951",
+      "ownership": "خصوصی - خانوادگی",
+      "market_cap_estimate": "بیش از 50 هزار میلیارد تومان",
+      "employees": "10000+",
+      "headquarters": "تهران"
+    },
+    "subsidiaries": {
+      "padeye_shimi_gharn": {
+        "name": "شرکت پدیده شیمی قرن",
+        "stock_symbol": "قرن",
+        "national_id": "10320217477",
+        "industry": "شوینده و بهداشتی",
+        "market": "بورس تهران",
+        "brands": [
+          {"name": "Active", "category": "شوینده خانگی", "products": "مایع ظرفشویی، پاک‌کننده سطوح", "market_position": "رهبر بازار"},
+          {"name": "Active Home", "category": "شوینده", "products": "محصولات خانگی", "market_position": "قوی"},
+          {"name": "Active Cleaners", "category": "خدمات", "products": "خشکشویی آنلاین", "established": "2018", "market_position": "نوپا"},
+          {"name": "Active Soft", "category": "بهداشتی", "products": "دستمال کاغذی", "market_position": "متوسط"},
+          {"name": "Activedent", "category": "بهداشت دهان", "products": "خمیر دندان، مسواک", "market_position": "متوسط"},
+          {"name": "پاکشو", "category": "شوینده", "products": "پودر لباسشویی", "market_position": "قوی"},
+          {"name": "Ave", "category": "شوینده", "products": "مایع لباسشویی، نرم‌کننده", "market_position": "رهبر"},
+          {"name": "تاژ", "category": "شوینده", "products": "پودر ماشین ظرفشویی", "market_position": "قوی"},
+          {"name": "Sana", "category": "بهداشتی", "products": "محصولات بهداشتی", "market_position": "متوسط"}
+        ]
+      },
+      "paknam": {
+        "name": "شرکت شیمیایی پاکنام",
+        "industry": "شوینده",
+        "brands": [
+          {"name": "Bonux", "category": "شوینده", "products": "پودر لباسشویی", "market_position": "قوی"},
+          {"name": "Ariel", "category": "شوینده", "products": "پودر لباسشویی (لایسنس P&G)", "market_position": "پرمیوم"}
+        ]
+      },
+      "shirin_asal": {
+        "name": "صنایع غذایی شیرین عسل",
+        "industry": "غذایی - قنادی",
+        "brands": [
+          {"name": "شیرین‌عسل", "category": "قنادی", "products": "آبنبات، شیرینی"},
+          {"name": "ماهان", "category": "قنادی", "products": "شکلات، تافی"},
+          {"name": "Top Top", "category": "قنادی", "products": "آدامس"},
+          {"name": "Merci", "category": "قنادی", "products": "شکلات (لایسنس)"},
+          {"name": "Nancy", "category": "قنادی", "products": "کیک و کلوچه"}
+        ]
+      },
+      "koroush": {
+        "name": "صنایع غذایی کورش",
+        "industry": "روغن نباتی",
+        "brands": [
+          {"name": "Oila", "category": "روغن", "products": "روغن مایع", "market_position": "رهبر"},
+          {"name": "Famila", "category": "روغن", "products": "روغن جامد"},
+          {"name": "Ladan", "category": "روغن", "products": "روغن زیتون"}
+        ]
+      },
+      "paki_dairy": {
+        "name": "لبنیات پاکی",
+        "industry": "لبنیات",
+        "brands": [
+          {"name": "پاکی", "category": "لبنیات", "products": "شیر، ماست، پنیر، کره"}
+        ]
+      },
+      "materfood": {
+        "name": "صنایع غذایی ماتر فود",
+        "industry": "آدامس",
+        "brands": [
+          {"name": "Biodent", "category": "آدامس", "products": "آدامس با طعم‌های مختلف"},
+          {"name": "Barlie", "category": "آبنبات", "products": "آبنبات میوه‌ای"}
+        ]
+      },
+      "marinasan": {
+        "name": "سلولزی ماریناسان",
+        "industry": "سلولزی",
+        "brands": [
+          {"name": "Softlan", "category": "دستمال کاغذی", "products": "دستمال، دستمال توالت"}
+        ]
+      },
+      "sadolin": {
+        "name": "رنگ‌های صنعتی شرق",
+        "industry": "رنگ",
+        "brands": [
+          {"name": "Sadolin", "category": "رنگ ساختمانی", "products": "رنگ دیواری، چوبی"}
+        ]
+      },
+      "golrang_pakhsh": {
+        "name": "گلرنگ پخش",
+        "industry": "توزیع",
+        "network": "شبکه توزیع سراسری",
+        "branches": "25+ شعبه"
+      }
+    },
+    "total_brands_count": 35,
+    "market_presence": "محصولات در 95% خانوارهای ایرانی"
+  },
+  "active_cleaners_detailed": {
+    "brand_name": "Active Cleaners",
+    "brand_name_fa": "اکتیو کلینرز",
+    "tagline": "خشکشویی آنلاین تهران",
+    "website": "https://activecleaners.ir",
+    "established_year": "2018-2019",
+    "parent_company": "شرکت پدیده شیمی قرن (سهامی عام - نماد: قرن)",
+    "business_model": "پلتفرم آنلاین خدمات خشکشویی B2C",
+    "services": [
+      "خشکشویی البسه",
+      "اتو و پرس لباس",
+      "شستشوی پرده و مبل",
+      "تحویل و دریافت درب منزل"
+    ],
+    "coverage": "تهران - تمام مناطق",
+    "target_audience": "افراد شاغل شهری، طبقه متوسط به بالا، 25-45 سال",
+    "competitive_advantages": [
+      "پشتوانه برند Active و گروه گلرنگ",
+      "دسترسی به محصولات شوینده Active",
+      "شبکه توزیع گلرنگ پخش",
+      "اعتبار برند خانوادگی"
+    ],
+    "pricing": "متوسط به بالا (15-20% بالاتر از میانگین بازار)",
+    "usp": "کیفیت تضمینی با پشتوانه برند Active"
+  },
+  "cinnagen_group_detailed": {
+    "parent_info": {
+      "name": "گروه بیوتکنولوژی سیناژن",
+      "name_en": "CinnaGen Biotech Group",
+      "stock_symbol": "سیناژن",
+      "established": "1994",
+      "ownership": "سهامی عام",
+      "market_cap_estimate": "بیش از 5000 میلیارد تومان",
+      "employees": "500+",
+      "headquarters": "تهران - شهرک غرب"
+    },
+    "subsidiaries": {
+      "cinnagen": {
+        "name": "شرکت سیناژن",
+        "stock_symbol": "سیناژن",
+        "industry": "بیوتکنولوژی و داروسازی",
+        "market": "بورس تهران",
+        "brands": [
+          {"name": "CinnaGen", "category": "بیوتک", "products": "داروهای بیوتکنولوژی", "market_position": "رهبر"},
+          {"name": "Orchid_Pharmed", "category": "بیوفارما", "products": "محصولات بیوفارماسوتیکال", "market_position": "قوی"},
+          {"name": "ReciGen", "category": "بیوتک", "products": "پروتئین‌های نوترکیب", "market_position": "تخصصی"}
+        ]
+      }
+    },
+    "total_brands_count": 3,
+    "market_presence": "بزرگترین تولیدکننده داروهای بیوتکنولوژی ایران"
+  },
+  "orchid_pharmed_detailed": {
+    "brand_name": "Orchid_Pharmed",
+    "brand_name_fa": "ارکید فارمد",
+    "tagline": "محصولات بیوفارماسوتیکال پیشرفته",
+    "website": "https://orchidpharmed.com/fa/",
+    "established_year": "2010",
+    "parent_company": "شرکت سیناژن (سهامی عام - نماد: سیناژن)",
+    "business_model": "B2B (بیمارستان‌ها، داروخانه‌ها) و B2C (بیماران)",
+    "products": [
+      "داروهای بیولوژیک",
+      "آنتی‌بادی‌های مونوکلونال",
+      "پروتئین‌های نوترکیب",
+      "واکسن‌های نوترکیب"
+    ],
+    "therapeutic_areas": [
+      "آنکولوژی (سرطان)",
+      "ایمونولوژی",
+      "هماتولوژی",
+      "بیماری‌های التهابی"
+    ],
+    "target_audience": "پزشکان متخصص، بیمارستان‌های تخصصی، بیماران نیازمند داروهای بیولوژیک",
+    "competitive_advantages": [
+      "تکنولوژی بیوتکنولوژی پیشرفته",
+      "تولید داروهای زیستی مشابه (Biosimilar)",
+      "استانداردهای بین‌المللی تولید (GMP)",
+      "تیم تحقیق و توسعه قوی"
+    ],
+    "certifications": [
+      "ISO 9001",
+      "GMP (Good Manufacturing Practice)",
+      "تاییدیه سازمان غذا و دارو ایران"
+    ],
+    "pricing": "پرمیوم (داروهای تخصصی و زیستی)",
+    "distribution": "بیمارستان‌های خصوصی و دولتی، داروخانه‌های زنجیره‌ای",
+    "usp": "تنها تولیدکننده ایرانی داروهای بیولوژیک با استاندارد بین‌المللی",
+    "annual_production": "میلیون‌ها دوز دارو در سال"
+  }
+}

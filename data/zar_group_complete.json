@@ -1,0 +1,179 @@
+{
+  "zar_group_complete": {
+    "corporate_structure": {
+      "ultimate_parent": {
+        "name": "Zar Industrial Group",
+        "name_fa": "گروه صنعتی زر",
+        "brand_name": "Zar Group",
+        "established": "1968",
+        "headquarters": "تهران، ایران",
+        "employees": "2000+",
+        "description": "تولیدکننده محصولات غذایی، شیرینی و شکلات",
+        "description_en": "Food products, confectionery and chocolate manufacturer",
+        "website": "https://www.zargroup.ir",
+        "stock_symbol": null,
+        "market_cap": "بیش از 2000 میلیارد تومان"
+      },
+      "subsidiaries": {
+        "confectionery": [
+          {
+            "company": "Zar Macaron",
+            "name_fa": "زر ماکارون",
+            "role": "Confectionery & Biscuits",
+            "established": "1968",
+            "website": "https://www.zarmacaron.com",
+            "focus": "Macarons, cookies, biscuits, wafers",
+            "focus_fa": "ماکارون، کوکی، بیسکویت، ویفر",
+            "industry": "Food_&_Beverage",
+            "sub_industry": "Confectionery",
+            "business_model": "B2C",
+            "description": "برند پیشرو در تولید ماکارون و بیسکویت در ایران",
+            "description_en": "Leading macaron and biscuit brand in Iran",
+            "market_position": "Top 3 in Iranian confectionery market",
+            "product_lines": [
+              {
+                "line": "Zar Macaron Classic",
+                "line_fa": "ماکارون کلاسیک زر",
+                "description": "Traditional coconut macarons",
+                "variants": ["Original", "Chocolate", "Pistachio"]
+              },
+              {
+                "line": "Zar Cookies",
+                "line_fa": "کوکی زر",
+                "description": "Premium cookies",
+                "variants": ["Chocolate Chip", "Oatmeal", "Butter"]
+              },
+              {
+                "line": "Zar Wafers",
+                "line_fa": "ویفر زر",
+                "description": "Cream-filled wafers",
+                "variants": ["Vanilla", "Chocolate", "Hazelnut"]
+              },
+              {
+                "line": "Zar Biscuits",
+                "line_fa": "بیسکویت زر",
+                "description": "Tea biscuits and crackers",
+                "variants": ["Tea Time", "Digestive", "Cream"]
+              }
+            ]
+          },
+          {
+            "company": "Zar Chocolate",
+            "name_fa": "شکلات زر",
+            "role": "Chocolate Products",
+            "established": "1985",
+            "website": "https://www.zargroup.ir/chocolate",
+            "focus": "Chocolate bars, chocolate-covered products",
+            "focus_fa": "شکلات تابلتی، محصولات روکش شکلاتی",
+            "industry": "Food_&_Beverage",
+            "sub_industry": "Chocolate_Manufacturing",
+            "business_model": "B2C",
+            "description": "محصولات شکلاتی با کیفیت از گروه زر",
+            "description_en": "Quality chocolate products from Zar Group",
+            "market_position": "Growing segment",
+            "product_lines": [
+              {
+                "line": "Zar Chocolate Bars",
+                "line_fa": "شکلات تابلتی زر",
+                "description": "Milk and dark chocolate bars",
+                "variants": ["Milk Chocolate", "Dark Chocolate", "Hazelnut"]
+              },
+              {
+                "line": "Zar Chocolate Wafers",
+                "line_fa": "ویفر شکلاتی زر",
+                "description": "Chocolate-coated wafers"
+              }
+            ]
+          },
+          {
+            "company": "Zar Snacks",
+            "name_fa": "اسنک زر",
+            "role": "Savory Snacks",
+            "established": "2000",
+            "website": null,
+            "focus": "Chips, crackers, savory snacks",
+            "focus_fa": "چیپس، کراکر، میان‌وعده‌های شور",
+            "industry": "Food_&_Beverage",
+            "sub_industry": "Savory_Snacks",
+            "business_model": "B2C",
+            "description": "محصولات میان‌وعده شور",
+            "description_en": "Savory snack products",
+            "market_position": "Niche segment"
+          }
+        ],
+        "distribution": [
+          {
+            "company": "Zar Distribution Network",
+            "name_fa": "شبکه توزیع زر",
+            "role": "Distribution & Logistics",
+            "focus": "National distribution for all Zar products",
+            "focus_fa": "توزیع سراسری تمام محصولات زر",
+            "business_model": "B2B",
+            "description": "شبکه توزیع یکپارچه برای تمام برندهای گروه",
+            "description_en": "Integrated distribution network for all group brands",
+            "coverage": "All major cities in Iran"
+          }
+        ]
+      }
+    },
+    "product_statistics": {
+      "total_brands": 3,
+      "total_product_lines": 15,
+      "production_capacity": "50,000+ tons annually",
+      "distribution_points": "10,000+ retail points nationwide"
+    },
+    "market_intelligence": {
+      "market_position": "یکی از سه برند برتر صنعت شیرینی در ایران",
+      "market_position_en": "One of top 3 confectionery brands in Iran",
+      "market_share": "15-20% in macaron category",
+      "key_competitors": [
+        "Minoo Industrial Group",
+        "Tak Macaron",
+        "Kale",
+        "Shirin Asal"
+      ],
+      "competitive_advantages": [
+        "Strong brand heritage (50+ years)",
+        "Wide product portfolio",
+        "National distribution network",
+        "Quality reputation"
+      ],
+      "target_demographics": {
+        "primary": "Families with children",
+        "primary_fa": "خانواده‌ها با کودکان",
+        "secondary": "Young adults, tea-time consumers",
+        "secondary_fa": "بزرگسالان جوان، مصرف‌کنندگان وقت چای",
+        "age_range": "5-45 years",
+        "socioeconomic": "Middle to upper-middle class"
+      }
+    },
+    "cross_promotion_opportunities": {
+      "high_synergy_pairs": [
+        {
+          "brand_1": "Zar Macaron",
+          "brand_2": "Zar Chocolate",
+          "opportunity": "Gift boxes combining macarons and chocolates",
+          "opportunity_fa": "جعبه هدیه ترکیبی ماکارون و شکلات"
+        },
+        {
+          "brand_1": "Zar Macaron",
+          "brand_2": "Zar Snacks",
+          "opportunity": "Party and gathering assortment packs",
+          "opportunity_fa": "بسته‌های ترکیبی برای مهمانی و گردهمایی"
+        },
+        {
+          "brand_1": "All Zar Products",
+          "brand_2": "Tea Brands",
+          "opportunity": "Tea-time bundle partnerships",
+          "opportunity_fa": "همکاری برای بسته‌های وقت چای"
+        }
+      ]
+    },
+    "seasonal_campaigns": {
+      "nowruz": "افزایش فروش 200% در ماه اسفند و فروردین",
+      "ramadan": "Campaign focus on Iftar snacks",
+      "yalda": "Winter gathering special packs",
+      "back_to_school": "Kids lunch box promotions"
+    }
+  }
+}

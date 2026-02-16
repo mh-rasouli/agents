@@ -1,0 +1,112 @@
+{
+  "artin_pouya_pardaz_group": {
+    "corporate_structure": {
+      "ultimate_parent": {
+        "name": "Artin Pouya Pardaz",
+        "name_fa": "آرتین پویا پرداز",
+        "brand_name": "Artin Pouya Pardaz",
+        "established": "Unknown",
+        "headquarters": "تهران، ایران",
+        "employees": "Unknown",
+        "description": "شرکت فعال در حوزه مشاوره روانشناسی و خدمات سلامت روان",
+        "description_en": "Company active in psychological counseling and mental health services",
+        "website": "https://hamkadeh.com/",
+        "stock_symbol": null,
+        "market_cap": "Unknown"
+      },
+      "subsidiaries": {
+        "mental_health_services": [
+          {
+            "company": "Hamkade",
+            "name_fa": "همکده",
+            "role": "Online Psychological Counseling Platform",
+            "established": "Unknown",
+            "website": "https://hamkadeh.com/",
+            "focus": "Online psychological counseling, mental health services, 300+ professional counselors",
+            "focus_fa": "مشاوره روانشناسی آنلاین، خدمات سلامت روان، بیش از 300 مشاور حرفه‌ای",
+            "industry": "Healthcare_Technology",
+            "industry_category": {
+              "name_en": "Healthcare_&_Medical_Services",
+              "name_fa": "خدمات بهداشت و درمان",
+              "isic_code": "8690",
+              "category_level_1": "Healthcare_Services",
+              "category_level_2": "Mental_Health_Services",
+              "category_level_3": "Online_Counseling_Platforms"
+            },
+            "business_model": "B2C",
+            "description": "بزرگترین مرکز مشاوره روانشناسی آنلاین ایران با بیش از 300 متخصص در 20 حوزه تخصصی",
+            "description_en": "Iran's largest online psychological counseling center with over 300 specialists in 20 specialized fields",
+            "market_position": "Leader in online mental health services",
+            "target_audience": "Individuals seeking psychological counseling, mental health support",
+            "target_audience_fa": "افراد نیازمند مشاوره روانشناسی، پشتیبانی سلامت روان",
+            "key_services": [
+              "Individual counseling",
+              "Couple therapy",
+              "Family counseling",
+              "Career counseling",
+              "Educational counseling"
+            ],
+            "key_services_fa": [
+              "مشاوره فردی",
+              "زوج درمانی",
+              "مشاوره خانواده",
+              "مشاوره شغلی",
+              "مشاوره تحصیلی"
+            ],
+            "social_media": {
+              "instagram": "https://www.instagram.com/hamkade.ir",
+              "telegram": "https://t.me/hamkadeh1"
+            },
+            "contact": {
+              "emails": ["info@hamkadeh.com", "info@hmakadeh.com"],
+              "phones": ["1757404837", "1771086430", "1770030099"]
+            }
+          }
+        ]
+      }
+    },
+    "brand_relationships": {
+      "sister_brands": [],
+      "competitors": [
+        "Tavan Counseling Center",
+        "Salamat Psychology",
+        "Doodline Psychology"
+      ],
+      "competitors_fa": [
+        "مرکز مشاوره توان",
+        "سلامت روان شناسی",
+        "دودلاین روان‌شناسی"
+      ]
+    },
+    "market_intelligence": {
+      "industry": "Mental Health & Counseling Services",
+      "industry_fa": "سلامت روان و خدمات مشاوره",
+      "market_size": "Growing rapidly - increased awareness of mental health",
+      "market_size_fa": "در حال رشد سریع - افزایش آگاهی از سلامت روان",
+      "competitive_advantages": [
+        "Largest pool of counselors (300+)",
+        "20 specialized counseling areas",
+        "Online accessibility",
+        "Established brand recognition"
+      ],
+      "competitive_advantages_fa": [
+        "بیشترین تعداد مشاور (بیش از 300)",
+        "20 حوزه تخصصی مشاوره",
+        "دسترسی آنلاین",
+        "شناخت برند استوار"
+      ],
+      "target_demographics": {
+        "age_range": "18-55",
+        "income_level": "middle_to_high",
+        "education": "high_school_and_above",
+        "urban_focus": "primarily_urban"
+      },
+      "distribution_channels": [
+        "Website",
+        "Mobile app",
+        "Social media",
+        "Referrals"
+      ]
+    }
+  }
+}
