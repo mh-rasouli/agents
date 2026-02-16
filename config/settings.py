@@ -15,6 +15,10 @@ class Settings(BaseSettings):
     MAX_TOKENS: int = 8192  # Gemini supports longer context
     TEMPERATURE: float = 0.7
 
+    # Tavily Search API (Optional - Enhanced AI Search)
+    TAVILY_API_KEY: Optional[str] = None
+    TAVILY_ENABLED: bool = False  # Enable Tavily search
+
     # Scraper Configuration
     RATE_LIMIT_DELAY: float = 1.5  # seconds between requests
     SCRAPER_TIMEOUT: int = 30  # seconds

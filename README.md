@@ -8,7 +8,8 @@ This system leverages **LangGraph** and **OpenRouter API (Gemini 3 Pro)** to orc
 
 ### Key Features
 
-- 📊 **Multi-Source Data Collection**: Aggregates data from 6+ Iranian sources (rasmio, codal, tsetmc, linka, trademark registry, websites)
+- 📊 **Multi-Source Data Collection**: Aggregates data from 7+ Iranian sources (rasmio, codal, tsetmc, linka, trademark registry, websites)
+- 🔍 **AI-Powered Search**: Optional Tavily integration for enhanced search results
 - 🔗 **Relationship Mapping**: Identifies parent companies, subsidiaries, sister brands, and shareholders
 - 🏢 **Industry Categorization**: Classifies industries, products, audience segments, and price tiers
 - 💡 **Strategic Insights**: Generates actionable advertising recommendations
@@ -75,6 +76,17 @@ cp .env.example .env
 ```bash
 playwright install
 ```
+
+6. **(Optional) Enable Tavily AI Search** (for enhanced search results)
+
+```bash
+# Get API key from https://tavily.com (1,000 free searches/month)
+# Add to .env:
+TAVILY_ENABLED=true
+TAVILY_API_KEY=tvly-your-api-key-here
+```
+
+See [TAVILY_INTEGRATION.md](TAVILY_INTEGRATION.md) for details.
 
 ## Usage
 
