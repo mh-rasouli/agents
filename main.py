@@ -98,7 +98,7 @@ def run_batch_mode(args):
         logger.info("Using PARALLEL processing mode")
 
         # Hard budget limit: $0.20 (can be overridden with --budget flag)
-        budget_limit = getattr(args, 'budget', 0.20)
+        budget_limit = args.budget if args.budget is not None else 0.20
         logger.info(f"💰 Budget limit: ${budget_limit:.2f}")
 
         processor = ParallelBatchProcessor(
