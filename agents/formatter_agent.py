@@ -1949,30 +1949,129 @@ class OutputFormatterAgent(BaseAgent):
 
         return output_path
 
+    def _extract_products_from_categories(self, categories_data) -> List[Dict]:
+        """Extract products from various category structures.
+
+        Args:
+            categories_data: Can be dict or list of categories
+
+        Returns:
+            List of products with category info
+        """
+        products = []
+
+        if isinstance(categories_data, dict):
+            # Dict structure: {category_key: {products: [...], category_name: "..."}}
+            for category_key, category_data in categories_data.items():
+                if isinstance(category_data, dict):
+                    category_name = category_data.get("category_name", category_key)
+                    # Try both "products" and "services" keys
+                    items = category_data.get("products", category_data.get("services", []))
+                    for product in items:
+                        product_with_category = product.copy() if isinstance(product, dict) else {"product_name": str(product)}
+                        product_with_category["category"] = category_name
+                        products.append(product_with_category)
+        elif isinstance(categories_data, list):
+            # List structure: [{category_name: "...", products: [...]}] or [{category: "...", services: [...]}]
+            for category in categories_data:
+                if isinstance(category, dict):
+                    # Try different key names for category
+                    category_name = category.get("category_name", category.get("category", "Unknown"))
+                    # Try both "products" and "services" keys
+                    items = category.get("products", category.get("services", []))
+                    for product in items:
+                        product_with_category = product.copy() if isinstance(product, dict) else {"product_name": str(product)}
+                        product_with_category["category"] = category_name
+                        products.append(product_with_category)
+
+        return products
+
     def _generate_products_export(self, state: Dict, output_dir: Path, timestamp: str) -> Path:
         """Generate products export CSV."""
         output_path = output_dir / "product_catalog.csv"
+        brand_output_dir = output_dir.parent  # Go up to brand directory
 
         product_catalog = state.get("product_catalog", {})
+
+        # If state is empty but JSON file exists, read from JSON file as fallback
+        if not product_catalog or (
+            not product_catalog.get("products") and
+            not product_catalog.get("product_categories") and
+            not product_catalog.get("services") and
+            not product_catalog.get("catalog") and
+            not product_catalog.get("categories")
+        ):
+            json_file = brand_output_dir / "7_product_catalog.json"
+            if json_file.exists():
+                try:
+                    import json
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        json_data = json.load(f)
+                    # Extract product_categories from JSON structure
+                    if "product_categories" in json_data:
+                        product_catalog = {"product_categories": json_data["product_categories"]}
+                    elif "complete_product_list" in json_data:
+                        product_catalog = {"products": json_data["complete_product_list"]}
+                    elif "services_list" in json_data:
+                        product_catalog = {"services": json_data["services_list"]}
+                except Exception as e:
+                    logger.error(f"Error reading JSON file for products export: {e}")
+
+        # Extract products from multiple possible locations
         products = product_catalog.get("products", [])
+
+        # If products not found, try catalog structure (LLM sometimes returns this)
+        if not products and "catalog" in product_catalog:
+            catalog = product_catalog["catalog"]
+            # catalog might contain the actual categories/products data
+            if isinstance(catalog, dict):
+                # Check if catalog has categories inside it
+                if "categories" in catalog:
+                    products = self._extract_products_from_categories(catalog["categories"])
+                # Check if catalog itself is the categories structure
+                elif any(isinstance(v, dict) and ("products" in v or "category_name" in v or "services" in v) for v in catalog.values()):
+                    products = self._extract_products_from_categories(catalog)
+            elif isinstance(catalog, list):
+                # catalog is a list of categories
+                products = self._extract_products_from_categories(catalog)
+
+        # If products not found, try categories structure (direct from state)
+        if not products and "categories" in product_catalog:
+            products = self._extract_products_from_categories(product_catalog["categories"])
+
+        # If products not found, try product_categories structure
+        if not products and "product_categories" in product_catalog:
+            products = self._extract_products_from_categories(product_catalog["product_categories"])
+
+        # If still no products, try services array (for healthcare/counseling brands)
+        if not products and "services" in product_catalog:
+            products = []
+            for service in product_catalog.get("services", []):
+                # Map service fields to product fields
+                products.append({
+                    "product_name": service.get("name", service.get("name_fa", "")),
+                    "category": service.get("category", "Services"),
+                    "description": service.get("type", service.get("availability", "")),
+                    "target_market": service.get("availability", "Available")
+                })
 
         if products:
             with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
-                fieldnames = ["product_name", "category", "therapeutic_area", "description"]
+                fieldnames = ["product_name", "category", "description", "target_market"]
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
 
                 for product in products:
                     writer.writerow({
-                        "product_name": product.get("name", ""),
+                        "product_name": product.get("product_name", product.get("service_name", product.get("name", ""))),
                         "category": product.get("category", ""),
-                        "therapeutic_area": product.get("therapeutic_area", ""),
-                        "description": product.get("description", "")
+                        "description": product.get("description", ""),
+                        "target_market": product.get("target_market", "")
                     })
         else:
             # Empty CSV with headers
             with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
-                writer = csv.DictWriter(f, fieldnames=["product_name", "category", "therapeutic_area", "description"])
+                writer = csv.DictWriter(f, fieldnames=["product_name", "category", "description", "target_market"])
                 writer.writeheader()
 
         return output_path
