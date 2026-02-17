@@ -8,6 +8,7 @@ from pathlib import Path
 from graph import run_workflow
 from config import settings
 from utils import get_logger
+from utils.exceptions import APIKeyError
 
 logger = get_logger(__name__)
 
@@ -42,22 +43,28 @@ def run_single_brand(args):
         logger.info(f"  Credentials: {google_sheets_credentials}")
         logger.info(f"  Sheet ID: {google_sheets_id}")
 
-    final_state = run_workflow(
-        brand_name=args.brand,
-        brand_website=args.website,
-        parent_company=args.parent,
-        google_sheets_credentials=google_sheets_credentials,
-        google_sheets_id=google_sheets_id
-    )
+    try:
+        final_state = run_workflow(
+            brand_name=args.brand,
+            brand_website=args.website,
+            parent_company=args.parent,
+            google_sheets_credentials=google_sheets_credentials,
+            google_sheets_id=google_sheets_id
+        )
 
-    # Print results
-    print_results(final_state)
+        # Print results
+        print_results(final_state)
 
-    # Exit with appropriate code
-    if final_state.get("errors"):
+        # Exit with appropriate code
+        if final_state.get("errors"):
+            sys.exit(1)
+        else:
+            sys.exit(0)
+
+    except APIKeyError as e:
+        # Clear, formatted error message
+        print(str(e))
         sys.exit(1)
-    else:
-        sys.exit(0)
 
 
 def run_batch_mode(args):
@@ -209,6 +216,40 @@ def run_batch_mode(args):
                         row_number,
                         final_state["outputs"]
                     )
+
+        except APIKeyError as e:
+            # API Key error - stop immediately and save progress
+            logger.error("=" * 60)
+            logger.error("API KEY ERROR - STOPPING BATCH PROCESSING")
+            logger.error("=" * 60)
+            logger.error(f"Failed on brand {idx}/{len(brands)}: {brand_name}")
+            logger.error(f"Processed {idx-1} brands before error")
+
+            # Save checkpoint with current progress
+            checkpoint_file = Path("state/checkpoint.json")
+            checkpoint_file.parent.mkdir(parents=True, exist_ok=True)
+
+            import json
+            from datetime import datetime
+            checkpoint = {
+                "timestamp": datetime.now().isoformat(),
+                "error": "API_KEY_ERROR",
+                "failed_brand": brand_name,
+                "failed_brand_index": idx,
+                "processed_count": idx - 1,
+                "results": results
+            }
+
+            with open(checkpoint_file, 'w') as f:
+                json.dump(checkpoint, f, indent=2)
+
+            logger.info(f"Progress saved to: {checkpoint_file}")
+
+            # Print clear error message
+            print(str(e))
+
+            # Exit immediately
+            sys.exit(1)
 
         except Exception as e:
             results["failed"].append({

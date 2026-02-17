@@ -14,6 +14,8 @@ from agents import (
     CustomerIntelligenceAgent,
 )
 from utils import get_logger
+from utils.exceptions import APIKeyError
+from utils.llm_client import llm_client
 
 logger = get_logger(__name__)
 
@@ -106,6 +108,14 @@ def run_workflow(
         Final state with all analysis results
     """
     logger.info(f"Starting brand intelligence analysis for: {brand_name}")
+
+    # Validate API key before starting (fail fast)
+    logger.info("Validating OpenRouter API key...")
+    try:
+        llm_client.validate_api_key_with_test_call()
+    except APIKeyError as e:
+        logger.error("API key validation failed - stopping immediately")
+        raise  # Re-raise to stop processing
 
     # Create workflow
     workflow = create_workflow(google_sheets_credentials, google_sheets_id)

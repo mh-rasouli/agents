@@ -5,6 +5,7 @@ from typing import Optional, Dict, Any
 from openai import OpenAI
 from config.settings import settings
 from utils.logger import get_logger
+from utils.exceptions import APIKeyError
 
 logger = get_logger(__name__)
 
@@ -39,6 +40,39 @@ class LLMClient:
         """
         return self.api_key_valid and self.client is not None
 
+    def validate_api_key_with_test_call(self) -> None:
+        """Validate API key by making a test call.
+
+        Raises:
+            APIKeyError: If API key is invalid or authentication fails
+        """
+        if not self.is_available():
+            raise APIKeyError(
+                message="API key is not configured or is invalid",
+                provider="OpenRouter"
+            )
+
+        try:
+            # Make a minimal test call
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[{"role": "user", "content": "test"}],
+                max_tokens=5
+            )
+            logger.info("✅ API key validation successful")
+        except Exception as e:
+            error_str = str(e)
+            if "401" in error_str or "authentication" in error_str.lower():
+                raise APIKeyError(
+                    message=f"Authentication failed: {error_str}",
+                    provider="OpenRouter"
+                )
+            else:
+                raise APIKeyError(
+                    message=f"API test call failed: {error_str}",
+                    provider="OpenRouter"
+                )
+
     def generate(
         self,
         prompt: str,
@@ -64,11 +98,10 @@ class LLMClient:
         """
         # Check if API is available
         if not self.is_available():
-            error_msg = "OpenRouter API not available - API key not configured"
-            logger.warning(error_msg)
-            if json_mode:
-                return "{}"  # Return empty JSON
-            return ""
+            raise APIKeyError(
+                message="Cannot generate: API key not configured or invalid",
+                provider="OpenRouter"
+            )
 
         try:
             messages = []
@@ -121,9 +154,17 @@ class LLMClient:
             return response_text
 
         except Exception as e:
+            error_str = str(e)
             logger.error(f"OpenRouter API error: {e}")
-            if json_mode:
-                return "{}"  # Return empty JSON on error
+
+            # Check for authentication errors (401)
+            if "401" in error_str or "authentication" in error_str.lower() or "user not found" in error_str.lower():
+                raise APIKeyError(
+                    message=f"Authentication failed during API call: {error_str}",
+                    provider="OpenRouter"
+                )
+
+            # Re-raise other errors
             raise
 
     def extract_structured_data(

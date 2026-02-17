@@ -12,6 +12,13 @@ from utils.helpers import (
 from utils.google_sheets_client import GoogleSheetsClient
 from utils.registry import BrandRegistry
 from utils.run_logger import RunLogger
+from utils.exceptions import (
+    BrandIntelligenceError,
+    APIKeyError,
+    TavilyAPIKeyError,
+    BudgetExceededError,
+    CheckpointError,
+)
 
 __all__ = [
     # LLM Client
@@ -30,6 +37,12 @@ __all__ = [
     # Registry & Logging
     "BrandRegistry",
     "RunLogger",
+    # Exceptions
+    "BrandIntelligenceError",
+    "APIKeyError",
+    "TavilyAPIKeyError",
+    "BudgetExceededError",
+    "CheckpointError",
 ]
 
 __version__ = "1.0.0"
