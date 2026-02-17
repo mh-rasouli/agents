@@ -93,7 +93,8 @@ def run_workflow(
     brand_website: str = None,
     parent_company: str = None,
     google_sheets_credentials: str = None,
-    google_sheets_id: str = None
+    google_sheets_id: str = None,
+    skip_api_validation: bool = False
 ) -> dict:
     """Run the brand intelligence workflow.
 
@@ -103,19 +104,21 @@ def run_workflow(
         parent_company: Optional parent company name
         google_sheets_credentials: Path to Google service account JSON credentials (optional)
         google_sheets_id: Google Sheets ID for customer intelligence data (optional)
+        skip_api_validation: Skip API validation (used in batch mode where validation happens once)
 
     Returns:
         Final state with all analysis results
     """
     logger.info(f"Starting brand intelligence analysis for: {brand_name}")
 
-    # Validate API key before starting (fail fast)
-    logger.info("Validating OpenRouter API key...")
-    try:
-        llm_client.validate_api_key_with_test_call()
-    except APIKeyError as e:
-        logger.error("API key validation failed - stopping immediately")
-        raise  # Re-raise to stop processing
+    # Validate API key before starting (fail fast) - unless already validated in batch mode
+    if not skip_api_validation:
+        logger.info("Validating OpenRouter API key...")
+        try:
+            llm_client.validate_api_key_with_test_call()
+        except APIKeyError as e:
+            logger.error("API key validation failed - stopping immediately")
+            raise  # Re-raise to stop processing
 
     # Create workflow
     workflow = create_workflow(google_sheets_credentials, google_sheets_id)

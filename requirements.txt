@@ -11,6 +11,7 @@ tavily-python>=0.3.0  # AI-powered search for agents
 
 # Data Processing
 pandas>=2.2.0
+tqdm>=4.66.0  # Progress bars for batch processing
 
 # Configuration & Settings
 pydantic>=2.8.0

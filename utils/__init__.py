@@ -12,6 +12,7 @@ from utils.helpers import (
 from utils.google_sheets_client import GoogleSheetsClient
 from utils.registry import BrandRegistry
 from utils.run_logger import RunLogger
+from utils.batch_processor import ParallelBatchProcessor
 from utils.exceptions import (
     BrandIntelligenceError,
     APIKeyError,
@@ -37,6 +38,8 @@ __all__ = [
     # Registry & Logging
     "BrandRegistry",
     "RunLogger",
+    # Batch Processing
+    "ParallelBatchProcessor",
     # Exceptions
     "BrandIntelligenceError",
     "APIKeyError",

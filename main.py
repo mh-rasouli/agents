@@ -74,11 +74,70 @@ def run_batch_mode(args):
         args: Command-line arguments
     """
     import time
-    from utils import GoogleSheetsClient, BrandRegistry, RunLogger
+    from utils import ParallelBatchProcessor, llm_client
+    from utils.exceptions import APIKeyError
 
+    # ONE-TIME API VALIDATION (Fail Fast at Batch Level)
     logger.info("=" * 60)
-    logger.info("BATCH MODE: Processing brands from Google Sheets")
+    logger.info("VALIDATING API KEYS")
     logger.info("=" * 60)
+
+    try:
+        llm_client.validate_api_key_with_test_call()
+        logger.info("✅ OpenRouter API key valid\n")
+    except APIKeyError as e:
+        logger.error("❌ OpenRouter API key invalid\n")
+        print(str(e))
+        sys.exit(1)
+
+    # Check if parallel mode is enabled
+    use_parallel = getattr(args, 'workers', 0) > 1
+
+    if use_parallel:
+        # Use new parallel batch processor
+        logger.info("Using PARALLEL processing mode")
+
+        processor = ParallelBatchProcessor(
+            sheets_credentials=args.sheets_credentials,
+            sheets_id=args.sheets_id,
+            max_workers=args.workers,
+            chunk_size=getattr(args, 'chunk_size', 50),
+            budget_limit=getattr(args, 'budget', None)
+        )
+
+        try:
+            results = processor.process_batch(
+                force=getattr(args, 'force', False),
+                limit=getattr(args, 'limit', None)
+            )
+
+            # Exit with appropriate code
+            if results["failed"]:
+                sys.exit(1)
+            else:
+                sys.exit(0)
+
+        except Exception as e:
+            logger.error(f"Batch processing failed: {e}")
+            import traceback
+            traceback.print_exc()
+            sys.exit(1)
+
+    else:
+        # Use original sequential processing (for backwards compatibility)
+        logger.info("Using SEQUENTIAL processing mode (legacy)")
+        logger.info("TIP: Use --workers 8 for 6× faster processing\n")
+        _run_batch_mode_sequential(args)
+
+
+def _run_batch_mode_sequential(args):
+    """Run batch mode with sequential processing (legacy mode).
+
+    Args:
+        args: Command-line arguments
+    """
+    import time
+    from utils import GoogleSheetsClient, BrandRegistry, RunLogger
 
     # Initialize run logger
     run_logger = RunLogger()
@@ -417,6 +476,36 @@ Examples:
         "--force",
         action="store_true",
         help="Force reprocessing all brands (ignore registry cache)"
+    )
+
+    # Parallel processing options
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=1,
+        help="Number of parallel workers for batch mode (default: 1, recommended: 8)"
+    )
+
+    parser.add_argument(
+        "--budget",
+        type=float,
+        default=None,
+        help="Budget limit in dollars (e.g., 50.0). Processing stops when budget is reached."
+    )
+
+    parser.add_argument(
+        "--limit",
+        "-l",
+        type=int,
+        default=None,
+        help="Limit number of brands to process (useful for testing, e.g., --limit 10)"
+    )
+
+    parser.add_argument(
+        "--chunk-size",
+        type=int,
+        default=50,
+        help="Brands per chunk for memory management (default: 50)"
     )
 
     args = parser.parse_args()
