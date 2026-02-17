@@ -34,7 +34,11 @@ class OutputFormatterAgent(BaseAgent):
             logger.info("Loaded Iranian brands knowledge base")
 
     def execute(self, state: BrandIntelligenceState) -> BrandIntelligenceState:
-        """Generate comprehensive outputs in 8 formats.
+        """Generate comprehensive outputs in dual-structure format.
+
+        Creates two separate output directories:
+        - human_reports/ : For human consumption (MD, PDF, CSV)
+        - vector_database/ : For RAG systems (chunks, metadata, entities)
 
         Args:
             state: Current workflow state
@@ -47,69 +51,98 @@ class OutputFormatterAgent(BaseAgent):
         brand_name = state["brand_name"]
         timestamp = generate_timestamp()
 
-        # Create brand-specific output directory
+        # Create brand-specific output directory with dual structure
         safe_brand_name = sanitize_filename(brand_name)
         brand_output_dir = self.output_dir / safe_brand_name
         brand_output_dir.mkdir(exist_ok=True)
 
+        # Create subdirectories for dual-output structure
+        human_reports_dir = brand_output_dir / "human_reports"
+        human_reports_dir.mkdir(exist_ok=True)
+
+        human_exports_dir = human_reports_dir / "data_exports"
+        human_exports_dir.mkdir(exist_ok=True)
+
+        vector_db_dir = brand_output_dir / "vector_database"
+        vector_db_dir.mkdir(exist_ok=True)
+
+        vector_chunks_dir = vector_db_dir / "chunks"
+        vector_chunks_dir.mkdir(exist_ok=True)
+
         # Enrich state with knowledge base if needed
         state = self._enrich_with_knowledge(state)
 
-        # Generate all 9 output files
         output_files = {}
 
         try:
-            logger.info(f"Generating 9 comprehensive output files for {brand_name}...")
+            logger.info(f"Generating dual-output structure for {brand_name}...")
+            logger.info("=" * 60)
 
-            # 0. Complete Master Report (TXT)
-            master_path = self._generate_master_report(state, brand_output_dir, timestamp)
-            output_files["master_report"] = str(master_path)
-            logger.info(f"[OK] Master Report: {master_path.name}")
+            # ========== HUMAN REPORTS ==========
+            logger.info("[HUMAN REPORTS]")
 
-            # 1. Brand Profile (JSON)
-            profile_path = self._generate_brand_profile(state, brand_output_dir, timestamp)
-            output_files["brand_profile"] = str(profile_path)
-            logger.info(f"[OK] Brand Profile: {profile_path.name}")
+            # Executive Summary (MD)
+            exec_summary_path = self._generate_executive_summary(state, human_reports_dir, timestamp)
+            output_files["executive_summary"] = str(exec_summary_path)
+            logger.info(f"  ✓ Executive Summary: {exec_summary_path.name}")
 
-            # 2. Strategic Insights (JSON)
-            insights_path = self._generate_strategic_insights(state, brand_output_dir, timestamp)
-            output_files["strategic_insights"] = str(insights_path)
-            logger.info(f"[OK] Strategic Insights: {insights_path.name}")
+            # Complete Analysis Report (MD) - Combines master report + insights
+            complete_report_path = self._generate_complete_analysis_report(state, human_reports_dir, timestamp)
+            output_files["complete_analysis_report"] = str(complete_report_path)
+            logger.info(f"  ✓ Complete Report: {complete_report_path.name}")
 
-            # 3. Brands Database (CSV)
-            csv_path = self._generate_brands_database(state, brand_output_dir, timestamp)
-            output_files["brands_database"] = str(csv_path)
-            logger.info(f"[OK] Brands Database: {csv_path.name}")
+            # Quick Reference (JSON) - Dashboard data
+            quick_ref_path = self._generate_quick_reference(state, human_reports_dir, timestamp)
+            output_files["quick_reference"] = str(quick_ref_path)
+            logger.info(f"  ✓ Quick Reference: {quick_ref_path.name}")
 
-            # 4. Embedding Ready (TXT)
-            embedding_path = self._generate_embedding_text(state, brand_output_dir, timestamp)
-            output_files["embedding_ready"] = str(embedding_path)
-            logger.info(f"[OK] Embedding Ready: {embedding_path.name}")
+            # Data Exports (CSV files)
+            related_brands_csv = self._generate_brands_database(state, human_exports_dir, timestamp)
+            output_files["related_brands_csv"] = str(related_brands_csv)
+            logger.info(f"  ✓ Related Brands CSV: {related_brands_csv.name}")
 
-            # 5. Financial Intelligence (JSON)
-            financial_path = self._generate_financial_intelligence(state, brand_output_dir, timestamp)
-            output_files["financial_intelligence"] = str(financial_path)
-            logger.info(f"[OK] Financial Intelligence: {financial_path.name}")
+            products_csv = self._generate_products_export(state, human_exports_dir, timestamp)
+            output_files["products_csv"] = str(products_csv)
+            logger.info(f"  ✓ Products CSV: {products_csv.name}")
 
-            # 6. Executive Summary (MD)
-            summary_path = self._generate_executive_summary(state, brand_output_dir, timestamp)
-            output_files["executive_summary"] = str(summary_path)
-            logger.info(f"[OK] Executive Summary: {summary_path.name}")
+            opportunities_csv = self._generate_opportunities_export(state, human_exports_dir, timestamp)
+            output_files["opportunities_csv"] = str(opportunities_csv)
+            logger.info(f"  ✓ Opportunities CSV: {opportunities_csv.name}")
 
-            # 7. Complete Product Catalog (JSON) - NEW!
-            product_catalog_path = self._generate_product_catalog(state, brand_output_dir, timestamp)
-            output_files["product_catalog"] = str(product_catalog_path)
-            logger.info(f"[OK] Product Catalog: {product_catalog_path.name}")
+            logger.info("")
 
-            # 8. All Data Aggregated (TXT) - Combines ALL previous files
-            aggregated_path = self._generate_all_data_aggregated(
-                state,
-                brand_output_dir,
-                timestamp,
-                output_files
-            )
-            output_files["all_data_aggregated"] = str(aggregated_path)
-            logger.info(f"[OK] All Data Aggregated: {aggregated_path.name}")
+            # ========== VECTOR DATABASE ==========
+            logger.info("[VECTOR DATABASE]")
+
+            # Semantic Chunks (12 topic-based chunks)
+            chunk_files = self._generate_semantic_chunks(state, vector_chunks_dir, timestamp)
+            output_files["vector_chunks"] = chunk_files
+            logger.info(f"  ✓ Generated {len(chunk_files)} semantic chunks")
+
+            # Metadata (JSON)
+            metadata_path = self._generate_metadata(state, vector_db_dir, timestamp, chunk_files)
+            output_files["metadata"] = str(metadata_path)
+            logger.info(f"  ✓ Metadata: {metadata_path.name}")
+
+            # Entities (JSONL)
+            entities_path = self._generate_entities(state, vector_db_dir, timestamp)
+            output_files["entities"] = str(entities_path)
+            logger.info(f"  ✓ Entities: {entities_path.name}")
+
+            # Relationships (JSON)
+            relationships_path = self._generate_relationships_graph(state, vector_db_dir, timestamp)
+            output_files["relationships_graph"] = str(relationships_path)
+            logger.info(f"  ✓ Relationships: {relationships_path.name}")
+
+            # Embedding Manifest (JSON)
+            manifest_path = self._generate_embedding_manifest(state, vector_db_dir, timestamp, chunk_files)
+            output_files["embedding_manifest"] = str(manifest_path)
+            logger.info(f"  ✓ Embedding Manifest: {manifest_path.name}")
+
+            logger.info("=" * 60)
+            logger.info(f"[SUCCESS] Dual-output structure complete!")
+            logger.info(f"  Human Reports: {human_reports_dir}")
+            logger.info(f"  Vector Database: {vector_db_dir}")
 
             state["outputs"] = output_files
             self._log_end(success=True)
@@ -1765,5 +1798,910 @@ class OutputFormatterAgent(BaseAgent):
         # Write with UTF-8 encoding
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write("\n".join(lines))
+
+        return output_path
+
+    # ========== NEW METHODS FOR DUAL-OUTPUT STRUCTURE ==========
+
+    def _generate_complete_analysis_report(self, state: Dict, output_dir: Path, timestamp: str) -> Path:
+        """Generate complete analysis report (MD) combining all insights."""
+        output_path = output_dir / "complete_analysis_report.md"
+
+        brand_name = state["brand_name"]
+        relationships = state.get("relationships", {})
+        categorization = state.get("categorization", {})
+        insights = state.get("insights", {})
+
+        lines = []
+        lines.append(f"# تحلیل جامع برند: {brand_name}")
+        lines.append("")
+        lines.append(f"**تاریخ گزارش:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        lines.append(f"**شناسه:** {timestamp}")
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+
+        # بخش ۱: پروفایل برند
+        lines.append("## 📋 پروفایل برند")
+        lines.append("")
+        lines.append(f"**نام:** {brand_name}")
+        lines.append(f"**وبسایت:** {state.get('brand_website', 'نامشخص')}")
+
+        parent = relationships.get("parent_company", {})
+        if parent and parent.get("name"):
+            lines.append(f"**شرکت مادر:** {parent.get('name')}")
+
+        lines.append(f"**صنعت:** {categorization.get('primary_industry', {}).get('name_fa', 'نامشخص')}")
+        lines.append(f"**مدل کسب‌وکار:** {categorization.get('business_model', 'B2C')}")
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+
+        # بخش ۲: روابط شرکتی
+        lines.append("## 🏢 ساختار شرکتی و روابط")
+        lines.append("")
+
+        sister_brands = relationships.get("sister_brands", [])
+        if sister_brands:
+            lines.append(f"### برندهای خواهر ({len(sister_brands)} برند)")
+            lines.append("")
+            for brand in sister_brands[:10]:
+                synergy = brand.get("synergy_score", "MEDIUM")
+                lines.append(f"- **{brand.get('name')}** ({brand.get('category', 'نامشخص')}) - هم‌افزایی: {synergy}")
+            lines.append("")
+
+        lines.append("---")
+        lines.append("")
+
+        # بخش ۳: فرصت‌های استراتژیک
+        lines.append("## 💡 فرصت‌های تبلیغات متقابل")
+        lines.append("")
+
+        cross_promo = insights.get("cross_promotion_opportunities", [])
+        if cross_promo:
+            for i, opp in enumerate(cross_promo[:5], 1):
+                lines.append(f"### {i}. {opp.get('partner_brand')}")
+                lines.append("")
+                lines.append(f"- **هم‌افزایی:** {opp.get('synergy_level')}")
+                lines.append(f"- **مفهوم کمپین:** {opp.get('campaign_concept')}")
+                lines.append(f"- **بودجه تخمینی:** {opp.get('estimated_budget')}")
+                lines.append("")
+
+        lines.append("---")
+        lines.append("")
+
+        # بخش ۴: استراتژی کانال
+        lines.append("## 📺 استراتژی کانال‌های بازاریابی")
+        lines.append("")
+
+        channel_recs = insights.get("channel_recommendations", [])
+        if channel_recs:
+            for ch in channel_recs:
+                lines.append(f"### {ch.get('channel')}")
+                lines.append(f"- **اولویت:** {ch.get('priority')}")
+                lines.append(f"- **دلیل:** {ch.get('rationale')}")
+                lines.append(f"- **بودجه:** {ch.get('budget_allocation')}")
+                lines.append("")
+
+        lines.append("---")
+        lines.append("")
+        lines.append(f"*تولید شده توسط Brand Intelligence Agent*")
+
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write("\n".join(lines))
+
+        return output_path
+
+    def _generate_quick_reference(self, state: Dict, output_dir: Path, timestamp: str) -> Path:
+        """Generate quick reference JSON for dashboards/APIs."""
+        output_path = output_dir / "quick_reference.json"
+
+        brand_name = state["brand_name"]
+        relationships = state.get("relationships", {})
+        categorization = state.get("categorization", {})
+        insights = state.get("insights", {})
+
+        quick_ref = {
+            "brand_id": f"{sanitize_filename(brand_name)}_{timestamp}",
+            "brand_name": brand_name,
+            "generated_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "summary": {
+                "industry": categorization.get("primary_industry", {}).get("name_fa", "نامشخص"),
+                "business_model": categorization.get("business_model", "B2C"),
+                "price_tier": categorization.get("price_tier", "نامشخص"),
+                "parent_company": relationships.get("parent_company", {}).get("name", "نامشخص")
+            },
+            "relationships": {
+                "sister_brands_count": len(relationships.get("sister_brands", [])),
+                "top_sister_brands": [
+                    {
+                        "name": b.get("name"),
+                        "synergy": b.get("synergy_score")
+                    }
+                    for b in relationships.get("sister_brands", [])[:5]
+                ]
+            },
+            "opportunities": {
+                "cross_promotion_count": len(insights.get("cross_promotion_opportunities", [])),
+                "top_opportunities": [
+                    {
+                        "partner": o.get("partner_brand"),
+                        "synergy": o.get("synergy_level"),
+                        "priority": o.get("priority")
+                    }
+                    for o in insights.get("cross_promotion_opportunities", [])[:3]
+                ]
+            },
+            "channels": {
+                "recommended_count": len(insights.get("channel_recommendations", [])),
+                "top_channels": [
+                    {
+                        "name": c.get("channel"),
+                        "priority": c.get("priority")
+                    }
+                    for c in insights.get("channel_recommendations", [])[:3]
+                ]
+            }
+        }
+
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(quick_ref, f, ensure_ascii=False, indent=2)
+
+        return output_path
+
+    def _generate_products_export(self, state: Dict, output_dir: Path, timestamp: str) -> Path:
+        """Generate products export CSV."""
+        output_path = output_dir / "product_catalog.csv"
+
+        product_catalog = state.get("product_catalog", {})
+        products = product_catalog.get("products", [])
+
+        if products:
+            with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
+                fieldnames = ["product_name", "category", "therapeutic_area", "description"]
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+
+                for product in products:
+                    writer.writerow({
+                        "product_name": product.get("name", ""),
+                        "category": product.get("category", ""),
+                        "therapeutic_area": product.get("therapeutic_area", ""),
+                        "description": product.get("description", "")
+                    })
+        else:
+            # Empty CSV with headers
+            with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
+                writer = csv.DictWriter(f, fieldnames=["product_name", "category", "therapeutic_area", "description"])
+                writer.writeheader()
+
+        return output_path
+
+    def _generate_opportunities_export(self, state: Dict, output_dir: Path, timestamp: str) -> Path:
+        """Generate campaign opportunities export CSV."""
+        output_path = output_dir / "campaign_opportunities.csv"
+
+        insights = state.get("insights", {})
+        opportunities = insights.get("cross_promotion_opportunities", [])
+
+        if opportunities:
+            with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
+                fieldnames = [
+                    "partner_brand",
+                    "synergy_level",
+                    "priority",
+                    "campaign_concept",
+                    "estimated_budget",
+                    "target_audience",
+                    "expected_benefit"
+                ]
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+
+                for opp in opportunities:
+                    writer.writerow({
+                        "partner_brand": opp.get("partner_brand", ""),
+                        "synergy_level": opp.get("synergy_level", ""),
+                        "priority": opp.get("priority", ""),
+                        "campaign_concept": opp.get("campaign_concept", ""),
+                        "estimated_budget": opp.get("estimated_budget", ""),
+                        "target_audience": opp.get("target_audience", ""),
+                        "expected_benefit": opp.get("expected_benefit", "")
+                    })
+        else:
+            # Empty CSV with headers
+            with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
+                fieldnames = ["partner_brand", "synergy_level", "priority", "campaign_concept", "estimated_budget", "target_audience", "expected_benefit"]
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+
+        return output_path
+
+    def _generate_semantic_chunks(self, state: Dict, chunks_dir: Path, timestamp: str) -> List[str]:
+        """Generate 12 semantic chunks for vector database (500-1000 words each)."""
+        brand_name = state["brand_name"]
+        chunk_files = []
+
+        # Define chunk topics and their content generators
+        chunks_config = [
+            ("001_brand_overview", self._generate_chunk_brand_overview),
+            ("002_corporate_structure", self._generate_chunk_corporate_structure),
+            ("003_sister_brands", self._generate_chunk_sister_brands),
+            ("004_market_positioning", self._generate_chunk_market_positioning),
+            ("005_product_catalog", self._generate_chunk_product_catalog),
+            ("006_strategic_opportunities", self._generate_chunk_strategic_opportunities),
+            ("007_campaign_timing", self._generate_chunk_campaign_timing),
+            ("008_channel_strategy", self._generate_chunk_channel_strategy),
+            ("009_budget_recommendations", self._generate_chunk_budget_recommendations),
+            ("010_creative_direction", self._generate_chunk_creative_direction),
+            ("011_success_metrics", self._generate_chunk_success_metrics),
+            ("012_customer_intelligence", self._generate_chunk_customer_intelligence),
+        ]
+
+        for chunk_filename, generator_func in chunks_config:
+            chunk_path = chunks_dir / f"{chunk_filename}.txt"
+            content = generator_func(state, brand_name, timestamp)
+
+            with open(chunk_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+
+            chunk_files.append(str(chunk_path))
+
+        return chunk_files
+
+    def _generate_chunk_brand_overview(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate brand overview chunk."""
+        categorization = state.get("categorization", {})
+        relationships = state.get("relationships", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Category: {categorization.get('primary_industry', {}).get('name_en', 'Consumer Products')}")
+        lines.append(f"Parent: {relationships.get('parent_company', {}).get('name', 'Unknown')}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[BRAND OVERVIEW]")
+        lines.append("")
+        lines.append(f"{brand_name} is a brand operating in the {categorization.get('primary_industry', {}).get('name_en', 'consumer products')} industry. ")
+
+        parent = relationships.get("parent_company", {})
+        if parent and parent.get("name"):
+            lines.append(f"The brand is owned by {parent.get('name')}, ")
+            if parent.get("stock_symbol"):
+                lines.append(f"which trades under the stock symbol {parent.get('stock_symbol')} on the Tehran Stock Exchange. ")
+
+        ultimate = relationships.get("ultimate_parent", {})
+        if ultimate and ultimate.get("name"):
+            lines.append(f"The ultimate parent company is {ultimate.get('name_fa', ultimate.get('name'))}, ")
+            if ultimate.get('total_brands'):
+                lines.append(f"which manages a portfolio of {ultimate.get('total_brands')} brands ")
+            if ultimate.get('market_cap'):
+                lines.append(f"with an estimated market capitalization of {ultimate.get('market_cap')}. ")
+
+        lines.append(f"The brand operates under a {categorization.get('business_model', 'B2C')} business model, ")
+        lines.append(f"positioned in the {categorization.get('price_tier', 'mid')} price tier. ")
+
+        website = state.get('brand_website', '')
+        if website:
+            lines.append(f"The official website is {website}. ")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_corporate_structure(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate corporate structure chunk."""
+        relationships = state.get("relationships", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[CORPORATE STRUCTURE]")
+        lines.append("")
+
+        parent = relationships.get("parent_company", {})
+        ultimate = relationships.get("ultimate_parent", {})
+
+        lines.append(f"The corporate structure of {brand_name} represents a complex hierarchy of ownership and brand management. ")
+
+        if parent and parent.get("name"):
+            lines.append(f"As a direct subsidiary of {parent.get('name')}, the brand benefits from established distribution networks, ")
+            lines.append(f"operational expertise, and financial stability. The parent company operates in the {parent.get('industry', 'consumer products')} sector, ")
+            lines.append("providing strategic alignment and synergies across the brand portfolio. ")
+
+        if ultimate and ultimate.get("name"):
+            lines.append(f"The ultimate parent organization, {ultimate.get('name_fa', ultimate.get('name'))}, ")
+            if ultimate.get('description'):
+                lines.append(f"is {ultimate.get('description')}. ")
+            if ultimate.get('employees'):
+                lines.append(f"With a workforce of {ultimate.get('employees')} employees ")
+            if ultimate.get('market_cap'):
+                lines.append(f"and market capitalization of {ultimate.get('market_cap')}, ")
+            lines.append("the group provides substantial resources and market presence. ")
+
+        brand_family = relationships.get("brand_family", [])
+        if brand_family:
+            lines.append(f"The broader brand family includes {len(brand_family)} brands across various categories, ")
+            lines.append("creating opportunities for cross-promotion and integrated marketing campaigns. ")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_sister_brands(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate sister brands chunk."""
+        relationships = state.get("relationships", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[SISTER BRANDS AND RELATIONSHIPS]")
+        lines.append("")
+
+        sister_brands = relationships.get("sister_brands", [])
+
+        if sister_brands:
+            lines.append(f"{brand_name} is part of a family of {len(sister_brands)} sister brands under the same parent company. ")
+            lines.append("These sister brands create significant opportunities for cross-promotion and integrated marketing:")
+            lines.append("")
+
+            for brand in sister_brands:
+                lines.append(f"- {brand.get('name')}: Specializes in {brand.get('products', 'consumer products')}, ")
+                lines.append(f"  targeting {brand.get('target_audience', 'general consumers')} with a synergy score of {brand.get('synergy_score', 'MEDIUM')}. ")
+                lines.append(f"  This brand operates in the {brand.get('category', 'consumer')} category with {brand.get('price_tier', 'mid')} pricing. ")
+                lines.append("")
+
+        competitors = relationships.get("competitors", [])
+        if competitors:
+            lines.append("Key competitors in the market include: ")
+            for comp in competitors[:5]:
+                lines.append(f"- {comp.get('name')} ({comp.get('category', 'same category')})")
+            lines.append("")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_market_positioning(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate market positioning chunk."""
+        categorization = state.get("categorization", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[MARKET POSITIONING]")
+        lines.append("")
+
+        lines.append(f"{brand_name} operates with a {categorization.get('business_model', 'B2C')} business model, ")
+
+        target_audiences = categorization.get('target_audiences', [])
+        if target_audiences:
+            aud_strs = []
+            for aud in target_audiences:
+                if isinstance(aud, dict):
+                    aud_strs.append(aud.get("segment") or aud.get("name") or "general consumers")
+                else:
+                    aud_strs.append(str(aud))
+            lines.append(f"targeting {', '.join(aud_strs)}. ")
+
+        lines.append(f"The brand is positioned in the {categorization.get('price_tier', 'mid')} price tier, ")
+        lines.append("balancing quality and affordability to capture maximum market share. ")
+
+        market_position = categorization.get("market_position", {})
+        if market_position:
+            lines.append(f"Market position: {market_position.get('positioning', 'competitive')}. ")
+            lines.append(f"Competitive landscape: {market_position.get('competitive_landscape', 'dynamic and competitive')}. ")
+
+        channels = categorization.get("distribution_channels", [])
+        if channels:
+            lines.append(f"Distribution channels include {', '.join([str(c) for c in channels])}, ")
+            lines.append("ensuring broad market coverage and accessibility to target consumers. ")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_product_catalog(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate product catalog chunk."""
+        product_catalog = state.get("product_catalog", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[PRODUCT CATALOG]")
+        lines.append("")
+
+        products = product_catalog.get("products", [])
+        therapeutic_areas = product_catalog.get("therapeutic_areas", [])
+
+        if products:
+            lines.append(f"{brand_name} offers a portfolio of {len(products)} products")
+            if therapeutic_areas:
+                lines.append(f" across {len(therapeutic_areas)} therapeutic areas. ")
+            else:
+                lines.append(". ")
+
+            lines.append("")
+            for product in products[:20]:  # Limit to 20 products for chunk size
+                lines.append(f"- {product.get('name', 'Product')}: {product.get('description', 'No description')} ")
+                if product.get('category'):
+                    lines.append(f"  Category: {product.get('category')} ")
+                lines.append("")
+        else:
+            lines.append(f"Product catalog information for {brand_name} is currently being compiled. ")
+
+        services = product_catalog.get("services", [])
+        if services:
+            lines.append("Services offered include: ")
+            for service in services:
+                lines.append(f"- {service.get('name', 'Service')}: {service.get('description', '')} ")
+            lines.append("")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_strategic_opportunities(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate strategic opportunities chunk."""
+        insights = state.get("insights", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[STRATEGIC CROSS-PROMOTION OPPORTUNITIES]")
+        lines.append("")
+
+        cross_promo = insights.get("cross_promotion_opportunities", [])
+
+        if cross_promo:
+            lines.append(f"Analysis reveals {len(cross_promo)} high-potential cross-promotion opportunities:")
+            lines.append("")
+
+            for i, opp in enumerate(cross_promo, 1):
+                lines.append(f"{i}. Partnership with {opp.get('partner_brand')}")
+                lines.append(f"   Synergy Level: {opp.get('synergy_level')}")
+                lines.append(f"   Campaign Concept: {opp.get('campaign_concept')}")
+                lines.append(f"   Target Audience: {opp.get('target_audience')}")
+                lines.append(f"   Estimated Budget: {opp.get('estimated_budget')}")
+                lines.append(f"   Expected Benefit: {opp.get('expected_benefit')}")
+                lines.append(f"   Implementation Difficulty: {opp.get('implementation_difficulty')}")
+                lines.append("")
+        else:
+            lines.append("Strategic cross-promotion opportunities are being identified for this brand. ")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_campaign_timing(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate campaign timing chunk."""
+        insights = state.get("insights", {})
+        timing = insights.get("campaign_timing", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[CAMPAIGN TIMING RECOMMENDATIONS]")
+        lines.append("")
+
+        optimal = timing.get("optimal_periods", [])
+        if optimal:
+            lines.append("Optimal campaign periods for maximum impact:")
+            for period in optimal:
+                lines.append(f"- {period}: High consumer engagement and spending")
+            lines.append("")
+
+        avoid = timing.get("avoid_periods", [])
+        if avoid:
+            lines.append("Periods to avoid for commercial campaigns:")
+            for period in avoid:
+                lines.append(f"- {period}")
+            lines.append("")
+
+        quarterly = timing.get("quarterly_recommendations", {})
+        if quarterly:
+            lines.append("Quarterly breakdown:")
+            for quarter, rec in quarterly.items():
+                lines.append(f"{quarter}: {rec}")
+            lines.append("")
+
+        seasonal = timing.get("seasonal_considerations")
+        if seasonal:
+            lines.append(f"Cultural context: {seasonal}")
+            lines.append("")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_channel_strategy(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate channel strategy chunk."""
+        insights = state.get("insights", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[MARKETING CHANNEL STRATEGY]")
+        lines.append("")
+
+        channel_recs = insights.get("channel_recommendations", [])
+
+        if channel_recs:
+            for ch in channel_recs:
+                lines.append(f"{ch.get('channel')} (Priority: {ch.get('priority')})")
+                lines.append(f"  Rationale: {ch.get('rationale')}")
+                lines.append(f"  Content Type: {ch.get('content_type', 'mixed content')}")
+                lines.append(f"  Budget Allocation: {ch.get('budget_allocation', 'TBD')}")
+                lines.append("")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_budget_recommendations(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate budget recommendations chunk."""
+        insights = state.get("insights", {})
+        budget = insights.get("budget_recommendations", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[BUDGET AND INVESTMENT RECOMMENDATIONS]")
+        lines.append("")
+
+        if budget:
+            if budget.get('estimated_range_tomans'):
+                lines.append(f"Recommended annual advertising budget: {budget.get('estimated_range_tomans')}")
+            if budget.get('estimated_range_usd'):
+                lines.append(f"USD equivalent: {budget.get('estimated_range_usd')}")
+            if budget.get('roi_expectations'):
+                lines.append(f"Expected return on investment: {budget.get('roi_expectations')}")
+            lines.append("")
+
+            allocation = budget.get("allocation_by_channel", {})
+            if allocation:
+                lines.append("Recommended channel allocation:")
+                for channel, percent in allocation.items():
+                    lines.append(f"- {channel}: {percent}")
+                lines.append("")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_creative_direction(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate creative direction chunk."""
+        insights = state.get("insights", {})
+        creative = insights.get("creative_direction", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[CREATIVE DIRECTION AND MESSAGING]")
+        lines.append("")
+
+        if creative:
+            messages = creative.get("key_messages", [])
+            if messages:
+                lines.append("Key brand messages:")
+                for msg in messages:
+                    lines.append(f"- {msg}")
+                lines.append("")
+
+            if creative.get("tone_and_style"):
+                lines.append(f"Tone and style: {creative['tone_and_style']}")
+            if creative.get("visual_recommendations"):
+                lines.append(f"Visual recommendations: {creative['visual_recommendations']}")
+            if creative.get("cultural_considerations"):
+                lines.append(f"Cultural considerations: {creative['cultural_considerations']}")
+            lines.append("")
+
+            hashtags = creative.get("hashtag_strategy", [])
+            if hashtags:
+                lines.append(f"Hashtag strategy: {' '.join(hashtags)}")
+                lines.append("")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_success_metrics(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate success metrics chunk."""
+        insights = state.get("insights", {})
+        metrics = insights.get("success_metrics", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[SUCCESS METRICS AND KEY PERFORMANCE INDICATORS]")
+        lines.append("")
+
+        kpis = metrics.get("primary_kpis", [])
+        if kpis:
+            lines.append("Primary KPIs for campaign success:")
+            for kpi in kpis:
+                lines.append(f"- {kpi}")
+            lines.append("")
+
+        if metrics.get("measurement_approach"):
+            lines.append(f"Measurement approach: {metrics['measurement_approach']}")
+        if metrics.get("benchmarks"):
+            lines.append(f"Benchmarks: {metrics['benchmarks']}")
+        lines.append("")
+
+        return "\n".join(lines)
+
+    def _generate_chunk_customer_intelligence(self, state: Dict, brand_name: str, timestamp: str) -> str:
+        """Generate customer intelligence chunk."""
+        customer_intel = state.get("customer_intelligence", {})
+
+        lines = []
+        lines.append(f"Brand: {brand_name}")
+        lines.append(f"Date: {datetime.now().strftime('%Y-%m-%d')}")
+        lines.append("")
+        lines.append("[CUSTOMER INTELLIGENCE]")
+        lines.append("")
+
+        if customer_intel.get("status") == "completed":
+            lines.append(f"Customer intelligence data is available for {brand_name}. ")
+            lines.append(f"Transaction count: {customer_intel.get('transaction_count', 0)}")
+            lines.append(f"Campaign count: {customer_intel.get('campaign_count', 0)}")
+            if customer_intel.get('total_revenue'):
+                lines.append(f"Total revenue: {customer_intel.get('total_revenue'):,.0f} Tomans")
+            lines.append("")
+            lines.append("This data provides insights into past campaign performance, ")
+            lines.append("customer engagement patterns, and revenue generation. ")
+        else:
+            lines.append(f"Customer intelligence data for {brand_name} is not currently available. ")
+            lines.append("This information would include transaction history, campaign performance, ")
+            lines.append("and customer engagement metrics. ")
+
+        return "\n".join(lines)
+
+    def _generate_metadata(self, state: Dict, vector_db_dir: Path, timestamp: str, chunk_files: List[str]) -> Path:
+        """Generate metadata.json for vector database filtering."""
+        output_path = vector_db_dir / "metadata.json"
+
+        brand_name = state["brand_name"]
+        categorization = state.get("categorization", {})
+        relationships = state.get("relationships", {})
+        primary_industry = categorization.get("primary_industry", {})
+
+        # Build chunks metadata
+        chunks_metadata = []
+        chunk_topics = [
+            "brand_overview", "corporate_structure", "sister_brands", "market_positioning",
+            "product_catalog", "strategic_opportunities", "campaign_timing", "channel_strategy",
+            "budget_recommendations", "creative_direction", "success_metrics", "customer_intelligence"
+        ]
+
+        for idx, chunk_file in enumerate(chunk_files):
+            chunk_path = Path(chunk_file)
+            # Read chunk to get word count
+            with open(chunk_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+                word_count = len(content.split())
+
+            chunks_metadata.append({
+                "chunk_id": f"{idx+1:03d}",
+                "filename": chunk_path.name,
+                "topic": chunk_topics[idx] if idx < len(chunk_topics) else "misc",
+                "word_count": word_count,
+                "language": "mixed_fa_en",
+                "tags": [chunk_topics[idx]] if idx < len(chunk_topics) else []
+            })
+
+        metadata = {
+            "brand_id": f"{sanitize_filename(brand_name)}_{timestamp}",
+            "brand_name": brand_name,
+            "brand_name_en": brand_name,  # Could add translation logic
+            "parent_company": relationships.get("parent_company", {}).get("name", "Unknown"),
+            "industry": primary_industry.get("name_en", "Unknown"),
+            "industry_code": primary_industry.get("isic_code", ""),
+            "category_l1": primary_industry.get("category_level_1", "Consumer_Products"),
+            "category_l2": primary_industry.get("category_level_2", "General_Products"),
+            "category_l3": primary_industry.get("category_level_3", "Products"),
+            "business_model": categorization.get("business_model", "B2C"),
+            "price_tier": categorization.get("price_tier", "mid"),
+            "total_sister_brands": len(relationships.get("sister_brands", [])),
+            "analysis_date": datetime.now().strftime("%Y-%m-%d"),
+            "data_sources": ["web", "knowledge_base"],
+            "has_customer_data": state.get("customer_intelligence", {}).get("status") == "completed",
+            "chunks": chunks_metadata
+        }
+
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(metadata, f, ensure_ascii=False, indent=2)
+
+        return output_path
+
+    def _generate_entities(self, state: Dict, vector_db_dir: Path, timestamp: str) -> Path:
+        """Generate entities.jsonl for knowledge graphs."""
+        output_path = vector_db_dir / "entities.jsonl"
+
+        brand_name = state["brand_name"]
+        categorization = state.get("categorization", {})
+        relationships = state.get("relationships", {})
+        product_catalog = state.get("product_catalog", {})
+
+        entities = []
+
+        # Add main brand entity
+        entities.append({
+            "entity_id": f"brand_{sanitize_filename(brand_name).lower()}",
+            "type": "brand",
+            "name": brand_name,
+            "name_en": brand_name,
+            "industry": categorization.get("primary_industry", {}).get("name_en", ""),
+            "parent": f"company_{sanitize_filename(relationships.get('parent_company', {}).get('name', 'unknown')).lower()}"
+        })
+
+        # Add parent company entity
+        parent = relationships.get("parent_company", {})
+        if parent and parent.get("name"):
+            entities.append({
+                "entity_id": f"company_{sanitize_filename(parent['name']).lower()}",
+                "type": "company",
+                "name": parent.get("name"),
+                "stock_symbol": parent.get("stock_symbol", ""),
+                "industry": parent.get("industry", "")
+            })
+
+        # Add sister brands
+        for sister in relationships.get("sister_brands", []):
+            entities.append({
+                "entity_id": f"brand_{sanitize_filename(sister.get('name', '')).lower()}",
+                "type": "brand",
+                "name": sister.get("name"),
+                "parent": f"company_{sanitize_filename(parent.get('name', 'unknown')).lower()}",
+                "relation": "sister",
+                "category": sister.get("category", "")
+            })
+
+        # Add products
+        for product in product_catalog.get("products", [])[:50]:  # Limit to 50
+            entities.append({
+                "entity_id": f"product_{sanitize_filename(product.get('name', '')).lower()}",
+                "type": "product",
+                "name": product.get("name"),
+                "brand": f"brand_{sanitize_filename(brand_name).lower()}",
+                "category": product.get("category", "")
+            })
+
+        # Write as JSONL
+        with open(output_path, 'w', encoding='utf-8') as f:
+            for entity in entities:
+                f.write(json.dumps(entity, ensure_ascii=False) + "\n")
+
+        return output_path
+
+    def _generate_relationships_graph(self, state: Dict, vector_db_dir: Path, timestamp: str) -> Path:
+        """Generate relationships.json for brand relationship graph."""
+        output_path = vector_db_dir / "relationships.json"
+
+        brand_name = state["brand_name"]
+        relationships = state.get("relationships", {})
+        insights = state.get("insights", {})
+
+        # Build cross-promotion partners
+        cross_promo_partners = []
+        for opp in insights.get("cross_promotion_opportunities", []):
+            cross_promo_partners.append({
+                "brand": opp.get("partner_brand"),
+                "synergy": opp.get("synergy_level", "MEDIUM").upper(),
+                "opportunity": opp.get("campaign_concept", "")
+            })
+
+        # Build graph nodes and edges
+        nodes = []
+        edges = []
+
+        # Main brand node
+        nodes.append({
+            "id": sanitize_filename(brand_name).lower(),
+            "type": "brand",
+            "label": brand_name
+        })
+
+        # Parent company node
+        parent = relationships.get("parent_company", {})
+        if parent and parent.get("name"):
+            parent_id = sanitize_filename(parent["name"]).lower()
+            nodes.append({
+                "id": parent_id,
+                "type": "parent",
+                "label": parent.get("name")
+            })
+            edges.append({
+                "from": sanitize_filename(brand_name).lower(),
+                "to": parent_id,
+                "type": "owned_by"
+            })
+
+        # Sister brands
+        for sister in relationships.get("sister_brands", []):
+            sister_id = sanitize_filename(sister.get("name", "")).lower()
+            nodes.append({
+                "id": sister_id,
+                "type": "sister",
+                "label": sister.get("name")
+            })
+            edges.append({
+                "from": sanitize_filename(brand_name).lower(),
+                "to": sister_id,
+                "type": "sister_brand",
+                "synergy": sister.get("synergy_score", "MEDIUM")
+            })
+
+        # Competitors
+        for comp in relationships.get("competitors", [])[:5]:
+            comp_id = sanitize_filename(comp.get("name", "")).lower()
+            nodes.append({
+                "id": comp_id,
+                "type": "competitor",
+                "label": comp.get("name")
+            })
+            edges.append({
+                "from": sanitize_filename(brand_name).lower(),
+                "to": comp_id,
+                "type": "competes_with"
+            })
+
+        graph_data = {
+            "brand": brand_name,
+            "relationships": {
+                "parent_of": [],
+                "child_of": [parent.get("name")] if parent and parent.get("name") else [],
+                "sister_of": [s.get("name") for s in relationships.get("sister_brands", [])],
+                "competes_with": [c.get("name") for c in relationships.get("competitors", [])],
+                "partners_with": [],
+                "cross_promotion_with": cross_promo_partners
+            },
+            "graph": {
+                "nodes": nodes,
+                "edges": edges
+            }
+        }
+
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(graph_data, f, ensure_ascii=False, indent=2)
+
+        return output_path
+
+    def _generate_embedding_manifest(self, state: Dict, vector_db_dir: Path, timestamp: str, chunk_files: List[str]) -> Path:
+        """Generate embedding_manifest.json for embedding pipeline."""
+        output_path = vector_db_dir / "embedding_manifest.json"
+
+        brand_name = state["brand_name"]
+
+        files_list = []
+        for chunk_file in chunk_files:
+            chunk_path = Path(chunk_file)
+            files_list.append({
+                "path": f"chunks/{chunk_path.name}",
+                "should_embed": True,
+                "priority": "high"
+            })
+
+        manifest = {
+            "manifest_version": "1.0",
+            "brand": brand_name,
+            "created": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "embedding_config": {
+                "model": "text-embedding-3-large",
+                "dimensions": 3072,
+                "chunk_strategy": "semantic_topic",
+                "chunk_size_words": "500-1000",
+                "overlap_words": 50,
+                "languages": ["fa", "en"]
+            },
+            "vector_database": {
+                "recommended_provider": "pinecone|qdrant|weaviate",
+                "index_name": "brand_intelligence",
+                "namespace": f"{sanitize_filename(brand_name).lower()}_{timestamp}",
+                "metadata_fields": [
+                    "brand_name",
+                    "industry",
+                    "category_l1",
+                    "category_l2",
+                    "topic",
+                    "analysis_date"
+                ]
+            },
+            "files": files_list
+        }
+
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(manifest, f, ensure_ascii=False, indent=2)
 
         return output_path
