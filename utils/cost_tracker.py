@@ -145,7 +145,7 @@ class CostTracker:
             f"  Total: ${summary['total_cost']:.2f}"
         ]
 
-        if self.budget_limit:
+        if self.budget_limit and summary['budget_used_percent'] is not None:
             lines.append(f"  Budget: ${summary['total_cost']:.2f} / ${summary['budget_limit']:.2f} "
                         f"({summary['budget_used_percent']:.1f}%)")
             lines.append(f"  Remaining: ${summary['budget_remaining']:.2f}")

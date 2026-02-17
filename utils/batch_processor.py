@@ -553,7 +553,7 @@ class ParallelBatchProcessor:
         if self.budget_limit:
             cost_summary = self.cost_tracker.get_summary()
             print(f"  Budget limit: ${self.budget_limit:.2f}")
-            if cost_summary["budget_used_percent"]:
+            if cost_summary["budget_used_percent"] is not None:
                 print(f"  Budget used: {cost_summary['budget_used_percent']:.1f}%")
 
         if self.results["failed"]:
