@@ -34,11 +34,14 @@ class OutputFormatterAgent(BaseAgent):
             logger.info("Loaded Iranian brands knowledge base")
 
     def execute(self, state: BrandIntelligenceState) -> BrandIntelligenceState:
-        """Generate comprehensive outputs in dual-structure format.
+        """Generate comprehensive outputs in human-readable format.
 
-        Creates two separate output directories:
-        - human_reports/ : For human consumption (MD, PDF, CSV)
-        - vector_database/ : For RAG systems (chunks, metadata, entities)
+        Creates output directory:
+        - human_reports/ : For human consumption (MD, CSV, JSON)
+          - Executive summary, complete report, quick reference
+          - Data exports: brands, products, opportunities (CSV)
+
+        Note: vector_database/ generation is DISABLED per user request
 
         Args:
             state: Current workflow state
@@ -63,11 +66,11 @@ class OutputFormatterAgent(BaseAgent):
         human_exports_dir = human_reports_dir / "data_exports"
         human_exports_dir.mkdir(exist_ok=True)
 
-        vector_db_dir = brand_output_dir / "vector_database"
-        vector_db_dir.mkdir(exist_ok=True)
-
-        vector_chunks_dir = vector_db_dir / "chunks"
-        vector_chunks_dir.mkdir(exist_ok=True)
+        # DISABLED: Vector database output not needed
+        # vector_db_dir = brand_output_dir / "vector_database"
+        # vector_db_dir.mkdir(exist_ok=True)
+        # vector_chunks_dir = vector_db_dir / "chunks"
+        # vector_chunks_dir.mkdir(exist_ok=True)
 
         # Enrich state with knowledge base if needed
         state = self._enrich_with_knowledge(state)
@@ -112,37 +115,27 @@ class OutputFormatterAgent(BaseAgent):
             logger.info("")
 
             # ========== VECTOR DATABASE ==========
-            logger.info("[VECTOR DATABASE]")
-
-            # Semantic Chunks (12 topic-based chunks)
-            chunk_files = self._generate_semantic_chunks(state, vector_chunks_dir, timestamp)
-            output_files["vector_chunks"] = chunk_files
-            logger.info(f"  ✓ Generated {len(chunk_files)} semantic chunks")
-
-            # Metadata (JSON)
-            metadata_path = self._generate_metadata(state, vector_db_dir, timestamp, chunk_files)
-            output_files["metadata"] = str(metadata_path)
-            logger.info(f"  ✓ Metadata: {metadata_path.name}")
-
-            # Entities (JSONL)
-            entities_path = self._generate_entities(state, vector_db_dir, timestamp)
-            output_files["entities"] = str(entities_path)
-            logger.info(f"  ✓ Entities: {entities_path.name}")
-
-            # Relationships (JSON)
-            relationships_path = self._generate_relationships_graph(state, vector_db_dir, timestamp)
-            output_files["relationships_graph"] = str(relationships_path)
-            logger.info(f"  ✓ Relationships: {relationships_path.name}")
-
-            # Embedding Manifest (JSON)
-            manifest_path = self._generate_embedding_manifest(state, vector_db_dir, timestamp, chunk_files)
-            output_files["embedding_manifest"] = str(manifest_path)
-            logger.info(f"  ✓ Embedding Manifest: {manifest_path.name}")
+            # DISABLED: Vector database output not needed per user request
+            # logger.info("[VECTOR DATABASE]")
+            # chunk_files = self._generate_semantic_chunks(state, vector_chunks_dir, timestamp)
+            # output_files["vector_chunks"] = chunk_files
+            # logger.info(f"  ✓ Generated {len(chunk_files)} semantic chunks")
+            # metadata_path = self._generate_metadata(state, vector_db_dir, timestamp, chunk_files)
+            # output_files["metadata"] = str(metadata_path)
+            # logger.info(f"  ✓ Metadata: {metadata_path.name}")
+            # entities_path = self._generate_entities(state, vector_db_dir, timestamp)
+            # output_files["entities"] = str(entities_path)
+            # logger.info(f"  ✓ Entities: {entities_path.name}")
+            # relationships_path = self._generate_relationships_graph(state, vector_db_dir, timestamp)
+            # output_files["relationships_graph"] = str(relationships_path)
+            # logger.info(f"  ✓ Relationships: {relationships_path.name}")
+            # manifest_path = self._generate_embedding_manifest(state, vector_db_dir, timestamp, chunk_files)
+            # output_files["embedding_manifest"] = str(manifest_path)
+            # logger.info(f"  ✓ Embedding Manifest: {manifest_path.name}")
 
             logger.info("=" * 60)
-            logger.info(f"[SUCCESS] Dual-output structure complete!")
+            logger.info(f"[SUCCESS] Output generation complete!")
             logger.info(f"  Human Reports: {human_reports_dir}")
-            logger.info(f"  Vector Database: {vector_db_dir}")
 
             state["outputs"] = output_files
             self._log_end(success=True)
