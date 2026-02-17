@@ -14,7 +14,7 @@ except ImportError:
     TQDM_AVAILABLE = False
     print("Warning: tqdm not installed. Install with: pip install tqdm")
 
-from utils import get_logger, BrandRegistry, RunLogger, GoogleSheetsClient, CostTracker
+from utils import get_logger, BrandRegistry, RunLogger, GoogleSheetsClient
 from utils.exceptions import APIKeyError, BudgetExceededError
 
 logger = get_logger(__name__)
@@ -58,7 +58,8 @@ class ParallelBatchProcessor:
             "skipped": []
         }
 
-        # Cost tracking with CostTracker
+        # Cost tracking with CostTracker (import here to avoid circular dependency)
+        from utils.cost_tracker import CostTracker
         self.cost_tracker = CostTracker(budget_limit=budget_limit)
         self.cost_per_brand = 0.05  # Estimate: $0.05 per brand (for estimates only)
 
