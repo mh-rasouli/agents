@@ -1988,12 +1988,10 @@ class OutputFormatterAgent(BaseAgent):
             with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
                 fieldnames = [
                     "partner_brand",
-                    "synergy_level",
-                    "priority",
-                    "campaign_concept",
-                    "estimated_budget",
-                    "target_audience",
-                    "expected_benefit"
+                    "rationale",
+                    "potential_reach",
+                    "recommended_approach",
+                    "timing"
                 ]
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
@@ -2001,17 +1999,15 @@ class OutputFormatterAgent(BaseAgent):
                 for opp in opportunities:
                     writer.writerow({
                         "partner_brand": opp.get("partner_brand", ""),
-                        "synergy_level": opp.get("synergy_level", ""),
-                        "priority": opp.get("priority", ""),
-                        "campaign_concept": opp.get("campaign_concept", ""),
-                        "estimated_budget": opp.get("estimated_budget", ""),
-                        "target_audience": opp.get("target_audience", ""),
-                        "expected_benefit": opp.get("expected_benefit", "")
+                        "rationale": opp.get("rationale", ""),
+                        "potential_reach": opp.get("potential_reach", ""),
+                        "recommended_approach": opp.get("recommended_approach", ""),
+                        "timing": opp.get("timing", "")
                     })
         else:
             # Empty CSV with headers
             with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
-                fieldnames = ["partner_brand", "synergy_level", "priority", "campaign_concept", "estimated_budget", "target_audience", "expected_benefit"]
+                fieldnames = ["partner_brand", "rationale", "potential_reach", "recommended_approach", "timing"]
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
 
