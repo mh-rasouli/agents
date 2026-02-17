@@ -97,12 +97,16 @@ def run_batch_mode(args):
         # Use new parallel batch processor
         logger.info("Using PARALLEL processing mode")
 
+        # Hard budget limit: $0.20 (can be overridden with --budget flag)
+        budget_limit = getattr(args, 'budget', 0.20)
+        logger.info(f"💰 Budget limit: ${budget_limit:.2f}")
+
         processor = ParallelBatchProcessor(
             sheets_credentials=args.sheets_credentials,
             sheets_id=args.sheets_id,
             max_workers=args.workers,
             chunk_size=getattr(args, 'chunk_size', 50),
-            budget_limit=getattr(args, 'budget', None)
+            budget_limit=budget_limit
         )
 
         try:
