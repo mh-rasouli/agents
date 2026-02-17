@@ -1,0 +1,4 @@
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Snapp,SELF,Unknown,Information and Communication Technology,Consumer_Products,General_Products,Information_and_Communication_Technology,SELF,leader,mid-market
+SnappFood & SnappMarket,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+SnappTrip & SnappRoom,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown

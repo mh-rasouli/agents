@@ -1,0 +1,43 @@
+{
+  "brand_id": "snapp_20260217_031109",
+  "brand_name": "Snapp",
+  "generated_date": "2026-02-17 03:11:09",
+  "summary": {
+    "industry": "فناوری اطلاعات و ارتباطات",
+    "business_model": "B2B2C",
+    "price_tier": "mid-market",
+    "parent_company": "نامشخص"
+  },
+  "relationships": {
+    "sister_brands_count": 0,
+    "top_sister_brands": []
+  },
+  "opportunities": {
+    "cross_promotion_count": 2,
+    "top_opportunities": [
+      {
+        "partner": "SnappFood & SnappMarket",
+        "synergy": null,
+        "priority": null
+      },
+      {
+        "partner": "SnappTrip & SnappRoom",
+        "synergy": null,
+        "priority": null
+      }
+    ]
+  },
+  "channels": {
+    "recommended_count": 2,
+    "top_channels": [
+      {
+        "name": "Instagram Reels",
+        "priority": "high"
+      },
+      {
+        "name": "Outdoor Billboards (Tehran)",
+        "priority": "high"
+      }
+    ]
+  }
+}

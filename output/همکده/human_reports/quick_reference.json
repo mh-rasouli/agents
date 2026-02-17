@@ -1,0 +1,48 @@
+{
+  "brand_id": "همکده_20260217_030353",
+  "brand_name": "همکده",
+  "generated_date": "2026-02-17 03:03:53",
+  "summary": {
+    "industry": "خدمات سلامت و روانشناسی",
+    "business_model": "B2C",
+    "price_tier": "mid-market",
+    "parent_company": "پیشگامان دنیای فناوری و سلامت (Pishgaman Donyaye Fanavari va Salamat)"
+  },
+  "relationships": {
+    "sister_brands_count": 0,
+    "top_sister_brands": []
+  },
+  "opportunities": {
+    "cross_promotion_count": 3,
+    "top_opportunities": [
+      {
+        "partner": "Filimo",
+        "synergy": null,
+        "priority": null
+      },
+      {
+        "partner": "Ketabrah / Taaghche",
+        "synergy": null,
+        "priority": null
+      },
+      {
+        "partner": "SnapDoctor",
+        "synergy": null,
+        "priority": null
+      }
+    ]
+  },
+  "channels": {
+    "recommended_count": 2,
+    "top_channels": [
+      {
+        "name": "Instagram Reels",
+        "priority": "high"
+      },
+      {
+        "name": "Tehran Metro Billboards",
+        "priority": "medium"
+      }
+    ]
+  }
+}

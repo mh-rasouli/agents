@@ -1,0 +1,17 @@
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Digikala,SELF,Hezardastan Group,E-commerce and Online Retail,Consumer_Products,General_Products,E_commerce_and_Online_Retail,SELF,leader,mid-market
+Cafe Bazaar,SISTER,Hezardastan Group,Technology,Consumer_Products,General_Products,Technology,MEDIUM,Strong,economy
+Divar,SISTER,Hezardastan Group,Technology,Consumer_Products,General_Products,Technology,MEDIUM,Strong,economy
+Basalam,COMPETITOR,Unknown,Social Marketplace,Consumer_Products,General_Products,Social_Marketplace,NONE,challenger,economy
+Technolife,COMPETITOR,Unknown,Electronics E-commerce,Consumer_Products,General_Products,Electronics_E_commerce,NONE,niche,mid-market
+Okala,COMPETITOR,Unknown,Online Grocery,Consumer_Services,E-Commerce,Online_Grocery,NONE,challenger,mid-market
+SnappShop,COMPETITOR,Unknown,General E-commerce,Consumer_Products,General_Products,General_E_commerce,NONE,challenger,mid-market
+Amazon,SIMILAR,Unknown,E-commerce,Consumer_Products,General_Products,E_commerce,LOW,Unknown,mid-market
+Emalls,SIMILAR,Unknown,Price Comparison,Consumer_Products,General_Products,Price_Comparison,LOW,Unknown,economy
+Torob,SIMILAR,Unknown,Price Comparison,Consumer_Products,General_Products,Price_Comparison,LOW,Unknown,economy
+Snapp,COMPLEMENTARY,Unknown,Ride-hailing,Technology_Services,On-Demand_Platforms,Ride-Hailing,HIGH,Unknown,mid-market
+Tapshi,COMPLEMENTARY,Unknown,Logistics/Ride-hailing,Consumer_Products,General_Products,Logistics/Ride_hailing,MEDIUM,Unknown,mid-market
+ZarinPal,COMPLEMENTARY,Unknown,Fintech,Consumer_Products,General_Products,Fintech,MEDIUM,Unknown,economy
+Digipay,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+Fidibo,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+Digikala Jet,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown

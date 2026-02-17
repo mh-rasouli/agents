@@ -1,0 +1,13 @@
+Brand: همکده
+Date: 2026-02-17
+
+[SUCCESS METRICS AND KEY PERFORMANCE INDICATORS]
+
+Primary KPIs for campaign success:
+- Cost Per Acquisition (CPA)
+- App Downloads/Web Registrations
+- Consultation Booking Rate
+- Customer Retention Rate
+
+Measurement approach: UTM tracking for all digital links, unique promo codes for influencers, and post-consultation surveys.
+Benchmarks: Conversion rate of 2-5% for health-tech landing pages in Iran.

@@ -1,0 +1,64 @@
+{
+  "brand_id": "golrang_20260217_030238",
+  "brand_name": "Golrang",
+  "generated_date": "2026-02-17 03:02:38",
+  "summary": {
+    "industry": "کالاهای تندمصرف (FMCG) و هلدینگ چندرشته‌ای",
+    "business_model": "B2B2C",
+    "price_tier": "mid-market",
+    "parent_company": "Golrang Industrial Group"
+  },
+  "relationships": {
+    "sister_brands_count": 5,
+    "top_sister_brands": [
+      {
+        "name": "Ave",
+        "synergy": null
+      },
+      {
+        "name": "Softlan",
+        "synergy": null
+      },
+      {
+        "name": "Active",
+        "synergy": null
+      },
+      {
+        "name": "Oila",
+        "synergy": null
+      },
+      {
+        "name": "Familia",
+        "synergy": null
+      }
+    ]
+  },
+  "opportunities": {
+    "cross_promotion_count": 2,
+    "top_opportunities": [
+      {
+        "partner": "Ofogh Koorosh & Okala",
+        "synergy": null,
+        "priority": null
+      },
+      {
+        "partner": "Tara (Fintech)",
+        "synergy": null,
+        "priority": null
+      }
+    ]
+  },
+  "channels": {
+    "recommended_count": 2,
+    "top_channels": [
+      {
+        "name": "Instagram Reels",
+        "priority": "high"
+      },
+      {
+        "name": "National TV (IRIB) - Prime Time",
+        "priority": "high"
+      }
+    ]
+  }
+}

@@ -94,37 +94,76 @@ class ProductCatalogAgent(BaseAgent):
         structured = raw_data.get("structured", {})
         website_info = structured.get("website_info", {})
 
-        # Prepare data for LLM
+        # Extract Tavily insights for products
+        tavily_data = raw_data.get("scraped_data", {}).get("tavily", {})
+        tavily_insights = []
+
+        if tavily_data:
+            # Extract AI summaries
+            for summary in tavily_data.get("ai_summaries", [])[:2]:
+                if summary:
+                    tavily_insights.append(summary[:500])
+
+            # Extract relevant product mentions from top results
+            for result in tavily_data.get("top_results", [])[:5]:
+                content = result.get("content", "")
+                if any(keyword in content.lower() for keyword in ["product", "service", "offer", "محصول", "خدمات"]):
+                    tavily_insights.append(content[:300])
+
+        # Prepare comprehensive data for LLM
         context = {
             "brand": brand_name,
             "industry": categorization.get("primary_industry", {}).get("name_fa", ""),
             "website_title": website_info.get("title", ""),
             "website_description": website_info.get("meta_description", ""),
-            "website_text": website_info.get("text_content", "")[:5000]  # First 5000 chars
+            "website_text": website_info.get("text_content", "")[:5000],  # First 5000 chars
+            "tavily_intelligence": "\n\n".join(tavily_insights) if tavily_insights else "No additional market intelligence available"
         }
 
-        prompt = f"""Extract COMPLETE product catalog from this brand's information.
+        prompt = f"""Extract COMPLETE and COMPREHENSIVE product/service catalog from ALL available data sources.
 
 Brand: {context['brand']}
 Industry: {context['industry']}
 
-Website Information:
+=== TAVILY AI MARKET INTELLIGENCE ===
+{context['tavily_intelligence']}
+
+=== WEBSITE INFORMATION ===
 Title: {context['website_title']}
 Description: {context['website_description']}
 
 Content:
 {context['website_text']}
 
-Extract ALL products/medications/services mentioned. For each product, extract:
-- Product name
-- Generic name (if pharmaceutical)
-- Category
-- Description
-- Indications (if pharmaceutical)
-- Target market
-- Any other relevant details
+CRITICAL REQUIREMENTS:
+- Extract AT LEAST 10-15 products/services (more if available)
+- Include ALL products/services mentioned in ANY data source
+- If exact details are missing, infer based on industry standards
+- For each product/service, provide:
+  * Product/service name (specific, not generic)
+  * Category (organize into logical groups)
+  * Description (detailed, 20+ words)
+  * Target market (specific demographics)
+  * Key features or benefits
 
-Return as structured JSON with categories and products."""
+Return as structured JSON with this EXACT format:
+{{
+  "categories": [
+    {{
+      "category_name": "Category Name",
+      "products": [
+        {{
+          "product_name": "Specific Product Name",
+          "description": "Detailed description of the product or service",
+          "target_market": "Specific target audience",
+          "key_features": ["feature 1", "feature 2"]
+        }}
+      ]
+    }}
+  ]
+}}
+
+Extract comprehensively - users need rich, detailed product data."""
 
         response = self.llm.generate(
             prompt=prompt,

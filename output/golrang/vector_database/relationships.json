@@ -1,0 +1,140 @@
+{
+  "brand": "Golrang",
+  "relationships": {
+    "parent_of": [],
+    "child_of": [
+      "Golrang Industrial Group"
+    ],
+    "sister_of": [
+      "Ave",
+      "Softlan",
+      "Active",
+      "Oila",
+      "Familia"
+    ],
+    "competes_with": [
+      "Henkel Pakvash",
+      "Behpak",
+      "Paxan"
+    ],
+    "partners_with": [],
+    "cross_promotion_with": [
+      {
+        "brand": "Ofogh Koorosh & Okala",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Tara (Fintech)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      }
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "golrang",
+        "type": "brand",
+        "label": "Golrang"
+      },
+      {
+        "id": "golrang_industrial_group",
+        "type": "parent",
+        "label": "Golrang Industrial Group"
+      },
+      {
+        "id": "ave",
+        "type": "sister",
+        "label": "Ave"
+      },
+      {
+        "id": "softlan",
+        "type": "sister",
+        "label": "Softlan"
+      },
+      {
+        "id": "active",
+        "type": "sister",
+        "label": "Active"
+      },
+      {
+        "id": "oila",
+        "type": "sister",
+        "label": "Oila"
+      },
+      {
+        "id": "familia",
+        "type": "sister",
+        "label": "Familia"
+      },
+      {
+        "id": "henkel_pakvash",
+        "type": "competitor",
+        "label": "Henkel Pakvash"
+      },
+      {
+        "id": "behpak",
+        "type": "competitor",
+        "label": "Behpak"
+      },
+      {
+        "id": "paxan",
+        "type": "competitor",
+        "label": "Paxan"
+      }
+    ],
+    "edges": [
+      {
+        "from": "golrang",
+        "to": "golrang_industrial_group",
+        "type": "owned_by"
+      },
+      {
+        "from": "golrang",
+        "to": "ave",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "golrang",
+        "to": "softlan",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "golrang",
+        "to": "active",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "golrang",
+        "to": "oila",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "golrang",
+        "to": "familia",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "golrang",
+        "to": "henkel_pakvash",
+        "type": "competes_with"
+      },
+      {
+        "from": "golrang",
+        "to": "behpak",
+        "type": "competes_with"
+      },
+      {
+        "from": "golrang",
+        "to": "paxan",
+        "type": "competes_with"
+      }
+    ]
+  }
+}

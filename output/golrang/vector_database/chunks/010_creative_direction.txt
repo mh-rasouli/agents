@@ -1,0 +1,14 @@
+Brand: Golrang
+Date: 2026-02-17
+
+[CREATIVE DIRECTION AND MESSAGING]
+
+Key brand messages:
+- {'message_fa': 'گلرنگ، از خانواده برای خانواده', 'message_en': 'Golrang, from our family to yours', 'target_segment': 'Mass Market'}
+- {'message_fa': 'پاکیزگی هوشمند با تکنولوژی روز', 'message_en': 'Smart cleanliness with modern technology', 'target_segment': 'Modern Urbanites'}
+
+Tone and style: Warm, vibrant, and high-production value. Visuals should be bright, using the signature 'Golrang Red' but with modern, minimalist art direction to avoid looking 'old-fashioned'.
+Visual recommendations: Use of slow-motion macro shots (bubbles, pouring oil) to emphasize quality. Scenes should depict diverse Iranian households (modern apartments and traditional courtyards).
+Cultural considerations: Heavy emphasis on 'Mehmannavazi' (hospitality). Ensure all clothing and home decor align with modern Iranian 'Chic' while respecting local norms.
+
+Hashtag strategy: #گلرنگ #سبک_زندگی #خانواده_ایرانی #کیفیت_تضمین_شده

@@ -1,0 +1,84 @@
+{
+  "brand": "همکده",
+  "relationships": {
+    "parent_of": [],
+    "child_of": [
+      "پیشگامان دنیای فناوری و سلامت (Pishgaman Donyaye Fanavari va Salamat)"
+    ],
+    "sister_of": [],
+    "competes_with": [
+      "Soshianet (Paziresh24)",
+      "DoctorNext",
+      "Moshvereh.net"
+    ],
+    "partners_with": [],
+    "cross_promotion_with": [
+      {
+        "brand": "Filimo",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Ketabrah / Taaghche",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "SnapDoctor",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      }
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "همکده",
+        "type": "brand",
+        "label": "همکده"
+      },
+      {
+        "id": "پیشگامان_دنیای_فناوری_و_سلامت_(pishgaman_donyaye_fanavari_va_salamat)",
+        "type": "parent",
+        "label": "پیشگامان دنیای فناوری و سلامت (Pishgaman Donyaye Fanavari va Salamat)"
+      },
+      {
+        "id": "soshianet_(paziresh24)",
+        "type": "competitor",
+        "label": "Soshianet (Paziresh24)"
+      },
+      {
+        "id": "doctornext",
+        "type": "competitor",
+        "label": "DoctorNext"
+      },
+      {
+        "id": "moshvereh.net",
+        "type": "competitor",
+        "label": "Moshvereh.net"
+      }
+    ],
+    "edges": [
+      {
+        "from": "همکده",
+        "to": "پیشگامان_دنیای_فناوری_و_سلامت_(pishgaman_donyaye_fanavari_va_salamat)",
+        "type": "owned_by"
+      },
+      {
+        "from": "همکده",
+        "to": "soshianet_(paziresh24)",
+        "type": "competes_with"
+      },
+      {
+        "from": "همکده",
+        "to": "doctornext",
+        "type": "competes_with"
+      },
+      {
+        "from": "همکده",
+        "to": "moshvereh.net",
+        "type": "competes_with"
+      }
+    ]
+  }
+}

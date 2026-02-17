@@ -1,0 +1,125 @@
+{
+  "brand": "Digikala",
+  "relationships": {
+    "parent_of": [],
+    "child_of": [
+      "Hezardastan Group"
+    ],
+    "sister_of": [
+      "Cafe Bazaar",
+      "Divar"
+    ],
+    "competes_with": [
+      "Basalam",
+      "Technolife",
+      "Okala",
+      "SnappShop"
+    ],
+    "partners_with": [],
+    "cross_promotion_with": [
+      {
+        "brand": "Digipay",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Fidibo",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Digikala Jet",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Snapp",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      }
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "digikala",
+        "type": "brand",
+        "label": "Digikala"
+      },
+      {
+        "id": "hezardastan_group",
+        "type": "parent",
+        "label": "Hezardastan Group"
+      },
+      {
+        "id": "cafe_bazaar",
+        "type": "sister",
+        "label": "Cafe Bazaar"
+      },
+      {
+        "id": "divar",
+        "type": "sister",
+        "label": "Divar"
+      },
+      {
+        "id": "basalam",
+        "type": "competitor",
+        "label": "Basalam"
+      },
+      {
+        "id": "technolife",
+        "type": "competitor",
+        "label": "Technolife"
+      },
+      {
+        "id": "okala",
+        "type": "competitor",
+        "label": "Okala"
+      },
+      {
+        "id": "snappshop",
+        "type": "competitor",
+        "label": "SnappShop"
+      }
+    ],
+    "edges": [
+      {
+        "from": "digikala",
+        "to": "hezardastan_group",
+        "type": "owned_by"
+      },
+      {
+        "from": "digikala",
+        "to": "cafe_bazaar",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "digikala",
+        "to": "divar",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "digikala",
+        "to": "basalam",
+        "type": "competes_with"
+      },
+      {
+        "from": "digikala",
+        "to": "technolife",
+        "type": "competes_with"
+      },
+      {
+        "from": "digikala",
+        "to": "okala",
+        "type": "competes_with"
+      },
+      {
+        "from": "digikala",
+        "to": "snappshop",
+        "type": "competes_with"
+      }
+    ]
+  }
+}

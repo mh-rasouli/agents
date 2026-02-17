@@ -1,0 +1,14 @@
+Brand: همکده
+Date: 2026-02-17
+
+[CREATIVE DIRECTION AND MESSAGING]
+
+Key brand messages:
+- {'message_fa': 'حالت رو به راه کن؛ هر جا که هستی.', 'message_en': 'Fix your mood; wherever you are.', 'target_segment': 'General Audience'}
+- {'message_fa': 'بزرگترین مرکز تخصصی روانشناسی در جیب شما.', 'message_en': 'The largest specialized psychology center in your pocket.', 'target_segment': 'Tech-savvy youth'}
+
+Tone and style: Modern-minimalist with warm, earthy tones (teals, soft oranges) to evoke calm and hope. Avoid clinical/scary imagery.
+Visual recommendations: Authentic Iranian faces, comfortable home environments, soft lighting, and clear typography.
+Cultural considerations: Respect family values; use Persian metaphors for 'peace of mind' (آرامش خیال).
+
+Hashtag strategy: #همکده #روانشناسی #مشاوره_آنلاین #سلامت_روان #تراپی

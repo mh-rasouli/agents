@@ -1,0 +1,13 @@
+﻿product_name,category,description,target_market
+Snapp Ride,Transportation,The primary ride-hailing service connecting passengers with private drivers for intra-city travel.,"General public, commuters"
+Snapp Eco,Transportation,The most economical ride-hailing option for affordable city travels.,Budget-conscious commuters
+Snapp Rose,Transportation,A dedicated ride-hailing service for female passengers with female drivers.,Women and children
+Snapp Bike (Bike Taxi),Transportation,Passenger transport using motorcycles to bypass urban traffic quickly.,"Solo travelers, individuals in a hurry"
+Snapp Box,Delivery & Logistics,On-demand courier service using motorcycles for fast package delivery.,"Individuals, small businesses"
+Snapp Pickup (Vanet),Delivery & Logistics,Logistics service for moving heavy items or bulk goods using pickup trucks.,"Individuals moving house, commercial businesses"
+Snapp Food,Food & Grocery,Online food ordering platform from local restaurants and cafes.,General consumers
+Snapp Market / Snapp Express,Food & Grocery,Online grocery shopping service with delivery from supermarkets and hypermarkets.,Households
+Snapp Doctor,Health & Medical,Telemedicine platform providing online consultations and medical services.,Patients requiring non-emergency medical advice
+Snapp Pharmacy,Health & Medical,Online ordering of non-prescription medications and health products.,General consumers
+Snapp Trip,Travel & Hospitality,"Comprehensive travel booking platform for flights, hotels, and buses.","Travelers, tourists"
+Snapp Pay,Financial Services,"Financial service offering 'Buy Now, Pay Later' (BNPL) and credit options.",Snapp Super App users

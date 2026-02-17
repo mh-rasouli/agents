@@ -1,0 +1,13 @@
+Brand: Snapp
+Date: 2026-02-17
+
+[SUCCESS METRICS AND KEY PERFORMANCE INDICATORS]
+
+Primary KPIs for campaign success:
+- Cross-service adoption rate
+- Monthly Active Users (MAU)
+- SnappPay transaction volume
+- Brand Sentiment Score
+
+Measurement approach: In-app data analytics, Brand Lift studies via Instagram polls, and third-party market research surveys.
+Benchmarks: Maintain >80% market share in ride-hailing; reach 60% awareness for SnappPay within 6 months.
