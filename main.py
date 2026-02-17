@@ -158,6 +158,7 @@ def _run_batch_mode_sequential(args):
         sheets_client = GoogleSheetsClient(args.sheets_credentials)
         brands = sheets_client.get_brands_from_sheet(
             sheet_id=args.sheets_id,
+            worksheet_name="INPUT",  # Read from INPUT sheet
             start_row=2  # Skip header
         )
     except Exception as e:

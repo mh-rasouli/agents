@@ -123,7 +123,8 @@ class GoogleSheetsClient:
         sheet_id: str,
         row_number: int,
         status_column: str = "D",
-        status: str = "Completed"
+        status: str = "Completed",
+        worksheet_name: str = "INPUT"
     ):
         """Update processing status in Google Sheet.
 
@@ -132,10 +133,11 @@ class GoogleSheetsClient:
             row_number: Row number to update
             status_column: Column for status updates (default: D)
             status: Status message to write
+            worksheet_name: Name of worksheet to update (default: INPUT)
         """
         try:
             spreadsheet = self.client.open_by_key(sheet_id)
-            worksheet = spreadsheet.get_worksheet(0)
+            worksheet = spreadsheet.worksheet(worksheet_name)
 
             # Convert column letter to cell reference
             cell = f"{status_column}{row_number}"
@@ -151,7 +153,8 @@ class GoogleSheetsClient:
         sheet_id: str,
         row_number: int,
         output_paths: Dict[str, str],
-        start_column: str = "E"
+        start_column: str = "E",
+        worksheet_name: str = "INPUT"
     ):
         """Write output file paths to Google Sheet.
 
@@ -160,10 +163,11 @@ class GoogleSheetsClient:
             row_number: Row number to update
             output_paths: Dictionary of output format -> file path
             start_column: Starting column for output paths (default: E)
+            worksheet_name: Name of worksheet to update (default: INPUT)
         """
         try:
             spreadsheet = self.client.open_by_key(sheet_id)
-            worksheet = spreadsheet.get_worksheet(0)
+            worksheet = spreadsheet.worksheet(worksheet_name)
 
             # Prepare values to write
             values = []

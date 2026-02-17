@@ -135,6 +135,7 @@ class ParallelBatchProcessor:
         try:
             brands = self.sheets_client.get_brands_from_sheet(
                 sheet_id=self.sheets_id,
+                worksheet_name="INPUT",  # Read from INPUT sheet
                 start_row=2  # Skip header
             )
         except Exception as e:
