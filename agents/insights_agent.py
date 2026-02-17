@@ -401,6 +401,40 @@ for comprehensive multi-channel approach.
 
         return summary
 
+    def _extract_tavily_insights(self, raw_data: Dict[str, Any]) -> str:
+        """Extract key insights from Tavily AI search results.
+
+        Args:
+            raw_data: Raw data including Tavily results
+
+        Returns:
+            Formatted string of Tavily insights
+        """
+        insights = []
+        tavily_data = raw_data.get("scraped_data", {}).get("tavily", {})
+
+        if tavily_data:
+            # Extract AI summaries
+            ai_summaries = tavily_data.get("ai_summaries", [])
+            if ai_summaries:
+                insights.append("TAVILY AI INSIGHTS:")
+                for idx, summary in enumerate(ai_summaries[:3], 1):
+                    insights.append(f"{idx}. {summary}")
+                insights.append("")
+
+            # Extract top results
+            top_results = tavily_data.get("top_results", [])
+            if top_results:
+                insights.append("KEY FINDINGS FROM WEB:")
+                for result in top_results[:5]:
+                    title = result.get("title", "")
+                    content = result.get("content", "")[:200]
+                    if title and content:
+                        insights.append(f"- {title}: {content}...")
+                insights.append("")
+
+        return "\n".join(insights) if insights else "No Tavily data available."
+
     def _prepare_insights_data(
         self,
         brand_name: str,
@@ -420,6 +454,13 @@ for comprehensive multi-channel approach.
             Formatted string for LLM input
         """
         lines = []
+
+        # Add Tavily AI insights FIRST (highest quality, AI-generated)
+        tavily_insights = self._extract_tavily_insights(raw_data)
+        if tavily_insights and "No Tavily data available" not in tavily_insights:
+            lines.append("=== TAVILY AI INTELLIGENCE (USE THIS FIRST) ===")
+            lines.append(tavily_insights)
+            lines.append("")
 
         # Add structured brand data
         structured = raw_data.get("structured", {})

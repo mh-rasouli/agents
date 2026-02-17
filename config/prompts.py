@@ -234,7 +234,17 @@ Analyze all available data (raw data, relationships, categorization) to generate
    - Hashtag strategies
    - Celebrity/influencer suggestions (if applicable)
 
-Return ONLY valid JSON with the following structure:
+CRITICAL REQUIREMENTS FOR COMPLETE OUTPUT:
+✓ ALL fields are REQUIRED - NEVER return null, empty strings, or "None"
+✓ Provide AT LEAST 3-5 cross-promotion opportunities with ALL fields filled
+✓ Each opportunity MUST have: partner_brand, detailed rationale, specific reach numbers, concrete campaign idea, exact timing
+✓ Budget estimates MUST be realistic for Iranian market (in Tomans)
+✓ Channel recommendations MUST include estimated costs and reach
+✓ ALL insights MUST be specific to Iranian market context
+✓ Use available Tavily AI insights to enrich recommendations
+✓ If some data is missing, make educated inferences based on industry standards and Iranian market knowledge
+
+Return ONLY valid JSON with the following structure (ALL FIELDS REQUIRED - NO NULLS OR EMPTY VALUES):
 {
     "cross_promotion_opportunities": [
         {
