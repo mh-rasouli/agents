@@ -1993,6 +1993,18 @@ class OutputFormatterAgent(BaseAgent):
 
         product_catalog = state.get("product_catalog", {})
 
+        # Handle nested product_catalog key (common LLM pattern where data is wrapped)
+        # e.g., {brand: "...", industry: "...", product_catalog: {...}} or {product_catalog: [...]}
+        if 'product_catalog' in product_catalog:
+            nested_val = product_catalog['product_catalog']
+            if isinstance(nested_val, dict):
+                # Nested dict - unwrap it
+                product_catalog = nested_val
+            elif isinstance(nested_val, list):
+                # Nested list - move to 'catalog' key for extraction
+                product_catalog['catalog'] = nested_val
+                del product_catalog['product_catalog']
+
         # If state is empty but JSON file exists, read from JSON file as fallback
         if not product_catalog or (
             not product_catalog.get("products") and
@@ -2018,12 +2030,12 @@ class OutputFormatterAgent(BaseAgent):
                     logger.error(f"Error reading JSON file for products export: {e}")
 
         # Extract products from multiple possible locations
+        # LLM may return different structures: products, services, catalog, categories, product_categories
         products = product_catalog.get("products", [])
 
-        # If products not found, try catalog structure (LLM sometimes returns this)
+        # Try catalog structure (list or dict of categories)
         if not products and "catalog" in product_catalog:
             catalog = product_catalog["catalog"]
-            # catalog might contain the actual categories/products data
             if isinstance(catalog, dict):
                 # Check if catalog has categories inside it
                 if "categories" in catalog:
@@ -2035,15 +2047,15 @@ class OutputFormatterAgent(BaseAgent):
                 # catalog is a list of categories
                 products = self._extract_products_from_categories(catalog)
 
-        # If products not found, try categories structure (direct from state)
+        # Try categories structure (direct from state)
         if not products and "categories" in product_catalog:
             products = self._extract_products_from_categories(product_catalog["categories"])
 
-        # If products not found, try product_categories structure
+        # Try product_categories structure
         if not products and "product_categories" in product_catalog:
             products = self._extract_products_from_categories(product_catalog["product_categories"])
 
-        # If still no products, try services array (for healthcare/counseling brands)
+        # Try services array (for healthcare/counseling brands)
         if not products and "services" in product_catalog:
             products = []
             for service in product_catalog.get("services", []):
