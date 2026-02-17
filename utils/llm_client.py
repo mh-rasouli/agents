@@ -9,6 +9,17 @@ from utils.exceptions import APIKeyError
 
 logger = get_logger(__name__)
 
+# Import rate limiter (avoid circular import)
+_openrouter_limiter = None
+
+def _get_rate_limiter():
+    """Get OpenRouter rate limiter (lazy import to avoid circular dependency)."""
+    global _openrouter_limiter
+    if _openrouter_limiter is None:
+        from utils.rate_limiter import openrouter_limiter
+        _openrouter_limiter = openrouter_limiter
+    return _openrouter_limiter
+
 
 class LLMClient:
     """Wrapper for OpenRouter API with Gemini 3 Pro."""
@@ -127,6 +138,11 @@ class LLMClient:
                 messages[-1]["content"] = f"{prompt}\n\nIMPORTANT: Return ONLY valid JSON. No explanations, no markdown formatting, just pure JSON."
 
             logger.info(f"Calling OpenRouter API with model {self.model}")
+
+            # Apply rate limiting
+            rate_limiter = _get_rate_limiter()
+            if rate_limiter:
+                rate_limiter.acquire()
 
             response = self.client.chat.completions.create(**kwargs)
 

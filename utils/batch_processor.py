@@ -14,7 +14,7 @@ except ImportError:
     TQDM_AVAILABLE = False
     print("Warning: tqdm not installed. Install with: pip install tqdm")
 
-from utils import get_logger, BrandRegistry, RunLogger, GoogleSheetsClient
+from utils import get_logger, BrandRegistry, RunLogger, GoogleSheetsClient, CostTracker
 from utils.exceptions import APIKeyError, BudgetExceededError
 
 logger = get_logger(__name__)
@@ -58,20 +58,65 @@ class ParallelBatchProcessor:
             "skipped": []
         }
 
-        # Cost tracking
-        self.total_cost = 0.0
-        self.cost_per_brand = 0.05  # Estimate: $0.05 per brand
+        # Cost tracking with CostTracker
+        self.cost_tracker = CostTracker(budget_limit=budget_limit)
+        self.cost_per_brand = 0.05  # Estimate: $0.05 per brand (for estimates only)
 
-    def process_batch(self, force: bool = False, limit: Optional[int] = None) -> Dict[str, Any]:
+    def load_checkpoint(self) -> Optional[Dict]:
+        """Load the latest checkpoint if it exists.
+
+        Returns:
+            Checkpoint data or None if no checkpoint exists
+        """
+        checkpoint_file = Path("state/checkpoint_latest.json")
+
+        if not checkpoint_file.exists():
+            return None
+
+        try:
+            with open(checkpoint_file) as f:
+                checkpoint = json.load(f)
+
+            logger.info("=" * 60)
+            logger.info("CHECKPOINT FOUND - RESUME AVAILABLE")
+            logger.info("=" * 60)
+            logger.info(f"Checkpoint time: {checkpoint['timestamp']}")
+            logger.info(f"Processed: {checkpoint['processed_count']} brands")
+            logger.info(f"Success: {len(checkpoint['results']['success'])}")
+            logger.info(f"Failed: {len(checkpoint['results']['failed'])}")
+
+            if checkpoint.get('cost_summary'):
+                logger.info(f"Cost so far: ${checkpoint['cost_summary']['total_cost']:.2f}")
+
+            return checkpoint
+
+        except Exception as e:
+            logger.error(f"Failed to load checkpoint: {e}")
+            return None
+
+    def process_batch(self, force: bool = False, limit: Optional[int] = None, resume: bool = False) -> Dict[str, Any]:
         """Process all brands from Google Sheets in parallel.
 
         Args:
             force: Force reprocessing of all brands (ignore registry)
             limit: Optional limit on number of brands to process (for testing)
+            resume: Resume from last checkpoint if available
 
         Returns:
             Dictionary with processing results
         """
+        # Check for checkpoint if resume requested
+        checkpoint = None
+        if resume:
+            checkpoint = self.load_checkpoint()
+            if checkpoint:
+                logger.info("Resuming from checkpoint...")
+                # Restore results
+                self.results = checkpoint["results"]
+            else:
+                logger.warning("No checkpoint found. Starting fresh.")
+                resume = False
+
         start_time = time.time()
 
         logger.info("=" * 60)
@@ -109,9 +154,27 @@ class ParallelBatchProcessor:
 
         # Filter brands that need processing
         brands_to_process = []
+        already_processed = set()
+
+        # If resuming, get list of already processed brands
+        if resume and checkpoint:
+            for item in checkpoint["results"]["success"] + checkpoint["results"]["failed"]:
+                already_processed.add(item["brand"])
+
         for brand_data in brands:
+            brand_name = brand_data.get("brand_name", "")
+
+            # Skip if already processed in checkpoint
+            if resume and brand_name in already_processed:
+                self.results["skipped"].append({
+                    "brand": brand_name,
+                    "row": brand_data.get("row_number"),
+                    "reason": "already_processed_in_checkpoint"
+                })
+                continue
+
             needs_proc, reason = self.registry.needs_processing(
-                brand_data.get("brand_name", ""),
+                brand_name,
                 brand_data.get("website"),
                 brand_data.get("parent_company"),
                 force=force
@@ -123,7 +186,7 @@ class ParallelBatchProcessor:
             else:
                 # Track skipped brands
                 self.results["skipped"].append({
-                    "brand": brand_data.get("brand_name", ""),
+                    "brand": brand_name,
                     "row": brand_data.get("row_number"),
                     "reason": reason
                 })
@@ -186,11 +249,11 @@ class ParallelBatchProcessor:
             # Save checkpoint after each chunk
             self._save_checkpoint(processed_count, "chunk_complete")
 
-            # Check budget
+            # Check budget (CostTracker raises exception if exceeded)
             if self.budget_limit:
-                self.total_cost = processed_count * self.cost_per_brand
-                if self.total_cost >= self.budget_limit:
-                    logger.warning(f"\n[BUDGET] Budget limit reached: ${self.total_cost:.2f} / ${self.budget_limit:.2f}")
+                cost_summary = self.cost_tracker.get_summary()
+                if cost_summary["total_cost"] >= self.budget_limit:
+                    logger.warning(f"\n[BUDGET] Budget limit reached: ${cost_summary['total_cost']:.2f} / ${self.budget_limit:.2f}")
                     logger.warning(f"Stopping processing. Processed {processed_count}/{total_brands} brands")
                     break
 
@@ -256,10 +319,13 @@ class ParallelBatchProcessor:
                         failed_count = len(self.results["failed"]) + len(chunk_results["failed"])
                         current_cost = (success_count + failed_count) * self.cost_per_brand
 
+                        # Get real-time cost from tracker
+                        cost_display = self.cost_tracker.get_progress_display()
+
                         progress.set_postfix({
                             "✓": success_count,
                             "✗": failed_count,
-                            "💰": f"${current_cost:.2f}"
+                            "💰": cost_display
                         })
                         progress.update(1)
 
@@ -423,12 +489,14 @@ class ParallelBatchProcessor:
             processed_count: Number of brands processed so far
             reason: Reason for checkpoint (auto, error, complete)
         """
+        cost_summary = self.cost_tracker.get_summary()
+
         checkpoint = {
             "timestamp": datetime.now().isoformat(),
             "reason": reason,
             "processed_count": processed_count,
             "results": self.results,
-            "total_cost": self.total_cost
+            "cost_summary": cost_summary
         }
 
         checkpoint_file = Path("state/checkpoint_latest.json")
@@ -477,12 +545,14 @@ class ParallelBatchProcessor:
             speedup = estimated_sequential_time / elapsed_time if elapsed_time > 0 else 0
             print(f"  ⚡ Speedup: {speedup:.1f}× faster than sequential")
 
-        print(f"\n[COST]")
-        actual_cost = total_processed * self.cost_per_brand
-        print(f"  Estimated cost: ${actual_cost:.2f}")
+        # Print cost summary from CostTracker
+        print(self.cost_tracker.get_formatted_summary())
+
         if self.budget_limit:
+            cost_summary = self.cost_tracker.get_summary()
             print(f"  Budget limit: ${self.budget_limit:.2f}")
-            print(f"  Budget used: {actual_cost/self.budget_limit*100:.1f}%")
+            if cost_summary["budget_used_percent"]:
+                print(f"  Budget used: {cost_summary['budget_used_percent']:.1f}%")
 
         if self.results["failed"]:
             print(f"\n[FAILED BRANDS]")

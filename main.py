@@ -108,7 +108,8 @@ def run_batch_mode(args):
         try:
             results = processor.process_batch(
                 force=getattr(args, 'force', False),
-                limit=getattr(args, 'limit', None)
+                limit=getattr(args, 'limit', None),
+                resume=getattr(args, 'resume', False)
             )
 
             # Exit with appropriate code
@@ -506,6 +507,12 @@ Examples:
         type=int,
         default=50,
         help="Brands per chunk for memory management (default: 50)"
+    )
+
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Resume from last checkpoint (skips already processed brands)"
     )
 
     args = parser.parse_args()
