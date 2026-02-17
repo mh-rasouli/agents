@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-02-17T08:45:56.527887",
+  "reason": "chunk_complete",
+  "processed_count": 5,
+  "results": {
+    "success": [
+      {
+        "status": "success",
+        "brand": "Cerita",
+        "row": 5,
+        "outputs": {
+          "executive_summary": "output\\cerita\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\cerita\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\cerita\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\cerita\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\cerita\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\cerita\\human_reports\\data_exports\\campaign_opportunities.csv"
+        },
+        "processing_time": 50.485018253326416
+      },
+      {
+        "status": "success",
+        "brand": "Blephamed",
+        "row": 2,
+        "outputs": {
+          "executive_summary": "output\\blephamed\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\blephamed\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\blephamed\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\blephamed\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\blephamed\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\blephamed\\human_reports\\data_exports\\campaign_opportunities.csv"
+        },
+        "processing_time": 59.487505197525024
+      },
+      {
+        "status": "success",
+        "brand": "Filfil",
+        "row": 6,
+        "outputs": {
+          "executive_summary": "output\\filfil\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\filfil\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\filfil\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\filfil\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\filfil\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\filfil\\human_reports\\data_exports\\campaign_opportunities.csv"
+        },
+        "processing_time": 61.91618990898132
+      },
+      {
+        "status": "success",
+        "brand": "Blu_Bank",
+        "row": 3,
+        "outputs": {
+          "executive_summary": "output\\blu_bank\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\blu_bank\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\blu_bank\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\blu_bank\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\blu_bank\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\blu_bank\\human_reports\\data_exports\\campaign_opportunities.csv"
+        },
+        "processing_time": 70.76947236061096
+      },
+      {
+        "status": "success",
+        "brand": "Capo",
+        "row": 4,
+        "outputs": {
+          "executive_summary": "output\\capo\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\capo\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\capo\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\capo\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\capo\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\capo\\human_reports\\data_exports\\campaign_opportunities.csv"
+        },
+        "processing_time": 74.46466493606567
+      }
+    ],
+    "failed": [],
+    "skipped": []
+  },
+  "cost_summary": {
+    "tavily_cost": 0.0,
+    "tavily_calls": 0,
+    "openrouter_cost": 0.0,
+    "openrouter_calls": 0,
+    "total_cost": 0.0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "budget_limit": 0.2,
+    "budget_remaining": 0.2,
+    "budget_used_percent": 0.0,
+    "elapsed_seconds": 81.960036,
+    "cost_per_minute": 0.0
+  }
+}

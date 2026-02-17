@@ -1,0 +1,55 @@
+{
+  "brand_id": "aban_tether_20260217_085808",
+  "brand_name": "Aban_Tether",
+  "generated_date": "2026-02-17 08:58:08",
+  "summary": {
+    "industry": "خدمات مالی و فین‌تک",
+    "business_model": "B2C",
+    "price_tier": "mid-market",
+    "parent_company": null
+  },
+  "relationships": {
+    "sister_brands_count": 0,
+    "top_sister_brands": []
+  },
+  "opportunities": {
+    "cross_promotion_count": 3,
+    "top_opportunities": [
+      {
+        "partner": "ZarinPal",
+        "rationale": "As a leading payment gateway, ZarinPal users are already comfortable with digital transactions. Inte...",
+        "reach": "Over 1 million active Iranian merchants and individual users.",
+        "timing": "Pre-Nowruz (February/March) when transaction volumes and Rial-to-Asset conversion needs are highest."
+      },
+      {
+        "partner": "Snapp (Super App)",
+        "rationale": "Snapp is the daily utility app for Iranians. AbanTether can leverage Snapp's loyalty club (SnappClub...",
+        "reach": "30 million+ users across Iran.",
+        "timing": "Continuous, with a heavy push during the 'Snapp Anniversary' or 'Yalda Festival'."
+      },
+      {
+        "partner": "Digikala",
+        "rationale": "High-intent shoppers on Digikala often look for electronics and hardware. This overlaps with the 'Te...",
+        "reach": "10 million+ monthly active shoppers.",
+        "timing": "Black Friday (Azar Month) and Pre-Nowruz electronics sales."
+      }
+    ]
+  },
+  "channels": {
+    "recommended_count": 3,
+    "top_channels": [
+      {
+        "name": "Telegram (Ads & Signal Channels)",
+        "priority": "high"
+      },
+      {
+        "name": "Instagram Reels",
+        "priority": "high"
+      },
+      {
+        "name": "LinkedIn",
+        "priority": "medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "Cerita": {
+    "last_input_hash": "35e82dc6819bf502a8232db35b12368f81d93bf58f5b0c4bf8ad10846ba58d18",
+    "status": "success",
+    "last_success_at": "2026-02-17T16:45:28.658812",
+    "last_run_id": "20260217_084434_005_cerita",
+    "outputs": {
+      "executive_summary": "output\\cerita\\human_reports\\6_executive_summary.md",
+      "complete_analysis_report": "output\\cerita\\human_reports\\complete_analysis_report.md",
+      "quick_reference": "output\\cerita\\human_reports\\quick_reference.json",
+      "related_brands_csv": "output\\cerita\\human_reports\\data_exports\\3_brands_database.csv",
+      "products_csv": "output\\cerita\\human_reports\\data_exports\\product_catalog.csv",
+      "opportunities_csv": "output\\cerita\\human_reports\\data_exports\\campaign_opportunities.csv"
+    }
+  },
+  "Capo": {
+    "last_input_hash": "9719d0c49e95c1f35063d2530344451087f574e325fb8855a03a385d4aee215d",
+    "status": "success",
+    "last_success_at": "2026-02-17T16:45:52.626329",
+    "last_run_id": "20260217_084434_004_capo",
+    "outputs": {
+      "executive_summary": "output\\capo\\human_reports\\6_executive_summary.md",
+      "complete_analysis_report": "output\\capo\\human_reports\\complete_analysis_report.md",
+      "quick_reference": "output\\capo\\human_reports\\quick_reference.json",
+      "related_brands_csv": "output\\capo\\human_reports\\data_exports\\3_brands_database.csv",
+      "products_csv": "output\\capo\\human_reports\\data_exports\\product_catalog.csv",
+      "opportunities_csv": "output\\capo\\human_reports\\data_exports\\campaign_opportunities.csv"
+    }
+  },
+  "Blu_Bank": {
+    "last_input_hash": "509e5e62763672032ab7731747979d8faedaa924dbf453de5b3a791e8a33a792",
+    "status": "success",
+    "last_success_at": "2026-02-17T16:45:48.934907",
+    "last_run_id": "20260217_084434_003_blu-bank",
+    "outputs": {
+      "executive_summary": "output\\blu_bank\\human_reports\\6_executive_summary.md",
+      "complete_analysis_report": "output\\blu_bank\\human_reports\\complete_analysis_report.md",
+      "quick_reference": "output\\blu_bank\\human_reports\\quick_reference.json",
+      "related_brands_csv": "output\\blu_bank\\human_reports\\data_exports\\3_brands_database.csv",
+      "products_csv": "output\\blu_bank\\human_reports\\data_exports\\product_catalog.csv",
+      "opportunities_csv": "output\\blu_bank\\human_reports\\data_exports\\campaign_opportunities.csv"
+    }
+  },
+  "Blephamed": {
+    "last_input_hash": "8bdb8610d8f4bd3c11b21fe570a9ff93ea2b8f156b33336ea2d78f02c0731420",
+    "status": "success",
+    "last_success_at": "2026-02-17T16:45:37.641037",
+    "last_run_id": "20260217_084434_002_blephamed",
+    "outputs": {
+      "executive_summary": "output\\blephamed\\human_reports\\6_executive_summary.md",
+      "complete_analysis_report": "output\\blephamed\\human_reports\\complete_analysis_report.md",
+      "quick_reference": "output\\blephamed\\human_reports\\quick_reference.json",
+      "related_brands_csv": "output\\blephamed\\human_reports\\data_exports\\3_brands_database.csv",
+      "products_csv": "output\\blephamed\\human_reports\\data_exports\\product_catalog.csv",
+      "opportunities_csv": "output\\blephamed\\human_reports\\data_exports\\campaign_opportunities.csv"
+    }
+  },
+  "Filfil": {
+    "last_input_hash": "ac4dda610dd1429ff4b566d367b0c39d57a7babd24062f219b71b9c3f102cbba",
+    "status": "success",
+    "last_success_at": "2026-02-17T16:45:40.084682",
+    "last_run_id": "20260217_084434_006_filfil",
+    "outputs": {
+      "executive_summary": "output\\filfil\\human_reports\\6_executive_summary.md",
+      "complete_analysis_report": "output\\filfil\\human_reports\\complete_analysis_report.md",
+      "quick_reference": "output\\filfil\\human_reports\\quick_reference.json",
+      "related_brands_csv": "output\\filfil\\human_reports\\data_exports\\3_brands_database.csv",
+      "products_csv": "output\\filfil\\human_reports\\data_exports\\product_catalog.csv",
+      "opportunities_csv": "output\\filfil\\human_reports\\data_exports\\campaign_opportunities.csv"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Aban_Tether,SELF,,Financial Services and Fintech,Consumer_Products,General_Products,Financial_Services_and_Fintech,SELF,challenger,mid-market
+Nobitex,COMPETITOR,Unknown,Cryptocurrency Exchange,Consumer_Products,General_Products,Cryptocurrency_Exchange,NONE,leader,mid-market
+Wallex,COMPETITOR,Unknown,Cryptocurrency Exchange,Consumer_Products,General_Products,Cryptocurrency_Exchange,NONE,challenger,mid-market
+Excoino,COMPETITOR,Unknown,Cryptocurrency Exchange,Consumer_Products,General_Products,Cryptocurrency_Exchange,NONE,challenger,mid-market
+Bitpin,COMPETITOR,Unknown,Cryptocurrency Exchange,Consumer_Products,General_Products,Cryptocurrency_Exchange,NONE,challenger,mid-market
+Farhad Exchange,SIMILAR,Unknown,Currency Exchange,Consumer_Products,General_Products,Currency_Exchange,LOW,Unknown,mid-market
+ArzPaya,SIMILAR,Unknown,Cryptocurrency Exchange,Consumer_Products,General_Products,Cryptocurrency_Exchange,LOW,Unknown,economy
+ZarinPal,COMPLEMENTARY,Unknown,Fintech / Payment Gateway,Consumer_Products,General_Products,Fintech_/_Payment_Gateway,HIGH,Unknown,mid-market
+Ledger,COMPLEMENTARY,Unknown,Hardware Wallets,Consumer_Products,General_Products,Hardware_Wallets,HIGH,Unknown,premium
+Signal,COMPLEMENTARY,Unknown,Financial Education / Analysis,Consumer_Products,General_Products,Financial_Education_/_Analysis,MEDIUM,Unknown,mid-market
+Snapp (Super App),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+Digikala,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown

@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-02-17T08:23:41.990790",
+  "reason": "chunk_complete",
+  "processed_count": 5,
+  "results": {
+    "success": [
+      {
+        "status": "success",
+        "brand": "Cerita",
+        "row": 5,
+        "outputs": {
+          "executive_summary": "output\\cerita\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\cerita\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\cerita\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\cerita\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\cerita\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\cerita\\human_reports\\data_exports\\campaign_opportunities.csv",
+          "vector_chunks": [
+            "output\\cerita\\vector_database\\chunks\\001_brand_overview.txt",
+            "output\\cerita\\vector_database\\chunks\\002_corporate_structure.txt",
+            "output\\cerita\\vector_database\\chunks\\003_sister_brands.txt",
+            "output\\cerita\\vector_database\\chunks\\004_market_positioning.txt",
+            "output\\cerita\\vector_database\\chunks\\005_product_catalog.txt",
+            "output\\cerita\\vector_database\\chunks\\006_strategic_opportunities.txt",
+            "output\\cerita\\vector_database\\chunks\\007_campaign_timing.txt",
+            "output\\cerita\\vector_database\\chunks\\008_channel_strategy.txt",
+            "output\\cerita\\vector_database\\chunks\\009_budget_recommendations.txt",
+            "output\\cerita\\vector_database\\chunks\\010_creative_direction.txt",
+            "output\\cerita\\vector_database\\chunks\\011_success_metrics.txt",
+            "output\\cerita\\vector_database\\chunks\\012_customer_intelligence.txt"
+          ],
+          "metadata": "output\\cerita\\vector_database\\metadata.json",
+          "entities": "output\\cerita\\vector_database\\entities.jsonl",
+          "relationships_graph": "output\\cerita\\vector_database\\relationships.json",
+          "embedding_manifest": "output\\cerita\\vector_database\\embedding_manifest.json"
+        },
+        "processing_time": 69.62094211578369
+      },
+      {
+        "status": "success",
+        "brand": "Capo",
+        "row": 4,
+        "outputs": {
+          "executive_summary": "output\\capo\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\capo\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\capo\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\capo\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\capo\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\capo\\human_reports\\data_exports\\campaign_opportunities.csv",
+          "vector_chunks": [
+            "output\\capo\\vector_database\\chunks\\001_brand_overview.txt",
+            "output\\capo\\vector_database\\chunks\\002_corporate_structure.txt",
+            "output\\capo\\vector_database\\chunks\\003_sister_brands.txt",
+            "output\\capo\\vector_database\\chunks\\004_market_positioning.txt",
+            "output\\capo\\vector_database\\chunks\\005_product_catalog.txt",
+            "output\\capo\\vector_database\\chunks\\006_strategic_opportunities.txt",
+            "output\\capo\\vector_database\\chunks\\007_campaign_timing.txt",
+            "output\\capo\\vector_database\\chunks\\008_channel_strategy.txt",
+            "output\\capo\\vector_database\\chunks\\009_budget_recommendations.txt",
+            "output\\capo\\vector_database\\chunks\\010_creative_direction.txt",
+            "output\\capo\\vector_database\\chunks\\011_success_metrics.txt",
+            "output\\capo\\vector_database\\chunks\\012_customer_intelligence.txt"
+          ],
+          "metadata": "output\\capo\\vector_database\\metadata.json",
+          "entities": "output\\capo\\vector_database\\entities.jsonl",
+          "relationships_graph": "output\\capo\\vector_database\\relationships.json",
+          "embedding_manifest": "output\\capo\\vector_database\\embedding_manifest.json"
+        },
+        "processing_time": 70.67698740959167
+      },
+      {
+        "status": "success",
+        "brand": "Blu_Bank",
+        "row": 3,
+        "outputs": {
+          "executive_summary": "output\\blu_bank\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\blu_bank\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\blu_bank\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\blu_bank\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\blu_bank\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\blu_bank\\human_reports\\data_exports\\campaign_opportunities.csv",
+          "vector_chunks": [
+            "output\\blu_bank\\vector_database\\chunks\\001_brand_overview.txt",
+            "output\\blu_bank\\vector_database\\chunks\\002_corporate_structure.txt",
+            "output\\blu_bank\\vector_database\\chunks\\003_sister_brands.txt",
+            "output\\blu_bank\\vector_database\\chunks\\004_market_positioning.txt",
+            "output\\blu_bank\\vector_database\\chunks\\005_product_catalog.txt",
+            "output\\blu_bank\\vector_database\\chunks\\006_strategic_opportunities.txt",
+            "output\\blu_bank\\vector_database\\chunks\\007_campaign_timing.txt",
+            "output\\blu_bank\\vector_database\\chunks\\008_channel_strategy.txt",
+            "output\\blu_bank\\vector_database\\chunks\\009_budget_recommendations.txt",
+            "output\\blu_bank\\vector_database\\chunks\\010_creative_direction.txt",
+            "output\\blu_bank\\vector_database\\chunks\\011_success_metrics.txt",
+            "output\\blu_bank\\vector_database\\chunks\\012_customer_intelligence.txt"
+          ],
+          "metadata": "output\\blu_bank\\vector_database\\metadata.json",
+          "entities": "output\\blu_bank\\vector_database\\entities.jsonl",
+          "relationships_graph": "output\\blu_bank\\vector_database\\relationships.json",
+          "embedding_manifest": "output\\blu_bank\\vector_database\\embedding_manifest.json"
+        },
+        "processing_time": 71.30533456802368
+      },
+      {
+        "status": "success",
+        "brand": "Blephamed",
+        "row": 2,
+        "outputs": {
+          "executive_summary": "output\\blephamed\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\blephamed\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\blephamed\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\blephamed\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\blephamed\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\blephamed\\human_reports\\data_exports\\campaign_opportunities.csv",
+          "vector_chunks": [
+            "output\\blephamed\\vector_database\\chunks\\001_brand_overview.txt",
+            "output\\blephamed\\vector_database\\chunks\\002_corporate_structure.txt",
+            "output\\blephamed\\vector_database\\chunks\\003_sister_brands.txt",
+            "output\\blephamed\\vector_database\\chunks\\004_market_positioning.txt",
+            "output\\blephamed\\vector_database\\chunks\\005_product_catalog.txt",
+            "output\\blephamed\\vector_database\\chunks\\006_strategic_opportunities.txt",
+            "output\\blephamed\\vector_database\\chunks\\007_campaign_timing.txt",
+            "output\\blephamed\\vector_database\\chunks\\008_channel_strategy.txt",
+            "output\\blephamed\\vector_database\\chunks\\009_budget_recommendations.txt",
+            "output\\blephamed\\vector_database\\chunks\\010_creative_direction.txt",
+            "output\\blephamed\\vector_database\\chunks\\011_success_metrics.txt",
+            "output\\blephamed\\vector_database\\chunks\\012_customer_intelligence.txt"
+          ],
+          "metadata": "output\\blephamed\\vector_database\\metadata.json",
+          "entities": "output\\blephamed\\vector_database\\entities.jsonl",
+          "relationships_graph": "output\\blephamed\\vector_database\\relationships.json",
+          "embedding_manifest": "output\\blephamed\\vector_database\\embedding_manifest.json"
+        },
+        "processing_time": 76.39538407325745
+      },
+      {
+        "status": "success",
+        "brand": "Filfil",
+        "row": 6,
+        "outputs": {
+          "executive_summary": "output\\filfil\\human_reports\\6_executive_summary.md",
+          "complete_analysis_report": "output\\filfil\\human_reports\\complete_analysis_report.md",
+          "quick_reference": "output\\filfil\\human_reports\\quick_reference.json",
+          "related_brands_csv": "output\\filfil\\human_reports\\data_exports\\3_brands_database.csv",
+          "products_csv": "output\\filfil\\human_reports\\data_exports\\product_catalog.csv",
+          "opportunities_csv": "output\\filfil\\human_reports\\data_exports\\campaign_opportunities.csv",
+          "vector_chunks": [
+            "output\\filfil\\vector_database\\chunks\\001_brand_overview.txt",
+            "output\\filfil\\vector_database\\chunks\\002_corporate_structure.txt",
+            "output\\filfil\\vector_database\\chunks\\003_sister_brands.txt",
+            "output\\filfil\\vector_database\\chunks\\004_market_positioning.txt",
+            "output\\filfil\\vector_database\\chunks\\005_product_catalog.txt",
+            "output\\filfil\\vector_database\\chunks\\006_strategic_opportunities.txt",
+            "output\\filfil\\vector_database\\chunks\\007_campaign_timing.txt",
+            "output\\filfil\\vector_database\\chunks\\008_channel_strategy.txt",
+            "output\\filfil\\vector_database\\chunks\\009_budget_recommendations.txt",
+            "output\\filfil\\vector_database\\chunks\\010_creative_direction.txt",
+            "output\\filfil\\vector_database\\chunks\\011_success_metrics.txt",
+            "output\\filfil\\vector_database\\chunks\\012_customer_intelligence.txt"
+          ],
+          "metadata": "output\\filfil\\vector_database\\metadata.json",
+          "entities": "output\\filfil\\vector_database\\entities.jsonl",
+          "relationships_graph": "output\\filfil\\vector_database\\relationships.json",
+          "embedding_manifest": "output\\filfil\\vector_database\\embedding_manifest.json"
+        },
+        "processing_time": 61.40163803100586
+      }
+    ],
+    "failed": [],
+    "skipped": []
+  },
+  "cost_summary": {
+    "tavily_cost": 0.0,
+    "tavily_calls": 0,
+    "openrouter_cost": 0.0,
+    "openrouter_calls": 0,
+    "total_cost": 0.0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "budget_limit": 0.2,
+    "budget_remaining": 0.2,
+    "budget_used_percent": 0.0,
+    "elapsed_seconds": 143.14074,
+    "cost_per_minute": 0.0
+  }
+}
