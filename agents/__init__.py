@@ -8,6 +8,7 @@ from agents.product_catalog_agent import ProductCatalogAgent
 from agents.insights_agent import StrategicInsightsAgent
 from agents.formatter_agent import OutputFormatterAgent
 from agents.customer_intelligence_agent import CustomerIntelligenceAgent
+from agents.code_review_agent import CodeReviewAgent
 
 __all__ = [
     "BaseAgent",
@@ -18,6 +19,7 @@ __all__ = [
     "StrategicInsightsAgent",
     "OutputFormatterAgent",
     "CustomerIntelligenceAgent",
+    "CodeReviewAgent",
 ]
 
 __version__ = "1.0.0"

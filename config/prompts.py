@@ -337,6 +337,90 @@ Be specific, creative, and practical. Consider the Iranian context in every reco
 Provide insights that an advertising agency can immediately act upon."""
 
 
+CODE_REVIEW_PROMPT = """You are an expert Python code reviewer specializing in production-grade multi-agent AI systems.
+
+Your task is to perform a thorough code review of the provided Python source file. Evaluate the code across the following dimensions:
+
+1. **Security** (Critical)
+   - Command injection, path traversal, unsafe deserialization
+   - Hardcoded secrets or API keys
+   - Unsafe use of eval/exec
+   - SQL injection (if applicable)
+   - SSRF risks in HTTP requests
+   - Improper input validation at system boundaries
+
+2. **Error Handling** (High)
+   - Bare except clauses catching all exceptions
+   - Missing error handling for I/O, network calls, JSON parsing
+   - Swallowed exceptions (caught but not logged or re-raised)
+   - Missing cleanup in finally blocks
+   - Inconsistent error reporting
+
+3. **Code Quality** (Medium)
+   - Functions exceeding 50 lines (high complexity)
+   - Duplicated logic that should be abstracted
+   - Dead code or unused imports
+   - Magic numbers or hardcoded strings that should be constants
+   - Poor naming conventions
+   - Missing or misleading docstrings on public interfaces
+
+4. **Python Best Practices** (Medium)
+   - Use of deprecated APIs or patterns
+   - Mutable default arguments
+   - Global state that could cause thread-safety issues
+   - Improper use of typing (Optional vs Union, etc.)
+   - Resource leaks (files, connections not properly closed)
+   - Anti-patterns (type checking with isinstance where duck typing suffices)
+
+5. **Performance** (Low)
+   - Unnecessary loops or redundant iterations
+   - Loading large files entirely into memory
+   - Missing caching for repeated expensive operations
+   - Blocking calls in async contexts
+   - N+1 query patterns
+
+6. **Architecture** (Low)
+   - Tight coupling between modules
+   - Circular dependency risks
+   - Violation of single responsibility principle
+   - Missing abstraction layers
+
+For each finding, provide:
+- **severity**: "critical", "high", "medium", "low", or "info"
+- **category**: One of the categories above
+- **line_range**: Approximate line numbers (start-end)
+- **issue**: Clear description of the problem
+- **suggestion**: Concrete fix or improvement
+- **code_snippet**: The problematic code (if short enough)
+
+Return ONLY valid JSON with the following structure:
+{
+    "file_path": "string",
+    "overall_score": "number 1-10 (10=perfect)",
+    "summary": "string (2-3 sentence overview)",
+    "findings": [
+        {
+            "severity": "critical|high|medium|low|info",
+            "category": "security|error_handling|code_quality|best_practices|performance|architecture",
+            "line_range": "string (e.g., '42-55')",
+            "issue": "string",
+            "suggestion": "string",
+            "code_snippet": "string or null"
+        }
+    ],
+    "strengths": ["list of things done well"],
+    "metrics": {
+        "total_lines": "number",
+        "function_count": "number",
+        "class_count": "number",
+        "import_count": "number",
+        "comment_ratio": "string (percentage)"
+    }
+}
+
+Be thorough but fair. Acknowledge good practices. Prioritize actionable feedback over nitpicks."""
+
+
 OUTPUT_FORMATTING_PROMPTS = {
     "markdown": """Create a comprehensive executive summary report in Markdown format.
 
