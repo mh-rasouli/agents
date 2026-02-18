@@ -4,6 +4,7 @@ import json
 from typing import Dict, Any, List
 from agents.base_agent import BaseAgent
 from models.state import BrandIntelligenceState
+from models.output_models import ProductCatalogOutput
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -40,8 +41,8 @@ class ProductCatalogAgent(BaseAgent):
             relationships
         )
 
-        # Update state
-        state["product_catalog"] = product_catalog
+        # Update state (validated)
+        self._validate_and_store(state, "product_catalog", product_catalog, ProductCatalogOutput)
 
         self._log_end(success=True)
         return state

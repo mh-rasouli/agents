@@ -18,6 +18,7 @@ from scrapers import (
     TrademarkScraper,
 )
 from config import DATA_EXTRACTION_PROMPT
+from models.output_models import RawDataOutput
 from utils import get_logger
 
 logger = get_logger(__name__)
@@ -66,11 +67,11 @@ class DataCollectionAgent(BaseAgent):
         # Extract structured data using LLM
         structured_data = self._extract_structured_data(raw_data)
 
-        # Update state
-        state["raw_data"] = {
+        # Update state (validated)
+        self._validate_and_store(state, "raw_data", {
             "scraped": raw_data,
             "structured": structured_data
-        }
+        }, RawDataOutput)
 
         # Check if we got any data
         successful_sources = [k for k, v in raw_data.items() if v is not None]

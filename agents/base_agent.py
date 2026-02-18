@@ -1,10 +1,13 @@
 """Base agent class with common functionality."""
 
 from abc import ABC, abstractmethod
-from typing import Dict, Any
+from typing import Any, Dict, Optional, Type
+
+from pydantic import BaseModel
 
 # Modular imports
 from models import BrandIntelligenceState
+from models.output_models import validate_agent_output
 from utils import llm_client, get_logger
 
 logger = get_logger(__name__)
@@ -66,3 +69,36 @@ class BaseAgent(ABC):
             "error": error_msg
         })
         logger.error(f"[{self.agent_name}] {error_msg}")
+
+    def _validate_and_store(
+        self,
+        state: BrandIntelligenceState,
+        key: str,
+        data: Any,
+        model_class: Type[BaseModel],
+    ) -> None:
+        """Validate agent output with a Pydantic model and store in state.
+
+        On success the validated dict is stored; on failure the original
+        data is stored unchanged and a validation warning is recorded in
+        state["errors"].
+
+        Args:
+            state: Current workflow state
+            key: State key to write to (e.g. "raw_data")
+            data: The raw dict produced by the agent
+            model_class: Pydantic model to validate against
+        """
+        validated, warnings = validate_agent_output(data, model_class, self.agent_name)
+
+        if validated is not None:
+            # Store the validated model dumped back to dict so state stays
+            # JSON-serialisable and downstream code sees plain dicts.
+            state[key] = validated.model_dump(mode="python")
+        else:
+            # Validation failed — store original data and record warning.
+            state[key] = data
+            if warnings:
+                if "errors" not in state:
+                    state["errors"] = []
+                state["errors"].append(warnings)

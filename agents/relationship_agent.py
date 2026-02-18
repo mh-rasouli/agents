@@ -6,6 +6,7 @@ from typing import Dict, Any, List
 from agents.base_agent import BaseAgent
 from models.state import BrandIntelligenceState
 from config.prompts import RELATIONSHIP_MAPPING_PROMPT
+from models.output_models import RelationshipsOutput
 from utils.logger import get_logger
 from utils.helpers import load_json
 
@@ -73,8 +74,8 @@ class RelationshipMappingAgent(BaseAgent):
         # Analyze relationships using LLM
         relationships = self._analyze_relationships(brand_name, raw_data, parent_company)
 
-        # Update state
-        state["relationships"] = relationships
+        # Update state (validated)
+        self._validate_and_store(state, "relationships", relationships, RelationshipsOutput)
 
         self._log_end(success=True)
         return state

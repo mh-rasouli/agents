@@ -6,6 +6,7 @@ from typing import Dict, Any, List
 from agents.base_agent import BaseAgent
 from models.state import BrandIntelligenceState
 from config.prompts import STRATEGIC_INSIGHTS_PROMPT
+from models.output_models import InsightsOutput
 from utils.logger import get_logger
 from utils.helpers import load_json
 
@@ -55,8 +56,8 @@ class StrategicInsightsAgent(BaseAgent):
             categorization
         )
 
-        # Update state
-        state["insights"] = insights
+        # Update state (validated)
+        self._validate_and_store(state, "insights", insights, InsightsOutput)
 
         self._log_end(success=True)
         return state

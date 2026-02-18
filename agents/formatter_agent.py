@@ -7,6 +7,7 @@ from typing import Dict, Any, List
 from datetime import datetime
 from agents.base_agent import BaseAgent
 from models.state import BrandIntelligenceState
+from models.output_models import OutputsResult
 from utils.logger import get_logger
 from utils.helpers import (
     generate_timestamp,
@@ -137,7 +138,7 @@ class OutputFormatterAgent(BaseAgent):
             logger.info(f"[SUCCESS] Output generation complete!")
             logger.info(f"  Human Reports: {human_reports_dir}")
 
-            state["outputs"] = output_files
+            self._validate_and_store(state, "outputs", output_files, OutputsResult)
             self._log_end(success=True)
 
         except Exception as e:
@@ -145,7 +146,7 @@ class OutputFormatterAgent(BaseAgent):
             import traceback
             traceback.print_exc()
             self._add_error(state, f"Output generation failed: {e}")
-            state["outputs"] = output_files
+            self._validate_and_store(state, "outputs", output_files, OutputsResult)
             self._log_end(success=False)
 
         return state

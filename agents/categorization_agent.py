@@ -5,6 +5,7 @@ from typing import Dict, Any
 from agents.base_agent import BaseAgent
 from models.state import BrandIntelligenceState
 from config.prompts import CATEGORIZATION_PROMPT
+from models.output_models import CategorizationOutput
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -43,8 +44,8 @@ class CategorizationAgent(BaseAgent):
         # Perform categorization using LLM
         categorization = self._categorize_brand(brand_name, raw_data, relationships)
 
-        # Update state
-        state["categorization"] = categorization
+        # Update state (validated)
+        self._validate_and_store(state, "categorization", categorization, CategorizationOutput)
 
         self._log_end(success=True)
         return state
