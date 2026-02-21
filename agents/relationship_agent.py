@@ -453,6 +453,7 @@ Brand: {brand_name}"""
                                 continue
 
                             # Add full sister brand information
+                            synergy_pot = "high" if self._is_high_synergy(subsidiary, sibling) else "medium"
                             sister_brands.append({
                                 "name": sibling_name,
                                 "name_fa": sibling_name_fa,
@@ -469,7 +470,20 @@ Brand: {brand_name}"""
                                 "relation": "sister_brand",
                                 "parent": group_name_en,
                                 "category": cat_key,
-                                "synergy_potential": "high" if self._is_high_synergy(subsidiary, sibling) else "medium"
+                                "synergy_potential": synergy_pot,
+                                # Fields required by formatter — derive from available KB data
+                                "products": (
+                                    sibling.get("focus_en")
+                                    or sibling.get("focus")
+                                    or sibling.get("description_en")
+                                    or sibling.get("industry", "")
+                                ),
+                                "target_audience": (
+                                    sibling.get("target_audience")
+                                    or sibling.get("target")
+                                    or sibling.get("description", "")
+                                ),
+                                "synergy_score": "HIGH" if synergy_pot == "high" else "MEDIUM",
                             })
 
                     relationships["sister_brands"] = sister_brands

@@ -292,7 +292,9 @@ class CategorizationOutput(BaseModel):
     product_categories: List[str] = Field(default_factory=list)
     business_model: str = "B2C"
     price_tier: str = "mid"
-    target_audiences: List[str] = Field(default_factory=list)
+    # Accepts both plain strings (rule-based) and dicts with segment/description/size_estimate
+    # (new LLM prompt format)
+    target_audiences: List[Union[str, Dict[str, Any]]] = Field(default_factory=list)
     distribution_channels: List[str] = Field(default_factory=list)
     market_position: Union[MarketPositionInfo, Dict[str, Any]] = Field(default_factory=dict)
 
@@ -365,11 +367,14 @@ class CampaignTiming(BaseModel):
 
 class AudienceInsights(BaseModel):
     model_config = _EXTRA_ALLOW
-    primary_segments: List[str] = Field(default_factory=list)
+    # Accepts plain strings (rule-based) or dicts with name/characteristics/size_estimate
+    # (new LLM prompt format)
+    primary_segments: List[Union[str, Dict[str, Any]]] = Field(default_factory=list)
     demographic_profile: str = ""
     psychographic_profile: str = ""
     digital_behavior: str = ""
-    untapped_segments: List[str] = Field(default_factory=list)
+    # Accepts plain strings or dicts with segment/opportunity/approach
+    untapped_segments: List[Union[str, Dict[str, Any]]] = Field(default_factory=list)
     overlap_with_sister_brands: str = ""
 
 
@@ -408,7 +413,9 @@ class KeyMessage(BaseModel):
 
 class CreativeDirection(BaseModel):
     model_config = _EXTRA_ALLOW
-    key_messages: List[str] = Field(default_factory=list)
+    # Accepts plain strings (rule-based) or dicts with message_fa/message_en/target_segment
+    # (new LLM prompt format)
+    key_messages: List[Union[str, Dict[str, Any]]] = Field(default_factory=list)
     tone_and_style: str = ""
     visual_recommendations: str = ""
     cultural_considerations: str = ""

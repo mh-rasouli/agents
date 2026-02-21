@@ -173,7 +173,23 @@ Extract comprehensively - users need rich, detailed product data."""
         )
 
         catalog = json.loads(response)
-        logger.info(f"[LLM] Extracted {len(catalog.get('products', []))} products")
+        catalog["extraction_method"] = "llm"
+
+        # Flatten products from nested categories structure into top-level products list.
+        # The LLM returns {"categories": [{"category_name": "...", "products": [...]}]}
+        # but state consumers and the formatter expect a flat top-level "products" list.
+        if not catalog.get("products"):
+            products_flat = []
+            for cat in catalog.get("categories", []):
+                if isinstance(cat, dict):
+                    for p in cat.get("products", []):
+                        if isinstance(p, dict):
+                            p.setdefault("category", cat.get("category_name", ""))
+                        products_flat.append(p)
+            catalog["products"] = products_flat
+
+        catalog["total_products"] = len(catalog["products"])
+        logger.info(f"[LLM] Extracted {catalog['total_products']} products")
 
         return catalog
 
