@@ -112,8 +112,16 @@ class OutputFormatterAgent(BaseAgent):
                 "brand_name": brand_name,
                 "brand_id": quick_reference.get("brand_id", f"{safe_brand_name}_{timestamp}"),
                 "generated_date": quick_reference.get("generated_date", datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
+                # Formatted reports (Markdown)
                 "executive_summary": executive_summary_text,
                 "complete_analysis_report": complete_report_text,
+                # Structured agent outputs (raw JSON from each agent)
+                "structured_data": state.get("raw_data", {}).get("structured", {}),
+                "relationships": state.get("relationships", {}),
+                "categorization": state.get("categorization", {}),
+                "insights": state.get("insights", {}),
+                "product_catalog_structured": state.get("product_catalog", {}),
+                # Tabular exports and summary
                 "quick_reference": quick_reference,
                 "brands_database": brands_database,
                 "product_catalog": product_catalog_rows,
