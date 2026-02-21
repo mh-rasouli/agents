@@ -1,6 +1,7 @@
 """OpenRouter API client wrapper for Gemini 3 Pro."""
 
 import json
+import re
 from typing import Optional, Dict, Any
 from openai import OpenAI
 from config.settings import settings
@@ -163,8 +164,15 @@ class LLMClient:
                     try:
                         json.loads(response_text)
                     except json.JSONDecodeError:
-                        logger.error("Failed to extract valid JSON from response")
-                        return "{}"
+                        # Strip trailing commas before } or ] (common LLM mistake)
+                        cleaned = re.sub(r',\s*([}\]])', r'\1', response_text)
+                        try:
+                            json.loads(cleaned)
+                            response_text = cleaned
+                            logger.info("Fixed trailing comma(s) in JSON response")
+                        except json.JSONDecodeError:
+                            logger.error("Failed to extract valid JSON from response")
+                            return "{}"
 
             logger.info("OpenRouter API call successful")
             return response_text
