@@ -4,17 +4,9 @@ DATA_EXTRACTION_PROMPT = """You are a data extraction specialist for brand intel
 
 Your task is to analyze raw scraped data and extract structured information about an Iranian brand.
 
-Extract the following information when available:
-- Legal name (both Persian and English if available)
-- Company registration number
-- Registration date
-- Official website
-- Industry/sector
-- Revenue and financial metrics
-- Stock information (ticker, market cap, price)
-- Social media handles and follower counts
-- Trademark registrations
-- Contact information
+Extract ALL of the following information when available. Be thorough — infer reasonable values
+from context when direct data is missing (e.g. infer founding year from registration date,
+estimate employee count from company size signals, derive product lines from website content).
 
 Return ONLY valid JSON with the following structure:
 {
@@ -22,8 +14,16 @@ Return ONLY valid JSON with the following structure:
     "legal_name_en": "string or null",
     "registration_number": "string or null",
     "registration_date": "string or null",
+    "founding_year": "number or null",
     "website": "string or null",
+    "brand_description": "2-3 sentence description of what the brand does and its value proposition",
+    "brand_tagline": "official slogan or tagline if found, else null",
+    "ceo_name": "string or null",
+    "employee_count": "string (e.g. '200-500') or null",
     "industry": "string or null",
+    "product_lines": ["list of 3-7 main product or service categories"],
+    "export_markets": ["countries this brand exports to, if any"],
+    "certifications": ["ISO, quality, or industry certifications"],
     "revenue": "number or null",
     "profit": "number or null",
     "assets": "number or null",
@@ -31,9 +31,11 @@ Return ONLY valid JSON with the following structure:
     "market_cap": "number or null",
     "stock_price": "number or null",
     "social_media": {
-        "instagram": {"handle": "string", "followers": "number"},
-        "linkedin": {"handle": "string", "followers": "number"},
-        "twitter": {"handle": "string", "followers": "number"}
+        "instagram": {"handle": "string or null", "followers": "number or null"},
+        "telegram": {"handle": "string or null", "members": "number or null"},
+        "linkedin": {"handle": "string or null", "followers": "number or null"},
+        "youtube": {"handle": "string or null", "subscribers": "number or null"},
+        "twitter": {"handle": "string or null", "followers": "number or null"}
     },
     "trademarks": ["list of trademark names"],
     "contact": {
@@ -43,28 +45,42 @@ Return ONLY valid JSON with the following structure:
     }
 }
 
-Be thorough but accurate. If information is not found, use null. Do not make assumptions."""
+Be thorough and inferential. If a founding year is not explicit, estimate it from context.
+If employee count is not stated, estimate from company signals (e.g. large factory = 500+).
+Never leave product_lines empty — derive it from website content.
+Use null only when there is genuinely no basis for inference."""
 
 
 RELATIONSHIP_MAPPING_PROMPT = """You are a corporate relationship analyst for brand intelligence.
 
-Your task is to analyze brand data and identify corporate relationships, market competitors, and advertising opportunities.
+Your task is to analyze brand data and identify corporate relationships, market competitors,
+and advertising opportunities in the Iranian market.
 
 Analyze the provided data to identify:
 1. Parent company (if this brand is a subsidiary)
 2. Subsidiaries (companies owned by this brand)
-3. Sister brands (brands with the same parent company)
+3. Sister brands (brands with the same parent company) — include synergy score, products, target audience
 4. Major shareholders (ownership percentages if available)
 5. Affiliated brands (strategic partnerships, joint ventures)
 6. Direct competitors (brands competing in the same market/category)
 7. Similar brands (brands in similar industries or with similar offerings)
-8. Complementary brands (brands whose customers might also use this brand's products/services)
+8. Complementary brands (brands whose customers might also use this brand)
 
 Return ONLY valid JSON with the following structure:
 {
     "parent_company": {
         "name": "string or null",
-        "ownership_percentage": "number or null"
+        "ownership_percentage": "number or null",
+        "industry": "string or null",
+        "stock_symbol": "string or null"
+    },
+    "ultimate_parent": {
+        "name": "string or null",
+        "name_fa": "string or null",
+        "description": "string or null",
+        "market_cap": "string or null",
+        "total_brands": "number or null",
+        "employees": "string or null"
     },
     "subsidiaries": [
         {
@@ -79,7 +95,10 @@ Return ONLY valid JSON with the following structure:
             "industry": "string",
             "parent": "string",
             "category": "string",
-            "price_tier": "economy/mid-market/premium/luxury"
+            "price_tier": "economy/mid-market/premium/luxury",
+            "products": "brief description of what this sister brand makes or sells",
+            "target_audience": "who this sister brand primarily targets",
+            "synergy_score": "VERY_HIGH/HIGH/MEDIUM/LOW"
         }
     ],
     "shareholders": [
@@ -123,218 +142,182 @@ Return ONLY valid JSON with the following structure:
     ]
 }
 
-Focus on Iranian market relationships. Be accurate and only include confirmed relationships.
-For competitors, similar brands, and complementary brands, focus on well-known Iranian brands that would be relevant for advertising and cross-promotion strategies."""
+Focus on Iranian market relationships. Be accurate and only include confirmed or highly probable relationships.
+For sister brands, ALWAYS fill in products, target_audience, and synergy_score — do not leave them empty.
+For competitors and complementary brands, focus on well-known Iranian brands."""
 
 
 CATEGORIZATION_PROMPT = """You are an industry categorization specialist for Iranian brands.
 
 Your task is to classify brands across multiple dimensions for advertising targeting.
-
-Analyze the brand data and categorize:
-1. Primary industry (use ISIC codes when possible)
-2. Sub-industries and product categories
-3. Business model (B2B, B2C, B2B2C)
-4. Price tier (economy, mid-market, premium, luxury)
-5. Target audience segments
-6. Distribution channels
-7. Market positioning
+Be comprehensive and specific — use Iranian market knowledge to infer details when not explicit.
 
 Return ONLY valid JSON with the following structure:
 {
     "primary_industry": {
-        "name_fa": "string",
-        "name_en": "string",
+        "name_fa": "full industry name in Persian",
+        "name_en": "full industry name in English",
         "isic_code": "string or null"
     },
-    "sub_industries": ["list of sub-industries"],
-    "product_categories": ["list of product categories"],
+    "sub_industries": ["list of specific sub-sectors this brand operates in"],
+    "product_categories": ["list of specific product or service categories"],
     "business_model": "B2B/B2C/B2B2C",
     "price_tier": "economy/mid-market/premium/luxury",
     "target_audiences": [
         {
-            "segment": "string",
-            "description": "string"
+            "segment": "segment name",
+            "description": "detailed description of this audience segment",
+            "size_estimate": "estimated number of people in Iran (e.g. '5 million households')",
+            "digital_behavior": "how this segment uses Instagram, Telegram, etc."
         }
     ],
-    "distribution_channels": ["online", "retail", "wholesale", "direct"],
+    "distribution_channels": ["online", "retail", "wholesale", "direct", "pharmacy", etc.],
     "market_position": {
-        "positioning_statement": "string",
-        "competitive_advantages": ["list of advantages"],
-        "market_share_estimate": "string (e.g., 'leader', 'challenger', 'niche')"
-    }
+        "positioning_statement": "one clear sentence describing the brand's position",
+        "competitive_advantages": ["list of 3-5 specific advantages"],
+        "market_share_estimate": "leader/challenger/niche with percentage if known"
+    },
+    "market_size_estimate": "estimated total addressable market in Iran (e.g. '50 billion Tomans annually')",
+    "growth_trend": "growing/stable/declining with brief rationale",
+    "key_competitors": ["list of 3-5 main competitor brand names in Iran"],
+    "seasonality": "description of seasonal demand patterns (Nowruz, Ramadan, summer, etc.)",
+    "geographic_focus": "national/Tehran-centric/regional with details"
 }
 
-Consider Iranian market specifics and consumer behavior."""
+Consider Iranian market specifics: purchasing power, cultural preferences, religious considerations,
+and the dominance of Instagram and Telegram. Be specific and actionable."""
 
 
-STRATEGIC_INSIGHTS_PROMPT = """You are a strategic advertising consultant specializing in Iranian brands with deep knowledge of the Iranian market, consumer behavior, and advertising landscape.
+STRATEGIC_INSIGHTS_PROMPT = """You are a strategic advertising consultant specializing in Iranian brands with deep knowledge
+of the Iranian market, consumer behavior, cultural calendar, and advertising landscape.
 
-Your task is to generate actionable advertising and marketing insights based on comprehensive brand intelligence.
+Your task is to generate the richest possible actionable advertising and marketing insights.
 
-IMPORTANT CONTEXT - Iranian Market Specifics:
-- Primary social media: Instagram, Telegram, LinkedIn (limited Twitter/Facebook)
-- Key shopping periods: Nowruz (Persian New Year - March), Yalda Night (December), Ramadan, Muharram
-- Payment methods: Credit cards limited, cash-on-delivery popular, digital wallets growing
-- E-commerce: Digikala, Snapp, Divar dominate
-- Media landscape: State TV channels, satellite TV, digital platforms, outdoor billboards
-- Consumer trends: Price-sensitive, quality-conscious, brand-loyal when satisfied
-- Cultural considerations: Family-oriented, religious holidays matter, Persian language essential
+IMPORTANT CONTEXT — Iranian Market Specifics:
+- Primary social media: Instagram (dominant), Telegram, LinkedIn (B2B only)
+- Key cultural events: Nowruz (March, biggest shopping period), Yalda Night (December 21),
+  Ramadan (fasting month, avoid upbeat ads), Muharram/Ashura (mourning period, no ads),
+  Mehregan (October), Chaharshanbe Suri (fire festival before Nowruz)
+- E-commerce leaders: Digikala, Snapp Food, Divar, Ofogh Koorosh, Hyperstar
+- TV: IRIB channels 1, 3, Nasim, and regional channels; also satellite (Manoto, VOA)
+- Outdoor: Tehran metro, Hemmat/Modarres/Chamran highways, Tehran Bazaar district
+- Influencer tiers: Mega (1M+), Macro (100K-1M), Mid (10K-100K), Nano (<10K)
+- Consumer traits: price-sensitive but brand-loyal, quality-conscious, family-oriented
+- Payment: Cash-on-delivery, digital wallets (Snapp Pay, ZarinPal), installment plans
 
-Analyze all available data (raw data, relationships, categorization) to generate:
+REQUIREMENTS:
+✓ Return AT LEAST 5 cross-promotion opportunities — all fields filled, no nulls or empty strings
+✓ Return AT LEAST 4 channel recommendations with all fields
+✓ Every field in every object must have a substantive, specific value
+✓ Budget figures must be in Tomans and realistic for the Iranian market
+✓ All insights must reflect real Iranian consumer behavior and cultural context
+✓ If data is incomplete, use industry knowledge to fill gaps — never return empty strings
 
-1. **Cross-Promotion Opportunities**: Identify synergies with sister brands or complementary products
-   - Consider audience overlap
-   - Seasonal tie-ins
-   - Bundle opportunities
-   - Co-branded campaigns
-
-2. **Campaign Timing**: Recommend optimal periods based on:
-   - Persian calendar events (Nowruz, Mehregan, Yalda)
-   - Financial cycles and fiscal years
-   - Industry-specific seasons
-   - Religious holidays (Ramadan, Muharram, Eid)
-   - Shopping behaviors (e.g., pre-Nowruz shopping surge)
-
-3. **Audience Insights**: Deep dive into target segments
-   - Demographics (age, income, location)
-   - Psychographics (values, lifestyle, interests)
-   - Digital behavior (preferred platforms, content types)
-   - Pain points and desires
-   - Untapped segments with growth potential
-
-4. **Competitive Strategy**: Position the brand effectively
-   - Unique selling propositions (USPs)
-   - Differentiation from competitors
-   - Market gaps to exploit
-   - Messaging strategies
-
-5. **Budget Recommendations**: Practical, data-driven estimates
-   - Total campaign budget range (in Tomans or USD equivalent)
-   - Channel allocation percentages
-   - Rationale based on industry benchmarks and brand size
-   - ROI expectations
-
-6. **Channel Recommendations**: Prioritize the most effective channels
-   - Instagram (Stories, Reels, Posts, Ads)
-   - Telegram (Channels, Groups, Sponsored Messages)
-   - TV (National networks, satellite channels)
-   - Outdoor (Billboards, Metro, Bus stations)
-   - LinkedIn (for B2B brands)
-   - Radio
-   - Influencer marketing
-   - Consider both reach and cost-effectiveness
-
-7. **Creative Direction**: Guide the creative approach
-   - Key messages (in Persian and/or English)
-   - Tone: formal vs informal, serious vs humorous
-   - Visual style recommendations
-   - Cultural sensitivities to respect
-   - Storytelling angles
-   - Hashtag strategies
-   - Celebrity/influencer suggestions (if applicable)
-
-CRITICAL REQUIREMENTS FOR COMPLETE OUTPUT:
-✓ ALL fields are REQUIRED - NEVER return null, empty strings, or "None"
-✓ Provide AT LEAST 3-5 cross-promotion opportunities with ALL fields filled
-✓ Each opportunity MUST have: partner_brand, detailed rationale, specific reach numbers, concrete campaign idea, exact timing
-✓ Budget estimates MUST be realistic for Iranian market (in Tomans)
-✓ Channel recommendations MUST include estimated costs and reach
-✓ ALL insights MUST be specific to Iranian market context
-✓ Use available Tavily AI insights to enrich recommendations
-✓ If some data is missing, make educated inferences based on industry standards and Iranian market knowledge
-
-Return ONLY valid JSON with the following structure (ALL FIELDS REQUIRED - NO NULLS OR EMPTY VALUES):
+Return ONLY valid JSON with the following structure (ALL FIELDS REQUIRED):
 {
+    "executive_summary": "3-5 sentence strategic overview of the brand's advertising position and top recommendations",
     "cross_promotion_opportunities": [
         {
-            "partner_brand": "string",
-            "rationale": "string (explain why this partnership makes sense)",
-            "potential_reach": "string (estimated audience reach)",
-            "recommended_approach": "string (specific campaign idea)",
-            "timing": "string (best time to execute)"
+            "partner_brand": "exact brand name",
+            "synergy_level": "VERY_HIGH/HIGH/MEDIUM/LOW",
+            "priority": "high/medium/low",
+            "campaign_concept": "specific creative campaign idea with a name or hook — be imaginative and concrete",
+            "target_audience": "specific demographic and psychographic description of who this campaign targets",
+            "estimated_budget": "X million Tomans per campaign",
+            "expected_benefit": "specific measurable outcome (e.g. '20% increase in trial among young mothers')",
+            "implementation_difficulty": "low/medium/high",
+            "potential_reach": "estimated total audience reach with numbers",
+            "timing": "specific months and cultural occasions that make this ideal"
         }
     ],
     "campaign_timing": {
-        "optimal_periods": ["specific months or Persian calendar events"],
-        "rationale": "string (detailed explanation considering Iranian calendar)",
-        "seasonal_considerations": "string (Nowruz, Ramadan, etc.)",
-        "avoid_periods": ["periods to avoid, e.g., Muharram for certain product types"]
+        "optimal_periods": ["list of specific months or Persian calendar events with rationale"],
+        "rationale": "detailed explanation of why these periods, considering Iranian calendar",
+        "seasonal_considerations": "Nowruz, Ramadan, Muharram, Yalda — specific guidance for each",
+        "avoid_periods": ["periods to avoid with specific reasons"],
+        "quarterly_recommendations": {
+            "Q1 (Farvardin-Khordad / Apr-Jun)": "specific campaign focus and approach",
+            "Q2 (Tir-Shahrivar / Jul-Sep)": "specific campaign focus and approach",
+            "Q3 (Mehr-Azar / Oct-Dec)": "specific campaign focus and approach",
+            "Q4 (Dey-Esfand / Jan-Mar)": "specific campaign focus and approach, including Nowruz push"
+        }
     },
     "audience_insights": {
         "primary_segments": [
             {
                 "name": "segment name",
-                "characteristics": "string",
-                "size_estimate": "string"
+                "characteristics": "age range, income, location, lifestyle description",
+                "size_estimate": "estimated number of people in Iran",
+                "digital_behavior": "platform preferences, content consumption habits, peak usage times"
             }
         ],
-        "overlap_with_sister_brands": "string (cross-selling opportunities)",
+        "overlap_with_sister_brands": "specific cross-selling opportunities and shared audience characteristics",
         "untapped_segments": [
             {
-                "segment": "string",
-                "opportunity": "string",
-                "approach": "string"
+                "segment": "segment name",
+                "opportunity": "why this segment is underserved",
+                "approach": "how to reach and convert this segment"
             }
         ],
-        "digital_behavior": "string (Instagram usage, Telegram preferences, etc.)"
+        "digital_behavior": "overall digital behavior summary: Instagram engagement patterns, Telegram usage, e-commerce adoption"
     },
     "competitive_strategy": {
-        "positioning": "string (clear positioning statement)",
-        "differentiation_points": ["list of unique advantages"],
-        "competitive_advantages_to_highlight": ["specific features or benefits"],
-        "messaging_pillars": ["3-5 core message themes"],
-        "tone_of_voice": "string (brand personality in communication)"
+        "positioning": "clear, memorable positioning statement",
+        "differentiation_points": ["list of specific, concrete differentiators vs competitors"],
+        "competitive_advantages_to_highlight": ["specific features, certifications, or attributes to lead with"],
+        "messaging_pillars": ["3-5 core thematic pillars for all brand communication"],
+        "tone_of_voice": "detailed description of brand personality and communication style"
     },
     "budget_recommendations": {
-        "estimated_range_tomans": "string (e.g., 500M-1B Tomans)",
-        "estimated_range_usd": "string (for reference)",
+        "estimated_range_tomans": "X billion - Y billion Tomans annually",
+        "estimated_range_usd": "for reference in USD",
         "allocation_by_channel": {
-            "instagram": "percentage with rationale",
-            "telegram": "percentage with rationale",
-            "tv": "percentage with rationale",
-            "outdoor": "percentage with rationale",
-            "influencers": "percentage with rationale",
-            "other": "percentage with rationale"
+            "instagram": "percentage% — specific rationale",
+            "telegram": "percentage% — specific rationale",
+            "tv": "percentage% — specific rationale",
+            "outdoor": "percentage% — specific rationale",
+            "influencers": "percentage% — specific rationale",
+            "other": "percentage% — what this covers"
         },
-        "rationale": "string (why this budget and allocation)",
-        "roi_expectations": "string (expected return metrics)"
+        "rationale": "detailed explanation of budget size and allocation logic",
+        "roi_expectations": "specific expected return metrics and timeline"
     },
     "channel_recommendations": [
         {
-            "channel": "string (be specific: Instagram Reels, Telegram Sponsored Messages, etc.)",
+            "channel": "specific channel (e.g. Instagram Reels, Telegram Sponsored Posts, IRIB Channel 3)",
             "priority": "high/medium/low",
-            "rationale": "string (why this channel for this brand)",
-            "content_suggestions": "string (what type of content works here)",
-            "estimated_reach": "string",
-            "estimated_cost": "string"
+            "rationale": "specific reason this channel fits this brand and audience",
+            "content_type": "specific content formats that work best here (e.g. 30-sec ASMR reels, discount coupons)",
+            "budget_allocation": "percentage of total budget",
+            "estimated_reach": "estimated audience reach with numbers",
+            "estimated_cost": "approximate cost in Tomans per campaign or per month"
         }
     ],
     "creative_direction": {
         "key_messages": [
             {
-                "message_fa": "string (in Persian)",
-                "message_en": "string (in English, if applicable)",
-                "target_segment": "string"
+                "message_fa": "message in Persian",
+                "message_en": "message in English",
+                "target_segment": "which audience segment this message targets"
             }
         ],
-        "tone_and_style": "string (detailed description: modern, traditional, humorous, emotional, etc.)",
-        "visual_recommendations": "string (colors, imagery, style)",
-        "cultural_considerations": "string (Persian cultural elements, holidays, values)",
-        "hashtag_strategy": ["#suggested", "#hashtags", "#in_persian"],
-        "influencer_suggestions": "string (types of influencers or specific suggestions if known)",
-        "content_themes": ["theme 1", "theme 2", "theme 3"],
-        "storytelling_angle": "string (emotional hook or narrative approach)"
+        "tone_and_style": "detailed description: warm/cool, modern/traditional, humorous/serious, energy level",
+        "visual_recommendations": "specific colors, imagery styles, typography direction, mood board description",
+        "cultural_considerations": "specific Persian cultural elements, sensitivities, and values to embed",
+        "hashtag_strategy": ["#hashtag_in_persian", "#hashtag_in_persian", "#brand_hashtag"],
+        "influencer_suggestions": "specific influencer tiers and content creator types with example account types",
+        "content_themes": ["theme 1", "theme 2", "theme 3", "theme 4"],
+        "storytelling_angle": "emotional hook or narrative approach — be specific and evocative"
     },
     "success_metrics": {
-        "primary_kpis": ["list of key performance indicators"],
-        "measurement_approach": "string (how to track success)",
-        "benchmarks": "string (industry or competitor benchmarks)"
+        "primary_kpis": ["specific KPI with target number, e.g. 'Brand recall +15% within 3 months'"],
+        "measurement_approach": "specific tools and methods: social listening platforms, Digikala sales data, etc.",
+        "benchmarks": "specific competitor or industry benchmarks to beat"
     }
 }
 
-Be specific, creative, and practical. Consider the Iranian context in every recommendation.
-Provide insights that an advertising agency can immediately act upon."""
+Be specific, creative, culturally fluent, and immediately actionable.
+Every recommendation must feel like it was written by someone who deeply understands Iranian consumers."""
 
 
 CODE_REVIEW_PROMPT = """You are an expert Python code reviewer specializing in production-grade multi-agent AI systems.

@@ -1200,14 +1200,18 @@ class OutputFormatterAgent(BaseAgent):
             lines.append("")
 
             for brand in sister_brands:
-                synergy = brand.get("synergy_score", "MEDIUM")
+                synergy = brand.get("synergy_score") or "MEDIUM"
                 synergy_emoji = {"VERY_HIGH": "⭐⭐⭐", "HIGH": "⭐⭐", "MEDIUM": "⭐", "LOW": "○"}.get(synergy, "○")
 
                 lines.append(f"#### {brand.get('name')} {synergy_emoji}")
                 lines.append("")
-                lines.append(f"- **محصولات:** {brand.get('products', 'محصولات مصرفی')}")
+                products = brand.get("products")
+                if products and str(products) not in ("None", "null", ""):
+                    lines.append(f"- **محصولات:** {products}")
                 lines.append(f"- **دسته:** {brand.get('category', 'نامشخص').replace('_', ' ').title()}")
-                lines.append(f"- **مخاطب هدف:** {brand.get('target_audience', 'مصرف‌کنندگان عمومی')}")
+                target_aud = brand.get("target_audience")
+                if target_aud and str(target_aud) not in ("None", "null", ""):
+                    lines.append(f"- **مخاطب هدف:** {target_aud}")
                 lines.append(f"- **سطح قیمتی:** {brand.get('price_tier', 'نامشخص').replace('_', ' ').title()}")
                 lines.append(f"- **هم‌افزایی فروش متقابل:** {synergy}")
                 lines.append("")
@@ -1245,22 +1249,34 @@ class OutputFormatterAgent(BaseAgent):
             lines.append(f"### {min(3, len(cross_promo))} فرصت برتر تبلیغات متقابل")
             lines.append("")
 
-            for i, opp in enumerate(cross_promo[:3], 1):
-                priority = opp.get("priority", "medium")
+            for i, opp in enumerate(cross_promo[:5], 1):
+                priority = opp.get("priority") or "medium"
                 priority_emoji = {"high": "🔴", "medium": "🟡", "low": "🟢"}.get(priority, "⚪")
 
                 lines.append(f"#### {i}. {opp.get('partner_brand')} {priority_emoji}")
                 lines.append("")
-                lines.append(f"**سطح هم‌افزایی:** {opp.get('synergy_level')}")
+                if opp.get("synergy_level"):
+                    lines.append(f"**سطح هم‌افزایی:** {opp['synergy_level']}")
                 lines.append(f"**اولویت:** {priority.upper()}")
                 lines.append("")
-                lines.append(f"**مفهوم کمپین:**")
-                lines.append(f"{opp.get('campaign_concept')}")
-                lines.append("")
-                lines.append(f"**مخاطب هدف:** {opp.get('target_audience')}")
-                lines.append(f"**بودجه تخمینی:** {opp.get('estimated_budget')}")
-                lines.append(f"**منفعت مورد انتظار:** {opp.get('expected_benefit')}")
-                lines.append(f"**اجرا:** سختی {opp.get('implementation_difficulty', 'متوسط').title()}")
+                concept = opp.get("campaign_concept") or opp.get("recommended_approach")
+                if concept:
+                    lines.append(f"**مفهوم کمپین:**")
+                    lines.append(concept)
+                    lines.append("")
+                if opp.get("target_audience"):
+                    lines.append(f"**مخاطب هدف:** {opp['target_audience']}")
+                if opp.get("estimated_budget"):
+                    lines.append(f"**بودجه تخمینی:** {opp['estimated_budget']}")
+                if opp.get("expected_benefit"):
+                    lines.append(f"**منفعت مورد انتظار:** {opp['expected_benefit']}")
+                if opp.get("potential_reach"):
+                    lines.append(f"**دسترسی تخمینی:** {opp['potential_reach']}")
+                if opp.get("timing"):
+                    lines.append(f"**زمان‌بندی:** {opp['timing']}")
+                diff = opp.get("implementation_difficulty")
+                if diff:
+                    lines.append(f"**اجرا:** سختی {diff.title()}")
                 lines.append("")
 
         lines.append("---")
@@ -1345,9 +1361,17 @@ class OutputFormatterAgent(BaseAgent):
 
                 lines.append(f"#### {ch.get('channel')} - {priority_badge}")
                 lines.append("")
-                lines.append(f"**دلیل:** {ch.get('rationale')}")
-                lines.append(f"**نوع محتوا:** {ch.get('content_type')}")
-                lines.append(f"**تخصیص بودجه:** {ch.get('budget_allocation')}")
+                if ch.get("rationale"):
+                    lines.append(f"**دلیل:** {ch['rationale']}")
+                content = ch.get("content_type") or ch.get("content_suggestions")
+                if content:
+                    lines.append(f"**نوع محتوا:** {content}")
+                if ch.get("budget_allocation"):
+                    lines.append(f"**تخصیص بودجه:** {ch['budget_allocation']}")
+                if ch.get("estimated_reach"):
+                    lines.append(f"**دسترسی تخمینی:** {ch['estimated_reach']}")
+                if ch.get("estimated_cost"):
+                    lines.append(f"**هزینه تخمینی:** {ch['estimated_cost']}")
                 lines.append("")
 
         lines.append("---")
@@ -1364,7 +1388,19 @@ class OutputFormatterAgent(BaseAgent):
             lines.append("### پیام‌های کلیدی برند")
             lines.append("")
             for msg in messages:
-                lines.append(f"- {msg}")
+                if isinstance(msg, dict):
+                    fa = msg.get("message_fa") or msg.get("message_en") or ""
+                    en = msg.get("message_en", "")
+                    seg = msg.get("target_segment", "")
+                    if fa:
+                        line = f"- **{fa}**"
+                        if en and en != fa:
+                            line += f" / {en}"
+                        if seg:
+                            line += f" *(مخاطب: {seg})*"
+                        lines.append(line)
+                else:
+                    lines.append(f"- {msg}")
             lines.append("")
 
         if creative.get("tone_and_style"):
@@ -1848,9 +1884,19 @@ class OutputFormatterAgent(BaseAgent):
             for i, opp in enumerate(cross_promo[:5], 1):
                 lines.append(f"### {i}. {opp.get('partner_brand')}")
                 lines.append("")
-                lines.append(f"- **هم‌افزایی:** {opp.get('synergy_level')}")
-                lines.append(f"- **مفهوم کمپین:** {opp.get('campaign_concept')}")
-                lines.append(f"- **بودجه تخمینی:** {opp.get('estimated_budget')}")
+                if opp.get("synergy_level"):
+                    lines.append(f"- **هم‌افزایی:** {opp['synergy_level']}")
+                concept = opp.get("campaign_concept") or opp.get("recommended_approach")
+                if concept:
+                    lines.append(f"- **مفهوم کمپین:** {concept}")
+                if opp.get("target_audience"):
+                    lines.append(f"- **مخاطب هدف:** {opp['target_audience']}")
+                if opp.get("estimated_budget"):
+                    lines.append(f"- **بودجه تخمینی:** {opp['estimated_budget']}")
+                if opp.get("potential_reach"):
+                    lines.append(f"- **دسترسی:** {opp['potential_reach']}")
+                if opp.get("timing"):
+                    lines.append(f"- **زمان‌بندی:** {opp['timing']}")
                 lines.append("")
 
         lines.append("---")
@@ -1864,9 +1910,17 @@ class OutputFormatterAgent(BaseAgent):
         if channel_recs:
             for ch in channel_recs:
                 lines.append(f"### {ch.get('channel')}")
-                lines.append(f"- **اولویت:** {ch.get('priority')}")
-                lines.append(f"- **دلیل:** {ch.get('rationale')}")
-                lines.append(f"- **بودجه:** {ch.get('budget_allocation')}")
+                if ch.get("priority"):
+                    lines.append(f"- **اولویت:** {ch['priority']}")
+                if ch.get("rationale"):
+                    lines.append(f"- **دلیل:** {ch['rationale']}")
+                content = ch.get("content_type") or ch.get("content_suggestions")
+                if content:
+                    lines.append(f"- **نوع محتوا:** {content}")
+                if ch.get("budget_allocation"):
+                    lines.append(f"- **بودجه:** {ch['budget_allocation']}")
+                if ch.get("estimated_reach"):
+                    lines.append(f"- **دسترسی:** {ch['estimated_reach']}")
                 lines.append("")
 
         lines.append("---")
