@@ -169,17 +169,10 @@ class GoogleSheetsClient:
             spreadsheet = self.client.open_by_key(sheet_id)
             worksheet = spreadsheet.worksheet(worksheet_name)
 
-            # Prepare values to write
-            values = []
-            for format_type in ["txt", "json", "csv", "md"]:
-                path = output_paths.get(format_type, "")
-                values.append(path)
-
-            # Write values starting from start_column
-            start_col_idx = ord(start_column.upper()) - ord('A')
-            range_notation = f"{start_column}{row_number}:{chr(ord(start_column) + len(values) - 1)}{row_number}"
-
-            worksheet.update(range_notation, [values])
+            # Write the unified brand report path to a single column
+            report_path = output_paths.get("brand_report", "")
+            range_notation = f"{start_column}{row_number}"
+            worksheet.update(range_notation, [[report_path]])
             logger.info(f"[OK] Wrote output paths for row {row_number}")
 
         except Exception as e:
