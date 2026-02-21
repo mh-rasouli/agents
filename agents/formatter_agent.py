@@ -35,108 +35,100 @@ class OutputFormatterAgent(BaseAgent):
             logger.info("Loaded Iranian brands knowledge base")
 
     def execute(self, state: BrandIntelligenceState) -> BrandIntelligenceState:
-        """Generate comprehensive outputs in human-readable format.
+        """Generate a single unified JSON report containing all brand intelligence data.
 
-        Creates output directory:
-        - human_reports/ : For human consumption (MD, CSV, JSON)
-          - Executive summary, complete report, quick reference
-          - Data exports: brands, products, opportunities (CSV)
-
-        Note: vector_database/ generation is DISABLED per user request
+        Writes one file:
+        - human_reports/brand_report.json : All content consolidated into one JSON
 
         Args:
             state: Current workflow state
 
         Returns:
-            Updated state with output file paths
+            Updated state with output file path
         """
         self._log_start()
 
         brand_name = state["brand_name"]
         timestamp = generate_timestamp()
 
-        # Create brand-specific output directory with dual structure
         safe_brand_name = sanitize_filename(brand_name)
         brand_output_dir = self.output_dir / safe_brand_name
         brand_output_dir.mkdir(exist_ok=True)
 
-        # Create subdirectories for dual-output structure
+        # Temporary directories used internally by helper methods
         human_reports_dir = brand_output_dir / "human_reports"
         human_reports_dir.mkdir(exist_ok=True)
-
         human_exports_dir = human_reports_dir / "data_exports"
         human_exports_dir.mkdir(exist_ok=True)
 
-        # DISABLED: Vector database output not needed
-        # vector_db_dir = brand_output_dir / "vector_database"
-        # vector_db_dir.mkdir(exist_ok=True)
-        # vector_chunks_dir = vector_db_dir / "chunks"
-        # vector_chunks_dir.mkdir(exist_ok=True)
-
-        # Enrich state with knowledge base if needed
         state = self._enrich_with_knowledge(state)
 
         output_files = {}
 
         try:
-            logger.info(f"Generating dual-output structure for {brand_name}...")
+            logger.info(f"Generating unified JSON report for {brand_name}...")
             logger.info("=" * 60)
 
-            # ========== HUMAN REPORTS ==========
-            logger.info("[HUMAN REPORTS]")
-
-            # Executive Summary (MD)
+            # Generate intermediate files using existing helper methods
             exec_summary_path = self._generate_executive_summary(state, human_reports_dir, timestamp)
-            output_files["executive_summary"] = str(exec_summary_path)
-            logger.info(f"  ✓ Executive Summary: {exec_summary_path.name}")
-
-            # Complete Analysis Report (MD) - Combines master report + insights
             complete_report_path = self._generate_complete_analysis_report(state, human_reports_dir, timestamp)
-            output_files["complete_analysis_report"] = str(complete_report_path)
-            logger.info(f"  ✓ Complete Report: {complete_report_path.name}")
-
-            # Quick Reference (JSON) - Dashboard data
             quick_ref_path = self._generate_quick_reference(state, human_reports_dir, timestamp)
-            output_files["quick_reference"] = str(quick_ref_path)
-            logger.info(f"  ✓ Quick Reference: {quick_ref_path.name}")
+            brands_csv_path = self._generate_brands_database(state, human_exports_dir, timestamp)
+            products_csv_path = self._generate_products_export(state, human_exports_dir, timestamp)
+            opps_csv_path = self._generate_opportunities_export(state, human_exports_dir, timestamp)
 
-            # Data Exports (CSV files)
-            related_brands_csv = self._generate_brands_database(state, human_exports_dir, timestamp)
-            output_files["related_brands_csv"] = str(related_brands_csv)
-            logger.info(f"  ✓ Related Brands CSV: {related_brands_csv.name}")
+            # Read content back from intermediate files
+            with open(exec_summary_path, encoding='utf-8') as f:
+                executive_summary_text = f.read()
 
-            products_csv = self._generate_products_export(state, human_exports_dir, timestamp)
-            output_files["products_csv"] = str(products_csv)
-            logger.info(f"  ✓ Products CSV: {products_csv.name}")
+            with open(complete_report_path, encoding='utf-8') as f:
+                complete_report_text = f.read()
 
-            opportunities_csv = self._generate_opportunities_export(state, human_exports_dir, timestamp)
-            output_files["opportunities_csv"] = str(opportunities_csv)
-            logger.info(f"  ✓ Opportunities CSV: {opportunities_csv.name}")
+            with open(quick_ref_path, encoding='utf-8') as f:
+                quick_reference = json.load(f)
 
-            logger.info("")
+            with open(brands_csv_path, encoding='utf-8-sig', newline='') as f:
+                brands_database = list(csv.DictReader(f))
 
-            # ========== VECTOR DATABASE ==========
-            # DISABLED: Vector database output not needed per user request
-            # logger.info("[VECTOR DATABASE]")
-            # chunk_files = self._generate_semantic_chunks(state, vector_chunks_dir, timestamp)
-            # output_files["vector_chunks"] = chunk_files
-            # logger.info(f"  ✓ Generated {len(chunk_files)} semantic chunks")
-            # metadata_path = self._generate_metadata(state, vector_db_dir, timestamp, chunk_files)
-            # output_files["metadata"] = str(metadata_path)
-            # logger.info(f"  ✓ Metadata: {metadata_path.name}")
-            # entities_path = self._generate_entities(state, vector_db_dir, timestamp)
-            # output_files["entities"] = str(entities_path)
-            # logger.info(f"  ✓ Entities: {entities_path.name}")
-            # relationships_path = self._generate_relationships_graph(state, vector_db_dir, timestamp)
-            # output_files["relationships_graph"] = str(relationships_path)
-            # logger.info(f"  ✓ Relationships: {relationships_path.name}")
-            # manifest_path = self._generate_embedding_manifest(state, vector_db_dir, timestamp, chunk_files)
-            # output_files["embedding_manifest"] = str(manifest_path)
-            # logger.info(f"  ✓ Embedding Manifest: {manifest_path.name}")
+            with open(products_csv_path, encoding='utf-8-sig', newline='') as f:
+                product_catalog_rows = list(csv.DictReader(f))
 
+            with open(opps_csv_path, encoding='utf-8-sig', newline='') as f:
+                campaign_opportunities = list(csv.DictReader(f))
+
+            # Remove intermediate files and empty data_exports dir
+            for path in [exec_summary_path, complete_report_path, quick_ref_path,
+                         brands_csv_path, products_csv_path, opps_csv_path]:
+                path.unlink(missing_ok=True)
+            try:
+                human_exports_dir.rmdir()
+            except OSError:
+                pass
+
+            # Build and write the single unified report
+            report_path = human_reports_dir / "brand_report.json"
+
+            unified_report = {
+                "brand_name": brand_name,
+                "brand_id": quick_reference.get("brand_id", f"{safe_brand_name}_{timestamp}"),
+                "generated_date": quick_reference.get("generated_date", datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
+                "executive_summary": executive_summary_text,
+                "complete_analysis_report": complete_report_text,
+                "quick_reference": quick_reference,
+                "brands_database": brands_database,
+                "product_catalog": product_catalog_rows,
+                "campaign_opportunities": campaign_opportunities,
+            }
+
+            with open(report_path, 'w', encoding='utf-8') as f:
+                json.dump(unified_report, f, ensure_ascii=False, indent=2)
+
+            output_files["brand_report"] = str(report_path)
+
+            logger.info(f"  ✓ Unified report: {report_path.name}")
             logger.info("=" * 60)
-            logger.info(f"[SUCCESS] Output generation complete!")
-            logger.info(f"  Human Reports: {human_reports_dir}")
+            logger.info("[SUCCESS] Output generation complete!")
+            logger.info(f"  Report: {report_path}")
 
             self._validate_and_store(state, "outputs", output_files, OutputsResult)
             self._log_end(success=True)
