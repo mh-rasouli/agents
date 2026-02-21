@@ -1,0 +1,76 @@
+{
+  "brand_id": "capo_20260217_084546",
+  "brand_name": "Capo",
+  "generated_date": "2026-02-17 08:45:46",
+  "summary": {
+    "industry": "صنایع غذایی",
+    "business_model": "B2B2C",
+    "price_tier": "premium",
+    "parent_company": "شرکت فرآورده های گوشتی کاله آمل (Kalleh Meat Products)"
+  },
+  "relationships": {
+    "sister_brands_count": 5,
+    "top_sister_brands": [
+      {
+        "name": "Kalleh",
+        "synergy": null
+      },
+      {
+        "name": "Pemina",
+        "synergy": null
+      },
+      {
+        "name": "Seven",
+        "synergy": null
+      },
+      {
+        "name": "Castle",
+        "synergy": null
+      },
+      {
+        "name": "Solico",
+        "synergy": null
+      }
+    ]
+  },
+  "opportunities": {
+    "cross_promotion_count": 3,
+    "top_opportunities": [
+      {
+        "partner": "Kalleh (Dairy Division)",
+        "rationale": "Capo's frozen pizzas and doughs are the perfect canvas for Kalleh's premium cheeses (Mozzarella, Gou...",
+        "reach": "15,000,000+ (Combined Instagram followers and retail touchpoints)",
+        "timing": "Thursday nights (Weekend kickoff) and during major football tournaments."
+      },
+      {
+        "partner": "Sunich",
+        "rationale": "High synergy between party-style finger foods (Capo's Hummus and Chorizo) and premium juices/mocktai...",
+        "reach": "8,000,000+ (Urban youth and party-planners segment)",
+        "timing": "Yalda Night (December) and Summer house-party season."
+      },
+      {
+        "partner": "Nano Sahar",
+        "rationale": "Capo’s premium cold cuts and deli meats require high-quality artisanal bread, which Nano Sahar provi...",
+        "reach": "3,000,000 (Upper-middle-class urbanites in Tehran and Karaj)",
+        "timing": "Back-to-school season (September) for premium lunchbox solutions."
+      }
+    ]
+  },
+  "channels": {
+    "recommended_count": 3,
+    "top_channels": [
+      {
+        "name": "Instagram Reels",
+        "priority": "high"
+      },
+      {
+        "name": "SnappFood In-App Advertising",
+        "priority": "high"
+      },
+      {
+        "name": "Outdoor (Digital Billboards)",
+        "priority": "medium"
+      }
+    ]
+  }
+}

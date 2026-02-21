@@ -1,0 +1,76 @@
+{
+  "brand_id": "blephamed_20260217_084531",
+  "brand_name": "Blephamed",
+  "generated_date": "2026-02-17 08:45:31",
+  "summary": {
+    "industry": "ساخت مواد و محصولات شیمیایی (محصولات دارویی و بهداشتی)",
+    "business_model": "B2B2C",
+    "price_tier": "mid-market",
+    "parent_company": "Sayateb Mana (سایاطب مانا)"
+  },
+  "relationships": {
+    "sister_brands_count": 6,
+    "top_sister_brands": [
+      {
+        "name": "Vitalayer",
+        "synergy": null
+      },
+      {
+        "name": "Eudora Max",
+        "synergy": null
+      },
+      {
+        "name": "Eyesol",
+        "synergy": null
+      },
+      {
+        "name": "Vitaplex",
+        "synergy": null
+      },
+      {
+        "name": "Elvina",
+        "synergy": null
+      }
+    ]
+  },
+  "opportunities": {
+    "cross_promotion_count": 3,
+    "top_opportunities": [
+      {
+        "partner": "Eyesol (Sister Brand)",
+        "rationale": "Eyesol specializes in eye-area dermocosmetics while Blephamed focuses on medical hygiene. A combined...",
+        "reach": "1.5M+ Health-conscious beauty consumers in Iran",
+        "timing": "Pre-Nowruz (February-March) when consumers upgrade their skincare routines for the New Year."
+      },
+      {
+        "partner": "Optic Iran / Local Optician Chains",
+        "rationale": "Patients purchasing contact lenses or glasses are high-intent targets for eyelid hygiene to prevent ...",
+        "reach": "500k+ Patients visiting specialized clinics annually",
+        "timing": "Year-round, with peaks during back-to-school (September) and Nowruz."
+      },
+      {
+        "partner": "Vitalayer (Sister Brand)",
+        "rationale": "Vitalayer has a strong presence in general dermocosmetics. Blephamed can ride its distribution and b...",
+        "reach": "",
+        "timing": "Summer months (June-August) when dust and sweat increase the need for thorough eyelid hygiene."
+      }
+    ]
+  },
+  "channels": {
+    "recommended_count": 3,
+    "top_channels": [
+      {
+        "name": "Instagram Reels (Educational)",
+        "priority": "high"
+      },
+      {
+        "name": "Doctor/Pharmacist Influencers",
+        "priority": "high"
+      },
+      {
+        "name": "Pharmacy Shelf Branding",
+        "priority": "medium"
+      }
+    ]
+  }
+}

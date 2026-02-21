@@ -1,0 +1,157 @@
+{
+  "brand": "Blephamed",
+  "relationships": {
+    "parent_of": [],
+    "child_of": [
+      "Sayateb Mana"
+    ],
+    "sister_of": [
+      "Vitalayer",
+      "Eudora Max",
+      "Eyesol",
+      "Vitaplex",
+      "Elvina",
+      "Bergamia"
+    ],
+    "competes_with": [
+      "Sina Darou",
+      "Lafarrerr",
+      "Hydroderm"
+    ],
+    "partners_with": [],
+    "cross_promotion_with": [
+      {
+        "brand": "Eyesol (Sister Brand)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Optic One / Specialized Opticians",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Vitalayer (Sister Brand)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      }
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "blephamed",
+        "type": "brand",
+        "label": "Blephamed"
+      },
+      {
+        "id": "sayateb_mana",
+        "type": "parent",
+        "label": "Sayateb Mana"
+      },
+      {
+        "id": "vitalayer",
+        "type": "sister",
+        "label": "Vitalayer"
+      },
+      {
+        "id": "eudora_max",
+        "type": "sister",
+        "label": "Eudora Max"
+      },
+      {
+        "id": "eyesol",
+        "type": "sister",
+        "label": "Eyesol"
+      },
+      {
+        "id": "vitaplex",
+        "type": "sister",
+        "label": "Vitaplex"
+      },
+      {
+        "id": "elvina",
+        "type": "sister",
+        "label": "Elvina"
+      },
+      {
+        "id": "bergamia",
+        "type": "sister",
+        "label": "Bergamia"
+      },
+      {
+        "id": "sina_darou",
+        "type": "competitor",
+        "label": "Sina Darou"
+      },
+      {
+        "id": "lafarrerr",
+        "type": "competitor",
+        "label": "Lafarrerr"
+      },
+      {
+        "id": "hydroderm",
+        "type": "competitor",
+        "label": "Hydroderm"
+      }
+    ],
+    "edges": [
+      {
+        "from": "blephamed",
+        "to": "sayateb_mana",
+        "type": "owned_by"
+      },
+      {
+        "from": "blephamed",
+        "to": "vitalayer",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "blephamed",
+        "to": "eudora_max",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "blephamed",
+        "to": "eyesol",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "blephamed",
+        "to": "vitaplex",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "blephamed",
+        "to": "elvina",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "blephamed",
+        "to": "bergamia",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "blephamed",
+        "to": "sina_darou",
+        "type": "competes_with"
+      },
+      {
+        "from": "blephamed",
+        "to": "lafarrerr",
+        "type": "competes_with"
+      },
+      {
+        "from": "blephamed",
+        "to": "hydroderm",
+        "type": "competes_with"
+      }
+    ]
+  }
+}

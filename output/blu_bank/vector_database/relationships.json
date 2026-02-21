@@ -1,0 +1,121 @@
+{
+  "brand": "Blu_Bank",
+  "relationships": {
+    "parent_of": [],
+    "child_of": [
+      "Saman Bank (Bank Saman)"
+    ],
+    "sister_of": [
+      "Saman Insurance",
+      "Saman Exchange",
+      "Saman Electronic Payment (SEP)"
+    ],
+    "competes_with": [
+      "Bankino",
+      "OMP Finex",
+      "Lendo"
+    ],
+    "partners_with": [],
+    "cross_promotion_with": [
+      {
+        "brand": "Saman Insurance",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Digikala",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Snapp",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      }
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "blu_bank",
+        "type": "brand",
+        "label": "Blu_Bank"
+      },
+      {
+        "id": "saman_bank_(bank_saman)",
+        "type": "parent",
+        "label": "Saman Bank (Bank Saman)"
+      },
+      {
+        "id": "saman_insurance",
+        "type": "sister",
+        "label": "Saman Insurance"
+      },
+      {
+        "id": "saman_exchange",
+        "type": "sister",
+        "label": "Saman Exchange"
+      },
+      {
+        "id": "saman_electronic_payment_(sep)",
+        "type": "sister",
+        "label": "Saman Electronic Payment (SEP)"
+      },
+      {
+        "id": "bankino",
+        "type": "competitor",
+        "label": "Bankino"
+      },
+      {
+        "id": "omp_finex",
+        "type": "competitor",
+        "label": "OMP Finex"
+      },
+      {
+        "id": "lendo",
+        "type": "competitor",
+        "label": "Lendo"
+      }
+    ],
+    "edges": [
+      {
+        "from": "blu_bank",
+        "to": "saman_bank_(bank_saman)",
+        "type": "owned_by"
+      },
+      {
+        "from": "blu_bank",
+        "to": "saman_insurance",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "blu_bank",
+        "to": "saman_exchange",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "blu_bank",
+        "to": "saman_electronic_payment_(sep)",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "blu_bank",
+        "to": "bankino",
+        "type": "competes_with"
+      },
+      {
+        "from": "blu_bank",
+        "to": "omp_finex",
+        "type": "competes_with"
+      },
+      {
+        "from": "blu_bank",
+        "to": "lendo",
+        "type": "competes_with"
+      }
+    ]
+  }
+}

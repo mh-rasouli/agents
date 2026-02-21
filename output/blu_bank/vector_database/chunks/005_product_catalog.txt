@@ -1,0 +1,86 @@
+Brand: Blu_Bank
+Date: 2026-02-17
+
+============================================================
+PRODUCT & SERVICE CATALOG
+============================================================
+
+BRAND POSITIONING:
+Industry: Digital Banking (Neobank)
+Business Model: B2C
+Price Tier: mid-market
+
+CATALOG OVERVIEW:
+Blu_Bank offers 13 products/services in the Digital Banking (Neobank) sector.
+
+PRODUCT CATEGORIES (5 categories):
+
+[Account Services & Onboarding] - 2 items
+--------------------------------------------------
+• Digital Current Account Opening
+  Description: A fully digital, paperless account opening process that allows users to join the bank in under 7 minutes using only a national ID and a smartphone video verification.
+  Target: Tech-savvy individuals, youth, and residents of remote areas seeking branchless banking.
+
+• Blu Contactless Debit Card
+  Description: A stylish, vertical-design debit card available in multiple colors (Red, Blue, Green, etc.) equipped with NFC technology for fast and secure contactless payments.
+  Target: Young adults and design-conscious consumers who value aesthetics and modern payment tech.
+
+[Lending & Credit Products] - 2 items
+--------------------------------------------------
+• Blu Instant Micro-Loans
+  Description: Short-term automated loans provided without the need for traditional collateral or physical guarantors, based on the user's transaction history and credit score.
+  Target: Individuals needing quick liquidity for unexpected expenses or small purchases.
+
+• BNPL (Buy Now, Pay Later)
+  Description: A credit service allowing users to purchase goods from partner merchants immediately and pay the cost in installments over a specified period.
+  Target: Online shoppers looking to manage their monthly budget and cash flow.
+
+[Savings & Investment] - 2 items
+--------------------------------------------------
+• Blu Box (Digital Savings Goal)
+  Description: A digital piggy bank feature that allows users to set aside money for specific goals, separate from their main balance, to encourage disciplined saving.
+  Target: Goal-oriented savers and individuals looking to organize their personal finances.
+
+• High-Yield Savings Interest
+  Description: A competitive interest-bearing feature applied to the daily minimum balance of the user's current account, paid out on a monthly basis.
+  Target: Conservative investors looking for a safe return on their liquid capital.
+
+[Payments & Transfers] - 3 items
+--------------------------------------------------
+• P2P Smart Transfers
+  Description: An intuitive peer-to-peer money transfer system that allows users to send funds to friends and family using just a phone number or contact list sync.
+  Target: Social groups, students, and family members who frequently split bills or share costs.
+
+• Auto-Payment & Utility Bill Management
+  Description: A centralized hub within the app to track, manage, and pay all utility bills and recurring service subscriptions automatically.
+  Target: Homeowners and busy professionals seeking to automate their monthly administrative tasks.
+
+• QR Code Payments
+  Description: A secure method to pay at physical merchant locations by scanning a QR code, eliminating the need for physical card swiping.
+  Target: Urban shoppers and tech-forward consumers at retail outlets.
+
+[Value-Added Services] - 4 items
+--------------------------------------------------
+• Personal Finance Management (PFM)
+  Description: An integrated tool that automatically categorizes all expenses and provides visual analytics to help users understand their spending habits.
+  Target: Budget-conscious individuals and those seeking to improve their financial literacy.
+
+• Blu Club (Loyalty & Rewards)
+  Description: A comprehensive rewards program where users earn points or cashback for transactions, which can be redeemed for various benefits or partner discounts.
+  Target: Frequent debit card users and brand loyalists.
+
+• 24/7 In-App Human Support
+  Description: A dedicated customer success service providing real-time assistance via chat or VoIP calls directly within the application, ensuring no physical branch visits are needed.
+  Target: All Blu users requiring technical assistance or financial guidance.
+
+• Blu Junior (Kids Banking)
+  Description: A specialized sub-account and card designed for children and teenagers, managed by parents to teach financial responsibility from a young age.
+  Target: Parents wishing to provide their children with a controlled digital allowance.
+
+
+BRAND VALUE PROPOSITIONS:
+✓ Superior UI/UX compared to traditional banking apps
+✓ Collateral-free automated lending
+✓ Distinctive aesthetic card designs (multiple colors)
+✓ Strong integration with Saman Bank's infrastructure
+✓ High referral-based organic growth

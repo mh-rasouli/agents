@@ -1,0 +1,17 @@
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Capo,SELF,شرکت فرآورده های گوشتی کاله آمل (Kalleh Meat Products),Food and Beverage Manufacturing,Consumer_Products,General_Products,Food_and_Beverage_Manufacturing,SELF,challenger,premium
+Kalleh,SISTER,شرکت فرآورده های گوشتی کاله آمل (Kalleh Meat Products),FMCG,Consumer_Products,General_Products,FMCG,MEDIUM,Strong,mid-market
+Pemina,SISTER,شرکت فرآورده های گوشتی کاله آمل (Kalleh Meat Products),FMCG,Consumer_Products,General_Products,FMCG,MEDIUM,Strong,premium
+Seven,SISTER,شرکت فرآورده های گوشتی کاله آمل (Kalleh Meat Products),Yogurt & Drinks,Consumer_Products,General_Products,Yogurt_&_Drinks,MEDIUM,Strong,mid-market
+Castle,SISTER,شرکت فرآورده های گوشتی کاله آمل (Kalleh Meat Products),Energy Drinks,Consumer_Products,General_Products,Energy_Drinks,MEDIUM,Strong,premium
+Solico,SISTER,شرکت فرآورده های گوشتی کاله آمل (Kalleh Meat Products),Processed Meat,Consumer_Products,General_Products,Processed_Meat,MEDIUM,Strong,premium
+Meat & Meat,COMPETITOR,Unknown,Premium Deli Meats,Consumer_Products,General_Products,Premium_Deli_Meats,NONE,challenger,premium
+Andre,COMPETITOR,Unknown,Processed Meat,Consumer_Products,General_Products,Processed_Meat,NONE,leader,premium
+202,COMPETITOR,Unknown,Processed Meat,Consumer_Products,General_Products,Processed_Meat,NONE,challenger,mid-market
+Mikailian,COMPETITOR,Unknown,Artisan Meats,Consumer_Products,General_Products,Artisan_Meats,NONE,niche,premium
+Shamsham,SIMILAR,Unknown,Meat Products,Consumer_Products,General_Products,Meat_Products,LOW,Unknown,mid-market
+Bon Ado,SIMILAR,Unknown,Ready-to-eat Meals,Consumer_Products,General_Products,Ready_to_eat_Meals,LOW,Unknown,premium
+Bel Rouz,COMPLEMENTARY,Unknown,Cheese,Consumer_Products,General_Products,Cheese,HIGH,Unknown,mid-market
+Sunich,COMPLEMENTARY,Unknown,Beverages,Consumer_Products,General_Products,Beverages,HIGH,Unknown,mid-market
+Nano Sahar,COMPLEMENTARY,Unknown,Bakery,Consumer_Products,General_Products,Bakery,HIGH,Unknown,mid-market
+Kalleh (Dairy Division),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown

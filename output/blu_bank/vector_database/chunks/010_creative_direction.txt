@@ -1,0 +1,14 @@
+Brand: Blu_Bank
+Date: 2026-02-17
+
+[CREATIVE DIRECTION AND MESSAGING]
+
+Key brand messages:
+- {'message_fa': 'بانکداری در جیب شما، نه در خیابان', 'message_en': 'Banking in your pocket, not on the street', 'target_segment': 'Millennials'}
+- {'message_fa': 'وام فوری، بدون ضامن و چک', 'message_en': 'Instant loan, no guarantor needed', 'target_segment': 'Micro-borrowers'}
+
+Tone and style: Modern, minimalist, and high-energy. Focus on vibrant colors (especially 'Blu' blue) and clean typography.
+Visual recommendations: Use of 3D motion graphics for the app interface and high-quality lifestyle photography featuring the physical cards.
+Cultural considerations: Emphasize 'Trust' (Ettehad) through the Saman Bank backing while keeping the youthful 'Blu' identity separate.
+
+Hashtag strategy: #بلوبانک #بانک_دوست_داشتنی #نئوبانک #BlueBank

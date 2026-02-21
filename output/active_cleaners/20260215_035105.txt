@@ -1,4 +1,0 @@
-brand_name: Active Cleaners
-website: https://activecleaners.ir
-
-# Brand Data

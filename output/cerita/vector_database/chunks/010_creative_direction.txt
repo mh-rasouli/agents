@@ -1,0 +1,14 @@
+Brand: Cerita
+Date: 2026-02-17
+
+[CREATIVE DIRECTION AND MESSAGING]
+
+Key brand messages:
+- {'message_fa': 'زیبایی، وقتی علمی می\u200cشود', 'message_en': 'Beauty, when it becomes scientific', 'target_segment': 'General Audience'}
+- {'message_fa': 'مژه\u200cهای بلندتر، فقط در ۴ هفته', 'message_en': 'Longer lashes, in just 4 weeks', 'target_segment': 'Lash Serum Seekers'}
+
+Tone and style: Modern, clinical, and clean. Minimalist aesthetics with a focus on 'Laboratory Chic'. High-quality macro photography of hair/lashes.
+Visual recommendations: White, silver, and clinical blue color palette. Use of microscopic textures and sleek product packaging shots.
+Cultural considerations: Respect 'Haya' (modesty) in hair-related visuals; focus on the results and health rather than just vanity.
+
+Hashtag strategy: #سریتا #تقویت_مژه #ضد_ریزش #CeritaTeb #BeautyScience

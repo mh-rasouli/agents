@@ -1,0 +1,14 @@
+Brand: Capo
+Date: 2026-02-17
+
+[CREATIVE DIRECTION AND MESSAGING]
+
+Key brand messages:
+- {'message_fa': 'طعم رستوران، در فریزر شما', 'message_en': 'Restaurant taste, in your freezer', 'target_segment': 'Busy Professionals'}
+- {'message_fa': 'پیتزای کاپو: از فریزر مستقیم به فر', 'message_en': 'Capo Pizza: Straight from freezer to oven', 'target_segment': 'Modern Households'}
+
+Tone and style: High-end cinematic food photography (Macro shots), vibrant colors (reds and yellows to stimulate appetite), and a fast-paced 'urban' editing style.
+Visual recommendations: Deep black backgrounds to make the food colors 'pop', focus on steam and texture, minimalist typography.
+Cultural considerations: Ensure all meat is clearly labeled as Halal (per Solico standards), emphasize family sharing sizes for Iranian hospitality.
+
+Hashtag strategy: #کاپو #پیتزا_منجمد #غذای_آماده #سولیکو #CapoFood

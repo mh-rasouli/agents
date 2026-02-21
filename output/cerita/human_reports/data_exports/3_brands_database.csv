@@ -1,0 +1,16 @@
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Cerita,SELF,Pars Azmay Teb (شرکت پارس آزمای طب),Retail sale of cosmetic and pharmaceutical goods,Consumer_Products,General_Products,Retail_sale_of_cosmetic_and_pharmaceutical_goods,SELF,challenger,mid-market
+Genice,SISTER,Pars Azmay Teb (شرکت پارس آزمای طب),Skincare,Consumer_Products,General_Products,Skincare,MEDIUM,Strong,mid-market
+Serita Beauty,SISTER,Pars Azmay Teb (شرکت پارس آزمای طب),Hair Care,Consumer_Products,General_Products,Hair_Care,MEDIUM,Strong,mid-market
+Cinere,COMPETITOR,Unknown,Herbal Hair & Skin Care,Consumer_Products,General_Products,Herbal_Hair_&_Skin_Care,NONE,leader,mid-market
+Lafarrerr,COMPETITOR,Unknown,Specialized Dermocosmetics,Consumer_Products,General_Products,Specialized_Dermocosmetics,NONE,challenger,premium
+Erieke,COMPETITOR,Unknown,Dermocosmetics,Consumer_Products,General_Products,Dermocosmetics,NONE,niche,premium
+Fulica,COMPETITOR,Unknown,Hair Care,Consumer_Products,General_Products,Hair_Care,NONE,follower,economy
+Prime,SIMILAR,Unknown,Dermocosmetics,Consumer_Products,General_Products,Dermocosmetics,LOW,Unknown,mid-market
+Hydroderm,SIMILAR,Unknown,Personal Care,Consumer_Products,General_Products,Personal_Care,LOW,Unknown,economy
+Active,COMPLEMENTARY,Unknown,Personal Hygiene,Consumer_Products,General_Products,Personal_Hygiene,MEDIUM,Unknown,economy
+Golrang,COMPLEMENTARY,Unknown,FMCG / Hair Care,Consumer_Products,General_Products,FMCG_/_Hair_Care,HIGH,Unknown,economy
+Fitbit / Health Apps,COMPLEMENTARY,Unknown,Wellness,Consumer_Products,General_Products,Wellness,MEDIUM,Unknown,mid-market
+Genice (Sister Brand),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+Daroukade (Retail Partner),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+Fitbit / Health Apps (Complementary),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown

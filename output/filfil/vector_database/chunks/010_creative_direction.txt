@@ -1,0 +1,14 @@
+Brand: Filfil
+Date: 2026-02-17
+
+[CREATIVE DIRECTION AND MESSAGING]
+
+Key brand messages:
+- {'message_fa': 'دنیای مزه\u200cها در یک بطری', 'message_en': 'A world of flavors in one bottle', 'target_segment': 'Modern Households'}
+- {'message_fa': 'سس آووکادو؛ انتخابی سالم و متفاوت', 'message_en': 'Avocado Sauce: A healthy and unique choice', 'target_segment': 'Health-conscious Consumers'}
+
+Tone and style: Minimalist, high-end food photography (Vogue Food style), vibrant colors matching the sauce ingredients (green for avocado, red for chili).
+Visual recommendations: Use 'Macro' shots of the sauce dripping. Clean white backgrounds to make the bottle colors pop.
+Cultural considerations: Emphasize 'Mehmannavazi' (Hospitality) by showing how the sauce elevates food served to guests.
+
+Hashtag strategy: #فیلفیل #دنیای_فیلفیل #آشپزی_مدرن #سس_خاص #FilfilWorld

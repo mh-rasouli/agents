@@ -1,0 +1,55 @@
+{
+  "brand_id": "filfil_20260217_084533",
+  "brand_name": "Filfil",
+  "generated_date": "2026-02-17 08:45:33",
+  "summary": {
+    "industry": "صنایع غذایی",
+    "business_model": "B2B2C",
+    "price_tier": "premium",
+    "parent_company": "شرکت راین نیلی (Ryan Nili)"
+  },
+  "relationships": {
+    "sister_brands_count": 0,
+    "top_sister_brands": []
+  },
+  "opportunities": {
+    "cross_promotion_count": 3,
+    "top_opportunities": [
+      {
+        "partner": "SnappFood",
+        "rationale": "High synergy between fast-food delivery and condiment consumption; Filfil can be an 'add-on' or feat...",
+        "reach": "5,000,000+ active monthly users",
+        "timing": "Weekends and late-night 'Zoodfood' hours"
+      },
+      {
+        "partner": "Kalleh (Meat Products)",
+        "rationale": "Filfil sauces complement Kalleh's premium burgers and sausages. Both target a modern, quality-consci...",
+        "reach": "2,000,000+ shoppers in hypermarkets",
+        "timing": "Summer grilling season and pre-Nowruz camping trips"
+      },
+      {
+        "partner": "MazMaz",
+        "rationale": "Filfil's dip-style sauces (Avocado/Creamy French) are a perfect match for MazMaz potato chips, tappi...",
+        "reach": "3,000,000+ retail touchpoints",
+        "timing": "Yalda Night (Shab-e Yalda) for family snacking"
+      }
+    ]
+  },
+  "channels": {
+    "recommended_count": 3,
+    "top_channels": [
+      {
+        "name": "Instagram Reels",
+        "priority": "high"
+      },
+      {
+        "name": "Digital Billboards (Tehran)",
+        "priority": "medium"
+      },
+      {
+        "name": "Influencer Marketing (Foodies)",
+        "priority": "high"
+      }
+    ]
+  }
+}

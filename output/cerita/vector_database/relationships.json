@@ -1,0 +1,120 @@
+{
+  "brand": "Cerita",
+  "relationships": {
+    "parent_of": [],
+    "child_of": [
+      "Pars Azmay Teb (شرکت پارس آزمای طب)"
+    ],
+    "sister_of": [
+      "Serie M",
+      "Genie"
+    ],
+    "competes_with": [
+      "Cinere",
+      "Hydroderm",
+      "Lafarrerr",
+      "Erieke"
+    ],
+    "partners_with": [],
+    "cross_promotion_with": [
+      {
+        "brand": "Darukade",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Serie M (Sister Brand)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Digikala (Beauty Section)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      }
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "cerita",
+        "type": "brand",
+        "label": "Cerita"
+      },
+      {
+        "id": "pars_azmay_teb_(شرکت_پارس_آزمای_طب)",
+        "type": "parent",
+        "label": "Pars Azmay Teb (شرکت پارس آزمای طب)"
+      },
+      {
+        "id": "serie_m",
+        "type": "sister",
+        "label": "Serie M"
+      },
+      {
+        "id": "genie",
+        "type": "sister",
+        "label": "Genie"
+      },
+      {
+        "id": "cinere",
+        "type": "competitor",
+        "label": "Cinere"
+      },
+      {
+        "id": "hydroderm",
+        "type": "competitor",
+        "label": "Hydroderm"
+      },
+      {
+        "id": "lafarrerr",
+        "type": "competitor",
+        "label": "Lafarrerr"
+      },
+      {
+        "id": "erieke",
+        "type": "competitor",
+        "label": "Erieke"
+      }
+    ],
+    "edges": [
+      {
+        "from": "cerita",
+        "to": "pars_azmay_teb_(شرکت_پارس_آزمای_طب)",
+        "type": "owned_by"
+      },
+      {
+        "from": "cerita",
+        "to": "serie_m",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "cerita",
+        "to": "genie",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "cerita",
+        "to": "cinere",
+        "type": "competes_with"
+      },
+      {
+        "from": "cerita",
+        "to": "hydroderm",
+        "type": "competes_with"
+      },
+      {
+        "from": "cerita",
+        "to": "lafarrerr",
+        "type": "competes_with"
+      },
+      {
+        "from": "cerita",
+        "to": "erieke",
+        "type": "competes_with"
+      }
+    ]
+  }
+}

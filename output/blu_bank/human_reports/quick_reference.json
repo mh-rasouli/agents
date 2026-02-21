@@ -1,0 +1,72 @@
+{
+  "brand_id": "blu_bank_20260217_084542",
+  "brand_name": "Blu_Bank",
+  "generated_date": "2026-02-17 08:45:42",
+  "summary": {
+    "industry": "بانکداری دیجیتال",
+    "business_model": "B2C",
+    "price_tier": "economy",
+    "parent_company": "Saman Bank (Bank Saman)"
+  },
+  "relationships": {
+    "sister_brands_count": 4,
+    "top_sister_brands": [
+      {
+        "name": "Saman Insurance",
+        "synergy": null
+      },
+      {
+        "name": "Saman Electronic Payment (SEP)",
+        "synergy": null
+      },
+      {
+        "name": "Saman Exchange",
+        "synergy": null
+      },
+      {
+        "name": "Saman Capital",
+        "synergy": null
+      }
+    ]
+  },
+  "opportunities": {
+    "cross_promotion_count": 4,
+    "top_opportunities": [
+      {
+        "partner": "Digikala",
+        "rationale": "As the e-commerce leader, Digikala transactions are the primary use case for Blu users. Integrating ...",
+        "reach": "30M+ active monthly shoppers",
+        "timing": "Pre-Nowruz (February) and Black Friday (November/December)"
+      },
+      {
+        "partner": "Snapp",
+        "rationale": "Snapp is the daily utility app for Gen Z/Millennials. Blu thrives on high-frequency, low-value trans...",
+        "reach": "40M+ registered users",
+        "timing": "Year-round, with high-intensity bursts during University semesters"
+      },
+      {
+        "partner": "Saman Insurance",
+        "rationale": "Leveraging the sister brand relationship to provide 'Micro-insurance' (Travel, Mobile Screen, Person...",
+        "reach": "5M+ existing Saman group customers",
+        "timing": "Summer holidays (Tir/Mordad) and Nowruz (Esfand)"
+      }
+    ]
+  },
+  "channels": {
+    "recommended_count": 3,
+    "top_channels": [
+      {
+        "name": "Instagram Reels",
+        "priority": "high"
+      },
+      {
+        "name": "Tehran Billboards",
+        "priority": "high"
+      },
+      {
+        "name": "LinkedIn",
+        "priority": "medium"
+      }
+    ]
+  }
+}

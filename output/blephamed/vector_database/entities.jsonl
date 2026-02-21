@@ -1,0 +1,8 @@
+{"entity_id": "brand_blephamed", "type": "brand", "name": "Blephamed", "name_en": "Blephamed", "industry": "Manufacture of chemicals and chemical products (Cosmetics and Toiletries)", "parent": "company_sayateb_mana"}
+{"entity_id": "company_sayateb_mana", "type": "company", "name": "Sayateb Mana", "stock_symbol": "", "industry": ""}
+{"entity_id": "brand_vitalayer", "type": "brand", "name": "Vitalayer", "parent": "company_sayateb_mana", "relation": "sister", "category": "Skincare"}
+{"entity_id": "brand_eudora_max", "type": "brand", "name": "Eudora Max", "parent": "company_sayateb_mana", "relation": "sister", "category": "Hair and Skin Care"}
+{"entity_id": "brand_eyesol", "type": "brand", "name": "Eyesol", "parent": "company_sayateb_mana", "relation": "sister", "category": "Ocular Cosmetics"}
+{"entity_id": "brand_vitaplex", "type": "brand", "name": "Vitaplex", "parent": "company_sayateb_mana", "relation": "sister", "category": "Health Supplements"}
+{"entity_id": "brand_elvina", "type": "brand", "name": "Elvina", "parent": "company_sayateb_mana", "relation": "sister", "category": "Baby Care"}
+{"entity_id": "brand_bergamia", "type": "brand", "name": "Bergamia", "parent": "company_sayateb_mana", "relation": "sister", "category": "Skincare"}

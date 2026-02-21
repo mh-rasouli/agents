@@ -1,0 +1,91 @@
+{
+  "manifest_version": "1.0",
+  "brand": "Filfil",
+  "created": "2026-02-17T08:23:33Z",
+  "embedding_config": {
+    "model": "text-embedding-3-large",
+    "dimensions": 3072,
+    "chunk_strategy": "semantic_topic",
+    "chunk_size_words": "500-1000",
+    "overlap_words": 50,
+    "languages": [
+      "fa",
+      "en"
+    ]
+  },
+  "vector_database": {
+    "recommended_provider": "pinecone|qdrant|weaviate",
+    "index_name": "brand_intelligence",
+    "namespace": "filfil_20260217_082333",
+    "metadata_fields": [
+      "brand_name",
+      "industry",
+      "category_l1",
+      "category_l2",
+      "topic",
+      "analysis_date"
+    ]
+  },
+  "files": [
+    {
+      "path": "chunks/001_brand_overview.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/002_corporate_structure.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/003_sister_brands.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/004_market_positioning.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/005_product_catalog.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/006_strategic_opportunities.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/007_campaign_timing.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/008_channel_strategy.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/009_budget_recommendations.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/010_creative_direction.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/011_success_metrics.txt",
+      "should_embed": true,
+      "priority": "high"
+    },
+    {
+      "path": "chunks/012_customer_intelligence.txt",
+      "should_embed": true,
+      "priority": "high"
+    }
+  ]
+}

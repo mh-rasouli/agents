@@ -1,4 +1,0 @@
-{"entity_id": "brand_digikala", "type": "brand", "name": "Digikala", "name_en": "Digikala", "industry": "E-commerce and Online Retail", "parent": "company_hezardastan_group"}
-{"entity_id": "company_hezardastan_group", "type": "company", "name": "Hezardastan Group", "stock_symbol": "", "industry": ""}
-{"entity_id": "brand_cafe_bazaar", "type": "brand", "name": "Cafe Bazaar", "parent": "company_hezardastan_group", "relation": "sister", "category": "Technology"}
-{"entity_id": "brand_divar", "type": "brand", "name": "Divar", "parent": "company_hezardastan_group", "relation": "sister", "category": "Technology"}

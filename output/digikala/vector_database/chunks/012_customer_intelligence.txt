@@ -1,8 +1,0 @@
-Brand: Digikala
-Date: 2026-02-17
-
-[CUSTOMER INTELLIGENCE]
-
-Customer intelligence data for Digikala is not currently available. 
-This information would include transaction history, campaign performance, 
-and customer engagement metrics. 

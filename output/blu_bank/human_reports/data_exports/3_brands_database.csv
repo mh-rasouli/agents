@@ -1,0 +1,16 @@
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Blu_Bank,SELF,Saman Bank (Bank Saman),Digital Banking,Consumer_Products,General_Products,Digital_Banking,SELF,leader,economy
+Saman Insurance,SISTER,Saman Bank (Bank Saman),Financial Services,Consumer_Products,General_Products,Financial_Services,MEDIUM,Strong,mid-market
+Saman Electronic Payment (SEP),SISTER,Saman Bank (Bank Saman),Payment Gateway,Consumer_Products,General_Products,Payment_Gateway,MEDIUM,Strong,mid-market
+Saman Exchange,SISTER,Saman Bank (Bank Saman),Financial Services,Consumer_Products,General_Products,Financial_Services,MEDIUM,Strong,mid-market
+Saman Capital,SISTER,Saman Bank (Bank Saman),Asset Management,Consumer_Products,General_Products,Asset_Management,MEDIUM,Strong,premium
+Bankino,COMPETITOR,Unknown,Neobanking,Consumer_Products,General_Products,Neobanking,NONE,challenger,economy
+OMP,COMPETITOR,Unknown,Neobanking,Consumer_Products,General_Products,Neobanking,NONE,follower,economy
+Abank,COMPETITOR,Unknown,Digital Banking,Consumer_Products,General_Products,Digital_Banking,NONE,challenger,economy
+Mellat Bank (Digital Services),COMPETITOR,Unknown,Traditional Banking,Consumer_Products,General_Products,Traditional_Banking,NONE,leader,mid-market
+Nobitex,SIMILAR,Unknown,Crypto Exchange,Consumer_Products,General_Products,Crypto_Exchange,LOW,Unknown,mid-market
+ZarinPal,SIMILAR,Unknown,Payment Service Provider,Consumer_Products,General_Products,Payment_Service_Provider,LOW,Unknown,economy
+Digikala,COMPLEMENTARY,Unknown,E-commerce,Consumer_Products,General_Products,E_commerce,HIGH,Unknown,mid-market
+Snapp,COMPLEMENTARY,Unknown,Super-app,Consumer_Products,General_Products,Super_app,HIGH,Unknown,economy
+Alibaba.ir,COMPLEMENTARY,Unknown,Travel,Consumer_Products,General_Products,Travel,MEDIUM,Unknown,mid-market
+Tapsi,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown

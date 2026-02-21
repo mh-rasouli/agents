@@ -1,0 +1,120 @@
+{
+  "brand": "Filfil",
+  "relationships": {
+    "parent_of": [],
+    "child_of": [
+      "شرکت راین نیلی (Ryan Nili)"
+    ],
+    "sister_of": [
+      "Honey Q",
+      "Caramelo"
+    ],
+    "competes_with": [
+      "Bijan",
+      "Mahram",
+      "Behrouz",
+      "Kalleh (Amol)"
+    ],
+    "partners_with": [],
+    "cross_promotion_with": [
+      {
+        "brand": "Solico (Kalleh Meat)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Honey Q (Sister Brand)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Zar Macaron",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      }
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "filfil",
+        "type": "brand",
+        "label": "Filfil"
+      },
+      {
+        "id": "شرکت_راین_نیلی_(ryan_nili)",
+        "type": "parent",
+        "label": "شرکت راین نیلی (Ryan Nili)"
+      },
+      {
+        "id": "honey_q",
+        "type": "sister",
+        "label": "Honey Q"
+      },
+      {
+        "id": "caramelo",
+        "type": "sister",
+        "label": "Caramelo"
+      },
+      {
+        "id": "bijan",
+        "type": "competitor",
+        "label": "Bijan"
+      },
+      {
+        "id": "mahram",
+        "type": "competitor",
+        "label": "Mahram"
+      },
+      {
+        "id": "behrouz",
+        "type": "competitor",
+        "label": "Behrouz"
+      },
+      {
+        "id": "kalleh_(amol)",
+        "type": "competitor",
+        "label": "Kalleh (Amol)"
+      }
+    ],
+    "edges": [
+      {
+        "from": "filfil",
+        "to": "شرکت_راین_نیلی_(ryan_nili)",
+        "type": "owned_by"
+      },
+      {
+        "from": "filfil",
+        "to": "honey_q",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "filfil",
+        "to": "caramelo",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "filfil",
+        "to": "bijan",
+        "type": "competes_with"
+      },
+      {
+        "from": "filfil",
+        "to": "mahram",
+        "type": "competes_with"
+      },
+      {
+        "from": "filfil",
+        "to": "behrouz",
+        "type": "competes_with"
+      },
+      {
+        "from": "filfil",
+        "to": "kalleh_(amol)",
+        "type": "competes_with"
+      }
+    ]
+  }
+}

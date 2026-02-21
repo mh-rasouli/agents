@@ -1,7 +1,0 @@
-{"entity_id": "brand_golrang", "type": "brand", "name": "Golrang", "name_en": "Golrang", "industry": "Fast-Moving Consumer Goods (FMCG) & Multi-sector Conglomerate", "parent": "company_golrang_industrial_group"}
-{"entity_id": "company_golrang_industrial_group", "type": "company", "name": "Golrang Industrial Group", "stock_symbol": "", "industry": ""}
-{"entity_id": "brand_ave", "type": "brand", "name": "Ave", "parent": "company_golrang_industrial_group", "relation": "sister", "category": "Detergents"}
-{"entity_id": "brand_softlan", "type": "brand", "name": "Softlan", "parent": "company_golrang_industrial_group", "relation": "sister", "category": "Fabric Softener"}
-{"entity_id": "brand_active", "type": "brand", "name": "Active", "parent": "company_golrang_industrial_group", "relation": "sister", "category": "Cleaning Supplies"}
-{"entity_id": "brand_oila", "type": "brand", "name": "Oila", "parent": "company_golrang_industrial_group", "relation": "sister", "category": "Edible Oils"}
-{"entity_id": "brand_familia", "type": "brand", "name": "Familia", "parent": "company_golrang_industrial_group", "relation": "sister", "category": "Canned Food"}

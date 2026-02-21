@@ -1,0 +1,4 @@
+{"entity_id": "brand_filfil", "type": "brand", "name": "Filfil", "name_en": "Filfil", "industry": "Food Industry - Manufacture of Condiments and Seasonings", "parent": "company_شرکت_راین_نیلی_(ryan_nili)"}
+{"entity_id": "company_شرکت_راین_نیلی_(ryan_nili)", "type": "company", "name": "شرکت راین نیلی (Ryan Nili)", "stock_symbol": "", "industry": ""}
+{"entity_id": "brand_honey_q", "type": "brand", "name": "Honey Q", "parent": "company_شرکت_راین_نیلی_(ryan_nili)", "relation": "sister", "category": "Honey/Sweeteners"}
+{"entity_id": "brand_caramelo", "type": "brand", "name": "Caramelo", "parent": "company_شرکت_راین_نیلی_(ryan_nili)", "relation": "sister", "category": "Confectionery/Syrups"}

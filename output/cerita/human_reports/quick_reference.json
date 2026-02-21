@@ -1,0 +1,64 @@
+{
+  "brand_id": "cerita_20260217_084523",
+  "brand_name": "Cerita",
+  "generated_date": "2026-02-17 08:45:23",
+  "summary": {
+    "industry": "خرده فروشی محصولات آرایشی، بهداشتی و تجهیزات پزشکی",
+    "business_model": "B2C",
+    "price_tier": "mid-market",
+    "parent_company": "Pars Azmay Teb (شرکت پارس آزمای طب)"
+  },
+  "relationships": {
+    "sister_brands_count": 2,
+    "top_sister_brands": [
+      {
+        "name": "Genice",
+        "synergy": null
+      },
+      {
+        "name": "Serita Beauty",
+        "synergy": null
+      }
+    ]
+  },
+  "opportunities": {
+    "cross_promotion_count": 3,
+    "top_opportunities": [
+      {
+        "partner": "Genice (Sister Brand)",
+        "rationale": "Genice focuses on dermocosmetic skincare while Cerita dominates hair/eyelash treatments. Both target...",
+        "reach": "1.5M+ combined beauty-conscious consumers",
+        "timing": "Pre-Nowruz (February-March) for the 'New Year, New You' makeover trend."
+      },
+      {
+        "partner": "Daroukade (Retail Partner)",
+        "rationale": "As a primary retail affiliate, Daroukade provides the medical credibility Cerita needs for its high-...",
+        "reach": "500k+ monthly active pharmacy shoppers",
+        "timing": "Mehregan (October) to capture the post-summer skin recovery market."
+      },
+      {
+        "partner": "Fitbit / Health Apps (Complementary)",
+        "rationale": "Cerita's TENS machines and pain relief massagers appeal to the wellness and fitness demographic.",
+        "reach": "200k+ tech-savvy wellness enthusiasts",
+        "timing": "January (Global New Year) when fitness resolutions are at their peak in urban Tehran."
+      }
+    ]
+  },
+  "channels": {
+    "recommended_count": 3,
+    "top_channels": [
+      {
+        "name": "Instagram Reels",
+        "priority": "high"
+      },
+      {
+        "name": "Influencer Marketing (Dermatologists)",
+        "priority": "high"
+      },
+      {
+        "name": "Telegram Beauty Channels",
+        "priority": "medium"
+      }
+    ]
+  }
+}

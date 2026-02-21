@@ -1,0 +1,14 @@
+Brand: Blephamed
+Date: 2026-02-17
+
+[CREATIVE DIRECTION AND MESSAGING]
+
+Key brand messages:
+- {'message_fa': 'سلامت چشم، از پلک\u200cها آغاز می\u200cشود.', 'message_en': 'Eye health begins with the eyelids.', 'target_segment': 'General Health Conscious'}
+- {'message_fa': 'پاک\u200cکننده تخصصی آرایش برای حساس\u200cترین چشمان.', 'message_en': 'Specialized makeup remover for the most sensitive eyes.', 'target_segment': 'Sensitive Skin Consumers'}
+
+Tone and style: Minimalist, clinical, and 'white-space' heavy. Modern medical aesthetic using high-quality 3D renders of the eye structure.
+Visual recommendations: Clinical blue, sterile white, and turquoise. Use of macro-lens photography showing clean lash lines.
+Cultural considerations: Respect modesty in health-related imagery; emphasize 'Halal' and 'Iranian-made' quality to appeal to national pride in pharma.
+
+Hashtag strategy: #بلفامد #بهداشت_چشم #بلفاریت #سلامت_پلک #blephamed

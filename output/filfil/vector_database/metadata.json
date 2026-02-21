@@ -1,0 +1,142 @@
+{
+  "brand_id": "filfil_20260217_082333",
+  "brand_name": "Filfil",
+  "brand_name_en": "Filfil",
+  "parent_company": "شرکت راین نیلی (Ryan Nili)",
+  "industry": "Food Industry - Manufacture of Condiments and Seasonings",
+  "industry_code": "1079",
+  "category_l1": "Consumer_Products",
+  "category_l2": "General_Products",
+  "category_l3": "Products",
+  "business_model": "B2B2C",
+  "price_tier": "mid-market",
+  "total_sister_brands": 2,
+  "analysis_date": "2026-02-17",
+  "data_sources": [
+    "web",
+    "knowledge_base"
+  ],
+  "has_customer_data": false,
+  "chunks": [
+    {
+      "chunk_id": "001",
+      "filename": "001_brand_overview.txt",
+      "topic": "brand_overview",
+      "word_count": 66,
+      "language": "mixed_fa_en",
+      "tags": [
+        "brand_overview"
+      ]
+    },
+    {
+      "chunk_id": "002",
+      "filename": "002_corporate_structure.txt",
+      "topic": "corporate_structure",
+      "word_count": 60,
+      "language": "mixed_fa_en",
+      "tags": [
+        "corporate_structure"
+      ]
+    },
+    {
+      "chunk_id": "003",
+      "filename": "003_sister_brands.txt",
+      "topic": "sister_brands",
+      "word_count": 112,
+      "language": "mixed_fa_en",
+      "tags": [
+        "sister_brands"
+      ]
+    },
+    {
+      "chunk_id": "004",
+      "filename": "004_market_positioning.txt",
+      "topic": "market_positioning",
+      "word_count": 66,
+      "language": "mixed_fa_en",
+      "tags": [
+        "market_positioning"
+      ]
+    },
+    {
+      "chunk_id": "005",
+      "filename": "005_product_catalog.txt",
+      "topic": "product_catalog",
+      "word_count": 663,
+      "language": "mixed_fa_en",
+      "tags": [
+        "product_catalog"
+      ]
+    },
+    {
+      "chunk_id": "006",
+      "filename": "006_strategic_opportunities.txt",
+      "topic": "strategic_opportunities",
+      "word_count": 379,
+      "language": "mixed_fa_en",
+      "tags": [
+        "strategic_opportunities"
+      ]
+    },
+    {
+      "chunk_id": "007",
+      "filename": "007_campaign_timing.txt",
+      "topic": "campaign_timing",
+      "word_count": 83,
+      "language": "mixed_fa_en",
+      "tags": [
+        "campaign_timing"
+      ]
+    },
+    {
+      "chunk_id": "008",
+      "filename": "008_channel_strategy.txt",
+      "topic": "channel_strategy",
+      "word_count": 85,
+      "language": "mixed_fa_en",
+      "tags": [
+        "channel_strategy"
+      ]
+    },
+    {
+      "chunk_id": "009",
+      "filename": "009_budget_recommendations.txt",
+      "topic": "budget_recommendations",
+      "word_count": 113,
+      "language": "mixed_fa_en",
+      "tags": [
+        "budget_recommendations"
+      ]
+    },
+    {
+      "chunk_id": "010",
+      "filename": "010_creative_direction.txt",
+      "topic": "creative_direction",
+      "word_count": 110,
+      "language": "mixed_fa_en",
+      "tags": [
+        "creative_direction"
+      ]
+    },
+    {
+      "chunk_id": "011",
+      "filename": "011_success_metrics.txt",
+      "topic": "success_metrics",
+      "word_count": 64,
+      "language": "mixed_fa_en",
+      "tags": [
+        "success_metrics"
+      ]
+    },
+    {
+      "chunk_id": "012",
+      "filename": "012_customer_intelligence.txt",
+      "topic": "customer_intelligence",
+      "word_count": 27,
+      "language": "mixed_fa_en",
+      "tags": [
+        "customer_intelligence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Blephamed,SELF,Sayateb Mana (سایاطب مانا),Manufacture of chemicals and chemical products (Pharmaceuticals and Cosmetics),Consumer_Products,General_Products,Manufacture_of_chemicals_and_chemical_products_(Pharmaceuticals_and_Cosmetics),SELF,challenger,mid-market
+Vitalayer,SISTER,Sayateb Mana (سایاطب مانا),Skincare,Consumer_Products,General_Products,Skincare,MEDIUM,Strong,mid-market
+Eudora Max,SISTER,Sayateb Mana (سایاطب مانا),Hair Care,Consumer_Products,General_Products,Hair_Care,MEDIUM,Strong,mid-market
+Eyesol,SISTER,Sayateb Mana (سایاطب مانا),Eye Care,Consumer_Products,General_Products,Eye_Care,MEDIUM,Strong,mid-market
+Vitaplex,SISTER,Sayateb Mana (سایاطب مانا),Hair Care,Consumer_Products,General_Products,Hair_Care,MEDIUM,Strong,mid-market
+Elvina,SISTER,Sayateb Mana (سایاطب مانا),Baby Care,Consumer_Products,General_Products,Baby_Care,MEDIUM,Strong,mid-market
+Bergamia,SISTER,Sayateb Mana (سایاطب مانا),Skincare,Consumer_Products,General_Products,Skincare,MEDIUM,Strong,mid-market
+Sina Darou,COMPETITOR,Unknown,Ophthalmic Pharmaceuticals,Consumer_Products,General_Products,Ophthalmic_Pharmaceuticals,NONE,leader,economy
+Caspian Tamin,COMPETITOR,Unknown,Pharmaceuticals,Consumer_Products,General_Products,Pharmaceuticals,NONE,challenger,mid-market
+Hydroderm (Eye Care Line),COMPETITOR,Unknown,Dermocosmetics,Consumer_Products,General_Products,Dermocosmetics,NONE,challenger,mid-market
+Cinere,SIMILAR,Unknown,Personal Care,Consumer_Products,General_Products,Personal_Care,LOW,Unknown,mid-market
+Cerita,SIMILAR,Unknown,Dermocosmetics,Consumer_Products,General_Products,Dermocosmetics,LOW,Unknown,mid-market
+Optic Iran,COMPLEMENTARY,Unknown,Eyewear Retail,Consumer_Products,General_Products,Eyewear_Retail,HIGH,Unknown,mid-market
+Dr. Akhavi Lab (Seagull),COMPLEMENTARY,Unknown,Sunscreen,Consumer_Products,General_Products,Sunscreen,MEDIUM,Unknown,mid-market
+Eyesol (Sister Brand),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+Optic Iran / Local Optician Chains,COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
+Vitalayer (Sister Brand),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown

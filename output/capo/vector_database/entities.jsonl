@@ -1,0 +1,7 @@
+{"entity_id": "brand_capo", "type": "brand", "name": "Capo", "name_en": "Capo", "industry": "Food Industry (Ready-to-eat and Frozen Meals)", "parent": "company_solico_group_(kalleh_meat_products_company_of_amol)"}
+{"entity_id": "company_solico_group_(kalleh_meat_products_company_of_amol)", "type": "company", "name": "Solico Group (Kalleh Meat Products Company of Amol)", "stock_symbol": "", "industry": ""}
+{"entity_id": "brand_kalleh", "type": "brand", "name": "Kalleh", "parent": "company_solico_group_(kalleh_meat_products_company_of_amol)", "relation": "sister", "category": "FMCG"}
+{"entity_id": "brand_pemina", "type": "brand", "name": "Pemina", "parent": "company_solico_group_(kalleh_meat_products_company_of_amol)", "relation": "sister", "category": "Ready-to-eat Meals"}
+{"entity_id": "brand_seven", "type": "brand", "name": "Seven", "parent": "company_solico_group_(kalleh_meat_products_company_of_amol)", "relation": "sister", "category": "Yogurt and Drinks"}
+{"entity_id": "brand_castle_bravo", "type": "brand", "name": "Castle Bravo", "parent": "company_solico_group_(kalleh_meat_products_company_of_amol)", "relation": "sister", "category": "Energy Drinks"}
+{"entity_id": "brand_solico", "type": "brand", "name": "Solico", "parent": "company_solico_group_(kalleh_meat_products_company_of_amol)", "relation": "sister", "category": "Processed Meats"}

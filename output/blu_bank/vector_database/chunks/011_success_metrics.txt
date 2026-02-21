@@ -1,0 +1,12 @@
+Brand: Blu_Bank
+Date: 2026-02-17
+
+[SUCCESS METRICS AND KEY PERFORMANCE INDICATORS]
+
+Primary KPIs for campaign success:
+- Cost Per Acquisition (CPA) of new funded accounts
+- App Store/Bazaar ranking
+- Referral code utilization rate
+
+Measurement approach: Internal dashboard tracking of promo codes and UTM links for influencer campaigns; brand sentiment analysis on Twitter/Instagram.
+Benchmarks: Targeting a 20% month-over-month growth in active transacting users.

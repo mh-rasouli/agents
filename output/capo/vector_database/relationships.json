@@ -1,0 +1,156 @@
+{
+  "brand": "Capo",
+  "relationships": {
+    "parent_of": [],
+    "child_of": [
+      "Solico Group (Kalleh Meat Products Company of Amol)"
+    ],
+    "sister_of": [
+      "Kalleh",
+      "Pemina",
+      "Seven",
+      "Castle Bravo",
+      "Solico"
+    ],
+    "competes_with": [
+      "2002 (Bist-o-Do)",
+      "B.A. Food",
+      "Sham Sham",
+      "Andre"
+    ],
+    "partners_with": [],
+    "cross_promotion_with": [
+      {
+        "brand": "Kalleh (Dairy Division)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Seven (Beverages)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      },
+      {
+        "brand": "Bijan (Sauces)",
+        "synergy": "MEDIUM",
+        "opportunity": ""
+      }
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "capo",
+        "type": "brand",
+        "label": "Capo"
+      },
+      {
+        "id": "solico_group_(kalleh_meat_products_company_of_amol)",
+        "type": "parent",
+        "label": "Solico Group (Kalleh Meat Products Company of Amol)"
+      },
+      {
+        "id": "kalleh",
+        "type": "sister",
+        "label": "Kalleh"
+      },
+      {
+        "id": "pemina",
+        "type": "sister",
+        "label": "Pemina"
+      },
+      {
+        "id": "seven",
+        "type": "sister",
+        "label": "Seven"
+      },
+      {
+        "id": "castle_bravo",
+        "type": "sister",
+        "label": "Castle Bravo"
+      },
+      {
+        "id": "solico",
+        "type": "sister",
+        "label": "Solico"
+      },
+      {
+        "id": "2002_(bist-o-do)",
+        "type": "competitor",
+        "label": "2002 (Bist-o-Do)"
+      },
+      {
+        "id": "b.a._food",
+        "type": "competitor",
+        "label": "B.A. Food"
+      },
+      {
+        "id": "sham_sham",
+        "type": "competitor",
+        "label": "Sham Sham"
+      },
+      {
+        "id": "andre",
+        "type": "competitor",
+        "label": "Andre"
+      }
+    ],
+    "edges": [
+      {
+        "from": "capo",
+        "to": "solico_group_(kalleh_meat_products_company_of_amol)",
+        "type": "owned_by"
+      },
+      {
+        "from": "capo",
+        "to": "kalleh",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "capo",
+        "to": "pemina",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "capo",
+        "to": "seven",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "capo",
+        "to": "castle_bravo",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "capo",
+        "to": "solico",
+        "type": "sister_brand",
+        "synergy": "MEDIUM"
+      },
+      {
+        "from": "capo",
+        "to": "2002_(bist-o-do)",
+        "type": "competes_with"
+      },
+      {
+        "from": "capo",
+        "to": "b.a._food",
+        "type": "competes_with"
+      },
+      {
+        "from": "capo",
+        "to": "sham_sham",
+        "type": "competes_with"
+      },
+      {
+        "from": "capo",
+        "to": "andre",
+        "type": "competes_with"
+      }
+    ]
+  }
+}

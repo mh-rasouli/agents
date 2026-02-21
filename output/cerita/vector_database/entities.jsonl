@@ -1,0 +1,4 @@
+{"entity_id": "brand_cerita", "type": "brand", "name": "Cerita", "name_en": "Cerita", "industry": "Retail of Cosmetics, Toiletries and Medical Equipment", "parent": "company_pars_azmay_teb_(شرکت_پارس_آزمای_طب)"}
+{"entity_id": "company_pars_azmay_teb_(شرکت_پارس_آزمای_طب)", "type": "company", "name": "Pars Azmay Teb (شرکت پارس آزمای طب)", "stock_symbol": "", "industry": ""}
+{"entity_id": "brand_serie_m", "type": "brand", "name": "Serie M", "parent": "company_pars_azmay_teb_(شرکت_پارس_آزمای_طب)", "relation": "sister", "category": "Hair Care"}
+{"entity_id": "brand_genie", "type": "brand", "name": "Genie", "parent": "company_pars_azmay_teb_(شرکت_پارس_آزمای_طب)", "relation": "sister", "category": "Skincare"}

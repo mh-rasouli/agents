@@ -1,4 +1,0 @@
-brand_name: Test Brand
-website: https://example.com
-
-# Brand Data

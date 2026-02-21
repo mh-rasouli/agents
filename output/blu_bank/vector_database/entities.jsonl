@@ -1,0 +1,5 @@
+{"entity_id": "brand_blu_bank", "type": "brand", "name": "Blu_Bank", "name_en": "Blu_Bank", "industry": "Digital Banking (Neobank)", "parent": "company_saman_bank_(bank_saman)"}
+{"entity_id": "company_saman_bank_(bank_saman)", "type": "company", "name": "Saman Bank (Bank Saman)", "stock_symbol": "", "industry": ""}
+{"entity_id": "brand_saman_insurance", "type": "brand", "name": "Saman Insurance", "parent": "company_saman_bank_(bank_saman)", "relation": "sister", "category": "Financial Services"}
+{"entity_id": "brand_saman_exchange", "type": "brand", "name": "Saman Exchange", "parent": "company_saman_bank_(bank_saman)", "relation": "sister", "category": "Financial Services"}
+{"entity_id": "brand_saman_electronic_payment_(sep)", "type": "brand", "name": "Saman Electronic Payment (SEP)", "parent": "company_saman_bank_(bank_saman)", "relation": "sister", "category": "Payment Gateway"}

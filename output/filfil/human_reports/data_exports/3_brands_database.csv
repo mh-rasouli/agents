@@ -1,0 +1,13 @@
+﻿brand_name,relationship_type,parent_company,category,category_level_1,category_level_2,category_level_3,cross_sell_potential,market_position,price_tier
+Filfil,SELF,شرکت راین نیلی (Ryan Nili),Food Industry,Consumer_Products,General_Products,Food_Industry,SELF,niche,premium
+Bijan,COMPETITOR,Unknown,Sauces and Condiments,Consumer_Products,General_Products,Sauces_and_Condiments,NONE,leader,mid-market
+Behrouz,COMPETITOR,Unknown,Sauces and Condiments,Consumer_Products,General_Products,Sauces_and_Condiments,NONE,leader,mid-market
+Mahram,COMPETITOR,Unknown,Sauces and Condiments,Consumer_Products,General_Products,Sauces_and_Condiments,NONE,leader,mid-market
+Delpazir,COMPETITOR,Unknown,Sauces and Condiments,Consumer_Products,General_Products,Sauces_and_Condiments,NONE,challenger,mid-market
+Kalleh (Sauce Line),COMPETITOR,Unknown,Sauces and Condiments,Consumer_Products,General_Products,Sauces_and_Condiments,NONE,challenger,premium
+Tabasco (Imported),SIMILAR,Unknown,Hot Sauce,Consumer_Products,General_Products,Hot_Sauce,LOW,Unknown,luxury
+Samyang (Buldak),SIMILAR,Unknown,Spicy Food,Consumer_Products,General_Products,Spicy_Food,LOW,Unknown,premium
+SnappFood,COMPLEMENTARY,Unknown,Food Delivery,Technology_Services,On-Demand_Platforms,Food_Delivery,HIGH,Unknown,mid-market
+Solico (Kalleh Meat),COMPLEMENTARY,Unknown,Processed Meat/Burgers,Consumer_Products,General_Products,Processed_Meat/Burgers,HIGH,Unknown,premium
+MazMaz,COMPLEMENTARY,Unknown,Snacks/Chips,Consumer_Products,General_Products,Snacks/Chips,MEDIUM,Unknown,mid-market
+Kalleh (Meat Products),COMPLEMENTARY,Unknown,Unknown,Consumer_Products,General_Products,Unknown,HIGH,Unknown,Unknown
