@@ -167,6 +167,20 @@ class DataCollectionAgent(BaseAgent):
 
                 if structured_data:
                     logger.info("[LLM] Successfully extracted structured data")
+                    # Merge website_info from raw web_search data if LLM didn't return it
+                    if not structured_data.get("website_info"):
+                        web_search = raw_data.get("web_search") or {}
+                        if web_search:
+                            structured_data["website_info"] = {
+                                "title": web_search.get("page_title"),
+                                "meta_description": web_search.get("meta_data", {}).get("description"),
+                                "is_javascript_site": web_search.get("is_javascript_site", False),
+                                "data_richness": web_search.get("data_richness_score", 0.0),
+                                "headings": web_search.get("headings", []),
+                                "content_summary": web_search.get("content_summary", ""),
+                                "about_us": web_search.get("about_us", ""),
+                                "internal_links": web_search.get("internal_links", [])
+                            }
                     return structured_data
 
             except Exception as e:

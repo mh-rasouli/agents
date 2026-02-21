@@ -1974,7 +1974,7 @@ class OutputFormatterAgent(BaseAgent):
                 "top_opportunities": [
                     {
                         "partner": o.get("partner_brand"),
-                        "rationale": o.get("rationale", "")[:100] + "..." if len(o.get("rationale", "")) > 100 else o.get("rationale", ""),
+                        "rationale": (o.get("campaign_concept", "") or "")[:100] + "..." if len(o.get("campaign_concept", "") or "") > 100 else (o.get("campaign_concept", "") or ""),
                         "reach": o.get("potential_reach", ""),
                         "timing": o.get("timing", "")
                     }
@@ -2148,9 +2148,9 @@ class OutputFormatterAgent(BaseAgent):
             with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
                 fieldnames = [
                     "partner_brand",
-                    "rationale",
+                    "campaign_concept",
                     "potential_reach",
-                    "recommended_approach",
+                    "expected_benefit",
                     "timing"
                 ]
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -2159,15 +2159,15 @@ class OutputFormatterAgent(BaseAgent):
                 for opp in opportunities:
                     writer.writerow({
                         "partner_brand": opp.get("partner_brand", ""),
-                        "rationale": opp.get("rationale", ""),
+                        "campaign_concept": opp.get("campaign_concept", ""),
                         "potential_reach": opp.get("potential_reach", ""),
-                        "recommended_approach": opp.get("recommended_approach", ""),
+                        "expected_benefit": opp.get("expected_benefit", ""),
                         "timing": opp.get("timing", "")
                     })
         else:
             # Empty CSV with headers
             with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
-                fieldnames = ["partner_brand", "rationale", "potential_reach", "recommended_approach", "timing"]
+                fieldnames = ["partner_brand", "campaign_concept", "potential_reach", "expected_benefit", "timing"]
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
 
@@ -2510,7 +2510,7 @@ class OutputFormatterAgent(BaseAgent):
                 lines.append("")
 
                 # Campaign Approach
-                approach = opp.get('recommended_approach', 'Collaborative marketing campaign')
+                approach = opp.get('campaign_concept', 'Collaborative marketing campaign')
                 lines.append(f"RECOMMENDED CAMPAIGN APPROACH:")
                 lines.append(f"{approach}")
                 lines.append("")
